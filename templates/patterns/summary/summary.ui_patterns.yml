@@ -1,0 +1,44 @@
+summary:
+  label: Summary
+  description: "The summary allows users to preview content and navigate between different sections of a page. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/262898307/Sommaire+-+Summary"
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Summary title.
+      preview: Summary
+    links:
+      type: array
+      label: Links
+      description: "Summary links by provider.
+        The link element contains the following elements:
+          - title: Link title;
+          - url: Link URI."
+      preview:
+        - title: Anchor title 1
+          url: '#anchor-title-1'
+          attributes:
+            data-test: test
+        - title: Anchor title 2
+          url: '#anchor-title-2'
+        - title: Anchor title 3
+          url: '#anchor-title-3'
+        - title: Anchor title 4
+          url: '#anchor-title-4'
+        - title: Anchor title 5
+          url: '#anchor-title-5'
+        - title: Anchor title 6
+          url: '#anchor-title-6'
+  settings:
+    title_tag:
+      type: select
+      label: Title tag
+      description: Title html tag. Can be 'p' or 'h2'-'h6'.
+      options:
+        p: p
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+      preview: p

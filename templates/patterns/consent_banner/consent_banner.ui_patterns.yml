@@ -1,0 +1,14 @@
+consent_banner:
+  label: Consent banner
+  description: "The consent manager allows the user to define his preferences on the use of his personal data, in particular the deposit of non-functional cookies in his browser. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/609189956/Gestionnaire+de+consentement+-+Consent+banner"
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Banner title. Optional.
+      preview: 'About cookies on sitename.fr'
+    text:
+      type: render
+      label: Text
+      description: Banner renderable text.
+      preview: 'Welcome! We use cookies to improve your experience and the services available on this site. To find out more, visit the <a href="#">Personal data and cookies</a> page. You can, at any time, have control over the cookies you want to activate.'

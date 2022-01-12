@@ -1,0 +1,21 @@
+tabs:
+  label: Tabs
+  description: The tab system helps group different content in a limited space and allows dense content to be divided into individually accessible sections to make it easier for the user to read. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/367985267/Onglets+-+Tabs
+  fields:
+    label:
+      type: text
+      label: Tabs label
+      description: Used for aria-label.
+      preview: Tabs label
+    items:
+      type: array
+      label: Tabs items
+      description: Contains 'title', 'icon' and 'content' elements.
+      preview:
+        - title: Tab label 1
+          icon: fr-fi-checkbox-circle-line
+          content: 'Tab <strong>content 1</strong>'
+        - title: Tab label 2
+          content: 'Tab content 2 with <a target="_blank" href="https://example.com">link</a>'
+        - title: Tab label 3
+          content: 'Tab content 3'

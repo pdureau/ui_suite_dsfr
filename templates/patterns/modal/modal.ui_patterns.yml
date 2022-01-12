@@ -1,0 +1,165 @@
+modal:
+  label: Modal
+  description: The modal allows the user's attention to be focused exclusively on a task or an element of information, without losing the context of the current page. This component requires user action in order to be closed or opened. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/476610770/Modale+-+Modal
+  variants:
+    default:
+      label: Medium
+    lg:
+      label: Large
+    sm:
+      label: Small
+  settings:
+    icon:
+      type: select
+      label: Icon
+      description: Icon to be placed near modal title.
+      options:
+        fr-fi-account-fill: account filled
+        fr-fi-account-line: account line
+        fr-fi-add-circle-fill: add-circle filled
+        fr-fi-add-circle-line: add-circle line
+        fr-fi-add-line: add line
+        fr-fi-alert-fill: alert filled
+        fr-fi-alert-line: alert line
+        fr-fi-arrow-down-line: arrow-down line
+        fr-fi-arrow-down-s-line: arrow-down-s line
+        fr-fi-arrow-left-line: arrow-left line
+        fr-fi-arrow-left-s-line: arrow-left-s line
+        fr-fi-arrow-right-line: arrow-right line
+        fr-fi-arrow-right-s-line: arrow-right-s line
+        fr-fi-arrow-up-line: arrow-up line
+        fr-fi-arrow-up-s-line: arrow-up-s line
+        fr-fi-attachment-fill: pièce jointe filled
+        fr-fi-attachment-line: pièce jointe line
+        fr-fi-calendar-fill: calendar filled
+        fr-fi-calendar-line: calendar line
+        fr-fi-check-line: check line
+        fr-fi-checkbox-circle-fill: checkbox-circle filled
+        fr-fi-checkbox-circle-line: checkbox-circle line
+        fr-fi-close-circle-fill: close-circle filled
+        fr-fi-close-circle-line: close-circle line
+        fr-fi-close-line: close line
+        fr-fi-daily-motion-fill: dailymotion filled
+        fr-fi-daily-motion-line: dailymotion line
+        fr-fi-delete-fill: delete filled
+        fr-fi-delete-line: delete line
+        fr-fi-download-line: download line
+        fr-fi-edit-fill: edit filled
+        fr-fi-edit-line: edit line
+        fr-fi-equalizer-fill: equalizer filled
+        fr-fi-equalizer-line: equalizer line
+        fr-fi-error-warning-fill: error-warning filled
+        fr-fi-error-warning-line: error-warning line
+        fr-fi-external-link-line: external-link line
+        fr-fi-eye-fill: eye filled
+        fr-fi-eye-line: eye line
+        fr-fi-eye-off-fill: eye-off filled
+        fr-fi-eye-off-line: eye-off line
+        fr-fi-facebook-fill: facebook filled
+        fr-fi-file-download-fill: file-download filled
+        fr-fi-file-download-line: file-download line
+        fr-fi-file-fill: file filled
+        fr-fi-file-line: file line
+        fr-fi-file-pdf-fill: file-pdf filled
+        fr-fi-file-pdf-line: file-pdf line
+        fr-fi-filter-fill: filtre filled
+        fr-fi-filter-line: filtre line
+        fr-fi-github-fill: github filled
+        fr-fi-github-line: github line
+        fr-fi-information-fill: information filled
+        fr-fi-information-line: information line
+        fr-fi-instagram-fill: instagram filled
+        fr-fi-instagram-line: instagram line
+        fr-fi-linkedin-box-fill: linkedin-box filled
+        fr-fi-lock-fill: lock filled
+        fr-fi-lock-line: lock line
+        fr-fi-mail-fill: mail filled
+        fr-fi-mail-line: mail line
+        fr-fi-menu-2-line: menu 2 filled
+        fr-fi-menu-fill: menu filled
+        fr-fi-npmjs-fill: npmjs filled
+        fr-fi-npmjs-line: npmjs line
+        fr-fi-pause-circle-fill: pause-circle filled
+        fr-fi-pause-circle-line: pause-circle line
+        fr-fi-play-fill: play filled
+        fr-fi-play-line: play line
+        fr-fi-printer-fill: printer filled
+        fr-fi-printer-line: printer line
+        fr-fi-question-fill: question filled
+        fr-fi-question-line: question line
+        fr-fi-remixicon-fill: remixicon filled
+        fr-fi-remixicon-line: remixicon line
+        fr-fi-save-fill: save filled
+        fr-fi-save-line: save line
+        fr-fi-search-fill: search filled
+        fr-fi-search-line: search line
+        fr-fi-slack-fill: slack filled
+        fr-fi-slack-line: slack line
+        fr-fi-snapchat-fill: snapchat filled
+        fr-fi-snapchat-line: snapchat line
+        fr-fi-subtract-line: subtract line
+        fr-fi-telegram-fill: telegram filled
+        fr-fi-telegram-line: telegram line
+        fr-fi-theme-fill: theme filled
+        fr-fi-tiktok-fill: tiktok filled
+        fr-fi-tiktok-line: tiktok line
+        fr-fi-twitch-fill: twitch filled
+        fr-fi-twitch-line: twitch line
+        fr-fi-twitter-fill: twitter filled
+        fr-fi-twitter-line: twitter line
+        fr-fi-upload-2-fill: upload filled
+        fr-fi-upload-2-line: upload line
+        fr-fi-user-fill: user filled
+        fr-fi-user-line: user line
+        fr-fi-vimeo-fill: vimeo filled
+        fr-fi-vimeo-line: vimeo line
+        fr-fi-volume-down-fill: volume-down filled
+        fr-fi-volume-down-line: volume-down line
+        fr-fi-volume-mute-fill: volume-mute filled
+        fr-fi-volume-mute-line: volume-mute line
+        fr-fi-volume-up-fill: volume-up filled
+        fr-fi-volume-up-line: volume-up line
+        fr-fi-youtube-fill: youtube filled
+        fr-fi-youtube-line: youtube line
+#      preview: fr-fi-arrow-right-line
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The modal button label.
+      preview: Open modal
+    title:
+      type: text
+      label: Title
+      description: The modal title
+      preview: Modal title
+    body:
+      type: render
+      label: Body
+      description: The modal body renderable text.
+      preview:
+        type: html_tag
+        tag: p
+        value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero, vitae commodo nunc quam et ligula. Ut nec ipsum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer id nisi nec nulla luctus lacinia non eu turpis. Etiam in ex imperdiet justo tincidunt egestas. Ut porttitor urna ac augue cursus tincidunt sit amet sed orci."
+    actions:
+      type: render
+      label: Actions
+      description: Modal action (buttons group pattern).
+      preview:
+        - type: pattern
+          id: button_group
+          variant: inline__lg__right
+          icon_position: left
+          fields:
+            buttons:
+              - type: pattern
+                id: button
+                icon: fr-fi-check-line
+                icon_position: left
+                fields:
+                  label: First button
+              - type: pattern
+                id: button
+                variant: secondary
+                fields:
+                  label: Second button

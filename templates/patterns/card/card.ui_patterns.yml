@@ -1,0 +1,54 @@
+card:
+  label: Card
+  description: "The card is a link to an editorial page of which it gives an overview. It is usually part of a collection or list of similar content previews. The card is never presented in isolation. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331445/Carte+-+Card"
+  variants:
+    default:
+      label: Vertical
+    horizontal:
+      label: Horizontal
+  settings:
+    enlarge_link:
+      type: boolean
+      label: Enlarge link?
+      description: Extend the link to the whole card.
+      preview: true
+    no_arrow:
+      type: boolean
+      label: Hide an arrow?
+      description: Hides an arrow in the card bottom.
+      preview: false
+    grey_hover:
+      type: boolean
+      label: Grey background?
+      description: Adds grey background on card hover.
+      preview: true
+  fields:
+    image:
+      type: render
+      label: Image
+      description: Card image render. Optional.
+      preview:
+        theme: image
+        uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+        alt: ""
+    title:
+      type: render
+      label: Title
+      description: Card title (May contain a link).
+      preview:
+        type: html_tag
+        tag: a
+        value: Card title
+        attributes:
+          href: '#'
+          title: Link title
+    detail:
+      type: text
+      label: Detail
+      description: Card detail. Plain text. Optional
+      preview: Detail
+    description:
+      type: text
+      label: Text
+      description: Card text. Plain text. Optional.
+      preview: "The card gives clickable previews of a content page to the user. It is usually part of a collection or list of similar content previews. The card is never presented in isolation."

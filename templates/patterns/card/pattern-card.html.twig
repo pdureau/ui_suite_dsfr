@@ -1,0 +1,32 @@
+{% if variant is not empty and variant|lower != 'default' %}
+  {% set attributes = attributes.addClass('fr-card--' ~ variant|lower|replace({'_': '-'})) %}
+{% endif %}
+
+{% if enlarge_link %}
+  {% set attributes = attributes.addClass('fr-enlarge-link') %}
+{% endif %}
+
+{% if no_arrow %}
+  {% set attributes = attributes.addClass('fr-card--no-arrow') %}
+{% endif %}
+
+{% if grey_hover %}
+  {% set attributes = attributes.addClass('fr-card--grey') %}
+{% endif %}
+
+{% if title %}
+  <div{{ attributes.addClass('fr-card') }}>
+    <div class="fr-card__body">
+      <h4 class="fr-card__title">
+        {{ title }}
+      </h4>
+      {% if description %}<div class="fr-card__desc">{{ description }}</div>{% endif %}
+      {% if detail %}<div class="fr-card__detail"> {{ detail }}</div>{% endif %}
+    </div>
+    {% if image %}
+      <div class="fr-card__img">
+        {{ image }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,57 @@
+follow:
+  label: Newsletter & Follow us
+  description: "These components allow the user to have access to additional services of the site: subscription to the proposed newsletter (s), as well as links to the social network accounts of the entity.
+  https://gouvfr.atlassian.net/wiki/spaces/DB/pages/779747332/Lettre+d+information+et+r+seaux+sociaux+-+Newsletter+Follow+us"
+  fields:
+    social_title:
+      type: render
+      label: Title (Social networks)
+      description: Social networks title rendered text.
+      preview: "Follow us <br> on social networks"
+    newsletter_title:
+      type: text
+      label: Title (Newsletter)
+      description: Newsletter title text.
+      preview: "Subscribe to our newsletter"
+    newsletter_body:
+      type: render
+      label: Description text
+      description: Newslatter description renderable text. Optional.
+      preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+    newsletter:
+      type: render
+      label: Newsletter
+      description: Newsletter subscription render.
+      preview:
+      - type: pattern
+        id: button
+        fields:
+          label: Subscribe
+          url: "https://example.com"
+    social:
+      type: array
+      label: Social networks links
+      description: "Follow links by provider.
+        The link element contains the following elements:
+          - id: Follow provider machine name (facebook, twitter…);
+          - title: Link title;
+          - url: Link URI."
+      preview:
+        - id: facebook
+          title: Follow on Facebook
+          url: 'https://facebook.com'
+        - id: twitter
+          title: Follow on Twitter
+          url: "https://twitter.com"
+        - id: instagram
+          title: Follow on Instagram
+          url: "https://instagram.com"
+        - id: linkedin
+          title: Follow on LinkedIn
+          url: "https://www.linkedin.com"
+          attributes:
+            data-test: Test
+        - id: youtube
+          title: Follow on Youtube
+          url: "https://www.youtube.com"
+

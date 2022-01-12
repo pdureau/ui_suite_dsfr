@@ -1,0 +1,43 @@
+pagination:
+  label: Pagination
+  description: "Pagination allows the user to navigate between the different pages of a list of items.  https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223051980/Pagination+-+Pagination"
+  fields:
+    items:
+      type: array
+      label: Items
+      description: "Pagination items.
+      The list is keyed by the following elements:
+        - first: Item for the first page.
+        - previous: Item for the previous page.
+        - next: Item for the next page.
+        - last: Item for the last page.
+        - pages: List of pages, keyed by page number."
+      preview:
+        pages:
+          1:
+            href: '#page1'
+          2:
+            href: '#page2'
+          3:
+            href: '#page3'
+          4:
+            href: '#page4'
+          5:
+            href: '#page5'
+        first:
+          href: '#first'
+        last:
+          href: '#last'
+        next:
+          href: '#next'
+        previous:
+          href: '#prev'
+    current:
+      type: number
+      label: Current page
+      description: Current page number.
+      preview: 3
+    ellipses:
+      type: array
+      label: Ellipsis
+      description: If there are more pages than the quantity allows, then an ellipsis before or after the listed pages may be present. Can contain previous and next element.

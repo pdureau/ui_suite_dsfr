@@ -1,0 +1,23 @@
+{% if variant is not empty and variant|lower != 'default' %}
+  {% set variants = variant|split('__') %}
+  {% for variant in variants %}
+    {% set attributes = attributes.addClass('fr-alert--' ~ variant|lower|replace({'_': '-'})) %}
+  {% endfor %}
+{% endif %}
+{% set title_tag = title_tag ?: 'p' %}
+{% if dismissible %}
+  {% set id = 'fr-alert-to-close-'~random() %}
+  <div class="fr-collapse" id="{{ id }}">
+{% endif %}
+  <div{{ attributes.addClass('fr-alert').setAttribute('role', 'alert') }}>
+    {% if title %}
+      <{{ title_tag }} class="fr-alert__title">{{ title }}</{{ title_tag }}>
+    {% endif %}
+    <p>{{ message }}</p>
+    {% if dismissible %}
+      <button class="fr-link--close fr-link" aria-expanded="true" aria-controls="{{ id }}">{{ close_title ?: 'Close'|t }}</button>
+    {% endif %}
+  </div>
+{% if dismissible %}
+  </div>
+{% endif %}

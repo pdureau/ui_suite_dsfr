@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Template for a grid layout.
+ */
+#}
+
+{% set with_container = attributes.hasClass('with-container') %}
+{% set fluid_container = attributes.hasClass('fluid-container') %}
+{% set with_gutters = attributes.hasClass('with-gutters') %}
+{% set attributes = attributes.removeClass('with-container').removeClass('fluid-container').removeClass('with-gutters') %}
+
+{%
+  set classes = [
+    'layout',
+    'layout--' ~ layout.id|clean_class,
+    'fr-grid-row',
+    with_gutters ? 'fr-grid-row--gutters',
+  ]
+%}
+
+{%
+  set container_classes = [
+    with_container ? 'fr-container',
+    fluid_container ? 'fr-container--fluid',
+    'fr-mb-3w',
+  ]
+%}
+
+{% set container_attributes = create_attribute() %}
+
+{% if content %}
+  {% if with_container %}
+    <div {{ container_attributes.addClass(container_classes) }}>
+  {% endif %}
+
+    <div{{ attributes.addClass(classes) }}>
+      {% for region in layout.getRegionNames %}
+        {% if content[region] %}
+          <div {{ region_attributes[region].addClass('layout__region', 'layout__region--' ~ region|clean_class, 'fr-col') }}>
+            {{ content[region] }}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  {% if with_container %}
+    </div>
+  {% endif %}
+{% endif %}

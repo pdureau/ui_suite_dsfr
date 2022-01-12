@@ -1,0 +1,158 @@
+layout_option_definitions:
+  # Sections options.
+  with_container:
+    title: "With container?"
+    description: "Is the row wrapped in a container? Containers provide a means to center and horizontally pad your site’s contents."
+    default: ""
+    plugin: layout_options_class_radios
+    multi: false
+    layout: true
+    regions: false
+    inline: true
+    weight:  1
+    options:
+      "with-container": "True"
+      "": "False"
+  fluid_container:
+    title: "Fluid Container?"
+    description: "Is the row wrapped in a fluid container ?"
+    default: ""
+    plugin: layout_options_class_radios
+    multi: false
+    layout: true
+    regions: false
+    inline: true
+    weight:  2
+    options:
+      "fluid-container": "True"
+      "": "False"
+  with_gutters:
+    title: "With gutters?"
+    description: "The gutters between columns in our predefined grid classes can be added with .fr-grid-row--gutters."
+    default: ""
+    plugin: layout_options_class_radios
+    multi: false
+    layout: true
+    regions: false
+    inline: true
+    weight:  3
+    options:
+      "with-gutters": "True"
+      "": "False"
+  # Regions options.
+  fr_col:
+    title: "All"
+    description: ""
+    default: ""
+    plugin: layout_options_class_select
+    multi: false
+    layout: false
+    regions: true
+    options:
+      fr-col-1: "1"
+      fr-col-2: "2"
+      fr-col-3: "3"
+      fr-col-4: "4"
+      fr-col-5: "5"
+      fr-col-6: "6"
+      fr-col-7: "7"
+      fr-col-8: "8"
+      fr-col-9: "9"
+      fr-col-10: "10"
+      fr-col-11: "11"
+      fr-col-12: "12"
+  fr_col_sm:
+    title: "Small"
+    description: ""
+    default: ""
+    plugin: layout_options_class_select
+    multi: false
+    layout: false
+    regions: true
+    options:
+      fr-col-sm-1: "1"
+      fr-col-sm-2: "2"
+      fr-col-sm-3: "3"
+      fr-col-sm-4: "4"
+      fr-col-sm-5: "5"
+      fr-col-sm-6: "6"
+      fr-col-sm-7: "7"
+      fr-col-sm-8: "8"
+      fr-col-sm-9: "9"
+      fr-col-sm-10: "10"
+      fr-col-sm-11: "11"
+      fr-col-sm-12: "12"
+  fr_col_md:
+    title: "Medium"
+    description: ""
+    default: ""
+    plugin: layout_options_class_select
+    multi: false
+    layout: false
+    regions: true
+    options:
+      fr-col-md-1: "1"
+      fr-col-md-2: "2"
+      fr-col-md-3: "3"
+      fr-col-md-4: "4"
+      fr-col-md-5: "5"
+      fr-col-md-6: "6"
+      fr-col-md-7: "7"
+      fr-col-md-8: "8"
+      fr-col-md-9: "9"
+      fr-col-md-10: "10"
+      fr-col-md-11: "11"
+      fr-col-md-12: "12"
+  fr_col_lg:
+    title: "Large"
+    description: ""
+    default: ""
+    plugin: layout_options_class_select
+    multi: false
+    layout: false
+    regions: true
+    options:
+      fr-col-lg-1: "1"
+      fr-col-lg-2: "2"
+      fr-col-lg-3: "3"
+      fr-col-lg-4: "4"
+      fr-col-lg-5: "5"
+      fr-col-lg-6: "6"
+      fr-col-lg-7: "7"
+      fr-col-lg-8: "8"
+      fr-col-lg-9: "9"
+      fr-col-lg-10: "10"
+      fr-col-lg-11: "11"
+      fr-col-lg-12: "12"
+  fr_col_xl:
+    title: "Extra large"
+    description: ""
+    default: ""
+    plugin: layout_options_class_select
+    multi: false
+    layout: false
+    regions: true
+    options:
+      fr-col-xl-1: "1"
+      fr-col-xl-2: "2"
+      fr-col-xl-3: "3"
+      fr-col-xl-4: "4"
+      fr-col-xl-5: "5"
+      fr-col-xl-6: "6"
+      fr-col-xl-7: "7"
+      fr-col-xl-8: "8"
+      fr-col-xl-9: "9"
+      fr-col-xl-10: "10"
+      fr-col-xl-11: "11"
+      fr-col-xl-12: "12"
+
+layout_options:
+  global:
+    with_container: {}
+    fluid_container: {}
+    with_gutters: {}
+    fr_col: {}
+    fr_col_sm: {}
+    fr_col_md: {}
+    fr_col_lg: {}
+    fr_col_xl: {}

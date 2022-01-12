@@ -1,0 +1,10 @@
+dsfr:
+  version: 1.x
+  license:
+    name: MIT
+    gpl-compatible: false
+  js:
+    dist/js/dsfr.module.min.js: { minified: true }
+  css:
+    theme:
+      dist/css/dsfr.min.css: { minified: true }

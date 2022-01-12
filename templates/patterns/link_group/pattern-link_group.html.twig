@@ -1,0 +1,7 @@
+{% if links %}
+  <ul{{ attributes.addClass('fr-links-group') }}>
+    {% for link in links %}
+      <li>{{ link }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

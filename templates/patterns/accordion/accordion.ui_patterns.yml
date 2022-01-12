@@ -1,0 +1,17 @@
+accordion:
+  label: Accordion
+  description: Accordions are used to condense space by hiding content and revealing it as needed. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/312082509/Accord+on+-+Accordion
+  fields:
+    title:
+      type: text
+      label: Title
+      description: The accordion title.
+      preview: Accordion title
+    content:
+      type: render
+      label: Content
+      description: The accordion renderable content.
+      preview:
+        - type: html_tag
+          tag: p
+          value: Accordion content

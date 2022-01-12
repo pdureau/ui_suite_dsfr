@@ -1,0 +1,38 @@
+tag_group:
+  label: Tags Group
+  description: Groping of tags. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/310706305/Tag
+  fields:
+    tags:
+      type: render
+      label: Tags
+      description: An array of 'tag' patterns.
+      preview:
+        - type: pattern
+          id: tag
+          fields:
+            label: Label tag
+            url: "https://example.com"
+        - type: pattern
+          id: tag
+          fields:
+            label: Label tag
+        - type: pattern
+          id: tag
+          variant: sm
+          fields:
+            label: Label tag
+            url: "https://example.com"
+        - type: pattern
+          id: tag
+          fields:
+            label: Label tag
+            url: "https://example.com"
+        - type: pattern
+          id: tag
+          fields:
+            label: Label tag
+            url: "https://example.com"
+        - type: pattern
+          id: tag
+          fields:
+            label: Label tag

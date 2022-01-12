@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Default template for Consent banner ui pattern.
+ *
+ * Available variables:
+ * - title: Banner title.
+ * - text: Banner renderable text.
+ * - attributes: HTML attributes.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if text %}
+  <div{{ attributes.addClass('fr-consent-banner') }}>
+    {% if title %}<p class="fr-h6 fr-mb-3v">{{ title }}</p>{% endif %}
+    <div class="fr-consent-banner__content">
+      <p class="fr-text--sm">{{ text }}</p>
+    </div>
+    {% set buttons = [
+      pattern('button', {'label': 'Accept all'|t }),
+      pattern('button', {'label': 'Refuse all'|t }),
+      pattern('button', {'label': 'Personalize'|t, 'variant': 'secondary',
+        'attributes':
+        {'data-fr-opened': 'false', 'aria-controls': 'fr-consent-modal'}
+      })
+    ] %}
+    {{ pattern('button_group', {
+      'variant': 'inline__inline_reverse__right',
+      'attributes': {'class': ['fr-consent-banner__buttons', 'fr-btns-group--inline-sm']},
+      'buttons': buttons
+    }) }}
+  </div>
+{% endif %}

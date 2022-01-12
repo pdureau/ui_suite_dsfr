@@ -1,0 +1,61 @@
+quote:
+  label: Quote
+  description: "The citation is used to cite a text in an editorial page. The quote can come from an excerpt from an oral speech made by a third party or from a written text. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/771358744/Citation+-+Quote"
+  settings:
+    color_schema:
+      type: select
+      label: Component color
+      description: "Component color schema. Css selector in DSFR is '.fr-quote--[color]'."
+      options:
+        green-tilleul-verveine: Tilleul Verveine
+        green-bourgeon: Bourgeon
+        green-emeraude: Émeraude
+        green-menthe: Menthe
+        green-archipel: Archipel
+        blue-ecume: Écume
+        blue-cumulus: Cumulus
+        purple-glycine: Glycine
+        pink-macaron: Macaron
+        pink-tuile: Tuile
+        yellow-tournesol: Tournesol
+        yellow-moutarde: Moutarde
+        orange-terre-battue: Terre Battue
+        brown-cafe-creme: Café crème
+        brown-caramel: Caramel
+        brown-opera: Opéra
+        beige-gris-galet: Gris Galet
+      preview: pink-macaron
+  fields:
+    image:
+      type: render
+      label: Image
+      description: Quote image render. Optional
+      preview:
+        theme: image
+        uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+        alt: ""
+    quote:
+      type: text
+      label: Quote
+      description: Quote text. Plain text.
+      preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat gravida tortor id semper."
+    author:
+      type: text
+      label: Author
+      description: The quote author. Optional.
+      preview: Auteur
+    source:
+      type: array
+      label: Source
+      description: The quote source render arrays. Optional.
+      preview:
+        - type: html_tag
+          tag: cite
+          value: Work
+        - Detail 1
+        - Detail 2
+        - type: pattern
+          id: link
+          fields:
+            label: Detail 5
+            url: https://example.com

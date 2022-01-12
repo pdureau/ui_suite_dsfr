@@ -1,0 +1,70 @@
+side_menu:
+  label: Side menu
+  description: The side menu allows users to navigate between the different pages of a topic or the same topic. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222789853/Navigation+principale+-+Main+navigation
+  variants:
+    default:
+      label: Default
+    sticky:
+      label: Sticky
+    sticky_full_height:
+      label: Sticky full height
+  settings:
+    position:
+      type: select
+      label: Menu position
+      options:
+        default: Left
+        right: Right
+      preview: right
+    html_id:
+      type: textfield
+      label: HTML id attribute
+  fields:
+    menu_name:
+      type: text
+      label: Menu name
+      description: Menu Name. Plain text.
+      preview: Side Menu name
+    title:
+      type: text
+      label: Menu title
+      description: Menu title text. Plain text.
+      preview: Section title
+    items:
+      type: render
+      label: Menu items
+      description: "Full-height and lightweight navigation (including support for dropdowns).
+        Can contain:
+          - title(link title),
+          - url(link url),
+          - below(child items array, can contain the same items as parent),
+          - in_active_trail(TRUE if the link is in the active trail),
+          - attributes(HTML attributes for the menu item)"
+      preview:
+        - title: Home
+          url: '/'
+        - title: Library
+          url: '#'
+          in_active_trail: true
+          below:
+            - title: Library Sub 1
+              url: '#'
+            - title: Library Sub 2
+              url: '#'
+        - title: Data
+          url: '#'
+          below:
+            - title: Data Sub 1
+              url: '#'
+              below:
+                - title: Data Sub 1.1
+                  url: '#'
+                - title: Data Sub 1.2
+                  url: '#'
+            - title: Data Sub 2
+              url: '#'
+              below:
+                - title: Data Sub 2.1
+                  url: '#'
+                - title: Data Sub 2.2
+                  url: '#'

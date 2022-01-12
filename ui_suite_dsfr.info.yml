@@ -1,0 +1,256 @@
+name: UI Suite DSFR
+type: theme
+description: "A site-builder friendly theme implementing DSFR (https://www.systeme-de-design.gouv.fr/) for Drupal 8/9, using the UI Suite."
+version: 1.2.1
+core_version_requirement: ^8 || ^9
+base theme: false
+libraries:
+  - ui_suite_dsfr/dsfr
+
+logo: assets/logo.svg
+
+ckeditor_stylesheets:
+  - dist/css/dsfr.css
+
+regions:
+  header: Header
+  primary_menu: Primary Menu
+  secondary_menu: Secondary Menu
+  content: Content
+  sidebar_first: Sidebar first
+  sidebar_second: Sidebar second
+  footer: Footer
+
+dependencies:
+  - component_blocks/component_blocks
+  - drupal:inline_form_errors
+  - layout_options/layout_options
+  - ui_patterns:ui_patterns
+  - ui_patterns:ui_patterns_library
+  - ui_patterns_settings:ui_patterns_settings
+  - ui_styles:ui_styles
+
+colors:
+  blue-france:
+    label: Bleu France
+    types:
+      background:
+      - alt
+      - contrast
+      text:
+      - inverted
+      - title
+      - label
+  red-marianne:
+    label: Rouge Marianne
+    types:
+      background:
+      - alt
+      - contrast
+      text:
+      - inverted
+      - title
+      - label
+  grey:
+    label: Gris
+    types:
+      background:
+      - alt
+      - contrast
+      - flat
+      - elevated
+      text:
+      - default
+      - inverted
+      - mention
+      - title
+      - label
+  info:
+    label: Info
+    types:
+      background:
+      - contrast
+      - flat
+      text:
+      - default
+      - inverted
+  success:
+    label: Succès
+    types:
+      background:
+      - contrast
+      - flat
+      text:
+      - default
+      - inverted
+  warning:
+    label: Avertissement
+    types:
+      background:
+      - contrast
+      - flat
+      text:
+      - default
+      - inverted
+  error:
+    label: Erreur
+    types:
+      background:
+      - contrast
+      - flat
+      text:
+      - default
+      - inverted
+  green-tilleul-verveine:
+    label: Tilleul Verveine
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  green-bourgeon:
+    label: Bourgeon
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  green-emeraude:
+    label: Émeraude
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  green-menthe:
+    label: Menthe
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  green-archipel:
+    label: Archipel
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  blue-ecume:
+    label: Écume
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  blue-cumulus:
+    label: Cumulus
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  purple-glycine:
+    label: Glycine
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  pink-macaron:
+    label: Macaron
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  pink-tuile:
+    label: Tuile
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  yellow-tournesol:
+    label: Tournesol
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  yellow-moutarde:
+    label: Moutarde
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  orange-terre-battue:
+    label: Terre Battue
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  brown-cafe-creme:
+    label: Café crème
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  brown-caramel:
+    label: Caramel
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  brown-opera:
+    label: Opéra
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted
+  beige-gris-galet:
+    label: Gris Galet
+    types:
+      background:
+      - contrast
+      - alt
+      text:
+      - label
+      - inverted

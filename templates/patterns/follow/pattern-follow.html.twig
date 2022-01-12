@@ -1,0 +1,64 @@
+{#
+/**
+ * @file
+ * Default template for Follow ui pattern.
+ *
+ * Available variables:
+ * - social_title: Title (Social networks).
+ * - newsletter_title: Title (Newsletter).
+ * - newsletter_body: Newsletter description renderable text.
+ * - social: Social networks links.
+ *     The link element contains the following elements:
+ *     - id: Follow provider machine name (facebook, twitter…);
+ *     - title: Link title;
+ *     - uri: Link URI.
+ * - newsletter: Subscription form render.
+ * - attributes: HTML attributes.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if social or newsletter %}
+  <div{{ attributes.addClass('fr-follow') }}>
+    <div class="fr-container">
+      <div class="fr-grid-row">
+        {% set social_class =  social and newsletter ? 'fr-col-12 fr-col-md-4' : 'fr-col-12' %}
+        {% set newsletter_class = social and newsletter ? 'fr-col-12 fr-col-md-8' : 'fr-col-12' %}
+        {% if newsletter %}
+          <div class="{{ newsletter_class }}">
+            <div class="fr-follow__newsletter">
+              <div>
+                <h5 class="fr-h5 fr-follow__title">{{ newsletter_title }}</h5>
+                {% if newsletter_body %}<p class="fr-text--sm fr-follow__desc">{{ newsletter_body }}</p>{% endif %}
+              </div>
+              <div>
+                {{ newsletter }}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+        {% if social %}
+          <div class="{{ social_class }}">
+            <div class="fr-follow__social">
+              <p class="fr-h5 fr-mb-3v fr-mb-3v">{{ social_title }}</p>
+              <ul class="fr-links-group fr-links-group--lg">
+                {% for link in social %}
+                  <li>
+                    {{ pattern('link', {
+                      label: link.id,
+                      title: link.title,
+                      url: link.url,
+                      target: 'blank',
+                      force_internal: true,
+                      attributes: link.attributes.addClass('fr-link--'~link.id)
+                    }) }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}

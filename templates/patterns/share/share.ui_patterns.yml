@@ -1,0 +1,35 @@
+share:
+  label: Share
+  description: "Share buttons allow users to easily share content they are viewing with other users. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/771555355/Partage+-+Share"
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Component title.
+      preview: Share page
+    links:
+      type: array
+      label: Links
+      description: "Share links by provider.
+        The link element contains the following elements:
+          - id: Share provider machine name (facebook, twitter, mail…);
+          - title: Link label (Share on Facebook, Share by email…);
+          - uri: Link URI."
+      preview:
+        - id: facebook
+          title: Share on Facebook
+          url: ''
+        - id: twitter
+          title: Share on Twitter
+          url: "https://twitter.com/intent/tweet?url=https://example.com&text=HelloWorld&via=@username&hashtags=dummy"
+        - id: linkedin
+          title: Share on LinkedIn
+          url: "https://www.linkedin.com/shareArticle?url=https://example.com&title=HelloWorld"
+        - id: mail
+          title: Share by email
+          url: "mailto:?subject=SubjectHere&body=BodyHere"
+    text:
+      type: render
+      label: Text
+      description: A renderable text. Optional.
+      preview: "Please <a href=https://example.com>allow the deposit of cookies</a> to share on Facebook, Twitter and LinkedIn."

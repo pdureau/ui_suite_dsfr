@@ -1,0 +1,45 @@
+{% if variant is not empty and variant|lower != 'default' %}
+  {% set attributes = attributes.addClass('fr-sidemenu--' ~ variant|lower|replace({'_': '-'})) %}
+{% endif %}
+
+{% if position is not empty and position|lower != 'default'%}
+  {% set attributes = attributes.addClass('fr-sidemenu--' ~ position) %}
+{% endif %}
+
+{% import _self as menus %}
+
+{% if items %}
+  {% if html_id is empty %}
+    {% set html_id = 'sidemenu-'~random() %}
+  {% endif %}
+  <nav{{ attributes.addClass('fr-sidemenu') }} role="navigation" aria-label="{{ menu_name }}" id="{{ html_id|clean_id }}">
+    <div class="fr-sidemenu__inner">
+      <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper-{{ html_id|clean_id }}" aria-expanded="false">{{ 'In this section'|t }}</button>
+      <div class="fr-collapse" id="fr-sidemenu-wrapper-{{ html_id|clean_id }}">
+        <div class="fr-sidemenu__title">{{ title }}</div>
+        {{ menus.menu_links(items, attributes, 0) }}
+      </div>
+    </div>
+  </nav>
+{% endif %}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    <ul class="fr-sidemenu__list">
+      {% for item in items %}
+          <li class="fr-sidemenu__item">
+          {% if item.below %}
+            {% set item_id = 'fr-sidemenu-item-'~loop.index~'-'~random() %}
+            <button class="fr-sidemenu__btn" aria-expanded="false" aria-controls="{{ item_id }}">{{ item.title }}</button>
+            <div class="fr-collapse" id="{{ item_id }}">
+              {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+            </div>
+          {% else %}
+              <a class="fr-sidemenu__link" href="{{ item.url }}">{{ item.title }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}

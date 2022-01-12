@@ -1,0 +1,86 @@
+header:
+  label: Header
+  description: The header allows users to identify what site they are on. It can provide access to search and certain key pages or features. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222789846/En-t+te+-+Header
+  fields:
+    operator_logo:
+      type: render
+      label: Header operator logo
+      description: Operator logo image render. Optional.
+      preview:
+        theme: image
+        uri: "themes/custom/ui_suite_dsfr/assets/logo.svg"
+        alt: Logo
+    navbar:
+      type: render
+      label: Header navbar
+      description: Renderable navbar.
+      preview:
+        type: pattern
+        id: nav_menu
+        fields:
+          menu_name: Main menu
+          html_id: header-navigation
+          items:
+            - title: Home
+              url: '/'
+            - title: Library
+              url: '#'
+              in_active_trail: true
+              content:
+                extra_title: Editorialized title
+                extra_description: Lorem <a href="#">ipsum</a> dolor sit <strong>amet</strong>, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat. Suspendisse potenti.
+                extra_link:
+                  url: '#'
+                  label: See the whole section
+              below:
+                - title: Sub 1
+                  url: '#'
+                  below:
+                    - title: Sub 1.1
+                      url: '#'
+                - title: Sub 2
+                  url: '#'
+                  below:
+                    - title: Sub 2.1
+                      url: '#'
+            - title: Data
+        settings:
+          is_mega_menu: true
+    service_title:
+      type: text
+      label: Header service title
+      description: Service title plain text. Optional.
+    service_tagline:
+      type: text
+      label: Header service tagline
+      description: Service tagline plain text. Optional.
+      preview: baseline - organization details
+    tools_links:
+      type: array
+      label: Header tools links
+      description: Quick access links render. Optional.
+      preview:
+        - type: pattern
+          id: link
+          fields:
+            label: Create a space
+            url: '#'
+          settings:
+            icon: fr-fi-add-circle-line
+        - type: pattern
+          id: link
+          fields:
+            label: Login
+            url: '#'
+          settings:
+            icon: fr-fi-lock-line
+        - type: pattern
+          id: link
+          fields:
+            label: Register
+            url: '#'
+          settings:
+            icon: fr-fi-account-line
+    tools_search:
+      type: render
+      label: Header tools search. Optional.

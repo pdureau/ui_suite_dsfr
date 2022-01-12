@@ -1,0 +1,22 @@
+link_group:
+  label: Links Group
+  description: Groups links in a list of links. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217284725/Liens+-+Links
+  fields:
+    links:
+      type: render
+      label: Links
+      description: An array of 'link' patterns.
+      preview:
+        - type: pattern
+          id: link
+          fields:
+            label: Link 1
+            url: "https://example.com"
+            title: Link 1 title
+        - type: pattern
+          id: link
+          fields:
+            label: Link 2
+            url: "https://example.com"
+            title: Link 2 title
+

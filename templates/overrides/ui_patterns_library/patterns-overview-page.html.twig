@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ * UI Pattern library page template, override this in your theme.
+ */
+#}
+
+{% if patterns is not empty %}
+<div class="fr-grid-row"">
+<div class="fr-col-lg-2">
+
+  <nav class="fr-sidemenu" role="navigation">
+  <h2 class="hidden">{{ "Available patterns"|t }}</h2>
+
+  {# List of available patterns with anchor links. #}
+  <ul class="class="fr-sidemenu__list">
+    {% for pattern_name, pattern in patterns %}
+      <li class="fr-sidemenu__item">
+        <a class="fr-sidemenu__link"  href="#{{ pattern_name }}">{{ pattern.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  </nav>
+
+</div>
+<div class="fr-col-lg-10">
+
+  {% for pattern_name, pattern in patterns %}
+
+    <div class="pattern-preview pattern-preview__{{ pattern.definition.id }}">
+    
+      <h2 class="pattern-preview__label fr-display-lg" id="{{ pattern_name }}">
+        <a href="{{ url('ui_patterns.patterns.single', {'name': pattern.id}) }}">
+           {{ pattern.label }}
+        </a>
+      </h2>
+    
+      {# Pattern name and desciption. #}
+      <a name="{{ pattern_name }}"></a>
+      {{ pattern.meta }}
+
+      {# Rendered pattern preview. #}
+      {{ pattern.rendered }}
+
+    </div>
+
+    <hr class="fr-my-5w">
+  {% endfor %}
+
+</div>
+
+{% endif %}
+
+
+

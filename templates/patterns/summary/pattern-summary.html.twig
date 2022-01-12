@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * Default template for Summary ui pattern.
+ *
+ * Available variables:
+ * - title: Summary title.
+ * - links: Summary links by provider.
+ *     The link element contains the following elements:
+ *     - title: Link title;
+ *     - url: Link URL.
+ *     - attributes: Link item HTML attributes.
+ * - title_tag: Setting for title html_tag.
+ * - attributes: HTML attributes.
+ *
+ * @ingroup themeable
+ */
+#}
+{% set title_id = 'fr-summary-title--' ~ random() %}
+{% set title_tag = title_tag ?: 'p' %}
+<nav{{ attributes.addClass('fr-summary').setAttribute('role', 'navigation').setAttribute('aria-labelledby', title_id) }}>
+  <{{ title_tag }} class="fr-summary__title" id="{{ title_id }}">{{ title }}</{{ title_tag }}>
+  <ol class="fr-summary__list">
+    {% for link in links %}
+      <li>
+        {% set url = link.url ?: link.attributes.href %}
+        <a{{ link.attributes.addClass('fr-summary__link').setAttribute('href', url) }}>{{ link.title }}</a>
+      </li>
+    {% endfor %}
+  </ol>
+</nav>

@@ -1,0 +1,105 @@
+{#
+/**
+ * @file
+ * Default template for Pagination ui pattern.
+ *
+ * Available variables:
+ * - items: List of pager items.
+ *   The list is keyed by the following elements:
+ *   - first: Item for the first page; not present on the first page of results.
+ *   - previous: Item for the previous page; not present on the first page
+ *     of results.
+ *   - next: Item for the next page; not present on the last page of results.
+ *   - last: Item for the last page; not present on the last page of results.
+ *   - pages: List of pages, keyed by page number.
+ *   Sub-sub elements:
+ *   items.first, items.previous, items.next, items.last, and each item inside
+ *   items.pages contain the following elements:
+ *   - href: URL with appropriate query parameters for the item.
+ *   - attributes: A keyed list of HTML attributes for the item.
+ * - current: The page number of the current page.
+ * - ellipses: If there are more pages than the quantity allows, then an
+ *   ellipsis before or after the listed pages may be present.
+ *   - previous: Present if the currently visible list of pages does not start
+ *     at the first page.
+ *   - next: Present if the visible list of pages ends before the last page.
+ * - attributes: HTML attributes.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if items.pages %}
+  <nav{{ attributes.addClass('fr-pagination').setAttribute('role', 'navigation').setAttribute('aria-label', 'Pagination'|t) }}>
+    <ul class="fr-pagination__list">
+      {% if items.first is empty %}
+        {% set first = {
+          attributes: create_attribute()
+        } %}
+      {% else %}
+         {% set first = items.first %}
+      {% endif %}
+      <li>
+        <a{{ first.attributes.addClass('fr-pagination__link', 'fr-pagination__link--first') }}{% if first.href %} href="{{ first.href }}"{% endif %}>
+          {{ 'First page'|t }}
+        </a>
+      </li>
+      {% if items.previous is empty %}
+        {% set previous = {
+          attributes: create_attribute()
+        } %}
+      {% else %}
+        {% set previous = items.previous %}
+      {% endif %}
+        <li>
+          <a{{ previous.attributes.addClass('fr-pagination__link', 'fr-pagination__link--prev', 'fr-pagination__link--lg-label') }}{% if previous.href %} href="{{ previous.href }}"{% endif %}>
+            {{ 'Previous page'|t }}
+          </a>
+        </li>
+      {% if ellipses.previous %}
+        <li><a class="fr-pagination__link fr-displayed-lg">...</a></li>
+      {% endif %}
+      {% for key, item in items.pages %}
+        <li>
+          {% if current == key %}
+            <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('aria-current', 'page').setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+          {% else %}
+            {% if key - current > 1 or key - current < -1 %}
+              <a{{ item.attributes.addClass('fr-pagination__link', 'fr-displayed-lg').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+            {% else %}
+              <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+            {% endif %}
+          {% endif %}
+            {{ key }}
+          </a>
+        </li>
+      {% endfor %}
+      {% if ellipses.next %}
+        <li><a class="fr-pagination__link fr-displayed-lg">...</a></li>
+      {% endif %}
+      {% if items.next is empty %}
+        {% set next = {
+          attributes: create_attribute()
+        } %}
+      {% else %}
+        {% set next = items.next %}
+      {% endif %}
+      <li>
+        <a{{ next.attributes.addClass('fr-pagination__link', 'fr-pagination__link--next', 'fr-pagination__link--lg-label') }}{% if next.href %} href="{{ next.href }}"{% endif %}>
+          {{ 'Next page'|t }}
+        </a>
+      </li>
+      {% if items.last is empty %}
+        {% set last = {
+          attributes: create_attribute()
+        } %}
+      {% else %}
+        {% set last = items.last %}
+      {% endif %}
+      <li>
+        <a{{ last.attributes.addClass('fr-pagination__link', 'fr-pagination__link--last') }}{% if last.href %} href="{{ last.href }}"{% endif %}>
+          {{ 'Last page'|t }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+{% endif %}

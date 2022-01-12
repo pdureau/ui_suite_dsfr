@@ -1,0 +1,30 @@
+{% if variant is not empty and variant|lower != 'default' %}
+  {% set variants = variant|split('__') %}
+  {% for variant in variants %}
+    {% set attributes = attributes.addClass('fr-btn--' ~ variant|lower|replace({'_': '-'})) %}
+  {% endfor %}
+{% endif %}
+
+{% if icon is not empty %}
+  {% set attributes = attributes.addClass(icon) %}
+  {% if icon_position is not empty %}
+    {% set attributes = attributes.addClass('fr-btn--icon-' ~ icon_position) %}
+  {% else %}
+     {% set attributes = attributes.setAttribute('title', label) %}
+  {% endif %}
+{% endif %}
+
+{% if disabled %}
+  {% set attributes = attributes.setAttribute('disabled', true) %}
+{% endif %}
+
+{% if url or attributes.href %}
+  {% set url = url ?: attributes.href %}
+  <a{{ attributes.addClass('fr-btn').setAttribute('href', url) }}>
+    {{ label }}
+  </a>
+{% else %}
+  <button{{ attributes.addClass('fr-btn') }}>
+    {{ label }}
+  </button>
+{% endif %}

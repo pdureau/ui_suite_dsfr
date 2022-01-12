@@ -1,0 +1,14 @@
+{% set text_attributes = create_attribute() %}
+{% if variant is not empty and variant|lower != 'default' %}
+  {% set text_attributes = text_attributes.addClass('fr-text--' ~ variant|lower) %}
+{% endif %}
+
+{% if color_schema %}
+  {% set attributes = attributes.addClass('fr-callout--' ~ color_schema) %}
+{% endif %}
+
+{% if text %}
+  <div{{ attributes.addClass('fr-highlight') }}>
+    <p{{ text_attributes }}>{{ text }}</p>
+  </div>
+{% endif %}

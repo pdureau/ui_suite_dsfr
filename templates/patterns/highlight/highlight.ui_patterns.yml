@@ -1,0 +1,40 @@
+highlight:
+  label: Highlight
+  description: "The highlighting allows the user to distinguish and locate information easily. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019199/Mise+en+exergue+-+Highlight"
+  variants:
+    default:
+      label: Medium
+    sm:
+      label: Small
+    lg:
+      label: Large
+  settings:
+    color_schema:
+      type: select
+      label: Component color
+      description: "Component color schema. Css selector in DSFR is '.fr-highlight--[color]'."
+      options:
+        green-tilleul-verveine: Tilleul Verveine
+        green-bourgeon: Bourgeon
+        green-emeraude: Émeraude
+        green-menthe: Menthe
+        green-archipel: Archipel
+        blue-ecume: Écume
+        blue-cumulus: Cumulus
+        purple-glycine: Glycine
+        pink-macaron: Macaron
+        pink-tuile: Tuile
+        yellow-tournesol: Tournesol
+        yellow-moutarde: Moutarde
+        orange-terre-battue: Terre Battue
+        brown-cafe-creme: Café crème
+        brown-caramel: Caramel
+        brown-opera: Opéra
+        beige-gris-galet: Gris Galet
+      preview: green-emeraude
+  fields:
+    text:
+      type: text
+      label: Text
+      description: Highlight text. Plain text.
+      preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat. Suspendisse potenti. Fusce elit diam, gravida id tortor eu, eleifend faucibus libero. Mauris quis mi finibus, accumsan dui ut, ultricies est. Fusce mi quam, suscipit vitae ante a, egestas auctor purus."

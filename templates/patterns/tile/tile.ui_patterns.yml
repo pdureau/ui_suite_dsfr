@@ -1,0 +1,44 @@
+tile:
+  label: Tile
+  description: "The tile is a shortcut or entry point that redirects users to pages of content. It is usually part of a collection or list of similar tiles. The tile is never presented in isolation. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331438/Tuile+-+Tile"
+  variants:
+    default:
+      label: Vertical
+    horizontal:
+      label: Horizontal
+  settings:
+    enlarge_link:
+      type: boolean
+      label: Enlarge link?
+      description: Extend the link to the whole tile.
+      preview: true
+    grey_hover:
+      type: boolean
+      label: Grey background?
+      description: Adds grey background on card hover.
+      preview: true
+  fields:
+    image:
+      type: render
+      label: Image
+      description: Tile image.
+      preview:
+        theme: image
+        uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+        alt: ""
+    title:
+      type: render
+      label: Title
+      description: Tile title (May contain a link).
+      preview:
+        type: html_tag
+        tag: a
+        value: Tile title
+        attributes:
+          href: '#'
+          title: Link title
+    description:
+      type: text
+      label: Text
+      description: Tile description. Plain text. Optional.
+      preview: Tile description

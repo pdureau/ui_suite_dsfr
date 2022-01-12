@@ -1,0 +1,42 @@
+{% set modal_id = 'fr-modal-' ~ random() %}
+
+{% if variant is empty or variant|lower == 'default' %}
+  {% set attributes = attributes.addClass('fr-col-md-6') %}
+{% endif %}
+{% if variant|lower == 'sm' %}
+  {% set attributes = attributes.addClass('fr-col-md-4') %}
+{% endif %}
+{% if variant|lower == 'lg' %}
+  {% set attributes = attributes.addClass('fr-col-md-8') %}
+{% endif %}
+<button class="fr-btn"  data-fr-opened="false" aria-controls="{{ modal_id }}">
+  {{ label }}
+</button>
+
+<dialog aria-labelledby="{{ modal_id ~ '-title' }}" aria-modal="true" role="dialog" id="{{ modal_id }}" class="fr-modal">
+  <div class="fr-container fr-container--fluid fr-container-md">
+    <div class="fr-grid-row fr-grid-row--center">
+      <div{{ attributes.addClass('fr-col-12') }}>
+        <div class="fr-modal__body">
+          <div class="fr-modal__header">
+            <button class="fr-link--close fr-link" aria-controls="{{ modal_id }}">{{ 'Close'|t }}</button>
+          </div>
+          <div class="fr-modal__content">
+            <h1 id="{{ modal_id ~ '-title' }}" class="fr-modal__title">
+              {% if icon %}
+                <span class="{{ icon }} fr-fi--lg"></span>
+              {% endif %}
+              {{ title }}
+            </h1>
+            {{ body }}
+          </div>
+          {% if actions %}
+            <div class="fr-modal__footer">
+              {{ actions }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>

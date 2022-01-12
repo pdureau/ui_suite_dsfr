@@ -1,0 +1,37 @@
+{% set container_attributes = create_attribute() %}
+{%
+  set container_classes = [
+    with_container ? 'fr-container',
+    fluid_container ? 'fr-container--fluid',
+    'fr-mb-3w',
+  ]
+%}
+
+{% if with_gutters %}
+  {% set attributes = attributes.addClass('fr-grid-row--gutters') %}
+{% endif %}
+{% if horizontal_align is not empty %}
+  {% set attributes = attributes.addClass('fr-grid-row--' ~ horizontal_align|lower|replace({'_': '-'})) %}
+{% endif %}
+{% if vertical_align is not empty %}
+  {% set attributes = attributes.addClass('fr-grid-row--' ~ vertical_align|lower|replace({'_': '-'})) %}
+{% endif %}
+
+
+{% if with_container %}
+  <div {{ create_attribute({'class': container_classes}) }}>
+{% endif %}
+
+
+<div{{ attributes.addClass('fr-grid-row') }}>
+  {% for item in content %}
+    {% set col_sizes = [fr_col, fr_col_sm, fr_col_md, fr_col_lg, fr_col_xl] %}
+    <div{{ create_attribute({'class': col_sizes}) }}>
+      {{ item }}
+    </div>
+  {% endfor %}
+</div>
+
+{% if with_container %}
+  </div>
+{% endif %}

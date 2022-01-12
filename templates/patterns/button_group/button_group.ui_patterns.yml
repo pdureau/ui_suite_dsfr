@@ -1,0 +1,68 @@
+button_group:
+  label: Button Group
+  description: "The group of buttons allows the user to choose between several actions. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/487915549/Groupe+de+boutons"
+  variants:
+    default:
+      label: Vertical
+    inline:
+      label: Horizontal
+    sm:
+      label: Vertical small
+    inline__sm:
+      label: Horizontal small
+    lg:
+      label: Vertical large
+    inline__lg:
+      label: Horizontal large
+    inline__center:
+      label: Horizontal center
+    inline__right:
+      label: Horizontal right
+    inline__inline_reverse__right:
+      label: Horizontal right reverse
+    inline__sm__center:
+      label: Horizontal small center
+    inline__sm__right:
+      label: Horizontal small right
+    inline__inline_reverse__sm__right:
+      label: Horizontal small right reverse
+    inline__lg__center:
+      label: Horizontal large center
+    inline__lg__right:
+      label: Horizontal large right
+    inline__inline_reverse__lg__right:
+      label: Horizontal large right reverse
+  settings:
+    equisized:
+      type: boolean
+      label: Equisized?
+      description: Force the same width for all the buttons in the group.
+      preview: true
+    icon_position:
+      type: select
+      label: Icon position
+      options:
+        left: Right
+        right: Left
+      preview: left
+  fields:
+    buttons:
+      type: render
+      label: Buttons
+      description: An array of 'button' patterns.
+      preview:
+        - type: pattern
+          id: button
+          fields:
+            label: First button
+            url: "https://example.com"
+        - type: pattern
+          id: button
+          fields:
+            label: Second button
+            url: "https://example.com"
+        - type: pattern
+          id: button
+          variant: secondary
+          fields:
+            label: Third button

@@ -1,0 +1,166 @@
+grid_row:
+  label: Grid Row
+  description: "The grid system uses a series of containers, rows, and columns to layout and align content https://getbootstrap.com/docs/4.3/layout/grid/ For simple use cases only. For more powerful needs, please use bootstrap_grid_row_* layouts."
+  settings:
+    with_container:
+      type: boolean
+      label: With container?
+      preview: false
+      description: "Is the row wrapped in a container? Containers provide a means to center and horizontally pad your site’s contents."
+    fluid_container:
+      type: boolean
+      label: Fluid Container?
+      preview: false
+      description: "Is the row wrapped in a fluid container?"
+    with_gutters:
+      type: boolean
+      label: With gutters?
+      preview: true
+      description: "The gutters between columns in our predefined grid classes can be added with .fr-grid-row--gutters."
+    fr_col:
+      label: All
+      type: select
+      preview: fr-col-4
+      options:
+        fr-col-1: 1
+        fr-col-2: 2
+        fr-col-3: 3
+        fr-col-4: 4
+        fr-col-5: 5
+        fr-col-6: 6
+        fr-col-7: 7
+        fr-col-8: 8
+        fr-col-9: 9
+        fr-col-10: 10
+        fr-col-11: 11
+        fr-col-12: 12
+    fr_col_sm:
+      label: Small
+      type: select
+      options:
+        fr-col-sm-1: 1
+        fr-col-sm-2: 2
+        fr-col-sm-3: 3
+        fr-col-sm-4: 4
+        fr-col-sm-5: 5
+        fr-col-sm-6: 6
+        fr-col-sm-7: 7
+        fr-col-sm-8: 8
+        fr-col-sm-9: 9
+        fr-col-sm-10: 10
+        fr-col-sm-11: 11
+        fr-col-sm-12: 12
+    fr_col_md:
+      label: Medium
+      type: select
+      options:
+        fr-col-md-1: 1
+        fr-col-md-2: 2
+        fr-col-md-3: 3
+        fr-col-md-4: 4
+        fr-col-md-5: 5
+        fr-col-md-6: 6
+        fr-col-md-7: 7
+        fr-col-md-8: 8
+        fr-col-md-9: 9
+        fr-col-md-10: 10
+        fr-col-md-11: 11
+        fr-col-md-12: 12
+    fr_col_lg:
+      label: Large
+      type: select
+      options:
+        fr-col-lg-1: 1
+        fr-col-lg-2: 2
+        fr-col-lg-3: 3
+        fr-col-lg-4: 4
+        fr-col-lg-5: 5
+        fr-col-lg-6: 6
+        fr-col-lg-7: 7
+        fr-col-lg-8: 8
+        fr-col-lg-9: 9
+        fr-col-lg-10: 10
+        fr-col-lg-11: 11
+        fr-col-lg-12: 12
+    fr_col_xl:
+      label: Extra large
+      type: select
+      options:
+        fr-col-xl-1: 1
+        fr-col-xl-2: 2
+        fr-col-xl-3: 3
+        fr-col-xl-4: 4
+        fr-col-xl-5: 5
+        fr-col-xl-6: 6
+        fr-col-xl-7: 7
+        fr-col-xl-8: 8
+        fr-col-xl-9: 9
+        fr-col-xl-10: 10
+        fr-col-xl-11: 11
+        fr-col-xl-12: 12
+    horizontal_align:
+      label: Alignement horizontal
+      type: select
+      preview: left
+      options:
+        left: Left
+        right: Right
+        center: Center
+    vertical_align:
+      label: Alignement vertical
+      type: select
+      options:
+        top: Top
+        bottom: Bottom
+        middle: Middle
+  fields:
+    content:
+      type: render
+      label: Content
+      description: The content of each column.
+      preview:
+        - type: pattern
+          id: card
+          fields:
+            detail: Detail
+            description: Card information text.
+            title:
+              type: html_tag
+              tag: a
+              value: Card title
+              attributes:
+                href: '#'
+                title: Link title
+          settings:
+            enlarge_link: true
+            grey_hover: true
+        - type: pattern
+          id: card
+          fields:
+            detail: Detail
+            title: Small card
+            description: "Card information text."
+          settings:
+            no_arrow: true
+        - type: pattern
+          id: card
+          fields:
+            detail: Detail
+            title: Small card
+            description: "Card information text."
+        - type: pattern
+          id: tile
+          fields:
+            detail: Detail
+            title: Small tile
+            description: "Tile information text."
+        - type: pattern
+          id: tile
+          fields:
+            title: Small tile
+            description: "Tile information text."
+        - type: pattern
+          id: tile
+          fields:
+            title: Small tile
+            description: "Tile information text."

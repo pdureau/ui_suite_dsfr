@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default template for Share ui pattern.
+ *
+ * Available variables:
+ * - title: Component title.
+ * - links: Share links by provider.
+ *     The link element contains the following elements:
+ *     - id: Share provider machine name (facebook, twitter, mail…);
+ *     - title: Link label (Share on Facebook, Share by email…);
+ *     - url: Link URI.
+ *     - attributes: Link HTML attributes.
+ * - text: A renderable text.
+ * - copy_attributes: Copy link HTML attributes.
+ * - attributes: HTML attributes.
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('fr-share') }}>
+  <p class="fr-share__title">{{ title }}</p>
+  <ul class="fr-share__group">
+    {% for link in links %}
+      <li>
+        {% set link_attributes = link.attributes.setAttribute('target', '_blank').setAttribute('rel', 'noopener') %}
+        {% if link.url %}
+          {% set link_attributes = link_attributes.setAttribute('href', link.url).setAttribute('title', '@title - opens a new window'|t({'@title': link.title })).setAttribute('onclick', "window.open(this.href,"~link.title~",'toolbar=no,location=yes,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); event.preventDefault();") %}
+        {% else %}
+          {% set link_attributes = link_attributes.setAttribute('title', '@title - disabled'|t({'@title': link.title })) %}
+        {% endif %}
+        <a{{ link_attributes.addClass(['fr-share__link', 'fr-share__link--'~link.id]) }}>
+          {{ link.title }}
+        </a>
+      </li>
+    {% endfor %}
+    {# Mandatory element goes here. #}
+    <li>
+      {% set copy_label = 'Copy to clipboard'|t %}
+      {% set copy_attributes = copy_attributes.setAttribute('title', copy_label).setAttribute('onclick', "navigator.clipboard.writeText(window.location);alert('"  ~ 'Address copied to clipboard.'|t ~ "');") %}
+      <button{{ copy_attributes.addClass(['fr-share__link', 'fr-share__link--copy']) }}>
+        {{ copy_label }}
+      </button>
+    </li>
+  </ul>
+  {% if text %}
+    <p class="fr-share__text">{{ text }}</p>
+  {% endif %}
+</div>

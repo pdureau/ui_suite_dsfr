@@ -1,0 +1,53 @@
+alert:
+  label: Alert
+  description: Alerts make it possible to draw the user's attention to information without interrupting his current task. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/736362500/Alertes+-+Alerts
+  variants:
+    error:
+      label: Error
+    success:
+      label: Success
+    info:
+      label: Information
+    warning:
+      label: Warning
+    error__sm:
+      label: Error small
+    success__sm:
+      label: Success small
+    info__sm:
+      label: Information small
+    warning__sm:
+      label: Warning small
+  settings:
+    dismissible:
+      type: boolean
+      label: Dismissible?
+      description: It’s possible to dismiss any alert inline.
+      preview: true
+    title_tag:
+      type: select
+      label: Title tag
+      description: Title html tag. Can be 'p' or 'h2'-'h6'.
+      options:
+        p: p
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+  fields:
+    title:
+      type: text
+      label: Title
+      description: The alert title. Optional.
+      preview: 'Alert: Title of an alert'
+    message:
+      type: render
+      label: Message
+      description: The alert message.
+      preview: Detailed description of the message.
+    close_title:
+      type: text
+      label: Close button text
+      description: Close button text. Optional. Will be used only if alert is dismissible.
+      preview: Hide message

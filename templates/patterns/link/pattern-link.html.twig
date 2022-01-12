@@ -1,0 +1,26 @@
+{% if variant is not empty and variant|lower != 'default' and is_external is empty %}
+  {% set attributes = attributes.addClass('fr-link--' ~ variant|lower|replace({'_': '-'})) %}
+{% endif %}
+{% set attributes = attributes.addClass('fr-link') %}
+{% if icon is not empty and is_external is empty %}
+  {% set attributes = attributes.addClass(icon).addClass('fr-link--icon-' ~ icon_position) %}
+{% endif %}
+{% if icon_position is not empty and is_external is empty %}
+  {% set attributes = attributes.addClass('fr-link--icon-' ~ icon_position) %}
+{% endif %}
+
+{% if target is not empty %}
+  {% set attributes = attributes.setAttribute('target', '_' ~ target) %}
+{% endif %}
+
+{% if is_external %}
+  {% set attributes = attributes.setAttribute('rel', 'noopener') %}
+  {% if force_internal is empty %}
+    {% set attributes = attributes.removeClass('fr-link') %}
+  {% endif %}
+{% endif %}
+
+{% set url = url ?: attributes.href %}
+<a{{ attributes.setAttribute('title', title).setAttribute('href', url) }}>
+  {{ label }}
+</a>

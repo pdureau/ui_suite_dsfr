@@ -1,0 +1,171 @@
+callout:
+  label: Call-out
+  description: "The highlight allows the user to quickly distinguish information that complements the content viewed. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331196/Mise+en+avant+-+Call-out"
+  settings:
+    title_tag:
+      type: select
+      label: Title tag
+      description: Title html tag. Can be 'p' or 'h2'-'h6'.
+      options:
+        p: p
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+    color_schema:
+      type: select
+      label: Component color
+      description: "Component color schema. Css selector in DSFR is '.fr-callout--[color]'."
+      options:
+        green-tilleul-verveine: Tilleul Verveine
+        green-bourgeon: Bourgeon
+        green-emeraude: Émeraude
+        green-menthe: Menthe
+        green-archipel: Archipel
+        blue-ecume: Écume
+        blue-cumulus: Cumulus
+        purple-glycine: Glycine
+        pink-macaron: Macaron
+        pink-tuile: Tuile
+        yellow-tournesol: Tournesol
+        yellow-moutarde: Moutarde
+        orange-terre-battue: Terre Battue
+        brown-cafe-creme: Café crème
+        brown-caramel: Caramel
+        brown-opera: Opéra
+        beige-gris-galet: Gris Galet
+      preview: green-tilleul-verveine
+    icon:
+      type: select
+      label: Icon
+      options:
+        fr-fi-account-fill: account filled
+        fr-fi-account-line: account line
+        fr-fi-add-circle-fill: add-circle filled
+        fr-fi-add-circle-line: add-circle line
+        fr-fi-add-line: add line
+        fr-fi-alert-fill: alert filled
+        fr-fi-alert-line: alert line
+        fr-fi-arrow-down-line: arrow-down line
+        fr-fi-arrow-down-s-line: arrow-down-s line
+        fr-fi-arrow-left-line: arrow-left line
+        fr-fi-arrow-left-s-line: arrow-left-s line
+        fr-fi-arrow-right-line: arrow-right line
+        fr-fi-arrow-right-s-line: arrow-right-s line
+        fr-fi-arrow-up-line: arrow-up line
+        fr-fi-arrow-up-s-line: arrow-up-s line
+        fr-fi-attachment-fill: pièce jointe filled
+        fr-fi-attachment-line: pièce jointe line
+        fr-fi-calendar-fill: calendar filled
+        fr-fi-calendar-line: calendar line
+        fr-fi-check-line: close line
+        fr-fi-checkbox-circle-fill: checkbox-circle filled
+        fr-fi-checkbox-circle-line: checkbox-circle line
+        fr-fi-close-circle-fill: close-circle filled
+        fr-fi-close-circle-line: close-circle line
+        fr-fi-close-line: close line
+        fr-fi-daily-motion-fill: dailymotion filled
+        fr-fi-daily-motion-line: dailymotion line
+        fr-fi-delete-fill: delete filled
+        fr-fi-delete-line: delete line
+        fr-fi-download-line: download line
+        fr-fi-edit-fill: edit filled
+        fr-fi-edit-line: edit line
+        fr-fi-equalizer-fill: equalizer filled
+        fr-fi-equalizer-line: equalizer line
+        fr-fi-error-warning-fill: error-warning filled
+        fr-fi-error-warning-line: error-warning line
+        fr-fi-external-link-line: external-link line
+        fr-fi-eye-fill: eye filled
+        fr-fi-eye-line: eye line
+        fr-fi-eye-off-fill: eye-off filled
+        fr-fi-eye-off-line: eye-off line
+        fr-fi-facebook-fill: facebook filled
+        fr-fi-file-download-fill: file-download filled
+        fr-fi-file-download-line: file-download line
+        fr-fi-file-fill: file filled
+        fr-fi-file-line: file line
+        fr-fi-file-pdf-fill: file-pdf filled
+        fr-fi-file-pdf-line: file-pdf line
+        fr-fi-filter-fill: filtre filled
+        fr-fi-filter-line: filtre line
+        fr-fi-github-fill: github filled
+        fr-fi-github-line: github line
+        fr-fi-information-fill: information filled
+        fr-fi-information-line: information line
+        fr-fi-instagram-fill: instagram filled
+        fr-fi-instagram-line: instagram line
+        fr-fi-linkedin-box-fill: linkedin-box filled
+        fr-fi-lock-fill: lock filled
+        fr-fi-lock-line: lock line
+        fr-fi-mail-fill: mail filled
+        fr-fi-mail-line: mail line
+        fr-fi-menu-2-line: menu 2 filled
+        fr-fi-menu-fill: menu filled
+        fr-fi-npmjs-fill: npmjs filled
+        fr-fi-npmjs-line: npmjs line
+        fr-fi-pause-circle-fill: pause-circle filled
+        fr-fi-pause-circle-line: pause-circle line
+        fr-fi-play-fill: play filled
+        fr-fi-play-line: play line
+        fr-fi-printer-fill: printer filled
+        fr-fi-printer-line: printer line
+        fr-fi-question-fill: question filled
+        fr-fi-question-line: question line
+        fr-fi-remixicon-fill: remixicon filled
+        fr-fi-remixicon-line: remixicon line
+        fr-fi-save-fill: save filled
+        fr-fi-save-line: save line
+        fr-fi-search-fill: search filled
+        fr-fi-search-line: search line
+        fr-fi-slack-fill: slack filled
+        fr-fi-slack-line: slack line
+        fr-fi-snapchat-fill: snapchat filled
+        fr-fi-snapchat-line: snapchat line
+        fr-fi-subtract-line: subtract line
+        fr-fi-telegram-fill: telegram filled
+        fr-fi-telegram-line: telegram line
+        fr-fi-theme-fill: theme filled
+        fr-fi-tiktok-fill: tiktok filled
+        fr-fi-tiktok-line: tiktok line
+        fr-fi-twitch-fill: twitch filled
+        fr-fi-twitch-line: twitch line
+        fr-fi-twitter-fill: twitter filled
+        fr-fi-twitter-line: twitter line
+        fr-fi-upload-2-fill: upload filled
+        fr-fi-upload-2-line: upload line
+        fr-fi-user-fill: user filled
+        fr-fi-user-line: user line
+        fr-fi-vimeo-fill: vimeo filled
+        fr-fi-vimeo-line: vimeo line
+        fr-fi-volume-down-fill: volume-down filled
+        fr-fi-volume-down-line: volume-down line
+        fr-fi-volume-mute-fill: volume-mute filled
+        fr-fi-volume-mute-line: volume-mute line
+        fr-fi-volume-up-fill: volume-up filled
+        fr-fi-volume-up-line: volume-up line
+        fr-fi-youtube-fill: youtube filled
+        fr-fi-youtube-line: youtube line
+      preview: fr-fi-alert-line
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Callout title. Plain text. Optional.
+      preview: Title
+    text:
+      type: text
+      label: Text
+      description: Callout text. Plain text.
+      preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat. Suspendisse potenti. Fusce elit diam, gravida id tortor eu, eleifend faucibus libero. Mauris quis mi finibus, accumsan dui ut, ultricies est. Fusce mi quam, suscipit vitae ante a, egestas auctor purus."
+    button:
+      type: render
+      label: Button
+      description: Call-out Button. Optional.
+      preview:
+        - type: pattern
+          id: button
+          fields:
+            label: Go somewhere
+            url: "https://example.com"

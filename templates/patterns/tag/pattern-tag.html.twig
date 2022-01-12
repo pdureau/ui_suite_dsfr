@@ -1,0 +1,22 @@
+{% if variant is not empty and variant|lower != 'default' %}
+  {% set attributes = attributes.addClass('fr-tag--' ~ variant|lower|replace({'_': '-'})) %}
+{% endif %}
+
+{% if icon is not empty and icon_position is not empty %}
+  {% set attributes = attributes.addClass(icon).addClass('fr-tag--icon-' ~ icon_position) %}
+{% endif %}
+
+
+{% if color_schema %}
+  {% set attributes = attributes.addClass('fr-tag--' ~ color_schema) %}
+{% endif %}
+
+{% if url %}
+  <a{{ attributes.addClass('fr-tag').setAttribute('href', url) }}>
+    {{ label }}
+  </a>
+{% else %}
+  <p{{ attributes.addClass('fr-tag') }}>
+    {{ label }}
+  </p>
+{% endif %}
