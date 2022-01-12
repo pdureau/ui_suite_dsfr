@@ -586,6 +586,3 @@ function ui_suite_dsfr_preprocess_pattern_share(array &$variables) {
   }
 }
 
-function ui_suite_dsfr_ui_styles_options_alter(array &$options, $id) {
-  $i = '';
-}
