@@ -11,10 +11,10 @@ breadcrumb:
           - url,
           - attributes(item html attributes)."
       preview:
-        - label: Home
+        - text: Home
           url: '/'
-        - label: Library
+        - text: Library
           url: '#'
-        - label: Data
+        - text: Data
           attributes:
             data-name: 'Test'

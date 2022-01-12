@@ -9,10 +9,10 @@
             {% set url = item.url ?: item.attributes.href %}
             {% if url %}
               <a{{ item.attributes.addClass('fr-breadcrumb__link').setAttribute('href', url).setAttribute('aria-current', loop.last ? 'page' : null) }}>
-                {{ item.label }}
+                {{ item.text }}
               </a>
             {% else %}
-              <span{{ item.attributes.addClass('fr-breadcrumb__link').setAttribute('aria-current', loop.last ? 'page' : null) }}>{{ item.label }}</span>
+              <span{{ item.attributes.addClass('fr-breadcrumb__link').setAttribute('aria-current', loop.last ? 'page' : null) }}>{{ item.text }}</span>
             {% endif %}
           </li>
         {% endfor %}
