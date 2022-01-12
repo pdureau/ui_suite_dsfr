@@ -7,7 +7,7 @@ breadcrumb:
       label: Items
       description: "Breadcrumb items array.
         Each item can contain:
-          - label,
+          - text,
           - url,
           - attributes(item html attributes)."
       preview:
