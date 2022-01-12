@@ -1,0 +1,7 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - 'curl --header "Job-Token: $CI_JOB_TOKEN" --data branch=master "https://__token__:5FJ1wBrKM4Qs-NVNYsS6@git.smile.fr/api/v4/projects/14517/packages/composer"'
