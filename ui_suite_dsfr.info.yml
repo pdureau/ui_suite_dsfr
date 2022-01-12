@@ -22,9 +22,9 @@ regions:
   footer: Footer
 
 dependencies:
-  - component_blocks/component_blocks
+  - component_blocks:component_blocks
   - drupal:inline_form_errors
-  - layout_options/layout_options
+  - layout_options:layout_options
   - ui_patterns:ui_patterns
   - ui_patterns:ui_patterns_library
   - ui_patterns_settings:ui_patterns_settings
