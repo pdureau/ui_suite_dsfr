@@ -20,15 +20,14 @@
     {% set buttons = [
       pattern('button', {'label': 'Accept all'|t }),
       pattern('button', {'label': 'Refuse all'|t }),
-      pattern('button', {'label': 'Personalize'|t, 'variant': 'secondary',
+      pattern('button', {'label': 'Personalize'|t,
         'attributes':
         {'data-fr-opened': 'false', 'aria-controls': 'fr-consent-modal'}
-      })
+      }, 'secondary')
     ] %}
     {{ pattern('button_group', {
-      'variant': 'inline__inline_reverse__right',
       'attributes': {'class': ['fr-consent-banner__buttons', 'fr-btns-group--inline-sm']},
       'buttons': buttons
-    }) }}
+    }, 'inline__inline_reverse__right') }}
   </div>
 {% endif %}

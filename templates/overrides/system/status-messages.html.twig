@@ -21,7 +21,6 @@
  * @ingroup themeable
  */
 #}
-
 <div data-drupal-messages>
   {% for type, messages in message_list %}
     {% set variant = '' %}
@@ -37,12 +36,10 @@
         so we will have the css classes from 1st in the 2nd.
       #}
       {{ pattern('alert', {
-        'variant': variant,
         'dismissible': false,
         'message': message,
-      }) }}
+      }, variant) }}
     {% endfor %}
-
   {% endfor %}
 </div>
 
