@@ -4,7 +4,8 @@ dsfr:
     name: MIT
     gpl-compatible: false
   js:
-    dist/js/dsfr.module.min.js: { minified: true }
+    # We don't use dsfr.module.min.js because of conflict with drupal js.
+    dist/js/dsfr.module.js: { }
   css:
     theme:
       dist/css/dsfr.min.css: { minified: true }

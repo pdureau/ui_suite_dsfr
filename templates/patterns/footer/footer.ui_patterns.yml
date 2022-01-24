@@ -9,7 +9,7 @@ footer:
       description: Operator logo image render. Optional.
       preview:
         theme: image
-        uri: "themes/custom/ui_suite_dsfr/assets/logo.svg"
+        uri: "themes/contrib/ui_suite_dsfr/assets/logo.svg"
         alt: Logo
     presentation_text:
       type: render
@@ -123,21 +123,21 @@ footer:
               data-test: test
             logo:
               theme: image
-              uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
               alt: Main partner 1
           - url: '#'
             logo:
               theme: image
-              uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
               alt: Main partner 2
         sub:
           - url: '#'
             logo:
               theme: image
-              uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
               alt: Partner 1
           - url: '#'
             logo:
               theme: image
-              uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
               alt: Partner 2

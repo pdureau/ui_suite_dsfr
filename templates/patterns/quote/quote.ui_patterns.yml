@@ -32,7 +32,7 @@ quote:
       description: Quote image render. Optional
       preview:
         theme: image
-        uri: "themes/custom/ui_suite_dsfr/assets/card-image.svg"
+        uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
         alt: ""
     quote:
       type: text
