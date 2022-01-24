@@ -156,7 +156,10 @@ function ui_suite_dsfr_preprocess_input(array &$variables) {
     ['hidden', 'submit', 'token', 'button'])) {
     return;
   }
-  $error_id = 'error-desc--' . $variables['element']['#name'];
+  $error_id = 'error-desc--';
+  if (isset($variables['element']['#name'])) {
+    $error_id .= $variables['element']['#name'];
+  }
   // Here we need to add aria-describedby prop for single checkbox only.
   if (in_array($variables['element']['#type'], ['checkbox', 'radio'])) {
     if (isset($variables['element']['#delta'])
@@ -203,7 +206,9 @@ function ui_suite_dsfr_preprocess_select(array &$variables) {
  * Implements hook_theme_suggestions_form_element_alter().
  */
 function ui_suite_dsfr_theme_suggestions_form_element_alter(array &$suggestions, array $variables, $hook) {
-  $suggestions[] = $hook . '__' . $variables['element']['#id'];
+  if (isset($variables['element']['#id'])) {
+    $suggestions[] = $hook . '__' . $variables['element']['#id'];
+  }
   $suggestions[] = $hook . '__' . $variables['element']['#type'];
 }
 
@@ -227,7 +232,10 @@ function ui_suite_dsfr_preprocess_form_element(array &$variables) {
       // Here we need to add error in form element template only for
       // single checkbox. These vars can be used in form_element.twig.html.
       $variables['add_error'] = isset($variables['element']['#delta']);
-      $variables['error_id'] = 'error-desc--' . $variables['element']['#name'];
+      $variables['error_id'] = 'error-desc--';
+      if (isset($variables['element']['#name'])) {
+        $variables['error_id'] .= $variables['element']['#name'];
+      }
       $error_class = isset($variables['element']['#delta']) ? $class . '--error' : NULL;
       break;
 

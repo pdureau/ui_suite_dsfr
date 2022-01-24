@@ -23,22 +23,26 @@
 #}
 
 <div data-drupal-messages>
-{% for type, messages in message_list %}
+  {% for type, messages in message_list %}
+    {% set variant = '' %}
+    {% set variant = (type == 'status') ? 'success__sm' : variant %}
+    {% set variant = (type == 'warning') ? 'warning__sm' : variant %}
+    {% set variant = (type == 'error') ? 'error__sm' : variant %}
 
-  {% set variant = '' %}
-  {% set variant = (type == 'status') ? 'success__sm' : variant %}
-  {% set variant = (type == 'warning') ? 'warning__sm' : variant %}
-  {% set variant = (type == 'error') ? 'error__sm' : variant %}
+    {% for message in messages %}
+      {#
+        We ignore 'attributes' because in case of multiple different type
+        messages we will have previous messages attributes in the next.
+        For example: we have 1st status message then the 2nd error message,
+        so we will have the css classes from 1st in the 2nd.
+      #}
+      {{ pattern('alert', {
+        'variant': variant,
+        'dismissible': false,
+        'message': message,
+      }) }}
+    {% endfor %}
 
-  {% for message in messages %}
-    {{ pattern('alert', {
-      'variant': variant,
-      'attributes': attributes,
-      'dismissible': false,
-      'message': message,
-    }) }}
   {% endfor %}
-
-{% endfor %}
 </div>
 
