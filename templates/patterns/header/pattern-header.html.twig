@@ -24,23 +24,25 @@
             {% endif %}
 
             <!-- Header navbar -->
-            <div class="fr-header__navbar">
-              {% set mobile_menu_mid = 'modal-' ~ random() %}
-              {% if tools_search %}
-                {% set search_mid = 'modal-' ~ random() %}
-                <button class="fr-btn--search fr-btn" data-fr-opened="false" aria-controls="{{ search_mid }}" title="{{ 'Search'|t }}">
-                  {{ 'Search'|t }}
-                </button>
-              {% endif %}
-              <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="{{ mobile_menu_mid }}" aria-haspopup="menu" title="{{ 'Menu'|t }}" id="fr-btn-menu-mobile">
-                {{ 'Menu'|t }}
-              </button>
-            </div>
+            {% if tools_search or navbar %}
+              <div class="fr-header__navbar">
+                {% if tools_search %}
+                  {% set search_mid = 'modal-' ~ random() %}
+                  <button class="fr-btn--search fr-btn" data-fr-opened="false" aria-controls="{{ search_mid }}" title="{{ 'Search'|t }}">
+                    {{ 'Search'|t }}
+                  </button>
+                {% endif %}
+                {% if navbar %}
+                  {% set mobile_menu_mid = 'modal-' ~ random() %}
+                  <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="{{ mobile_menu_mid }}" aria-haspopup="menu" title="{{ 'Menu'|t }}" id="fr-btn-menu-mobile">
+                    {{ 'Menu'|t }}
+                  </button>
+                {% endif %}
+              </div>
+            {% endif %}
           </div>
-
           <!-- Header service -->
           <div class="fr-header__service">
-
             <!-- Header service title-->
             <a href="/" title="{{ 'Homepage'|t }} - {{ service_title }}">
               <p class="fr-header__service-title">{{ service_title }}</p>
@@ -58,9 +60,7 @@
             <!-- Header tools links -->
             {% if tools_links %}
               <div class="fr-header__tools-links">
-                {{ pattern('link_group', {
-                  links: tools_links
-                }) }}
+                {{ tools_links }}
               </div>
             {% endif %}
             <!-- Header tools bottom (can be used for search bar) -->
@@ -77,11 +77,13 @@
       </div>
     </div>
   </div>
-  <div class="fr-header__menu fr-modal" id="{{ mobile_menu_mid }}" aria-labelledby="fr-btn-menu-mobile">
-    <div class="fr-container">
-      <button class="fr-link--close fr-link" aria-controls="{{ mobile_menu_mid }}">{{ 'Close'|t }}</button>
-      <div class="fr-header__menu-links"></div>
-      {{ navbar }}
+  {% if navbar %}
+    <div class="fr-header__menu fr-modal" id="{{ mobile_menu_mid }}" aria-labelledby="fr-btn-menu-mobile">
+      <div class="fr-container">
+        <button class="fr-link--close fr-link" aria-controls="{{ mobile_menu_mid }}">{{ 'Close'|t }}</button>
+        <div class="fr-header__menu-links"></div>
+        {{ navbar }}
+      </div>
     </div>
-  </div>
+  {% endif %}
 </header>
