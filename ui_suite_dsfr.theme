@@ -594,3 +594,12 @@ function ui_suite_dsfr_preprocess_pattern_share(array &$variables) {
   }
 }
 
+/**
+ * Implements hook_preprocess_pattern_share().
+ */
+function ui_suite_dsfr_preprocess_pattern_consent_banner(array &$variables) {
+  // Make element relative for preview mode.
+  if ($variables['context']->getType() == 'preview') {
+    $variables['attributes']['style'] = 'position:relative;';
+  }
+}
