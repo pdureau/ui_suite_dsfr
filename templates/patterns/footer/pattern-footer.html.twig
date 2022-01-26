@@ -4,13 +4,11 @@
  * Default template for Footer ui pattern.
  *
  * Available variables:
- * - top_links: Lists of links can be categorized.
+ * - top: Top content render.
  * - operator_logo: Operator logo image render.
- * - presentation_text: A presentation rendered text.
- * - ecosystem_links: 4 institutional ecosystem reference links.
- * - partners: Array with partners. Can have two elements: 'main' and 'sub'.
- * - legal_links: The list of links related to legal obligations.
- * - license: A mention of the license.
+ * - content: Main content render.
+ * - partners: Partners render.
+ * - bottom: Bottom content render.
  * - service_title: Name of the site.
  * - attributes: HTML attributes.
  *
@@ -18,28 +16,10 @@
  */
 #}
 <footer{{ attributes.addClass('fr-footer').setAttribute('role', 'contentinfo').setAttribute('id', 'footer') }}>
-  {% if top_links %}
+  {% if top %}
     <div class="fr-footer__top">
-    <div class="fr-container">
-      <div class="fr-grid-row fr-grid-row--start fr-grid-row--gutters">
-        {% for top_link in top_links %}
-          <div class="fr-col-12 fr-col-sm-3 fr-col-md-2">
-          {% if top_link.category %}
-            <h3 class="fr-footer__top-cat">{{ top_link.category }}</h3>
-          {% endif %}
-          <ul class="fr-footer__top-list">
-            {% for top_link_item in top_link.links %}
-              <li>
-                {% set url = top_link_item.url ?: top_link_item.attributes.href %}
-                <a{{ top_link_item.attributes.addClass('fr-footer__top-link').setAttribute('href', url) }}>{{ top_link_item.label }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endfor %}
-      </div>
+      {{ top }}
     </div>
-  </div>
   {% endif %}
   <div class="fr-container">
     <div class="fr-footer__body">
@@ -60,66 +40,22 @@
           </a>
         {% endif %}
       </div>
-      <div class="fr-footer__content">
-        {% if presentation_text %}
-          <p class="fr-footer__content-desc">{{ presentation_text }}</p>
-        {% endif %}
-        <ul class="fr-footer__content-list">
-          {% for e_link in ecosystem_links %}
-            <li class="fr-footer__content-item">
-              {% set url = e_link.url ?: e_link.attributes.href %}
-              <a{{ e_link.attributes.addClass('fr-footer__content-link').setAttribute('href', url) }}>{{ e_link.label }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    {% if partners %}
-      <div class="fr-footer__partners">
-        <h4 class="fr-footer__partners-title">{{ 'Our partners'|t }}</h4>
-        <div class="fr-footer__partners-logos">
-          {% if partners.main %}
-            <div class="fr-footer__partners-main">
-              {% for main in partners.main %}
-                {% set url = main.url ?: main.attributes.href %}
-                <a{{ main.attributes.addClass('footer__partners-link').setAttribute('href', url) }}>
-                  {{ main.logo }}
-                </a>
-              {% endfor %}
-            </div>
-          {% endif %}
-          {% if partners.sub %}
-            <div class="fr-footer__partners-sub">
-              <ul>
-                {% for sub in partners.sub %}
-                  <li>
-                    {% set url = sub.url ?: sub.attributes.href %}
-                    <a{{ sub.attributes.addClass('footer__partners-link').setAttribute('href', url) }}>
-                      {{ sub.logo }}
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    {% endif %}
-    <div class="fr-footer__bottom">
-      <ul class="fr-footer__bottom-list">
-        {% for l_link in legal_links %}
-          <li class="fr-footer__bottom-item">
-            {% set url = l_link.url ?: l_link.attributes.href %}
-            <a{{ l_link.attributes.addClass('fr-footer__bottom-link').setAttribute('href', url) }}>{{ l_link.label }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-      {% if license %}
-        <div class="fr-footer__bottom-copy">
-          {{ license }}
+      {% if content %}
+        <div class="fr-footer__content">
+          {{ content }}
         </div>
       {% endif %}
     </div>
+    {% if partners %}
+      <div class="fr-footer__partners">
+        {{ partners }}
+      </div>
+    {% endif %}
+    {% if bottom %}
+      <div class="fr-footer__bottom">
+        {{ bottom }}
+      </div>
+    {% endif %}
   </div>
 </footer>
 

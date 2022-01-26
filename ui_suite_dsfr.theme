@@ -450,33 +450,8 @@ function ui_suite_dsfr_preprocess_pattern_pagination(array &$variables) {
  * Implements hook_preprocess_pattern_footer().
  */
 function ui_suite_dsfr_preprocess_pattern_footer(array &$variables) {
-  if (isset($variables['operator_logo'])) {
-    _ui_suite_dsfr_add_class($variables['operator_logo'], 'fr-footer__logo');
-  }
-  if (isset($variables['partners'])) {
-    foreach ($variables['partners'] as &$type) {
-      foreach ($type as &$value) {
-        _ui_suite_dsfr_add_class($value['logo'], 'fr-footer__logo');
-      }
-    }
-  }
   if (empty($variables['service_title'])) {
     $variables['service_title'] = \Drupal::config('system.site')->get('name');
-  }
-  foreach (['ecosystem_links', 'legal_links'] as $link) {
-    if (isset($variables[$link])) {
-      _ui_suite_dsfr_add_elements_attributes($variables[$link]);
-    }
-  }
-  if (isset($variables['top_links'])) {
-    foreach ($variables['top_links'] as &$top_link) {
-      _ui_suite_dsfr_add_elements_attributes($top_link['links']);
-    }
-  }
-  if (isset($variables['partners'])) {
-    foreach ($variables['partners'] as &$p_type) {
-      _ui_suite_dsfr_add_elements_attributes($p_type);
-    }
   }
 }
 
@@ -484,9 +459,6 @@ function ui_suite_dsfr_preprocess_pattern_footer(array &$variables) {
  * Implements hook_preprocess_pattern_header().
  */
 function ui_suite_dsfr_preprocess_pattern_header(array &$variables) {
-  if (isset($variables['operator_logo'])) {
-    _ui_suite_dsfr_add_class($variables['operator_logo'], 'fr-responsive-img');
-  }
   if (empty($variables['service_title'])) {
     $variables['service_title'] = \Drupal::config('system.site')->get('name');
   }

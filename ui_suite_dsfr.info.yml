@@ -20,7 +20,11 @@ regions:
   content: Content
   sidebar_first: Sidebar first
   sidebar_second: Sidebar second
-  footer: Footer
+  footer_top: Footer Top
+  footer_operator_logo: Footer Operator Logo
+  footer_content: Footer Content
+  footer_partners: Footer Partners
+  footer_bottom: Footer Bottom
 
 dependencies:
   - component_blocks:component_blocks

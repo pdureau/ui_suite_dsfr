@@ -3,6 +3,10 @@ footer:
   description: "The footer provides information on the site and secondary navigation for the user to continue his journey. It is flexible according to the needs and requirements of the site.
     https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331413/Pied+de+page+-+Footer#Structure"
   fields:
+    top:
+      type: render
+      label: Top content
+      description: Top content render. Optional.
     operator_logo:
       type: render
       label: Operator logo
@@ -11,133 +15,66 @@ footer:
         theme: image
         uri: "themes/contrib/ui_suite_dsfr/assets/logo.svg"
         alt: Logo
-    presentation_text:
+    content:
       type: render
-      label: Presentation text
-      description: A presentation rendered text. Optional.
-      preview: 'Lorem ipsum dolor sit amet, consectetur adipiscing, <strong>incididunt</strong>, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est.'
-    ecosystem_links:
-      type: array
-      label: Ecosystem links
-      description: 4 institutional ecosystem reference links. Each element shopuld contain 'label' and 'url'.
+      label: Content
+      description: Content render. Optional.
       preview:
-        - label: legifrance.gouv.fr
-          url: https://legifrance.gouv.fr
-        - label: gouvernement.fr
-          url: https://gouvernement.fr
-        - label: service-public.fr
-          url: https://service-public.fr
-        - label: data.gouv.fr
-          url: https://data.gouv.fr
-    legal_links:
-      type: array
-      label: Legal links
-      description: The list of links related to legal obligations. Each element shopuld contain 'label' and 'url'.
-      preview:
-        - label: Sitemap
-          url: '#'
+        - type: html_tag
+          tag: p
           attributes:
             class:
-              - legal-link-item
-        - label: "Accessibility: no/partially/fully compliant"
-          url: '#'
-        - label: Legal Notice
-          url: '#'
-        - label: Cookie management
-          url: '#'
-    license:
-      type: render
-      label: license text.
-      description: A mention of the license. Optional.
-      preview: '<p>Unless otherwise stated, all content on this site is under <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">licence etalab-2.0</a>'
-    top_links:
-      type: array
-      label: Top links
-      description: Lists of links can be categorized. Optional. It is possible to go to a maximum of 6 columns of links. We recommend not to exceed lists of more than 8 links.
-      preview:
-        - category: Category name
-          links:
-            - label: Navigation link
-              url: '#'
-              attributes:
-                class:
-                  - test-class
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-        - category: Category name
-          links:
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-        - category: Category name
-          links:
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
-            - label: Navigation link
-              url: '#'
+              - fr-footer__content-desc
+          value: 'Lorem ipsum dolor sit amet, consectetur adipiscing, <strong>incididunt</strong>, ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et. Diam maecenas sed enim ut. Accumsan lacus vel facilisis volutpat est.'
+        - type: html_tag
+          tag: ul
+          attributes:
+            class:
+              - fr-footer__content-list
+          value: '<li class="fr-footer__content-item">
+                   <a class="fr-footer__content-link" href="https://legifrance.gouv.fr">legifrance.gouv.fr</a>
+                   </li>
+                   <li class="fr-footer__content-item">
+                   <a class="fr-footer__content-link" href="https://gouvernement.fr">gouvernement.fr</a>
+                   </li>
+                   <li class="fr-footer__content-item">
+                   <a class="fr-footer__content-link" href="https://service-public.fr">service-public.fr</a>
+                   </li>
+                   <li class="fr-footer__content-item">
+                   <a class="fr-footer__content-link" href="https://data.gouv.fr">data.gouv.fr</a>
+                   </li>'
     partners:
-      type: array
+      type: render
       label: Partners
-      description: "Array with partners. Optional. Can have two elements: 'main' and 'sub'. Each element in type should contain 'url'(string) and 'logo'(image render array)."
+      description: "Partners render. Optional."
+    bottom:
+      type: render
+      label: Bottom content
+      description: Bottom content render.
       preview:
-        main:
-          - url: '#'
-            attributes:
-              data-test: test
-            logo:
-              theme: image
-              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
-              alt: Main partner 1
-          - url: '#'
-            logo:
-              theme: image
-              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
-              alt: Main partner 2
-        sub:
-          - url: '#'
-            logo:
-              theme: image
-              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
-              alt: Partner 1
-          - url: '#'
-            logo:
-              theme: image
-              uri: "themes/contrib/ui_suite_dsfr/assets/card-image.svg"
-              alt: Partner 2
+        - type: html_tag
+          tag: ul
+          attributes:
+            class:
+              - fr-footer__bottom-list
+          value: '<li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="#">Sitemap</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="#">Accessibility</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="#">Legal Notice</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="#">Personal data</a>
+                </li>
+                <li class="fr-footer__bottom-item">
+                    <a class="fr-footer__bottom-link" href="#">Cookie management</a>
+                </li>'
+        - type: html_tag
+          tag: div
+          attributes:
+            class:
+              - fr-footer__bottom-copy
+          value: 'Unless otherwise stated, all content on this site is licensed under <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">etalab-2.0 license</a>'
