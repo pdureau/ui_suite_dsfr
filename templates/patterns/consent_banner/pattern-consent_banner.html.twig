@@ -6,6 +6,14 @@
  * Available variables:
  * - title: Banner title.
  * - text: Banner renderable text.
+ * - modal: Array with values for modal. Can contain:
+ *   - title: Modal title,
+ *   - text: Modal text,
+ *   - services: array with services, keyed by service id. Can contain:
+ *     - title: Service title,
+ *     - description: Service description text,
+ *     - sub_services: Array with sub services, keyed by sub service id. Contains:
+ *       - title: Service title.
  * - attributes: HTML attributes.
  *
  * @ingroup themeable
@@ -30,4 +38,93 @@
       'buttons': buttons
     }, 'inline__inline_reverse__right') }}
   </div>
+  {% if modal %}
+    <dialog id="fr-consent-modal" class="fr-modal" role="dialog" aria-labelledby="fr-consent-modal-title">
+    <div class="fr-container fr-container--fluid fr-container-md">
+      <div class="fr-grid-row fr-grid-row--center">
+        <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
+          <div class="fr-modal__body">
+            <div class="fr-modal__header">
+              <button class="fr-link--close fr-link" aria-controls="fr-consent-modal">
+                {{ 'Close'|t }}
+              </button>
+            </div>
+            <div class="fr-modal__content">
+              <h1 id="fr-consent-modal-title" class="fr-modal__title">
+                {{ modal.title }}
+              </h1>
+              <div class="fr-consent-manager">
+                <div class="fr-consent-service fr-consent-manager__header">
+                  <fieldset class="fr-fieldset fr-fieldset--inline">
+                    {%  if modal.text %}
+                      <legend id="finality-legend" class="fr-consent-service__title">{{ modal.text }}</legend>
+                    {% endif %}
+                    <div class="fr-consent-service__radios">
+                      <div class="fr-radio-group">
+                        <input type="radio" id="consent-all-accept" name="consent-all">
+                        <label class="fr-label" for="consent-all-accept">{{ 'Accept all'|t }}</label>
+                      </div>
+                      <div class="fr-radio-group">
+                        <input type="radio" id="consent-all-refuse" name="consent-all">
+                        <label class="fr-label" for="consent-all-refuse">{{ 'Refuse all'|t }}</label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                {% for id, service in modal.services %}
+                  <div class="fr-consent-service">
+                    <fieldset aria-labelledby="{{ id }}-legend {{ id }}-desc" role="group" class="fr-fieldset fr-fieldset--inline">
+                  <legend id="{{ id }}-legend" class="fr-consent-service__title">{{ service.title }}</legend>
+                  <div class="fr-consent-service__radios">
+                    <div class="fr-radio-group">
+                      <input type="radio" id="consent-{{ id }}-accept" name="consent-{{ id }}">
+                      <label class="fr-label" for="consent-{{ id }}-accept">{{ 'Accept'|t }}</label>
+                    </div>
+                    <div class="fr-radio-group">
+                      <input type="radio" id="consent-{{ id }}-refuse" name="consent-{{ id }}">
+                      <label class="fr-label" for="consent-{{ id }}-refuse">{{ 'Refuse'|t }}</label>
+                    </div>
+                  </div>
+                  {% if service.description %}
+                    <p id="{{ id }}-desc" class="fr-consent-service__desc">{{ service.description }}</p>
+                  {% endif %}
+                  {% if service.sub_services %}
+                    <div class="fr-consent-service__collapse">
+                      <button class="fr-consent-service__collapse-btn" aria-expanded="false" aria-describedby="{{ id }}-legend" aria-controls="{{ id }}-collapse">{{ 'See more details'|t }}</button>
+                    </div>
+                    <div class="fr-consent-services fr-collapse" id="{{ id }}-collapse">
+                      {% for sub_id, sub_service in service.sub_services %}
+                        <div class="fr-consent-service">
+                          <fieldset class="fr-fieldset fr-fieldset--inline">
+                            <legend id="{{ id }}-{{ sub_id }}-legend" class="fr-consent-service__title">{{ sub_service.title }}</legend>
+                            <div class="fr-consent-service__radios fr-fieldset--inline">
+                              <div class="fr-radio-group">
+                                <input type="radio" id="consent-{{ id }}-{{ sub_id }}-accept" name="consent-{{ id }}-{{ sub_id }}">
+                                <label class="fr-label" for="consent-{{ id }}-{{ sub_id }}-accept">{{ 'Accept'|t }}</label>
+                              </div>
+                              <div class="fr-radio-group">
+                                <input type="radio" id="consent-{{ id }}-{{ sub_id }}-refuse" name="consent-{{ id }}-{{ sub_id }}">
+                                <label class="fr-label" for="consent-{{ id }}-{{ sub_id }}-refuse">{{ 'Refuse'|t }}</label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </fieldset>
+                  </div>
+                {% endfor %}
+                {{ pattern('button_group', {
+                  'attributes': {'class': ['fr-consent-manager__buttons', 'fr-btns-group--inline-sm']},
+                  'buttons': [pattern('button', {'label': 'Confirm my choices'|t})]
+                }, 'right') }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  {% endif %}
 {% endif %}

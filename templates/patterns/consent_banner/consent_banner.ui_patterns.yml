@@ -12,3 +12,29 @@ consent_banner:
       label: Text
       description: Banner renderable text.
       preview: 'Welcome! We use cookies to improve your experience and the services available on this site. To find out more, visit the <a href="#">Personal data and cookies</a> page. You can, at any time, have control over the cookies you want to activate.'
+    modal:
+      type: array
+      label: Modal data
+      description: "Modal data array. Contains:
+        - title: Modal title,
+        - text: Modal text,
+        - services: array with services, keyed by service id. Can contain:
+          - title: Service title,
+          - description: Service description text,
+          - sub_services: Array with sub services, keyed by sub service id. Contains:
+            - title: Service title."
+      preview:
+        title: Cookie management panel
+        text: Preferences for all services.
+        services:
+          youtube:
+            title: Youtube
+            description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+          google:
+            title: Google
+            description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+            sub_services:
+              analitycs:
+                title: Google Analytics
+              maps:
+                title: Google Maps
