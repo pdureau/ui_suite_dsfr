@@ -3,7 +3,7 @@
     <ul class="fr-tabs__list" role="tablist" aria-label="{{ label }}">
       {% for item in items %}
         <li role="presentation">
-          {% set button_attributes = create_attribute({'id': 'tabpanel-'~loop.index, 'aria-controls': 'tabpanel-'~loop.index~'-panel', 'role': 'tab'}) %}
+          {% set button_attributes = create_attribute({'id': 'tabpanel-'~item.uniq, 'aria-controls': 'tabpanel-'~item.uniq~'-panel', 'role': 'tab'}) %}
           {% if item.icon %}
             {% set button_attributes = button_attributes.addClass(['fr-tabs__tab--icon-left', item.icon]) %}
           {% endif %}
@@ -15,7 +15,7 @@
       {% endfor %}
     </ul>
     {% for item in items %}
-      {% set div_attributes = create_attribute({'id': 'tabpanel-'~loop.index~'-panel', 'aria-labelledby': 'tabpanel-'~loop.index, 'role': 'tabpanel', 'tabindex': 0}) %}
+      {% set div_attributes = create_attribute({'id': 'tabpanel-'~item.uniq~'-panel', 'aria-labelledby': 'tabpanel-'~item.uniq, 'role': 'tabpanel', 'tabindex': 0}) %}
       {% if loop.first %}
         {% set div_attributes = div_attributes.addClass('fr-tabs__panel--selected') %}
       {% endif %}

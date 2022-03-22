@@ -567,11 +567,20 @@ function ui_suite_dsfr_preprocess_pattern_share(array &$variables) {
 }
 
 /**
- * Implements hook_preprocess_pattern_share().
+ * Implements hook_preprocess_pattern_consent_banner().
  */
 function ui_suite_dsfr_preprocess_pattern_consent_banner(array &$variables) {
   // Make element relative for preview mode.
   if ($variables['context']->getType() == 'preview') {
     $variables['attributes']['style'] = 'position:relative;';
+  }
+}
+
+/**
+ * Implements hook_preprocess_pattern_tabs().
+ */
+function ui_suite_dsfr_preprocess_pattern_tabs(array &$variables) {
+  foreach ($variables['items'] as &$item) {
+    $item['uniq'] = rand();
   }
 }
