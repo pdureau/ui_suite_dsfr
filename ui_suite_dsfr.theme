@@ -14,7 +14,8 @@ use Drupal\Core\Template\Attribute;
  * Implements hook_preprocess_HOOK() for html templates.
  */
 function ui_suite_dsfr_preprocess_html(&$variables) {
-  $variables['theme_path'] = \Drupal::service('extension.path.resolver')->getPath('theme', 'ui_suite_dsfr');
+  // Use drupal_get_path() to be compatible with drupal 8.
+  $variables['theme_path'] = drupal_get_path('theme', 'ui_suite_dsfr');
   $theme_color = theme_get_setting('theme_color');
   $variables['html_attributes']['data-fr-scheme'] = $theme_color;
 }
