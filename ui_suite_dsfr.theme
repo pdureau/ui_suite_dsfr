@@ -88,18 +88,22 @@ function _ui_suite_dsfr_add_link_class(&$element, string $class) {
   if (!is_array($element)) {
     return;
   }
-  if (array_key_exists('#type', $element)) {
-    if ($element['#type'] === 'link') {
-      $element['#attributes']['class'][] = $class;
+  if (Element::getVisibleChildren($element)) {
+    foreach (Element::children($element) as $child) {
+      if (!array_key_exists('#type', $element[$child])) {
+        continue;
+      }
+      if ($element[$child]['#type'] === 'link'
+        || ($element[$child]['#type'] === 'html_tag' && $element[$child]['#tag'] === 'a')
+        || ($element[$child]['#type'] === 'pattern' && $element[$child]['#id'] === 'link')) {
+        $element[$child]['#attributes']['class'][] = $class;
+      }
     }
-
-    if ($element['#type'] === 'html_tag' && $element['#tag'] === 'a') {
-      $element['#attributes']['class'][] = $class;
-    }
-
-    if ($element['#type'] === 'pattern' && $element['#id'] === 'link') {
-      $element['#attributes']['class'][] = $class;
-    }
+  }
+  elseif ($element['#type'] === 'link'
+    || ($element['#type'] === 'html_tag' && $element['#tag'] === 'a')
+    || ($element['#type'] === 'pattern' && $element['#id'] === 'link')) {
+    $element['#attributes']['class'][] = $class;
   }
 }
 
