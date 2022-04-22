@@ -1,9 +1,11 @@
+{% set unique = random() %}
 {% if items %}
   <div{{ attributes.addClass('fr-tabs') }}>
     <ul class="fr-tabs__list" role="tablist" aria-label="{{ label }}">
       {% for item in items %}
         <li role="presentation">
-          {% set button_attributes = create_attribute({'id': 'tabpanel-'~item.uniq, 'aria-controls': 'tabpanel-'~item.uniq~'-panel', 'role': 'tab'}) %}
+          {% set button_attributes = create_attribute({'id': 'tabpanel-'~loop.index~'-'~unique, 'aria-controls':
+            'tabpanel-'~loop.index~'-panel-'~unique, 'role': 'tab'}) %}
           {% if item.icon %}
             {% set button_attributes = button_attributes.addClass(['fr-tabs__tab--icon-left', item.icon]) %}
           {% endif %}
@@ -15,12 +17,12 @@
       {% endfor %}
     </ul>
     {% for item in items %}
-      {% set div_attributes = create_attribute({'id': 'tabpanel-'~item.uniq~'-panel', 'aria-labelledby': 'tabpanel-'~item.uniq, 'role': 'tabpanel', 'tabindex': 0}) %}
+      {% set div_attributes = create_attribute({'id': 'tabpanel-'~loop.index~'-panel'~'-'~unique, 'aria-labelledby': 'tabpanel-'~loop.index~'-'~unique, 'role': 'tabpanel', 'tabindex': 0}) %}
       {% if loop.first %}
         {% set div_attributes = div_attributes.addClass('fr-tabs__panel--selected') %}
       {% endif %}
       <div{{ div_attributes.addClass('fr-tabs__panel') }}>
-        <p>{{ item.content|raw }}</p>
+        {{ item.content|raw }}
       </div>
     {% endfor %}
   </div>

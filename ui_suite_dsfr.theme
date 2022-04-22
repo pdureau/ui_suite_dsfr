@@ -580,12 +580,3 @@ function ui_suite_dsfr_preprocess_pattern_consent_banner(array &$variables) {
     $variables['attributes']['style'] = 'position:relative;';
   }
 }
-
-/**
- * Implements hook_preprocess_pattern_tabs().
- */
-function ui_suite_dsfr_preprocess_pattern_tabs(array &$variables) {
-  foreach ($variables['items'] as &$item) {
-    $item['uniq'] = rand();
-  }
-}
