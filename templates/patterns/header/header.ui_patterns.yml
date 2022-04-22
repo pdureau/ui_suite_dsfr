@@ -82,3 +82,6 @@ header:
     tools_search:
       type: render
       label: Header tools search. Optional.
+    logo:
+      type: array
+      label: Logo text and title. Optional.

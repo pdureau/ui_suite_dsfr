@@ -27,9 +27,14 @@
         {% if operator_logo is empty %}
           <a href="/" title="{{ 'Back to home - @name'|t({'@name': service_title}) }}">
         {% endif %}
-          <p class="fr-logo" title="{{ 'French Republic'|t }}">
-            république
-            <br>française
+          <p class="fr-logo"{% if logo.title %} title="{{ logo.title }}"{% else %} title="{{ 'French Republic'|t }}"{% endif %}>
+            {% if logo.text %}
+              {{ logo.text }}
+            {% else %}
+              République
+              <br>
+              Française
+            {% endif %}
           </p>
         {% if operator_logo is empty %}
           </a>

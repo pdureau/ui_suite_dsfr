@@ -8,10 +8,14 @@
             <!-- Main logo -->
             <div class="fr-header__logo">
               <a href="/" title="{{ 'Homepage'|t }} - {{ service_title }}">
-                <p class="fr-logo">
-                  République
-                  <br>
-                  Française
+                <p class="fr-logo"{% if logo.title %} title="{{ logo.title }}"{% endif %}>
+                  {% if logo.text %}
+                    {{ logo.text }}
+                  {% else %}
+                    République
+                    <br>
+                    Française
+                  {% endif %}
                 </p>
               </a>
             </div>

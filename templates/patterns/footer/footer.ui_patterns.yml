@@ -78,3 +78,6 @@ footer:
             class:
               - fr-footer__bottom-copy
           value: 'Unless otherwise stated, all content on this site is licensed under <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">etalab-2.0 license</a>'
+    logo:
+      type: array
+      label: Logo text and title. Optional.
