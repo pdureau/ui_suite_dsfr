@@ -13,7 +13,7 @@
     {% if title %}
       <{{ title_tag }} class="fr-alert__title">{{ title }}</{{ title_tag }}>
     {% endif %}
-    <p>{{ message }}</p>
+      {{ message|raw }}
     {% if dismissible %}
       <button class="fr-link--close fr-link" aria-expanded="true" aria-controls="{{ id }}">{{ close_title ?: 'Close'|t }}</button>
     {% endif %}

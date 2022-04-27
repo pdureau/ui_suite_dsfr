@@ -37,7 +37,7 @@
       #}
       {{ pattern('alert', {
         'dismissible': false,
-        'message': message,
+        'message': '<p>'~message~'</p>',
       }, variant) }}
     {% endfor %}
   {% endfor %}

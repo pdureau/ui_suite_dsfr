@@ -45,7 +45,7 @@ alert:
       type: render
       label: Message
       description: The alert message.
-      preview: Detailed description of the message.
+      preview: <p>Detailed description of the message.</p>
     close_title:
       type: text
       label: Close button text
