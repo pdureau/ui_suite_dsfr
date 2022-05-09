@@ -22,6 +22,17 @@ card:
       label: Grey background?
       description: Adds grey background on card hover.
       preview: true
+    title_tag:
+      type: select
+      label: Title tag
+      description: Title html tag. Can be 'h2'-'h6'.
+      options:
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+      preview: h4
   fields:
     image:
       type: render
