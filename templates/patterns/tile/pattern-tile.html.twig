@@ -10,12 +10,14 @@
   {% set attributes = attributes.addClass('fr-tile--grey') %}
 {% endif %}
 
+{% set title_tag = title_tag ?? 'h4' %}
+
 {% if title %}
   <div{{ attributes.addClass('fr-tile') }}>
     <div class="fr-tile__body">
-      <h4 class="fr-tile__title">
+      <{{ title_tag }} class="fr-tile__title">
         {{ title }}
-      </h4>
+      </{{ title_tag }}>
       {% if description %}<p class="fr-tile__desc">{{ description }}</p>{% endif %}
     </div>
     {% if image %}
