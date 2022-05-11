@@ -36,9 +36,17 @@
     'form-wrapper',
   ]
 %}
+{%
+  set legend_classes = [
+    'fr-fieldset__legend',
+    'fr-text--regular',
+    required ? 'js-form-required',
+    required ? 'form-required',
+  ]
+%}
 <div class="fr-form-group">
   <fieldset{{ attributes.setAttribute('role', 'group').addClass(classes) }}>
-    <legend{{ legend.attributes.addClass('fr-fieldset__legend', 'fr-text--regular') }}>{{ legend.title }}
+    <legend{{ legend.attributes.addClass(legend_classes) }}>{{ legend.title }}
       {% if description.content %}
         <span class="fr-hint-text">{{ description.content }}</span>
       {% endif %}
