@@ -6,6 +6,7 @@
 {% endif %}
 
 {% set title_tag = title_tag ?: 'p' %}
+{% set text_tag = text_tag ?: 'p' %}
 
 <div{{ attributes.addClass('fr-callout') }}>
   {% if title %}
@@ -13,8 +14,8 @@
       {{ title }}
     </{{ title_tag }}>
   {% endif %}
-  <p class="fr-callout__text">
+  <{{ text_tag }} class="fr-callout__text">
     {{ text }}
-  </p>
+  </{{ text_tag }}>
   {{ button }}
 </div>

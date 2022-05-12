@@ -13,6 +13,13 @@ callout:
         h4: h4
         h5: h5
         h6: h6
+    text_tag:
+      type: select
+      label: Text wrapper tag
+      description: Text wrapper html tag. Can be 'p' or 'div'.
+      options:
+        p: p
+        div: div
     color_schema:
       type: select
       label: Component color
