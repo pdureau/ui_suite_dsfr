@@ -56,7 +56,7 @@
           </a>
         </li>
       {% if ellipses.previous %}
-        <li><a class="fr-pagination__link fr-displayed-lg">...</a></li>
+        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg">...</a></li>
       {% endif %}
       {% for key, item in items.pages %}
         <li>
@@ -64,7 +64,7 @@
             <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('aria-current', 'page').setAttribute('title', 'Page @key'|t({'@key': key})) }}>
           {% else %}
             {% if key - current > 1 or key - current < -1 %}
-              <a{{ item.attributes.addClass('fr-pagination__link', 'fr-displayed-lg').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+              <a{{ item.attributes.addClass('fr-pagination__link', 'fr-hidden', 'fr-unhidden-lg').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
             {% else %}
               <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
             {% endif %}
@@ -74,7 +74,7 @@
         </li>
       {% endfor %}
       {% if ellipses.next %}
-        <li><a class="fr-pagination__link fr-displayed-lg">...</a></li>
+        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg">...</a></li>
       {% endif %}
       {% if items.next is empty %}
         {% set next = {

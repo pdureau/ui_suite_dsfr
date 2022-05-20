@@ -53,16 +53,25 @@ button_group:
       preview:
         - type: pattern
           id: button
+          settings:
+            icon: fr-icon-arrow-right-line
+            icon_position: right
           fields:
             label: First button
             url: "https://example.com"
         - type: pattern
           id: button
+          variant: secondary
           fields:
             label: Second button
             url: "https://example.com"
         - type: pattern
           id: button
-          variant: secondary
+          variant: tertiary
           fields:
             label: Third button
+        - type: pattern
+          id: button
+          variant: tertiary_no_outline
+          fields:
+            label: Fourth button

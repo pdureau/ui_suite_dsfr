@@ -20,10 +20,14 @@ alert:
       label: Warning small
   settings:
     dismissible:
-      type: boolean
+      type: select
       label: Dismissible?
       description: It’s possible to dismiss any alert inline.
-      preview: true
+      options:
+        '': No
+        core: Using dsfr
+        custom: Custom
+      preview: core
     title_tag:
       type: select
       label: Title tag

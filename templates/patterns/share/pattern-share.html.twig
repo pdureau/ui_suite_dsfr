@@ -20,16 +20,16 @@
 #}
 <div{{ attributes.addClass('fr-share') }}>
   <p class="fr-share__title">{{ title }}</p>
-  <ul class="fr-share__group">
+  <ul class="fr-btns-group">
     {% for link in links %}
       <li>
         {% set link_attributes = link.attributes.setAttribute('target', '_blank').setAttribute('rel', 'noopener') %}
         {% if link.url %}
-          {% set link_attributes = link_attributes.setAttribute('href', link.url).setAttribute('title', '@title - opens a new window'|t({'@title': link.title })).setAttribute('onclick', "window.open(this.href,"~link.title~",'toolbar=no,location=yes,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); event.preventDefault();") %}
+          {% set link_attributes = link_attributes.setAttribute('href', link.url).setAttribute('title', '@title - new window'|t({'@title': link.title })).setAttribute('onclick', "window.open(this.href,"~link.title~",'toolbar=no,location=yes,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); event.preventDefault();") %}
         {% else %}
-          {% set link_attributes = link_attributes.setAttribute('title', '@title - disabled'|t({'@title': link.title })) %}
+          {% set link_attributes = link_attributes.setAttribute('role', 'link').setAttribute('aria-disabled', 'true') %}
         {% endif %}
-        <a{{ link_attributes.addClass(['fr-share__link', 'fr-share__link--'~link.id]) }}>
+        <a{{ link_attributes.addClass(['fr-btn', 'fr-btn--'~link.id]) }}>
           {{ link.title }}
         </a>
       </li>
@@ -38,7 +38,7 @@
     <li>
       {% set copy_label = 'Copy to clipboard'|t %}
       {% set copy_attributes = copy_attributes.setAttribute('title', copy_label).setAttribute('onclick', "navigator.clipboard.writeText(window.location);alert('"  ~ 'Address copied to clipboard.'|t ~ "');") %}
-      <button{{ copy_attributes.addClass(['fr-share__link', 'fr-share__link--copy']) }}>
+      <button{{ copy_attributes.addClass(['fr-btn', 'fr-btn--copy']) }}>
         {{ copy_label }}
       </button>
     </li>

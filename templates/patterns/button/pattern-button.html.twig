@@ -9,9 +9,11 @@
   {% set attributes = attributes.addClass(icon) %}
   {% if icon_position is not empty %}
     {% set attributes = attributes.addClass('fr-btn--icon-' ~ icon_position) %}
-  {% else %}
-     {% set attributes = attributes.setAttribute('title', label) %}
   {% endif %}
+{% endif %}
+
+{% if title %}
+  {% set attributes = attributes.setAttribute('title', title) %}
 {% endif %}
 
 {% if disabled %}

@@ -13,7 +13,7 @@ tabs:
       description: Contains 'title', 'icon' and 'content' elements.
       preview:
         - title: Tab label 1
-          icon: fr-fi-checkbox-circle-line
+          icon: fr-icon-checkbox-circle-line
           content: '<p>Tab <strong>content 1</strong></p>'
         - title: Tab label 2
           content: '<p>Tab content 2 with <a target="_blank" href="https://example.com">link</a></p>'

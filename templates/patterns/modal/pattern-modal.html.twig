@@ -19,12 +19,12 @@
       <div{{ attributes.addClass('fr-col-12') }}>
         <div class="fr-modal__body">
           <div class="fr-modal__header">
-            <button class="fr-link--close fr-link" aria-controls="{{ modal_id }}">{{ 'Close'|t }}</button>
+            <button class="fr-btn fr-btn--close" aria-controls="{{ modal_id }}" title="{{ 'Close'|t }}">{{ 'Close'|t }}</button>
           </div>
           <div class="fr-modal__content">
             <h1 id="{{ modal_id ~ '-title' }}" class="fr-modal__title">
               {% if icon %}
-                <span class="{{ icon }} fr-fi--lg"></span>
+                <span class="{{ icon }} fr-fi--lg" aria-hidden="true"></span>
               {% endif %}
               {{ title }}
             </h1>

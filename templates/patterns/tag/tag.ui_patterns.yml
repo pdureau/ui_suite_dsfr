@@ -7,10 +7,15 @@ tag:
     sm:
       label: Small
   settings:
+    dismissible:
+      type: boolean
+      label: Dismissible?
+      description: It’s possible to dismiss tag inline. Can be used only for unclicable tags.
+      preview: false
     color_schema:
       type: select
       label: Component color
-      description: "Component color schema. Css selector in DSFR is '.fr-tag--[color]'."
+      description: "Component color schema. Css selector in DSFR is '.fr-tag--[color]'. It is possible to use illustrative colors on clickable tags only."
       options:
         green-tilleul-verveine: Tilleul Verveine
         green-bourgeon: Bourgeon
@@ -30,125 +35,143 @@ tag:
         brown-opera: Opéra
         beige-gris-galet: Gris Galet
       preview: brown-caramel
-    icon_position:
-      type: select
-      label: Icon position
-      options:
-        left: Left
-        right: Right
-      preview: left
     icon:
       type: select
       label: Icon
+      description: Will not be applied for dismissible tag.
       options:
-        fr-fi-account-fill: account filled
-        fr-fi-account-line: account line
-        fr-fi-add-circle-fill: add-circle filled
-        fr-fi-add-circle-line: add-circle line
-        fr-fi-add-line: add line
-        fr-fi-alert-fill: alert filled
-        fr-fi-alert-line: alert line
-        fr-fi-arrow-down-line: arrow-down line
-        fr-fi-arrow-down-s-line: arrow-down-s line
-        fr-fi-arrow-left-line: arrow-left line
-        fr-fi-arrow-left-s-line: arrow-left-s line
-        fr-fi-arrow-right-line: arrow-right line
-        fr-fi-arrow-right-s-line: arrow-right-s line
-        fr-fi-arrow-up-line: arrow-up line
-        fr-fi-arrow-up-s-line: arrow-up-s line
-        fr-fi-attachment-fill: pièce jointe filled
-        fr-fi-attachment-line: pièce jointe line
-        fr-fi-calendar-fill: calendar filled
-        fr-fi-calendar-line: calendar line
-        fr-fi-check-line: check line
-        fr-fi-checkbox-circle-fill: checkbox-circle filled
-        fr-fi-checkbox-circle-line: checkbox-circle line
-        fr-fi-close-circle-fill: close-circle filled
-        fr-fi-close-circle-line: close-circle line
-        fr-fi-close-line: close line
-        fr-fi-daily-motion-fill: dailymotion filled
-        fr-fi-daily-motion-line: dailymotion line
-        fr-fi-delete-fill: delete filled
-        fr-fi-delete-line: delete line
-        fr-fi-download-line: download line
-        fr-fi-edit-fill: edit filled
-        fr-fi-edit-line: edit line
-        fr-fi-equalizer-fill: equalizer filled
-        fr-fi-equalizer-line: equalizer line
-        fr-fi-error-warning-fill: error-warning filled
-        fr-fi-error-warning-line: error-warning line
-        fr-fi-external-link-line: external-link line
-        fr-fi-eye-fill: eye filled
-        fr-fi-eye-line: eye line
-        fr-fi-eye-off-fill: eye-off filled
-        fr-fi-eye-off-line: eye-off line
-        fr-fi-facebook-fill: facebook filled
-        fr-fi-file-download-fill: file-download filled
-        fr-fi-file-download-line: file-download line
-        fr-fi-file-fill: file filled
-        fr-fi-file-line: file line
-        fr-fi-file-pdf-fill: file-pdf filled
-        fr-fi-file-pdf-line: file-pdf line
-        fr-fi-filter-fill: filtre filled
-        fr-fi-filter-line: filtre line
-        fr-fi-github-fill: github filled
-        fr-fi-github-line: github line
-        fr-fi-information-fill: information filled
-        fr-fi-information-line: information line
-        fr-fi-instagram-fill: instagram filled
-        fr-fi-instagram-line: instagram line
-        fr-fi-linkedin-box-fill: linkedin-box filled
-        fr-fi-lock-fill: lock filled
-        fr-fi-lock-line: lock line
-        fr-fi-mail-fill: mail filled
-        fr-fi-mail-line: mail line
-        fr-fi-menu-2-line: menu 2 filled
-        fr-fi-menu-fill: menu filled
-        fr-fi-npmjs-fill: npmjs filled
-        fr-fi-npmjs-line: npmjs line
-        fr-fi-pause-circle-fill: pause-circle filled
-        fr-fi-pause-circle-line: pause-circle line
-        fr-fi-play-fill: play filled
-        fr-fi-play-line: play line
-        fr-fi-printer-fill: printer filled
-        fr-fi-printer-line: printer line
-        fr-fi-question-fill: question filled
-        fr-fi-question-line: question line
-        fr-fi-remixicon-fill: remixicon filled
-        fr-fi-remixicon-line: remixicon line
-        fr-fi-save-fill: save filled
-        fr-fi-save-line: save line
-        fr-fi-search-fill: search filled
-        fr-fi-search-line: search line
-        fr-fi-slack-fill: slack filled
-        fr-fi-slack-line: slack line
-        fr-fi-snapchat-fill: snapchat filled
-        fr-fi-snapchat-line: snapchat line
-        fr-fi-subtract-line: subtract line
-        fr-fi-telegram-fill: telegram filled
-        fr-fi-telegram-line: telegram line
-        fr-fi-theme-fill: theme filled
-        fr-fi-tiktok-fill: tiktok filled
-        fr-fi-tiktok-line: tiktok line
-        fr-fi-twitch-fill: twitch filled
-        fr-fi-twitch-line: twitch line
-        fr-fi-twitter-fill: twitter filled
-        fr-fi-twitter-line: twitter line
-        fr-fi-upload-2-fill: upload filled
-        fr-fi-upload-2-line: upload line
-        fr-fi-user-fill: user filled
-        fr-fi-user-line: user line
-        fr-fi-vimeo-fill: vimeo filled
-        fr-fi-vimeo-line: vimeo line
-        fr-fi-volume-down-fill: volume-down filled
-        fr-fi-volume-down-line: volume-down line
-        fr-fi-volume-mute-fill: volume-mute filled
-        fr-fi-volume-mute-line: volume-mute line
-        fr-fi-volume-up-fill: volume-up filled
-        fr-fi-volume-up-line: volume-up line
-        fr-fi-youtube-fill: youtube filled
-        fr-fi-youtube-line: youtube line
-      preview: fr-fi-checkbox-circle-line
+        fr-icon-account-fill: account filled
+        fr-icon-account-line: account line
+        fr-icon-add-circle-fill: add-circle filled
+        fr-icon-add-circle-line: add-circle line
+        fr-icon-add-line: add line
+        fr-icon-alert-fill: alert filled
+        fr-icon-alert-line: alert line
+        fr-icon-arrow-down-line: arrow-down line
+        fr-icon-arrow-down-s-line: arrow-down-s line
+        fr-icon-arrow-go-back-fill: arrow go back filled
+        fr-icon-arrow-go-back-line: arrow go back line
+        fr-icon-arrow-left-line: arrow-left line
+        fr-icon-arrow-left-s-line: arrow-left-s line
+        fr-icon-arrow-right-line: arrow-right line
+        fr-icon-arrow-right-s-line: arrow-right-s line
+        fr-icon-arrow-up-fill: arrow up filled
+        fr-icon-arrow-up-line: arrow-up line
+        fr-icon-arrow-up-s-fill: arrow up s filled
+        fr-icon-arrow-up-s-line: arrow-up-s line
+        fr-icon-attachment-fill: pièce jointe filled
+        fr-icon-attachment-line: pièce jointe line
+        fr-icon-calendar-fill: calendar filled
+        fr-icon-calendar-line: calendar line
+        fr-icon-check-line: check line
+        fr-icon-checkbox-circle-fill: checkbox-circle filled
+        fr-icon-checkbox-circle-line: checkbox-circle line
+        fr-icon-close-circle-fill: close-circle filled
+        fr-icon-close-circle-line: close-circle line
+        fr-icon-close-line: close line
+        fr-icon-daily-motion-fill: dailymotion filled
+        fr-icon-daily-motion-line: dailymotion line
+        fr-icon-delete-fill: delete filled
+        fr-icon-delete-line: delete line
+        fr-icon-download-line: download line
+        fr-icon-edit-fill: edit filled
+        fr-icon-edit-line: edit line
+        fr-icon-equalizer-fill: equalizer filled
+        fr-icon-equalizer-line: equalizer line
+        fr-icon-error-warning-fill: error-warning filled
+        fr-icon-error-warning-line: error-warning line
+        fr-icon-external-link-line: external-link line
+        fr-icon-eye-fill: eye filled
+        fr-icon-eye-line: eye line
+        fr-icon-eye-off-fill: eye-off filled
+        fr-icon-eye-off-line: eye-off line
+        fr-icon-facebook-fill: facebook filled
+        fr-icon-file-download-fill: file-download filled
+        fr-icon-file-download-line: file-download line
+        fr-icon-file-fill: file filled
+        fr-icon-file-line: file line
+        fr-icon-file-pdf-fill: file-pdf filled
+        fr-icon-file-pdf-line: file-pdf line
+        fr-icon-filter-fill: filtre filled
+        fr-icon-filter-line: filtre line
+        fr-icon-github-fill: github filled
+        fr-icon-github-line: github line
+        fr-icon-home-4-fill: home 4 filled
+        fr-icon-home-4-line: home 4 line
+        fr-icon-image-fill: image filled
+        fr-icon-image-line: image line
+        fr-icon-information-fill: information filled
+        fr-icon-information-line: information line
+        fr-icon-instagram-fill: instagram filled
+        fr-icon-instagram-line: instagram line
+        fr-icon-line-chart-fill: line chart filled
+        fr-icon-line-chart-line: line chart line
+        fr-icon-linkedin-box-fill: linkedin-box filled
+        fr-icon-lock-fill: lock filled
+        fr-icon-lock-line: lock line
+        fr-icon-mail-fill: mail filled
+        fr-icon-mail-line: mail line
+        fr-icon-map-pin-2-fill: map pin 2 filled
+        fr-icon-map-pin-2-line: map pin 2 line
+        fr-icon-menu-2-line: menu 2 filled
+        fr-icon-menu-fill: menu filled
+        fr-icon-npmjs-fill: npmjs filled
+        fr-icon-npmjs-line: npmjs line
+        fr-icon-pause-circle-fill: pause-circle filled
+        fr-icon-pause-circle-line: pause-circle line
+        fr-icon-phone-fill: phone filled
+        fr-icon-phone-line: phone line
+        fr-icon-play-fill: play filled
+        fr-icon-play-line: play line
+        fr-icon-printer-fill: printer filled
+        fr-icon-printer-line: printer line
+        fr-icon-question-fill: question filled
+        fr-icon-question-line: question line
+        fr-icon-remixicon-fill: remixicon filled
+        fr-icon-remixicon-line: remixicon line
+        fr-icon-road-map-fill: road map filled
+        fr-icon-road-map-line: road map line
+        fr-icon-rss-fill: rss filled
+        fr-icon-rss-line: rss line
+        fr-icon-save-fill: save filled
+        fr-icon-save-line: save line
+        fr-icon-search-fill: search filled
+        fr-icon-search-line: search line
+        fr-icon-slack-fill: slack filled
+        fr-icon-slack-line: slack line
+        fr-icon-snapchat-fill: snapchat filled
+        fr-icon-snapchat-line: snapchat line
+        fr-icon-subtract-line: subtract line
+        fr-icon-telegram-fill: telegram filled
+        fr-icon-telegram-line: telegram line
+        fr-icon-theme-fill: theme filled
+        fr-icon-tiktok-fill: tiktok filled
+        fr-icon-tiktok-line: tiktok line
+        fr-icon-timer-fill: timer filled
+        fr-icon-timer-line: timer line
+        fr-icon-twitch-fill: twitch filled
+        fr-icon-twitch-line: twitch line
+        fr-icon-twitter-fill: twitter filled
+        fr-icon-twitter-line: twitter line
+        fr-icon-upload-2-fill: upload filled
+        fr-icon-upload-2-line: upload line
+        fr-icon-user-fill: user filled
+        fr-icon-user-line: user line
+        fr-icon-vimeo-fill: vimeo filled
+        fr-icon-vimeo-line: vimeo line
+        fr-icon-volume-down-fill: volume-down filled
+        fr-icon-volume-down-line: volume-down line
+        fr-icon-volume-mute-fill: volume-mute filled
+        fr-icon-volume-mute-line: volume-mute line
+        fr-icon-volume-up-fill: volume-up filled
+        fr-icon-volume-up-line: volume-up line
+        fr-icon-youtube-fill: youtube filled
+        fr-icon-youtube-line: youtube line
+        fr-icon-zoom-in-fill: zoom in filled
+        fr-icon-zoom-in-line: zoom in line
+        fr-icon-zoom-out-fill: zoom out filled
+        fr-icon-zoom-out-line: zoom out line
+      preview: fr-icon-checkbox-circle-line
   fields:
     label:
       type: text
@@ -159,4 +182,4 @@ tag:
       type: text
       label: URL
       description: The tag URL. Optional.
-      preview: https://example.com
+      preview: 'https://example.com'

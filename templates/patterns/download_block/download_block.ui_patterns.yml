@@ -1,0 +1,169 @@
+download_block:
+  label: Download block
+  description: To highlight the document to be downloaded, use a download block. This block is an instance of the MD card. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/980025345/T+l+chargement+de+fichier#%5BinlineExtension%5DBloc-de-t%C3%A9l%C3%A9chargement
+  settings:
+    new_window:
+      type: boolean
+      label: Open is a new window?
+      preview: true
+    direct_download:
+      type: boolean
+      label: Direct download?
+      description: The attribute download allows the direct download of the resource, without opening it.
+    detail_icon:
+      type: select
+      label: Detail icon
+      description: Avaliable detail icons.
+      options:
+        fr-icon-account-fill: account filled
+        fr-icon-account-line: account line
+        fr-icon-add-circle-fill: add-circle filled
+        fr-icon-add-circle-line: add-circle line
+        fr-icon-add-line: add line
+        fr-icon-alert-fill: alert filled
+        fr-icon-alert-line: alert line
+        fr-icon-arrow-down-line: arrow-down line
+        fr-icon-arrow-down-s-line: arrow-down-s line
+        fr-icon-arrow-go-back-fill: arrow go back filled
+        fr-icon-arrow-go-back-line: arrow go back line
+        fr-icon-arrow-left-line: arrow-left line
+        fr-icon-arrow-left-s-line: arrow-left-s line
+        fr-icon-arrow-right-line: arrow-right line
+        fr-icon-arrow-right-s-line: arrow-right-s line
+        fr-icon-arrow-up-fill: arrow up filled
+        fr-icon-arrow-up-line: arrow-up line
+        fr-icon-arrow-up-s-fill: arrow up s filled
+        fr-icon-arrow-up-s-line: arrow-up-s line
+        fr-icon-attachment-fill: pièce jointe filled
+        fr-icon-attachment-line: pièce jointe line
+        fr-icon-calendar-fill: calendar filled
+        fr-icon-calendar-line: calendar line
+        fr-icon-check-line: check line
+        fr-icon-checkbox-circle-fill: checkbox-circle filled
+        fr-icon-checkbox-circle-line: checkbox-circle line
+        fr-icon-close-circle-fill: close-circle filled
+        fr-icon-close-circle-line: close-circle line
+        fr-icon-close-line: close line
+        fr-icon-daily-motion-fill: dailymotion filled
+        fr-icon-daily-motion-line: dailymotion line
+        fr-icon-delete-fill: delete filled
+        fr-icon-delete-line: delete line
+        fr-icon-download-line: download line
+        fr-icon-edit-fill: edit filled
+        fr-icon-edit-line: edit line
+        fr-icon-equalizer-fill: equalizer filled
+        fr-icon-equalizer-line: equalizer line
+        fr-icon-error-warning-fill: error-warning filled
+        fr-icon-error-warning-line: error-warning line
+        fr-icon-external-link-line: external-link line
+        fr-icon-eye-fill: eye filled
+        fr-icon-eye-line: eye line
+        fr-icon-eye-off-fill: eye-off filled
+        fr-icon-eye-off-line: eye-off line
+        fr-icon-facebook-fill: facebook filled
+        fr-icon-file-download-fill: file-download filled
+        fr-icon-file-download-line: file-download line
+        fr-icon-file-fill: file filled
+        fr-icon-file-line: file line
+        fr-icon-file-pdf-fill: file-pdf filled
+        fr-icon-file-pdf-line: file-pdf line
+        fr-icon-filter-fill: filtre filled
+        fr-icon-filter-line: filtre line
+        fr-icon-github-fill: github filled
+        fr-icon-github-line: github line
+        fr-icon-home-4-fill: home 4 filled
+        fr-icon-home-4-line: home 4 line
+        fr-icon-image-fill: image filled
+        fr-icon-image-line: image line
+        fr-icon-information-fill: information filled
+        fr-icon-information-line: information line
+        fr-icon-instagram-fill: instagram filled
+        fr-icon-instagram-line: instagram line
+        fr-icon-line-chart-fill: line chart filled
+        fr-icon-line-chart-line: line chart line
+        fr-icon-linkedin-box-fill: linkedin-box filled
+        fr-icon-lock-fill: lock filled
+        fr-icon-lock-line: lock line
+        fr-icon-mail-fill: mail filled
+        fr-icon-mail-line: mail line
+        fr-icon-map-pin-2-fill: map pin 2 filled
+        fr-icon-map-pin-2-line: map pin 2 line
+        fr-icon-menu-2-line: menu 2 filled
+        fr-icon-menu-fill: menu filled
+        fr-icon-npmjs-fill: npmjs filled
+        fr-icon-npmjs-line: npmjs line
+        fr-icon-pause-circle-fill: pause-circle filled
+        fr-icon-pause-circle-line: pause-circle line
+        fr-icon-phone-fill: phone filled
+        fr-icon-phone-line: phone line
+        fr-icon-play-fill: play filled
+        fr-icon-play-line: play line
+        fr-icon-printer-fill: printer filled
+        fr-icon-printer-line: printer line
+        fr-icon-question-fill: question filled
+        fr-icon-question-line: question line
+        fr-icon-remixicon-fill: remixicon filled
+        fr-icon-remixicon-line: remixicon line
+        fr-icon-road-map-fill: road map filled
+        fr-icon-road-map-line: road map line
+        fr-icon-rss-fill: rss filled
+        fr-icon-rss-line: rss line
+        fr-icon-save-fill: save filled
+        fr-icon-save-line: save line
+        fr-icon-search-fill: search filled
+        fr-icon-search-line: search line
+        fr-icon-slack-fill: slack filled
+        fr-icon-slack-line: slack line
+        fr-icon-snapchat-fill: snapchat filled
+        fr-icon-snapchat-line: snapchat line
+        fr-icon-subtract-line: subtract line
+        fr-icon-telegram-fill: telegram filled
+        fr-icon-telegram-line: telegram line
+        fr-icon-theme-fill: theme filled
+        fr-icon-tiktok-fill: tiktok filled
+        fr-icon-tiktok-line: tiktok line
+        fr-icon-timer-fill: timer filled
+        fr-icon-timer-line: timer line
+        fr-icon-twitch-fill: twitch filled
+        fr-icon-twitch-line: twitch line
+        fr-icon-twitter-fill: twitter filled
+        fr-icon-twitter-line: twitter line
+        fr-icon-upload-2-fill: upload filled
+        fr-icon-upload-2-line: upload line
+        fr-icon-user-fill: user filled
+        fr-icon-user-line: user line
+        fr-icon-vimeo-fill: vimeo filled
+        fr-icon-vimeo-line: vimeo line
+        fr-icon-volume-down-fill: volume-down filled
+        fr-icon-volume-down-line: volume-down line
+        fr-icon-volume-mute-fill: volume-mute filled
+        fr-icon-volume-mute-line: volume-mute line
+        fr-icon-volume-up-fill: volume-up filled
+        fr-icon-volume-up-line: volume-up line
+        fr-icon-youtube-fill: youtube filled
+        fr-icon-youtube-line: youtube line
+        fr-icon-zoom-in-fill: zoom in filled
+        fr-icon-zoom-in-line: zoom in line
+        fr-icon-zoom-out-fill: zoom out filled
+        fr-icon-zoom-out-line: zoom out line
+      preview: fr-icon-file-pdf-line
+  fields:
+    name:
+      type: text
+      label: Block title
+      description: Text title of the block.
+      preview: Download PDF lorem ipsum sit dolores amet
+    url:
+      type: text
+      label: File url
+      preview: '#pdf'
+    detail:
+      type: text
+      label: File detail
+      description: File format and weight.
+      preview: PDF – 61,88 Ko
+    description:
+      type: text
+      label: Description
+      description: Short description. Optional.
+      preview: Description texte body small regular consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore…

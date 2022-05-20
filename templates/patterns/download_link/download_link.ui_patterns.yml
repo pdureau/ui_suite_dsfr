@@ -1,0 +1,27 @@
+download_link:
+  label: Download link
+  description: The download link makes one or more files available for download along with the text. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/980025345/T+l+chargement+de+fichier
+  settings:
+    new_window:
+      type: boolean
+      label: Open is a new window?
+      preview: true
+    direct_download:
+      type: boolean
+      label: Direct download?
+      description: The attribute download allows the direct download of the resource, without opening it.
+  fields:
+    name:
+      type: text
+      label: File name
+      description: Text name of the file.
+      preview: Download document lorem ipsum sit dolores amet
+    url:
+      type: text
+      label: File url
+      preview: '#'
+    detail:
+      type: text
+      label: File detail
+      description: File format and weight.
+      preview: JPG – 61,88 ko

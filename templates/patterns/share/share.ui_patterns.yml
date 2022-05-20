@@ -14,7 +14,7 @@ share:
         The link element contains the following elements:
           - id: Share provider machine name (facebook, twitter, mail…);
           - title: Link label (Share on Facebook, Share by email…);
-          - uri: Link URI."
+          - url: Link URI."
       preview:
         - id: facebook
           title: Share on Facebook

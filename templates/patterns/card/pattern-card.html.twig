@@ -1,8 +1,14 @@
 {% if variant is not empty and variant|lower != 'default' %}
-  {% set attributes = attributes.addClass('fr-card--' ~ variant|lower|replace({'_': '-'})) %}
+  {% set variants = variant|split('__') %}
+  {% for variant in variants %}
+    {% set attributes = attributes.addClass('fr-card--' ~ variant|lower|replace({'_': '-'})) %}
+    {% if horisontal_ratio %}
+      {% set attributes = attributes.addClass('fr-card--' ~ variant|lower|replace({'_': '-'}) ~ '-' ~ horisontal_ratio) %}
+    {% endif %}
+  {% endfor %}
 {% endif %}
 
-{% if enlarge_link %}
+{% if enlarge_link and not footer %}
   {% set attributes = attributes.addClass('fr-enlarge-link') %}
 {% endif %}
 
@@ -10,8 +16,8 @@
   {% set attributes = attributes.addClass('fr-card--no-arrow') %}
 {% endif %}
 
-{% if grey_hover %}
-  {% set attributes = attributes.addClass('fr-card--grey') %}
+{% if bg_boxes %}
+  {% set attributes = attributes.addClass('fr-card--' ~ bg_boxes) %}
 {% endif %}
 
 {% set title_tag = title_tag ?? 'h4' %}
@@ -19,15 +25,35 @@
 {% if title %}
   <div{{ attributes.addClass('fr-card') }}>
     <div class="fr-card__body">
-      <{{ title_tag }} class="fr-card__title">
-        {{ title }}
-      </{{ title_tag }}>
-      {% if description %}<div class="fr-card__desc">{{ description }}</div>{% endif %}
-      {% if detail %}<div class="fr-card__detail">{{ detail }}</div>{% endif %}
+      <div class="fr-card__content">
+        <{{ title_tag }} class="fr-card__title">
+          {{ title }}
+        </{{ title_tag }}>
+        {% if description %}<p class="fr-card__desc">{{ description }}</p>{% endif %}
+        {% if detail or tags %}
+          <div class="fr-card__start">
+            {{ tags_badges }}
+            <p class="fr-card__detail {{ detail_icon }}">{{ detail }}</p>
+          </div>
+        {% endif %}
+        {% if detail_end %}
+          <div class="fr-card__end">
+            <p class="fr-card__detail {{ detail_end_icon }}">{{ detail_end }}</p>
+          </div>
+        {% endif %}
+      </div>
+      {% if footer %}
+        <div class="fr-card__footer">
+          {{ footer }}
+        </div>
+      {% endif %}
     </div>
     {% if image %}
-      <div class="fr-card__img">
-        {{ image }}
+      <div class="fr-card__header">
+        <div class="fr-card__img">
+          {{ image }}
+        </div>
+        {{ image_badges }}
       </div>
     {% endif %}
   </div>

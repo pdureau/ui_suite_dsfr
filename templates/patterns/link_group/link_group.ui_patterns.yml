@@ -1,5 +1,5 @@
 link_group:
-  label: Links Group
+  label: Link Group
   description: Groups links in a list of links. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217284725/Liens+-+Links
   fields:
     links:

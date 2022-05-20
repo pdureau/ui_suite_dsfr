@@ -1,0 +1,8 @@
+france_connect:
+  label: FranceConnect
+  description: The FranceConnect button allows an administration (or a software supplier acting on behalf of an administration) to offer a connection or a simplified account creation. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/967868417/Bouton+FranceConnect
+  variants:
+    default:
+      label: Default
+    plus:
+      label: Plus

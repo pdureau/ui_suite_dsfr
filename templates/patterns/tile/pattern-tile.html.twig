@@ -10,6 +10,10 @@
   {% set attributes = attributes.addClass('fr-tile--grey') %}
 {% endif %}
 
+{% if display_md %}
+  {% set attributes = attributes.addClass('fr-tile--' ~ display_md ~ '-md') %}
+{% endif %}
+
 {% set title_tag = title_tag ?? 'h4' %}
 
 {% if title %}

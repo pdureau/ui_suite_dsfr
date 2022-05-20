@@ -2,21 +2,23 @@
   {% set attributes = attributes.addClass('fr-tag--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
 
-{% if icon is not empty and icon_position is not empty %}
-  {% set attributes = attributes.addClass(icon).addClass('fr-tag--icon-' ~ icon_position) %}
-{% endif %}
-
-
-{% if color_schema %}
-  {% set attributes = attributes.addClass('fr-tag--' ~ color_schema) %}
-{% endif %}
-
 {% if url %}
+  {% if icon %}
+    {% set attributes = attributes.addClass(icon).addClass('fr-tag--icon-left') %}
+  {% endif %}
+  {% if color_schema %}
+    {% set attributes = attributes.addClass('fr-tag--' ~ color_schema) %}
+  {% endif %}
   <a{{ attributes.addClass('fr-tag').setAttribute('href', url) }}>
     {{ label }}
   </a>
 {% else %}
-  <p{{ attributes.addClass('fr-tag') }}>
+  {% set tag = attributes.hasAttribute('aria-pressed') or dismissible ? 'button' : 'p' %}
+
+  {% if dismissible and not attributes.hasAttribute('aria-pressed') %}
+    {% set attributes = attributes.addClass('fr-tag--dismiss').setAttribute('onclick', 'event.preventDefault(); this.parentNode.removeChild(this);') %}
+  {% endif %}
+  <{{ tag }}{{ attributes.addClass('fr-tag') }}>
     {{ label }}
-  </p>
+  </{{ tag }}>
 {% endif %}

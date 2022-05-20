@@ -111,6 +111,7 @@ function _ui_suite_dsfr_add_link_class(&$element, string $class) {
  * Implements hook_form_FORM_ID_alter().
  */
 function ui_suite_dsfr_form_alter(&$form, &$form_state, $form_id) {
+  $form['#attributes']['novalidate'] = 'novalidate';
   // Style form buttons like button patterns.
   if (isset($form['actions'])) {
     $actions = Element::children($form['actions']);
@@ -550,7 +551,20 @@ function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
     && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost()))) {
     $variables['is_external'] = TRUE;
     $variables['target'] = 'blank';
-    $variables['title'] = t('@title - opens a new window', ['@title' => $variables['title'] ?? $variables['label']]);
+    $variables['title'] = t('@title - new window', ['@title' => $variables['title'] ?? $variables['label']]);
+  }
+}
+
+/**
+ * Implements hook_preprocess_pattern_button().
+ */
+function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
+  // Mark external urls.
+  if (isset($variables['url'])
+    && (UrlHelper::isExternal($variables['url'])
+      && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost()))) {
+    $variables['attributes']['target'] = '_blank';
+    $variables['title'] = t('@title - new window', ['@title' => $variables['title'] ?? $variables['label']]);
   }
 }
 

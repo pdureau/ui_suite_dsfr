@@ -41,10 +41,10 @@ responsive_media:
     transcription_link:
       type: render
       label: Transcription Link
-      description: A 'link' pattern. Optional.
+      description: A 'button' pattern. Optional.
       preview:
         type: pattern
-        id: link
+        id: button
         fields:
           label: Transcription button label
           url: '/'

@@ -26,11 +26,15 @@
       <p class="fr-text--sm">{{ text }}</p>
     </div>
     {% set buttons = [
-      pattern('button', {'label': 'Accept all'|t }),
-      pattern('button', {'label': 'Refuse all'|t }),
+      pattern('button', {'label': 'Accept all'|t,
+        'attributes': {title: 'Accept all cookies'|t}
+      }),
+      pattern('button', {'label': 'Refuse all'|t,
+        'attributes': {title: 'Refuse all cookies'|t}
+      }),
       pattern('button', {'label': 'Personalize'|t,
         'attributes':
-        {'data-fr-opened': 'false', 'aria-controls': 'fr-consent-modal'}
+        {'data-fr-opened': 'false', 'aria-controls': 'fr-consent-modal', title: 'Personalize cookies'|t}
       }, 'secondary')
     ] %}
     {{ pattern('button_group', {
@@ -45,7 +49,7 @@
         <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
           <div class="fr-modal__body">
             <div class="fr-modal__header">
-              <button class="fr-link--close fr-link" aria-controls="fr-consent-modal">
+              <button class="fr-btn fr-btn--close" aria-controls="fr-consent-modal" title="{{ 'Close'|t }}">
                 {{ 'Close'|t }}
               </button>
             </div>

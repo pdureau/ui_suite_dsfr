@@ -1,0 +1,51 @@
+download_link_group:
+  label: Download link group
+  description: It is possible to make a list of download links. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/980025345/T+l+chargement+de+fichier#Liste-de-liens-de-t%C3%A9l%C3%A9chargement
+  settings:
+    bordered:
+      type: boolean
+      label: With border?
+      preview: true
+    title_tag:
+      type: select
+      label: Title tag
+      description: Title html tag. Can be 'h2'-'h6'.
+      options:
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+      preview: h4
+  fields:
+    title:
+      type: text
+      label: Title
+      description: The group title.
+      preview: Download group title
+    downloads:
+      type: array
+      label: Downloads items
+      description: Download link patterns array.
+      preview:
+      - type: pattern
+        id: download_link
+        settings:
+          new_window: true
+        fields:
+          name: Download document 1
+          url: '#'
+          detail: PDF – 161,88 Ko
+      - type: pattern
+        id: download_link
+        fields:
+          name: Download document 2
+          url: '#'
+          detail: PNG – 61,88 Ko
+      - type: pattern
+        id: download_link
+        fields:
+          name: Download document 3
+          url: '#'
+          detail: JPG – 261,88 Ko
+

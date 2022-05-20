@@ -7,7 +7,7 @@
 
             <!-- Main logo -->
             <div class="fr-header__logo">
-              <a href="/" title="{{ 'Homepage'|t }} - {{ service_title }}">
+              <a href="/" title="{{ 'Homepage'|t }} - {{ service_title|striptags }}">
                 <p class="fr-logo"{% if logo.title %} title="{{ logo.title }}"{% endif %}>
                   {% if logo.text %}
                     {{ logo.text }}
@@ -48,7 +48,7 @@
           <!-- Header service -->
           <div class="fr-header__service">
             <!-- Header service title-->
-            <a href="/" title="{{ 'Homepage'|t }} - {{ service_title }}">
+            <a href="/" title="{{ 'Homepage'|t }} - {{ service_title|striptags }}">
               <p class="fr-header__service-title">{{ service_title }}</p>
             </a>
             <!-- Header service tagline-->
@@ -71,7 +71,7 @@
             {% if tools_search %}
               <div class="fr-header__search fr-modal" id="{{ search_mid }}">
                 <div class="fr-container fr-container-lg--fluid">
-                  <button class="fr-link--close fr-link" aria-controls="{{ search_mid }}">{{ 'Close'|t }}</button>
+                  <button class="fr-btn fr-btn--close" aria-controls="{{ search_mid }}" title="{{ 'Close'|t }}">{{ 'Close'|t }}</button>
                   {{ tools_search }}
                 </div>
               </div>
@@ -84,7 +84,7 @@
   {% if navbar %}
     <div class="fr-header__menu fr-modal" id="{{ mobile_menu_mid }}" aria-labelledby="fr-btn-menu-mobile">
       <div class="fr-container">
-        <button class="fr-link--close fr-link" aria-controls="{{ mobile_menu_mid }}">{{ 'Close'|t }}</button>
+        <button class="fr-btn fr-btn--close" aria-controls="{{ mobile_menu_mid }}" title="{{ 'Close'|t }}">{{ 'Close'|t }}</button>
         <div class="fr-header__menu-links"></div>
         {{ navbar }}
       </div>

@@ -1,0 +1,18 @@
+{% if new_window %}
+  {% set attributes = attributes.setAttribute('target', '_blank') %}
+{% endif %}
+
+{% if direct_download %}
+  {% set attributes = attributes.setAttribute('download', true) %}
+{% endif %}
+
+{% if name and url %}
+  <div class="fr-download fr-enlarge-link fr-download--card">
+    <a{{ attributes.setAttribute('href', url).addClass('fr-download__link') }}>{{ name }}
+      <span class="fr-download__detail {{ detail_icon }}">{{ detail }}</span>
+    </a>
+    {% if description %}
+      <p class="fr-download__desc">{{ description }}</p>
+    {% endif %}
+  </div>
+{% endif %}

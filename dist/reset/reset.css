@@ -1,0 +1,9 @@
+/**
+ * Reset for admin toolbar links.
+ */
+.toolbar a {
+  background-image: none;
+  cursor: pointer;
+  --hover-tint: none;
+  --active-tint: none;
+}

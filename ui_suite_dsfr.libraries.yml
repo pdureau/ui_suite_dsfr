@@ -5,7 +5,9 @@ dsfr:
     gpl-compatible: false
   js:
     # We don't use dsfr.module.min.js because of conflict with drupal js.
-    dist/js/dsfr.module.js: { }
+    dist/dsfr.module.js: { }
   css:
     theme:
-      dist/css/dsfr.min.css: { minified: true }
+      dist/dsfr.min.css: { minified: true }
+      dist/utility/icons/icons.min.css: { minified: true }
+      dist/reset/reset.css: {}

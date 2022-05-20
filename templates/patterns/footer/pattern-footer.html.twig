@@ -25,7 +25,7 @@
     <div class="fr-footer__body">
       <div class="fr-footer__brand fr-enlarge-link">
         {% if operator_logo is empty %}
-          <a href="/" title="{{ 'Back to home - @name'|t({'@name': service_title}) }}">
+          <a href="/" title="{{ 'Back to home - @name'|t({'@name': service_title|striptags}) }}">
         {% endif %}
           <p class="fr-logo"{% if logo.title %} title="{{ logo.title }}"{% else %} title="{{ 'French Republic'|t }}"{% endif %}>
             {% if logo.text %}
@@ -40,7 +40,7 @@
           </a>
         {% endif %}
         {% if operator_logo %}
-          <a class="fr-footer__brand-link" href="/" title="{{ 'Back to home - @name'|t({'@name': service_title}) }}">
+          <a class="fr-footer__brand-link" href="/" title="{{ 'Back to home - @name'|t({'@name': service_title|striptags}) }}">
             {{ operator_logo }}
           </a>
         {% endif %}

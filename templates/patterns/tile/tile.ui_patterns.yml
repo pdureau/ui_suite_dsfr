@@ -28,6 +28,13 @@ tile:
         h5: h5
         h6: h6
       preview: h4
+    display_md:
+      type: select
+      label: Display MD
+      description: Can be vertical or horizontal from the MD breakpoint.
+      options:
+        horizontal: Horizontal
+        vertical: Vertical
   fields:
     image:
       type: render
