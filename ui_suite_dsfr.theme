@@ -169,7 +169,7 @@ function ui_suite_dsfr_preprocess_input(array &$variables) {
   // Here we need to add aria-describedby prop for single checkbox only.
   if (in_array($variables['element']['#type'], ['checkbox', 'radio'])) {
     if (isset($variables['element']['#delta'])
-      && $variables['element']['#errors']) {
+      && !empty($variables['element']['#errors'])) {
       $variables['attributes']['aria-describedby'] = $error_id;
     }
     return;
@@ -183,7 +183,7 @@ function ui_suite_dsfr_preprocess_input(array &$variables) {
   }
 
   $variables['attributes']['class'][] = $class;
-  if ($variables['element']['#errors']) {
+  if (!empty($variables['element']['#errors'])) {
     $variables['attributes']['class'][] = $class . '--error';
     // Move error to input, so can be used in input template.
     $variables['errors'] = $variables['element']['#errors'];
@@ -198,7 +198,7 @@ function ui_suite_dsfr_preprocess_input(array &$variables) {
 function ui_suite_dsfr_preprocess_select(array &$variables) {
   $class = 'fr-select';
   $variables['attributes']['class'][] = $class;
-  if ($variables['element']['#errors']) {
+  if (!empty($variables['element']['#errors'])) {
     $error_id = 'error-desc--' . $variables['element']['#name'];
     $variables['attributes']['class'][] = $class . '--error';
     // Move error to input, so can be used in select template.
