@@ -564,8 +564,11 @@ function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
     && (UrlHelper::isExternal($variables['url'])
       && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost()))) {
     $variables['attributes']['target'] = '_blank';
+  }
+  if (isset($variables['target']) && $variables['target'] === 'blank') {
     $variables['title'] = t('@title - new window', ['@title' => $variables['title'] ?? $variables['label']]);
   }
+
 }
 
 /**

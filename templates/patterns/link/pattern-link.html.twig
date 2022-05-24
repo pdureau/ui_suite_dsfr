@@ -1,11 +1,11 @@
-{% if variant is not empty and variant|lower != 'default' and is_external is empty %}
+{% if variant is not empty and variant|lower != 'default' and not is_external %}
   {% set attributes = attributes.addClass('fr-link--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
 {% set attributes = attributes.addClass('fr-link') %}
-{% if icon is not empty and is_external is empty %}
+{% if icon is not empty and not is_external %}
   {% set attributes = attributes.addClass(icon).addClass('fr-link--icon-' ~ icon_position) %}
 {% endif %}
-{% if icon_position is not empty and is_external is empty %}
+{% if icon_position is not empty and not is_external %}
   {% set attributes = attributes.addClass('fr-link--icon-' ~ icon_position) %}
 {% endif %}
 
@@ -15,7 +15,7 @@
 
 {% if is_external %}
   {% set attributes = attributes.setAttribute('rel', 'noopener') %}
-  {% if force_internal is empty %}
+  {% if not force_internal %}
     {% set attributes = attributes.removeClass('fr-link') %}
   {% endif %}
 {% endif %}
