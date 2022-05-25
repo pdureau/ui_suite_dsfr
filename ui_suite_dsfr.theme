@@ -6,6 +6,7 @@
  */
 
 use Drupal\Component\Render\MarkupInterface;
+use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Template\Attribute;
@@ -215,7 +216,9 @@ function ui_suite_dsfr_theme_suggestions_form_element_alter(array &$suggestions,
   if (isset($variables['element']['#id'])) {
     $suggestions[] = $hook . '__' . $variables['element']['#id'];
   }
-  $suggestions[] = $hook . '__' . $variables['element']['#type'];
+  if (isset($variables['element']['#type'])) {
+    $suggestions[] = $hook . '__' . $variables['element']['#type'];
+  }
 }
 
 /**
@@ -261,7 +264,7 @@ function ui_suite_dsfr_preprocess_form_element(array &$variables) {
   }
   $variables['attributes']['class'][] = $class;
 
-  if ($variables['errors'] && isset($error_class)) {
+  if (!empty($variables['errors']) && isset($error_class)) {
     $variables['attributes']['class'][] = $error_class;
   }
 
@@ -275,13 +278,14 @@ function ui_suite_dsfr_preprocess_form_element(array &$variables) {
 function ui_suite_dsfr_preprocess_fieldset(array &$variables) {
   unset($variables['attributes']['aria-describedby']);
   $variables['attributes']['class'][] = 'fr-fieldset';
-  $legend_id = 'fs-legend--' . $variables['element']['#name'];
+  $name = $variables['element']['#name'] = $variables['element']['#name'] ?? 'fs-' . Crypt::randomBytesBase64(8);
+  $legend_id = 'fs-legend--' . $name;
   $variables['attributes']['aria-labelledby'] = $legend_id;
   $variables['legend']['attributes']['id'] = $legend_id;
   // In case of error we need additional attributes.
-  if ($variables['errors']) {
+  if (!empty($variables['errors'])) {
     $variables['attributes']['class'][] = 'fr-fieldset--error';
-    $variables['error_id'] = 'error-desc--' . $variables['element']['#name'];
+    $variables['error_id'] = 'error-desc--' . $name;
     $variables['attributes']['aria-labelledby'] .= ' ' . $variables['error_id'];
   }
 }
