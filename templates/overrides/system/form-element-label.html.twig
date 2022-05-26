@@ -26,7 +26,7 @@
 {% if title is not empty or required -%}
   <label{{ attributes.addClass(classes) }}>{{ title }}
     {% if description.content %}
-      <span class="fr-hint-text">{{ description.content }}</span>
+      <span{{ description.attributes.addClass('fr-hint-text) }}>{{ description.content }}</span>
     {% endif %}
   </label>
 {%- endif %}
