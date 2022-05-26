@@ -18,7 +18,7 @@
   {% set attributes = attributes.addClass('fr-content-media--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
 {% if image %}
-  <figure{{ attributes.setAttribute('role', 'group') }}{% if caption %} aria-label="{{ caption }}"{% endif %}>
+  <figure{{ attributes.addClass('fr-content-media').setAttribute('role', 'group') }}{% if caption %} aria-label="{{ caption }}"{% endif %}>
     <div class="fr-content-media__img">
       {{ image }}
     </div>
@@ -27,7 +27,7 @@
     {% endif %}
   </figure>
 {% elseif video %}
-  <div{{ attributes }}>
+  <div{{ attributes.addClass('fr-content-media') }}>
     <div class="fr-responsive-vid{{ ratio == '4x3' ? ' fr-responsive-vid--4x3' }}">
       {{ video }}
     </div>
