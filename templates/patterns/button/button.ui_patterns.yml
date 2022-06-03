@@ -44,131 +44,597 @@ button:
       label: Icon
       description: Avaliable button icons.
       options:
+        fr-icon-account-circle-fill: account circle fill
+        fr-icon-account-circle-line: account circle line
         fr-icon-account-fill: account filled
         fr-icon-account-line: account line
+        fr-icon-account-pin-circle-fill: account pin circle fill
+        fr-icon-account-pin-circle-line: account pin circle line
         fr-icon-add-circle-fill: add-circle filled
         fr-icon-add-circle-line: add-circle line
         fr-icon-add-line: add line
+        fr-icon-admin-fill: admin fill
+        fr-icon-admin-line: admin line
+        fr-icon-alarm-warning-fill: alarm warning fill
+        fr-icon-alarm-warning-line: alarm warning line
         fr-icon-alert-fill: alert filled
         fr-icon-alert-line: alert line
+        fr-icon-anchor-fill: anchor fill
+        fr-icon-anchor-line: anchor line
+        fr-icon-ancient-gate-fill: ancient gate fill
+        fr-icon-ancient-gate-line: ancient gate line
+        fr-icon-ancient-pavilion-fill: ancient pavilion fill
+        fr-icon-ancient-pavilion-line: ancient pavilion line
+        fr-icon-archive-fill: archive fill
+        fr-icon-archive-line: archive line
+        fr-icon-arrow-down-fill: arrow down fill
         fr-icon-arrow-down-line: arrow-down line
+        fr-icon-arrow-down-s-fill: arrow down s fill
         fr-icon-arrow-down-s-line: arrow-down-s line
         fr-icon-arrow-go-back-fill: arrow go back filled
         fr-icon-arrow-go-back-line: arrow go back line
+        fr-icon-arrow-go-forward-fill: arrow go forward fill
+        fr-icon-arrow-go-forward-line: arrow go forward line
+        fr-icon-arrow-left-fill: arrow left fill
         fr-icon-arrow-left-line: arrow-left line
+        fr-icon-arrow-left-s-fill: arrow left s fill
+        fr-icon-arrow-left-s-first-line: arrow left s first line
+        fr-icon-arrow-left-s-line-double: arrow left s line double
         fr-icon-arrow-left-s-line: arrow-left-s line
+        fr-icon-arrow-right-fill: arrow right fill
         fr-icon-arrow-right-line: arrow-right line
+        fr-icon-arrow-right-s-fill: arrow right s fill
+        fr-icon-arrow-right-s-last-line: arrow right s last line
+        fr-icon-arrow-right-s-line-double: arrow right s line double
         fr-icon-arrow-right-s-line: arrow-right-s line
+        fr-icon-arrow-right-up-line: arrow right up line
         fr-icon-arrow-up-fill: arrow up filled
         fr-icon-arrow-up-line: arrow-up line
         fr-icon-arrow-up-s-fill: arrow up s filled
         fr-icon-arrow-up-s-line: arrow-up-s line
+        fr-icon-article-fill: article fill
+        fr-icon-article-line: article line
         fr-icon-attachment-fill: pièce jointe filled
         fr-icon-attachment-line: pièce jointe line
+        fr-icon-award-fill: award fill
+        fr-icon-award-line: award line
+        fr-icon-ball-pen-fill: ball pen fill
+        fr-icon-ball-pen-line: ball pen line
+        fr-icon-bank-card-fill: bank card fill
+        fr-icon-bank-card-line: bank card line
+        fr-icon-bank-fill: bank fill
+        fr-icon-bank-line: bank line
+        fr-icon-bar-chart-box-fill: bar chart box fill
+        fr-icon-bar-chart-box-line: bar chart box line
+        fr-icon-bike-fill: bike fill
+        fr-icon-bike-line: bike line
+        fr-icon-bluetooth-fill: bluetooth fill
+        fr-icon-bluetooth-line: bluetooth line
+        fr-icon-bold: bold
+        fr-icon-book-2-fill: book 2 fill
+        fr-icon-book-2-line: book 2 line
+        fr-icon-booklet-fill: booklet fill
+        fr-icon-booklet-line: booklet line
+        fr-icon-bookmark-fill: bookmark fill
+        fr-icon-bookmark-line: bookmark line
+        fr-icon-briefcase-fill: briefcase fill
+        fr-icon-briefcase-line: briefcase line
+        fr-icon-brush-3-fill: brush 3 fill
+        fr-icon-brush-3-line: brush 3 line
+        fr-icon-brush-fill: brush fill
+        fr-icon-brush-line: brush line
+        fr-icon-bug-fill: bug fill
+        fr-icon-bug-line: bug line
+        fr-icon-building-fill: building fill
+        fr-icon-building-line: building line
+        fr-icon-bus-fill: bus fill
+        fr-icon-bus-line: bus line
+        fr-icon-calendar-2-fill: calendar 2 fill
+        fr-icon-calendar-2-line: calendar 2 line
+        fr-icon-calendar-event-fill: alendar event fill
+        fr-icon-calendar-event-line: alendar event line
         fr-icon-calendar-fill: calendar filled
         fr-icon-calendar-line: calendar line
+        fr-icon-camera-fill: camera fill
+        fr-icon-camera-line: camera line
+        fr-icon-capsule-fill: capsule fill
+        fr-icon-capsule-line: capsule line
+        fr-icon-car-fill: car fill
+        fr-icon-car-line: car line
+        fr-icon-caravan-fill: caravan fill
+        fr-icon-caravan-line: caravan line
+        fr-icon-charging-pile-2-fill: charging pile 2 fill
+        fr-icon-charging-pile-2-line: charging pile 2 line
+        fr-icon-chat-2-fill: chat 2 fill
+        fr-icon-chat-2-line: chat 2 line
+        fr-icon-chat-3-fill: chat 3 fill
+        fr-icon-chat-3-line: chat 3 line
+        fr-icon-chat-check-fill: chat check fill
+        fr-icon-chat-check-line: chat check line
+        fr-icon-chat-delete-fill: chat delete fill
+        fr-icon-chat-delete-line: chat delete line
+        fr-icon-chat-poll-fill: chat poll fill
+        fr-icon-chat-poll-line: chat poll line
         fr-icon-check-line: check line
         fr-icon-checkbox-circle-fill: checkbox-circle filled
         fr-icon-checkbox-circle-line: checkbox-circle line
+        fr-icon-checkbox-fill: checkbox fill
+        fr-icon-checkbox-line: checkbox line
+        fr-icon-chrome-fill: chrome fill
+        fr-icon-chrome-line: chrome line
+        fr-icon-clapperboard-fill: clapperboard fill
+        fr-icon-clapperboard-line: clapperboard line
+        fr-icon-clipboard-fill: clipboard fill
+        fr-icon-clipboard-line: clipboard line
         fr-icon-close-circle-fill: close-circle filled
         fr-icon-close-circle-line: close-circle line
         fr-icon-close-line: close line
+        fr-icon-cloud-fill: cloud fill
+        fr-icon-cloud-line: cloud line
+        fr-icon-cloudy-2-fill: cloudy 2 fill
+        fr-icon-cloudy-2-line: cloudy 2 line
+        fr-icon-code-box-fill: code box fill
+        fr-icon-code-box-line: code box line
+        fr-icon-code-s-slash-line: code s slash line
+        fr-icon-code-view: code view
+        fr-icon-coin-fill: coin fill
+        fr-icon-community-fill: community fill
+        fr-icon-community-line: community line
+        fr-icon-compass-3-fill: compass 3 fill
+        fr-icon-compass-3-line: compass 3 line
+        fr-icon-computer-fill: computer fill
+        fr-icon-computer-line: computer line
+        fr-icon-contrast-fill: contrast fill
+        fr-icon-contrast-line: contrast line
+        fr-icon-copyright-fill: copyright fill
+        fr-icon-copyright-line: copyright line
+        fr-icon-crop-fill: crop fill
+        fr-icon-crop-line: crop line
+        fr-icon-cup-fill: cup fill
+        fr-icon-cup-line: cup line
+        fr-icon-cursor-fill: cursor fill
+        fr-icon-cursor-line: cursor line
+        fr-icon-customer-service-fill: customer service fill
+        fr-icon-customer-service-line: customer service line
         fr-icon-daily-motion-fill: dailymotion filled
         fr-icon-daily-motion-line: dailymotion line
+        fr-icon-dailymotion-fill: dailymotion fill
+        fr-icon-dailymotion-line: dailymotion line
+        fr-icon-dashboard-3-fill: dashboard 3 fill
+        fr-icon-dashboard-3-line: dashboard 3 line
+        fr-icon-database-fill: database fill
+        fr-icon-database-line: database line
         fr-icon-delete-fill: delete filled
         fr-icon-delete-line: delete line
+        fr-icon-device-fill: device fill
+        fr-icon-device-line: device line
+        fr-icon-discuss-fill: discuss fill
+        fr-icon-discuss-line: discuss line
+        fr-icon-dislike-fill: dislike fill
+        fr-icon-dislike-line: dislike line
+        fr-icon-dossier-fill: dossier fill
+        fr-icon-dossier-line: dossier line
+        fr-icon-download-fill: download fill
         fr-icon-download-line: download line
+        fr-icon-draft-fill: draft fill
+        fr-icon-draft-line: draft line
+        fr-icon-drag-move-2-fill: drag move 2 fill
+        fr-icon-drag-move-2-line: drag move 2 line
+        fr-icon-drop-fill: drop fill
+        fr-icon-drop-line: drop line
+        fr-icon-earth-fill: earth fill
+        fr-icon-earth-line: earth line
+        fr-icon-edge-fill: edge fill
+        fr-icon-edge-line: edge line
+        fr-icon-edit-box-fill: edit box fill
+        fr-icon-edit-box-line: edit box line
         fr-icon-edit-fill: edit filled
         fr-icon-edit-line: edit line
         fr-icon-equalizer-fill: equalizer filled
         fr-icon-equalizer-line: equalizer line
+        fr-icon-error-fill: error fill
+        fr-icon-error-line: error line
         fr-icon-error-warning-fill: error-warning filled
         fr-icon-error-warning-line: error-warning line
+        fr-icon-external-link-fill: external link fill
         fr-icon-external-link-line: external-link line
         fr-icon-eye-fill: eye filled
         fr-icon-eye-line: eye line
         fr-icon-eye-off-fill: eye-off filled
         fr-icon-eye-off-line: eye-off line
+        fr-icon-facebook-circle-fill: facebook circle fill
+        fr-icon-facebook-circle-line: facebook circle line
         fr-icon-facebook-fill: facebook filled
+        fr-icon-feedback-fill: feedback fill
+        fr-icon-feedback-line: feedback line
+        fr-icon-file-add-fill: file add fill
+        fr-icon-file-add-line: file add line
         fr-icon-file-download-fill: file-download filled
         fr-icon-file-download-line: file-download line
         fr-icon-file-fill: file filled
         fr-icon-file-line: file line
         fr-icon-file-pdf-fill: file-pdf filled
         fr-icon-file-pdf-line: file-pdf line
+        fr-icon-file-text-fill: file text fill
+        fr-icon-file-text-line: file text line
+        fr-icon-film-fill: film fill
+        fr-icon-film-line: film line
         fr-icon-filter-fill: filtre filled
         fr-icon-filter-line: filtre line
+        fr-icon-firefox-fill: firefox fill
+        fr-icon-firefox-line: firefox line
+        fr-icon-first-aid-kit-fill: first aid kit fill
+        fr-icon-first-aid-kit-line: first aid kit line
+        fr-icon-flag-fill: flag fill
+        fr-icon-flag-line: flag line
+        fr-icon-flashlight-fill: flashlight fill
+        fr-icon-flashlight-line: flashlight line
+        fr-icon-folder-2-fill: folder 2 fill
+        fr-icon-folder-2-line: folder 2 line
+        fr-icon-font-size: font size
+        fr-icon-france-fill: france fill
+        fr-icon-france-line: france line
+        fr-icon-gallery-fill: gallery fill
+        fr-icon-gallery-line: gallery line
+        fr-icon-gas-station-fill: gas station fill
+        fr-icon-gas-station-line: gas station line
+        fr-icon-gift-fill: gift fill
+        fr-icon-gift-line: gift line
+        fr-icon-git-branch-fill: git branch fill
+        fr-icon-git-branch-line: git branch line
+        fr-icon-git-commit-fill: git commit fill
+        fr-icon-git-commit-line: git commit line
+        fr-icon-git-merge-fill: git merge fill
+        fr-icon-git-merge-line: git merge line
+        fr-icon-git-pull-request-fill: git pull request fill
+        fr-icon-git-pull-request-line: git pull request line
+        fr-icon-git-repository-commits-fill: git repository commits fill
+        fr-icon-git-repository-commits-line: git repository commits line
+        fr-icon-git-repository-fill: git repository fill
+        fr-icon-git-repository-line: git repository line
+        fr-icon-git-repository-private-fill: git repository private fill
+        fr-icon-git-repository-private-line: git repository private line
         fr-icon-github-fill: github filled
         fr-icon-github-line: github line
+        fr-icon-global-fill: global fill
+        fr-icon-global-line: global line
+        fr-icon-goblet-fill: goblet fill
+        fr-icon-goblet-line: goblet line
+        fr-icon-google-fill: google fill
+        fr-icon-google-line: google line
+        fr-icon-government-fill: government fill
+        fr-icon-government-line: government line
+        fr-icon-group-fill: group fill
+        fr-icon-group-line: group line
+        fr-icon-h-1: h1
+        fr-icon-h-2: h2
+        fr-icon-h-3: h3
+        fr-icon-h-4: h4
+        fr-icon-h-5: h5
+        fr-icon-h-6: h6
+        fr-icon-hand-sanitizer-fill: hand sanitizer fill
+        fr-icon-hand-sanitizer-line: hand sanitizer line
+        fr-icon-hard-drive-2-fill: hard drive 2 fill
+        fr-icon-hard-drive-2-line: hard drive 2 line
+        fr-icon-hashtag: hashtag
+        fr-icon-headphone-fill: headphone fill
+        fr-icon-headphone-line: headphone line
+        fr-icon-health-book-fill: health book fill
+        fr-icon-health-book-line: health book line
+        fr-icon-heart-fill: heart fill
+        fr-icon-heart-line: heart line
+        fr-icon-heart-pulse-fill: heart pulse fill
+        fr-icon-heart-pulse-line: heart pulse line
+        fr-icon-highlight: highlight
         fr-icon-home-4-fill: home 4 filled
         fr-icon-home-4-line: home 4 line
+        fr-icon-hospital-fill: hospital fill
+        fr-icon-hospital-line: hospital line
+        fr-icon-hotel-fill: hotel fill
+        fr-icon-hotel-line: hotel line
+        fr-icon-ie-fill: ie fill
+        fr-icon-ie-line: ie line
+        fr-icon-image-add-fill: image add fill
+        fr-icon-image-add-line: image add line
+        fr-icon-image-edit-fill: image edit fill
+        fr-icon-image-edit-line: image edit line
         fr-icon-image-fill: image filled
         fr-icon-image-line: image line
+        fr-icon-info-fill: info fill
+        fr-icon-info-line: info line
         fr-icon-information-fill: information filled
         fr-icon-information-line: information line
+        fr-icon-ink-bottle-fill: ink bottle fill
+        fr-icon-ink-bottle-line: ink bottle line
         fr-icon-instagram-fill: instagram filled
         fr-icon-instagram-line: instagram line
+        fr-icon-italic: italic
+        fr-icon-layout-grid-fill: layout grid fill
+        fr-icon-layout-grid-line: layout grid line
+        fr-icon-leaf-fill: leaf fill
+        fr-icon-leaf-line: leaf line
+        fr-icon-lightbulb-fill: lightbulb fill
+        fr-icon-lightbulb-line: lightbulb line
         fr-icon-line-chart-fill: line chart filled
         fr-icon-line-chart-line: line chart line
+        fr-icon-link-unlink: link unlink
+        fr-icon-link: link
         fr-icon-linkedin-box-fill: linkedin-box filled
+        fr-icon-links-fill: links fill
+        fr-icon-links-line: links line
+        fr-icon-list-ordered: list ordered
+        fr-icon-list-unordered: list unordered
+        fr-icon-live-fill: live fill
+        fr-icon-live-line: live line
         fr-icon-lock-fill: lock filled
         fr-icon-lock-line: lock line
+        fr-icon-lock-unlock-fill: lock unlock fill
+        fr-icon-lock-unlock-line: lock unlock line
+        fr-icon-logout-box-r-fill: logout box r fill
+        fr-icon-logout-box-r-line: logout box r line
+        fr-icon-lungs-fill: lungs fill
+        fr-icon-lungs-line: lungs line
+        fr-icon-mac-fill: mac fill
+        fr-icon-mac-line: mac line
         fr-icon-mail-fill: mail filled
         fr-icon-mail-line: mail line
+        fr-icon-mail-open-fill: mail open fill
+        fr-icon-mail-open-line: mail open line
         fr-icon-map-pin-2-fill: map pin 2 filled
         fr-icon-map-pin-2-line: map pin 2 line
+        fr-icon-map-pin-user-fill: map pin user fill
+        fr-icon-map-pin-user-line: map pin user line
+        fr-icon-mark-pen-fill: mark pen fill
+        fr-icon-mark-pen-line: mark pen line
+        fr-icon-mastodon-fill: mastodon fill
+        fr-icon-mastodon-line: mastodon line
+        fr-icon-medal-fill: medal fill
+        fr-icon-medal-line: medal line
+        fr-icon-medicine-bottle-fill: medicine bottle fill
+        fr-icon-medicine-bottle-line: medicine bottle line
+        fr-icon-mental-health-fill: mental health fill
+        fr-icon-mental-health-line: mental health line
+        fr-icon-menu-2-fill: menu 2 fill
         fr-icon-menu-2-line: menu 2 filled
         fr-icon-menu-fill: menu filled
+        fr-icon-message-2-fill: message 2 fill
+        fr-icon-message-2-line: message 2 line
+        fr-icon-mic-fill: mic fill
+        fr-icon-mic-line: mic line
+        fr-icon-microscope-fill: microscope fill
+        fr-icon-microscope-line: microscope line
+        fr-icon-money-euro-box-fill: money euro box fill
+        fr-icon-money-euro-box-line: money euro box line
+        fr-icon-money-euro-circle-fill: money euro circle fill
+        fr-icon-money-euro-circle-line: money euro circle line
+        fr-icon-moon-fill: moon fill
+        fr-icon-moon-line: moon line
+        fr-icon-more-fill: more fill
+        fr-icon-more-line: more line
+        fr-icon-motorbike-fill: motorbike fill
+        fr-icon-motorbike-line: motorbike line
+        fr-icon-music-2-fill: music 2 fill
+        fr-icon-music-2-line: music 2 line
+        fr-icon-newspaper-fill: newspaper fill
+        fr-icon-newspaper-line: newspaper line
+        fr-icon-notification-3-fill: notification 3 fill
+        fr-icon-notification-3-line: notification 3 line
+        fr-icon-notification-badge-fill: notification badge fill
+        fr-icon-notification-badge-line: notification badge line
         fr-icon-npmjs-fill: npmjs filled
         fr-icon-npmjs-line: npmjs line
+        fr-icon-paint-brush-fill: paint brush fill
+        fr-icon-paint-brush-line: paint brush line
+        fr-icon-paint-fill: paint fill
+        fr-icon-paint-line: paint line
+        fr-icon-palette-fill: palette fill
+        fr-icon-palette-line: palette line
+        fr-icon-pantone-fill: pantone fill
+        fr-icon-pantone-line: pantone line
+        fr-icon-parent-fill: parent fill
+        fr-icon-parent-line: parent line
+        fr-icon-passport-fill: passport fill
+        fr-icon-passport-line: passport line
         fr-icon-pause-circle-fill: pause-circle filled
         fr-icon-pause-circle-line: pause-circle line
+        fr-icon-pen-nib-fill: pen nib fill
+        fr-icon-pen-nib-line: pen nib line
+        fr-icon-pencil-fill: pencil fill
+        fr-icon-pencil-line: pencil line
+        fr-icon-pencil-ruler-fill: pencil ruler fill
+        fr-icon-pencil-ruler-line: pencil ruler line
         fr-icon-phone-fill: phone filled
         fr-icon-phone-line: phone line
+        fr-icon-pie-chart-2-fill: pie chart 2 fill
+        fr-icon-pie-chart-2-line: pie chart 2 line
+        fr-icon-pie-chart-box-fill: pie chart box fill
+        fr-icon-pie-chart-box-line: pie chart box line
+        fr-icon-plant-fill: plant fill
+        fr-icon-plant-line: plant line
+        fr-icon-play-circle-fill: play circle fill
+        fr-icon-play-circle-line: play circle line
         fr-icon-play-fill: play filled
         fr-icon-play-line: play line
         fr-icon-printer-fill: printer filled
         fr-icon-printer-line: printer line
+        fr-icon-profil-fill: profil fill
+        fr-icon-profil-line: profil line
+        fr-icon-projector-2-fill: projector 2 fill
+        fr-icon-projector-2-line: projector 2 line
+        fr-icon-psychotherapy-fill: psychotherapy fill
+        fr-icon-psychotherapy-line: psychotherapy line
+        fr-icon-pulse-line: pulse line
+        fr-icon-qr-code-fill: qr code fill
+        fr-icon-qr-code-line: qr code line
+        fr-icon-question-answer-fill: question answer fill
+        fr-icon-question-answer-line: question answer line
         fr-icon-question-fill: question filled
         fr-icon-question-line: question line
+        fr-icon-question-mark: question mark
+        fr-icon-questionnaire-fill: questionnaire fill
+        fr-icon-questionnaire-line: questionnaire line
+        fr-icon-quote-fill: quote fill
+        fr-icon-quote-line: quote line
+        fr-icon-recycle-fill: recycle fill
+        fr-icon-recycle-line: recycle line
+        fr-icon-refresh-fill: refresh fill
+        fr-icon-refresh-line: refresh line
         fr-icon-remixicon-fill: remixicon filled
         fr-icon-remixicon-line: remixicon line
+        fr-icon-restaurant-fill: restaurant fill
+        fr-icon-restaurant-line: restaurant line
         fr-icon-road-map-fill: road map filled
         fr-icon-road-map-line: road map line
         fr-icon-rss-fill: rss filled
         fr-icon-rss-line: rss line
+        fr-icon-safari-fill: safari fill
+        fr-icon-safari-line: safari line
+        fr-icon-sailboat-fill: sailboat fill
+        fr-icon-sailboat-line: sailboat line
+        fr-icon-save-3-fill: save 3 fill
+        fr-icon-save-3-line: save 3 line
         fr-icon-save-fill: save filled
         fr-icon-save-line: save line
+        fr-icon-scales-3-fill: scales 3 fill
+        fr-icon-scales-3-line: scales 3 line
         fr-icon-search-fill: search filled
         fr-icon-search-line: search line
+        fr-icon-secure-payment-fill: secure payment fill
+        fr-icon-secure-payment-line: secure payment line
+        fr-icon-seedling-fill: seedling fill
+        fr-icon-seedling-line: seedling line
+        fr-icon-send-plane-fill: send plane fill
+        fr-icon-send-plane-line: send plane line
+        fr-icon-separator: separator
+        fr-icon-server-fill: server fill
+        fr-icon-server-line: server line
+        fr-icon-settings-5-fill: settings 5 fill
+        fr-icon-settings-5-line: settings 5 line
+        fr-icon-shield-fill: shield fill
+        fr-icon-shield-line: shield line
+        fr-icon-ship-2-fill: ship 2 fill
+        fr-icon-ship-2-line: ship 2 line
+        fr-icon-shopping-bag-fill: shopping bag fill
+        fr-icon-shopping-bag-line: shopping bag line
+        fr-icon-shopping-cart-2-fill: shopping cart 2 fill
+        fr-icon-shopping-cart-2-line: shopping cart 2 line
+        fr-icon-signal-tower-fill: signal tower fill
+        fr-icon-signal-tower-line: signal tower line
+        fr-icon-sip-fill: sip fill
+        fr-icon-sip-line: sip line
         fr-icon-slack-fill: slack filled
         fr-icon-slack-line: slack line
+        fr-icon-slideshow-fill: slideshow fill
+        fr-icon-slideshow-line: slideshow line
+        fr-icon-smartphone-fill: smartphone fill
+        fr-icon-smartphone-line: smartphone line
         fr-icon-snapchat-fill: snapchat filled
         fr-icon-snapchat-line: snapchat line
+        fr-icon-space: space
+        fr-icon-star-fill: star fill
+        fr-icon-star-line: star line
+        fr-icon-star-s-fill: star s fill
+        fr-icon-star-s-line: star s line
+        fr-icon-stethoscope-fill: stethoscope fill
+        fr-icon-stethoscope-line: stethoscope line
+        fr-icon-stop-circle-fill: stop circle fill
+        fr-icon-stop-circle-line: stop circle line
+        fr-icon-subscript: subscript
         fr-icon-subtract-line: subtract line
+        fr-icon-success-fill: success fill
+        fr-icon-success-line: success line
+        fr-icon-suitcase-2-fill: suitcase 2 fill
+        fr-icon-suitcase-2-line: suitcase 2 line
+        fr-icon-superscript: superscript
+        fr-icon-surgical-mask-fill: surgical mask fill
+        fr-icon-surgical-mask-line: surgical mask line
+        fr-icon-survey-fill: survey fill
+        fr-icon-survey-line: survey line
+        fr-icon-syringe-fill: syringe fill
+        fr-icon-syringe-line: syringe line
+        fr-icon-table-2: table 2
+        fr-icon-table-fill: table fill
+        fr-icon-table-line: table line
+        fr-icon-tablet-fill: tablet fill
+        fr-icon-tablet-line: tablet line
+        fr-icon-taxi-fill: taxi fill
+        fr-icon-taxi-line: taxi line
+        fr-icon-team-fill: team fill
+        fr-icon-team-line: team line
         fr-icon-telegram-fill: telegram filled
         fr-icon-telegram-line: telegram line
+        fr-icon-terminal-box-fill: terminal box fill
+        fr-icon-terminal-box-line: terminal box line
+        fr-icon-terminal-line: terminal line
+        fr-icon-terminal-window-fill: terminal window fill
+        fr-icon-terminal-window-line: terminal window line
+        fr-icon-test-tube-fill: test tube fill
+        fr-icon-test-tube-line: test tube line
         fr-icon-theme-fill: theme filled
+        fr-icon-thermometer-fill: thermometer fill
+        fr-icon-thermometer-line: thermometer line
+        fr-icon-thumb-down-fill: thumb down fill
+        fr-icon-thumb-down-line: thumb down line
+        fr-icon-thumb-up-fill: thumb up fill
+        fr-icon-thumb-up-line: thumb up line
         fr-icon-tiktok-fill: tiktok filled
         fr-icon-tiktok-line: tiktok line
+        fr-icon-time-fill: time fill
+        fr-icon-time-line: time line
         fr-icon-timer-fill: timer filled
         fr-icon-timer-line: timer line
+        fr-icon-todo-fill: todo fill
+        fr-icon-todo-line: todo line
+        fr-icon-train-fill: train fill
+        fr-icon-train-line: train line
+        fr-icon-transcription: transcription
+        fr-icon-translate-2: translate 2
+        fr-icon-trophy-fill: trophy fill
+        fr-icon-trophy-line: trophy line
+        fr-icon-tv-fill: tv fill
+        fr-icon-tv-line: tv line
         fr-icon-twitch-fill: twitch filled
         fr-icon-twitch-line: twitch line
         fr-icon-twitter-fill: twitter filled
         fr-icon-twitter-line: twitter line
+        fr-icon-umbrella-fill: umbrella fill
+        fr-icon-umbrella-line: umbrella line
         fr-icon-upload-2-fill: upload filled
         fr-icon-upload-2-line: upload line
+        fr-icon-upload-fill: upload fill
+        fr-icon-upload-line: upload line
+        fr-icon-user-add-fill: user add fill
+        fr-icon-user-add-line: user add line
         fr-icon-user-fill: user filled
+        fr-icon-user-heart-fill: user heart fill
+        fr-icon-user-heart-line: user heart line
         fr-icon-user-line: user line
+        fr-icon-user-search-fill: user search fill
+        fr-icon-user-search-line: user search line
+        fr-icon-user-setting-fill: user setting fill
+        fr-icon-user-setting-line: user setting line
+        fr-icon-user-star-fill: user star fill
+        fr-icon-user-star-line: user star line
+        fr-icon-video-chat-fill: video chat fill
+        fr-icon-video-chat-line: video chat line
         fr-icon-vimeo-fill: vimeo filled
         fr-icon-vimeo-line: vimeo line
+        fr-icon-virus-fill: virus fill
+        fr-icon-virus-line: virus line
         fr-icon-volume-down-fill: volume-down filled
         fr-icon-volume-down-line: volume-down line
         fr-icon-volume-mute-fill: volume-mute filled
         fr-icon-volume-mute-line: volume-mute line
         fr-icon-volume-up-fill: volume-up filled
         fr-icon-volume-up-line: volume-up line
+        fr-icon-vuejs-fill: vuejs fill
+        fr-icon-vuejs-line: vuejs line
+        fr-icon-warning-fill: warning fill
+        fr-icon-warning-line: warning line
+        fr-icon-wifi-fill: wifi fill
+        fr-icon-wifi-line: wifi line
+        fr-icon-window-fill: window fill
+        fr-icon-window-line: window line
         fr-icon-youtube-fill: youtube filled
         fr-icon-youtube-line: youtube line
         fr-icon-zoom-in-fill: zoom in filled
