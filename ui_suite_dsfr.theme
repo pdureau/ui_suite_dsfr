@@ -557,6 +557,9 @@ function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
     $variables['target'] = 'blank';
     $variables['title'] = t('@title - new window', ['@title' => $variables['title'] ?? $variables['label']]);
   }
+  if (isset($variables['target']) && $variables['target'] === 'blank') {
+    $variables['title'] = t('@title - opens a new window', ['@title' => !empty($variables['title']) ? $variables['title'] : $variables['label']]);
+  }
 }
 
 /**
@@ -569,8 +572,9 @@ function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
       && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost()))) {
     $variables['attributes']['target'] = '_blank';
   }
-  if (isset($variables['target']) && $variables['target'] === 'blank') {
-    $variables['title'] = t('@title - new window', ['@title' => $variables['title'] ?? $variables['label']]);
+  if ((isset($variables['target']) && $variables['target'] === 'blank')
+  || (isset($variables['attributes']['target']) && $variables['attributes']['target'] === '_blank')) {
+    $variables['title'] = t('@title - new window', ['@title' => !empty($variables['title']) ? $variables['title'] : $variables['label']]);
   }
 
 }

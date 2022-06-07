@@ -27,6 +27,15 @@ button:
     tertiary_no_outline__sm:
       label: Tertiary Small No Outline
   settings:
+    target:
+      type: select
+      label: Link target attribute. If button is used as link.
+      options:
+        self: Self
+        blank: Blank
+        parent: Parent
+        top: Left
+      preview: self
     disabled:
       type: boolean
       label: Disabled?
