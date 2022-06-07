@@ -22,6 +22,9 @@
 
 {% if url or attributes.href %}
   {% set url = url ?: attributes.href %}
+  {% if target %}
+    {% set attributes = attributes.setAttribute('target', '_' ~ target) %}
+  {% endif %}
   <a{{ attributes.addClass('fr-btn').setAttribute('href', url) }}>
     {{ label }}
   </a>
