@@ -7,3 +7,15 @@
   --hover-tint: none;
   --active-tint: none;
 }
+
+/**
+ * Pagination fix to allow ajax use.
+ */
+.fr-pagination__link[href=""] {
+  color: var(--text-disabled-grey);
+  cursor: not-allowed;
+}
+
+.fr-pagination__link[aria-current="page"] {
+  pointer-events: none;
+}
