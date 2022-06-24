@@ -30,7 +30,7 @@
 #}
 {% if items.pages %}
   <nav{{ attributes.addClass('fr-pagination').setAttribute('role', 'navigation').setAttribute('aria-label', 'Pagination'|t) }}>
-    <ul class="fr-pagination__list">
+    <ul class="fr-pagination__list pager__items js-pager__items">
       {% if items.first is empty %}
         {% set first = {
           attributes: create_attribute()
@@ -39,7 +39,7 @@
          {% set first = items.first %}
       {% endif %}
       <li>
-        <a{{ first.attributes.addClass('fr-pagination__link', 'fr-pagination__link--first') }}{% if first.href %} href="{{ first.href }}"{% endif %}>
+        <a{{ first.attributes.addClass('fr-pagination__link', 'fr-pagination__link--first') }} href="{{ first.href }}">
           {{ 'First page'|t }}
         </a>
       </li>
@@ -51,17 +51,17 @@
         {% set previous = items.previous %}
       {% endif %}
         <li>
-          <a{{ previous.attributes.addClass('fr-pagination__link', 'fr-pagination__link--prev', 'fr-pagination__link--lg-label') }}{% if previous.href %} href="{{ previous.href }}"{% endif %}>
+          <a{{ previous.attributes.addClass('fr-pagination__link', 'fr-pagination__link--prev', 'fr-pagination__link--lg-label') }} href="{{ previous.href }}">
             {{ 'Previous page'|t }}
           </a>
         </li>
       {% if ellipses.previous %}
-        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg">...</a></li>
+        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg" href="">...</a></li>
       {% endif %}
       {% for key, item in items.pages %}
         <li>
           {% if current == key %}
-            <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('aria-current', 'page').setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+            <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('aria-current', 'page').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
           {% else %}
             {% if key - current > 1 or key - current < -1 %}
               <a{{ item.attributes.addClass('fr-pagination__link', 'fr-hidden', 'fr-unhidden-lg').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
@@ -74,7 +74,7 @@
         </li>
       {% endfor %}
       {% if ellipses.next %}
-        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg">...</a></li>
+        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg" href="">...</a></li>
       {% endif %}
       {% if items.next is empty %}
         {% set next = {
@@ -84,7 +84,7 @@
         {% set next = items.next %}
       {% endif %}
       <li>
-        <a{{ next.attributes.addClass('fr-pagination__link', 'fr-pagination__link--next', 'fr-pagination__link--lg-label') }}{% if next.href %} href="{{ next.href }}"{% endif %}>
+        <a{{ next.attributes.addClass('fr-pagination__link', 'fr-pagination__link--next', 'fr-pagination__link--lg-label') }} href="{{ next.href }}">
           {{ 'Next page'|t }}
         </a>
       </li>
@@ -96,7 +96,7 @@
         {% set last = items.last %}
       {% endif %}
       <li>
-        <a{{ last.attributes.addClass('fr-pagination__link', 'fr-pagination__link--last') }}{% if last.href %} href="{{ last.href }}"{% endif %}>
+        <a{{ last.attributes.addClass('fr-pagination__link', 'fr-pagination__link--last') }} href="{{ last.href }}">
           {{ 'Last page'|t }}
         </a>
       </li>
