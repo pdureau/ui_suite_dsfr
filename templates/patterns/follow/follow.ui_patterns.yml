@@ -2,6 +2,18 @@ follow:
   label: Newsletter & Follow us
   description: "These components allow the user to have access to additional services of the site: subscription to the proposed newsletter (s), as well as links to the social network accounts of the entity.
   https://gouvfr.atlassian.net/wiki/spaces/DB/pages/779747332/Lettre+d+information+et+r+seaux+sociaux+-+Newsletter+Follow+us"
+  settings:
+    title_tag:
+      type: select
+      label: Title tag
+      description: Title html tag. Can be 'h2'-'h6'.
+      options:
+        h2: h2
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+      preview: h4
   fields:
     social_title:
       type: render

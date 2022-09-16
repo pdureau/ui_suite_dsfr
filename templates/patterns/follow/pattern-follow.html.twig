@@ -19,6 +19,7 @@
  */
 #}
 {% if social or newsletter %}
+  {% set title_tag = title_tag ?? 'h4' %}
   <div{{ attributes.addClass('fr-follow') }}>
     <div class="fr-container">
       <div class="fr-grid-row">
@@ -28,7 +29,7 @@
           <div class="{{ newsletter_class }}">
             <div class="fr-follow__newsletter">
               <div>
-                <h5 class="fr-h5 fr-follow__title">{{ newsletter_title }}</h5>
+                <{{ title_tag }} class="fr-h5 fr-follow__title">{{ newsletter_title }}</{{ title_tag }}>
                 {% if newsletter_body %}<p class="fr-text--sm fr-follow__desc">{{ newsletter_body }}</p>{% endif %}
               </div>
               <div>
