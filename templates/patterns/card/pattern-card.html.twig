@@ -33,12 +33,16 @@
         {% if detail or tags_badges %}
           <div class="fr-card__start">
             {{ tags_badges }}
-            <p class="fr-card__detail {{ detail_icon }}">{{ detail }}</p>
+            {% if detail %}
+              <p class="fr-card__detail {{ detail_icon }}">{{ detail }}</p>
+            {% endif %}
           </div>
         {% endif %}
         {% if detail_end %}
           <div class="fr-card__end">
-            <p class="fr-card__detail {{ detail_end_icon }}">{{ detail_end }}</p>
+            {% if detail_end %}
+              <p class="fr-card__detail {{ detail_end_icon }}">{{ detail_end }}</p>
+            {% endif %}
           </div>
         {% endif %}
       </div>
