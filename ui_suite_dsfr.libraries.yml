@@ -10,4 +10,5 @@ dsfr:
     theme:
       dist/dsfr.min.css: { minified: true }
       dist/utility/icons/icons.min.css: { minified: true }
-      dist/reset/reset.css: {}
+      dist/utility/colors/colors.min.css: { minified: true }
+      dist/reset/reset.css: { }

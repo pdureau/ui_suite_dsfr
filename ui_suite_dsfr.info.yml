@@ -1,7 +1,7 @@
 name: UI Suite DSFR
 type: theme
 description: "A site-builder friendly theme implementing DSFR (https://www.systeme-de-design.gouv.fr/) for Drupal 8/9, using the UI Suite."
-version: 1.2.1
+version: 1.7.2
 core_version_requirement: ^8 || ^9
 base theme: false
 libraries:

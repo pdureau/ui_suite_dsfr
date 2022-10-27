@@ -2,6 +2,7 @@ stages:
   - composer_package_master
   - composer_package_1_2
   - composer_package_1_5
+  - composer_package_1_7
 
 composer_package_master:
   stage: composer_package_master
@@ -27,5 +28,14 @@ composer_package_1_5:
     - 'curl --header "Job-Token: $CI_JOB_TOKEN" --data branch=v1.5 "https://__token__:5FJ1wBrKM4Qs-NVNYsS6@git.smile.fr/api/v4/projects/14517/packages/composer"'
   only:
     - v1.5
+  tags:
+    - tandem-shell
+
+composer_package_1_7:
+  stage: composer_package_1_7
+  script:
+    - 'curl --header "Job-Token: $CI_JOB_TOKEN" --data branch=v1.7 "https://__token__:5FJ1wBrKM4Qs-NVNYsS6@git.smile.fr/api/v4/projects/14517/packages/composer"'
+  only:
+    - v1.7
   tags:
     - tandem-shell
