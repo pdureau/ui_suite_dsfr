@@ -10,7 +10,7 @@ libraries:
 logo: assets/logo.svg
 
 ckeditor_stylesheets:
-  - dist/css/dsfr.css
+  - dist/dsfr.css
 
 regions:
   header_operator_logo: Header Operator Logo
