@@ -13,19 +13,25 @@
   <h2 class="hidden">{{ "Available patterns"|t }}</h2>
 
   {# List of available patterns with anchor links. #}
-  <ul class="class="fr-sidemenu__list">
-    {% for pattern_name, pattern in patterns %}
+  {% for group_name, group_patterns in patterns %}
+    {% if patterns|length > 1 %}
+    <h3>{{ group_name }}</h3>
+    {% endif %}
+    <ul class="fr-sidemenu__list">
+    {% for pattern_name, pattern in group_patterns %}
       <li class="fr-sidemenu__item">
         <a class="fr-sidemenu__link"  href="#{{ pattern_name }}">{{ pattern.label }}</a>
       </li>
     {% endfor %}
-  </ul>
+    </ul>
+  {% endfor %}
   </nav>
 
 </div>
 <div class="fr-col-lg-10">
 
-  {% for pattern_name, pattern in patterns %}
+  {% for group_patterns in patterns %}
+    {% for pattern_name, pattern in group_patterns %}
 
     <div class="pattern-preview pattern-preview__{{ pattern.definition.id }}">
     
@@ -45,6 +51,7 @@
     </div>
 
     <hr class="fr-my-5w">
+    {% endfor %}
   {% endfor %}
 
 </div>
