@@ -1,35 +1,40 @@
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019527/Typographie+-+Typography
 typography:
   label: Text titles & styles
-  description: "To give greater editorial and graphic freedom, without harming the information hierarchy and referencing, we offer several levels of alternative titles (display).\n You can use them for highlights, banners etc...\n In order to customize the size of your titles you can also use the classes fr-h1, fr-h2, fr-h3, fr-h4, fr- h5, fr-h6. For example: <h3 class=\"fr-h1\"> will give your title h3 the graphic characteristics of h1, while preserving your information architecture."
+  description: "To give greater editorial and graphic freedom, without harming the information hierarchy and referencing, we offer several levels of alternative titles (display)."
+  category: Typography
   options:
-    fr-display--xl: Alternative title XL
-    fr-display--lg: Alternative title LG
-    fr-display--md: Alternative title MD
-    fr-display--sm: Alternative title SM
-    fr-display--xs: Alternative title XS
-    fr-h1: Title h1
-    fr-h2: Title h2
-    fr-h3: Title h3
-    fr-h4: Title h4
-    fr-h5: Title h5
-    fr-h6: Title h6
-    fr-text--lead: Text chapo - XL
-    fr-text--lg: Text article - LG
-    fr-text--md: Text standard - MD
-    fr-text--sm: Text detail - SM
-    fr-text--xs: Text mention - XS
+    fr-display--xl: Alt title XL
+    fr-display--lg: Alt title LG
+    fr-display--md: Alt title MD
+    fr-display--sm: Alt title SM
+    fr-display--xs: Alt title XS
+    fr-h1: Title 1
+    fr-h2: Title 2
+    fr-h3: Title 3
+    fr-h4: Title 4
+    fr-h5: Title 5
+    fr-h6: Title 6
+    fr-text--lead: Lead
+    fr-text--lg: Article
+    fr-text--md: Standard
+    fr-text--sm: Detail
+    fr-text--xs: Mention
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019527/Typographie+-+Typography#Corps-de-texte---Body
 alternative-font:
   label: Alternative font
-  description: "LG, MD, SM, and XS text styles are also available with Spectral typography, by adding the 'fr-text--alt' class. Use of the Spectral is limited to secondary, minor, or distinguishable information."
+  description: "Use of the Spectral is limited to secondary, minor, or distinguishable information."
+  category: Typography
   options:
     fr-text--alt: Spectral typography
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin:
   label: Margin
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-m-0: 0
     fr-m-auto: auto
@@ -52,7 +57,10 @@ spacing_margin:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_top:
-  label: Margin Top
+  label: Margin top
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-mt-0: 0
     fr-mt-auto: auto
@@ -75,7 +83,10 @@ spacing_margin_top:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_bottom:
-  label: Margin Bottom
+  label: Margin bottom
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-mb-0: 0
     fr-mb-auto: auto
@@ -98,7 +109,10 @@ spacing_margin_bottom:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_left:
-  label: Margin Left
+  label: Margin left
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-ml-0: 0
     fr-ml-auto: auto
@@ -121,7 +135,10 @@ spacing_margin_left:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_right:
-  label: Margin Right
+  label: Margin right
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-mr-0: 0
     fr-mr-auto: auto
@@ -145,6 +162,9 @@ spacing_margin_right:
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding:
   label: Padding
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-p-0: 0
     fr-p-auto: auto
@@ -167,7 +187,10 @@ spacing_padding:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_top:
-  label: Padding Top
+  label: Padding top
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-pt-0: 0
     fr-pt-auto: auto
@@ -190,7 +213,10 @@ spacing_padding_top:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_bottom:
-  label: Padding Bottom
+  label: Padding bottom
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-pb-0: 0
     fr-pb-auto: auto
@@ -213,7 +239,10 @@ spacing_padding_bottom:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_left:
-  label: Padding Left
+  label: Padding left
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-pl-0: 0
     fr-pl-auto: auto
@@ -236,7 +265,10 @@ spacing_padding_left:
 
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_right:
-  label: Padding Right
+  label: Padding right
+  category: Spacing
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-pr-0: 0
     fr-pr-auto: auto
@@ -260,6 +292,8 @@ spacing_padding_right:
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons
 icons:
   label: Icons
+  category: Icons
+  description: Functional icons are visual symbols that accompany the user in his actions and help him understand the interface.
   options:
     fr-icon-account-fill: account filled
     fr-icon-account-line: account line
@@ -396,6 +430,8 @@ icons:
 # https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Tailles
 icons_size:
   label: Icon sizes
+  description: The icons are available in four sizes. It is possible to modify the size of the icons using specific modifiers.
+  category: Icons
   options:
     fr-fi--sm: SM
     fr-fi--md: MD
@@ -406,12 +442,23 @@ icons_size:
 # ...
 container_type:
   label: Type of container
+  description: External margins and gutters.
+  previewed_with:
+    - fr-background-alt--grey
   options:
     fr-container: Default
     fr-container--fluid: Fluid
 
 background:
   label: Background
+  category: Color
+  previewed_with:
+    - fr-p-1v
+  options: {}
 
 text_color:
   label: Text color
+  category: Color
+  previewed_with:
+    - fr-p-1v
+  options: {}
