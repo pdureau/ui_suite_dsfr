@@ -8,7 +8,7 @@ header:
       description: Operator logo image render. Optional.
       preview:
         theme: image
-        uri: "themes/contrib/ui_suite_dsfr/assets/logo.svg"
+        uri: "data:image/svg+xml;charset=UTF-8,%3csvg width='150' height='150' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='2' y='2' width='146' height='146' style='fill:%23dedede;stroke:%23555555;stroke-width:2'/%3e%3ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' alignment-baseline='middle' font-family='monospace, sans-serif' fill='%23555555'%3eoperator logo%3c/text%3e%3c/svg%3e"
         alt: Logo
     navbar:
       type: render
