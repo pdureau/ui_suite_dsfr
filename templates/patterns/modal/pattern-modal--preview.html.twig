@@ -1,0 +1,11 @@
+{% set modal_id = 'fr-modal-' ~ random() %}
+
+{{ pattern('button', {
+  label: 'Open modal'|t,
+  attributes: {
+    'data-fr-opened': 'false',
+    'aria-controls': modal_id
+  }
+}) }}
+
+{{ include('@ui_suite_dsfr/patterns/modal/pattern-modal.html.twig') }}

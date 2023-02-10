@@ -1,0 +1,25 @@
+consent_manager:
+  label: Consent manager
+  description: "Allows the user to define his preferences on the use of his personal data, in particular the deposit of non-functional cookies in his browser. Used with consent_banner. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/gestionnaire-de-consentement/"
+  fields:
+    text:
+      type: text
+      label: Text
+      description: Descriptive text for the "Accept all" / "Refuse all" options.
+      preview: Preferences for all services.
+    services:
+      type: array
+      label: Services
+      description: "Cookies list, keyed by service ID. Contains: - title: Service title, - description: Service description text, - sub_services: Array with sub services, keyed by sub service id. Contains: - title: Service title."
+      preview:
+        youtube:
+          title: Youtube
+          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+        google:
+          title: Google
+          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+          sub_services:
+            analitycs:
+              title: Google Analytics
+            maps:
+              title: Google Maps

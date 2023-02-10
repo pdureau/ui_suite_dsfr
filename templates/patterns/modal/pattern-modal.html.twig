@@ -1,5 +1,3 @@
-{% set modal_id = 'fr-modal-' ~ random() %}
-
 {% if variant is empty or variant|lower == 'default' %}
   {% set attributes = attributes.addClass('fr-col-md-6') %}
 {% endif %}
@@ -9,10 +7,6 @@
 {% if variant|lower == 'lg' %}
   {% set attributes = attributes.addClass('fr-col-md-8') %}
 {% endif %}
-<button class="fr-btn"  data-fr-opened="false" aria-controls="{{ modal_id }}">
-  {{ label }}
-</button>
-
 <dialog aria-labelledby="{{ modal_id ~ '-title' }}" aria-modal="true" role="dialog" id="{{ modal_id }}" class="fr-modal">
   <div class="fr-container fr-container--fluid fr-container-md">
     <div class="fr-grid-row fr-grid-row--center">

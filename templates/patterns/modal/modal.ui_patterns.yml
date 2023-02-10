@@ -9,6 +9,10 @@ modal:
     sm:
       label: Small
   settings:
+    modal_id:
+      type: textfield
+      label: Modal ID
+      description: To link the triggered element (the one with 'aria-controls') and the modal.
     icon:
       type: select
       label: Icon
@@ -613,11 +617,6 @@ modal:
         fr-icon-zoom-out-line: zoom out line
       preview: fr-icon-question-line
   fields:
-    label:
-      type: text
-      label: Label
-      description: The modal button label.
-      preview: Open modal
     title:
       type: text
       label: Title

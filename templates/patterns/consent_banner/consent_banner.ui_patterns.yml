@@ -1,28 +1,24 @@
 consent_banner:
   label: Consent banner
-  description: "The consent manager allows the user to define his preferences on the use of his personal data, in particular the deposit of non-functional cookies in his browser. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/609189956/Gestionnaire+de+consentement+-+Consent+banner"
+  description: "Allows the collection of the consent of users upon arrival on the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/gestionnaire-de-consentement"
   fields:
     title:
       type: text
       label: Title
       description: Banner title. Optional.
-      preview: 'About cookies on sitename.fr'
+      preview: "About cookies on sitename.fr"
     text:
       type: render
-      label: Text
-      description: Banner renderable text.
+      label: Content
+      description: Banner renderable content.
       preview: 'Welcome! We use cookies to improve your experience and the services available on this site. To find out more, visit the <a href="#">Personal data and cookies</a> page. You can, at any time, have control over the cookies you want to activate.'
     modal:
       type: array
       label: Modal data
-      description: "Modal data array. Contains:
+      description: "Contains:
         - title: Modal title,
-        - text: Modal text,
-        - services: array with services, keyed by service id. Can contain:
-          - title: Service title,
-          - description: Service description text,
-          - sub_services: Array with sub services, keyed by sub service id. Contains:
-            - title: Service title."
+        - text: see 'Consent manager' pattern,
+        - services: see 'Consent manager' pattern"
       preview:
         title: Cookie management panel
         text: Preferences for all services.
