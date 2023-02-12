@@ -1,0 +1,57 @@
+footer_top:
+  label: (Footer top)
+  description: "To be embedded in the footer pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
+  fields:
+    items:
+      type: menu
+      label: Items
+      description: "A 2 levels Drupal menu structure. https://api.drupal.org/api/drupal/core!modules!system!templates!menu.html.twig/10.0.x Il est recommandé de choisir le pied de page complet pour les sites profonds nécessitant de réintégrer des listes de liens en rebond de la navigation."
+      preview:
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"

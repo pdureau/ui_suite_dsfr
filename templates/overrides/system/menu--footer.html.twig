@@ -20,12 +20,6 @@
  * @ingroup themeable
  */
 #}
-{% if items %}
-  <ul class="fr-footer__bottom-list">
-    {% for item in items %}
-      <li class="fr-footer__bottom-item">
-        {{ link(item.title, item.url, item.attributes.addClass('fr-footer__bottom-link')) }}
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+{{ pattern('footer_menu', {
+  items: items
+}, 'bottom') }}

@@ -1,0 +1,12 @@
+{% set variant = variant|default('content') %}
+<ul{{ attributes.addClass('fr-footer__' ~ variant ~ '-list') }}>
+  {% for item in items %}
+  <li class="fr-footer__{{ variant  }}-item">
+    {% if item.url %}
+   <a class="fr-footer__{{ variant  }}-link" href="{{ item.url }}">{{ item.title }}</a>
+   {% else %}
+    {{ item.text }}
+   {% endif %}
+  </li>
+  {% endfor %}
+</ul>

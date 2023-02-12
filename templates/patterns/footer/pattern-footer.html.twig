@@ -1,41 +1,14 @@
-{#
-/**
- * @file
- * Default template for Footer ui pattern.
- *
- * Available variables:
- * - top: Top content render.
- * - operator_logo: Operator logo image render.
- * - content: Main content render.
- * - partners: Partners render.
- * - bottom: Bottom content render.
- * - service_title: Name of the site.
- * - attributes: HTML attributes.
- *
- * @ingroup themeable
- */
-#}
 <footer{{ attributes.addClass('fr-footer').setAttribute('role', 'contentinfo').setAttribute('id', 'footer') }}>
-  {% if top %}
-    <div class="fr-footer__top">
-      {{ top }}
-    </div>
-  {% endif %}
+   {{ top }}
   <div class="fr-container">
     <div class="fr-footer__body">
       <div class="fr-footer__brand fr-enlarge-link">
         {% if operator_logo is empty %}
           <a href="/" title="{{ 'Back to home - @name'|t({'@name': service_title|striptags}) }}">
         {% endif %}
-          <p class="fr-logo"{% if logo.title %} title="{{ logo.title }}"{% else %} title="{{ 'French Republic'|t }}"{% endif %}>
-            {% if logo.text %}
-              {{ logo.text }}
-            {% else %}
-              République
-              <br>
-              Française
-            {% endif %}
-          </p>
+        <p class="fr-logo">
+          {{ logo|default("République\nFrançaise")|nl2br }}
+        </p>
         {% if operator_logo is empty %}
           </a>
         {% endif %}
@@ -45,20 +18,22 @@
           </a>
         {% endif %}
       </div>
-      {% if content %}
+      {% if content or content_desc %}
         <div class="fr-footer__content">
+          {% if content_desc %}
+          <div class="fr-footer__content-desc">{{ content_desc }}</div>
+          {% endif %}
           {{ content }}
         </div>
       {% endif %}
     </div>
-    {% if partners %}
-      <div class="fr-footer__partners">
-        {{ partners }}
-      </div>
-    {% endif %}
-    {% if bottom %}
+    {{ partners }}
+    {% if bottom or bottom_copy %}
       <div class="fr-footer__bottom">
         {{ bottom }}
+        {% if bottom_copy %}
+        <div class="fr-footer__bottom-copy">{{ bottom_copy }}</div>
+        {% endif %}
       </div>
     {% endif %}
   </div>

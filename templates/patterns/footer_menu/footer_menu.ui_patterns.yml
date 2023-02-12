@@ -1,0 +1,21 @@
+footer_menu:
+  label: (Footer menu)
+  description: "To be embedded in the footer pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
+  variants:
+    content: Content (Default)
+    bottom: Bottom
+  fields:
+    items:
+      type: menu
+      label: Items
+      description: "A flat Drupal menu structure. https://api.drupal.org/api/drupal/core!modules!system!templates!menu.html.twig/10.0.x"
+      preview:
+        - title: Sitemap
+          url: "#"
+        - title: Accessibility
+          url: "#"
+        - title: Legal Notice
+          url: "#"
+        - title: Personal data
+          url: "#"
+        - title: Cook

@@ -1,0 +1,18 @@
+<div{{ attributes.addClass('fr-footer__top') }}>
+  <div class="fr-container">
+    <div class="fr-grid-row fr-grid-row--start fr-grid-row--gutters">
+        {% for category in items %}
+        <div class="fr-col-12 fr-col-sm-3 fr-col-md-2">
+            <h3 class="fr-footer__top-cat">{{ category.title }}</h3>
+            <ul class="fr-footer__top-list">
+              {% for item in category.below %}
+              <li>
+                  <a class="fr-footer__top-link" href="{{ item.url }}">{{ item.title }}</a>
+              </li>
+             {% endfor %}
+            </ul>
+        </div>
+     {% endfor %}
+    </div>
+  </div>
+</div>

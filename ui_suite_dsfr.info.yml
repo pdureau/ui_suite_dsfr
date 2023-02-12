@@ -20,11 +20,13 @@ regions:
   content: Content
   sidebar_first: Sidebar first
   sidebar_second: Sidebar second
-  footer_top: Footer Top
-  footer_operator_logo: Footer Operator Logo
-  footer_content: Footer Content
-  footer_partners: Footer Partners
-  footer_bottom: Footer Bottom
+  footer_top: Footer - Top links
+  footer_operator_logo: Footer - Operator Logo
+  footer_content: Footer - Content
+  footer_content_desc: Footer - Content description
+  footer_partners: Footer - Partners
+  footer_bottom: Footer - Bottom
+  footer_bottom_copy: Footer - Bottom copy
 
 dependencies:
   - drupal:inline_form_errors
