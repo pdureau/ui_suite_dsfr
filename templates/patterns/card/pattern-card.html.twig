@@ -20,7 +20,7 @@
   {% set attributes = attributes.addClass('fr-card--' ~ bg_boxes) %}
 {% endif %}
 
-{% set title_tag = title_tag ?? 'h4' %}
+{% set title_tag = title_tag|default('h4') %}
 
 {% if title %}
   <div{{ attributes.addClass('fr-card') }}>

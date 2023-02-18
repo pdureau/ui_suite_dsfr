@@ -1,30 +1,31 @@
 follow:
   label: Newsletter & Follow us
-  description: "These components allow the user to have access to additional services of the site: subscription to the proposed newsletter (s), as well as links to the social network accounts of the entity.
-  https://gouvfr.atlassian.net/wiki/spaces/DB/pages/779747332/Lettre+d+information+et+r+seaux+sociaux+-+Newsletter+Follow+us"
+  description: "Allow the user to have access to the subscription to the proposed newsletter (s), and the links to the social network accounts of the entity. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lettre-d-info-et-reseaux-sociaux/"
   settings:
     title_tag:
       type: select
       label: Title tag
       description: Title html tag. Can be 'h2'-'h6'.
       options:
-        h2: h2
+        h2: h2 (default)
         h3: h3
         h4: h4
         h5: h5
         h6: h6
-      preview: h4
+      default: h2
+      preview: h2
     follow_title_tag:
       type: select
       label: Follow us title tag
       description: Title html tag. Can be 'h2'-'h6'.
       options:
-        h2: h2
+        h2: h2 (default)
         h3: h3
         h4: h4
         h5: h5
         h6: h6
-      preview: h4
+      default: h2
+      preview: h2
   fields:
     social_title:
       type: render
@@ -46,23 +47,23 @@ follow:
       label: Newsletter
       description: Newsletter subscription render.
       preview:
-      - type: pattern
-        id: button
-        fields:
-          label: Subscribe
-          url: "https://example.com"
+        - type: pattern
+          id: button
+          fields:
+            label: Subscribe
+            url: "https://example.com"
     social:
       type: array
       label: Social networks links
       description: "Follow links by provider.
         The link element contains the following elements:
-          - id: Follow provider machine name (facebook, twitter…);
-          - title: Link title;
-          - url: Link URI."
+        - id: Follow provider machine name (facebook, twitter…);
+        - title: Link title;
+        - url: Link URI."
       preview:
         - id: facebook
           title: Follow on Facebook
-          url: 'https://facebook.com'
+          url: "https://facebook.com"
         - id: twitter
           title: Follow on Twitter
           url: "https://twitter.com"
@@ -77,4 +78,3 @@ follow:
         - id: youtube
           title: Follow on Youtube
           url: "https://www.youtube.com"
-

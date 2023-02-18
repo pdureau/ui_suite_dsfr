@@ -50,9 +50,10 @@ card:
       options:
         h2: h2
         h3: h3
-        h4: h4
+        h4: h4 (default)
         h5: h5
         h6: h6
+      default: h4
       preview: h4
     detail_icon:
       type: select
@@ -1278,10 +1279,10 @@ card:
         id: badge_group
         fields:
           badges:
-          - type: pattern
-            id: badge
-            fields:
-              label: Badge label
+            - type: pattern
+              id: badge
+              fields:
+                label: Badge label
     title:
       type: render
       label: Title
@@ -1291,7 +1292,7 @@ card:
         tag: a
         value: Card title
         attributes:
-          href: '#'
+          href: "#"
           title: Link title
     tags_badges:
       type: render
@@ -1302,14 +1303,14 @@ card:
         id: tag_group
         fields:
           tags:
-          - type: pattern
-            id: tag
-            fields:
-              label: Label tag 1
-          - type: pattern
-            id: tag
-            fields:
-              label: Label tag 2
+            - type: pattern
+              id: tag
+              fields:
+                label: Label tag 1
+            - type: pattern
+              id: tag
+              fields:
+                label: Label tag 2
     detail:
       type: text
       label: Top detail
@@ -1335,14 +1336,14 @@ card:
         variant: inline__sm
         fields:
           buttons:
-          - type: pattern
-            id: button
-            variant: secondary
-            fields:
-              label: Button 1
-              url: "https://example.com"
-              title: Button 1 title
-          - type: pattern
-            id: button
-            fields:
-              label: Button 2
+            - type: pattern
+              id: button
+              variant: secondary
+              fields:
+                label: Button 1
+                url: "https://example.com"
+                title: Button 1 title
+            - type: pattern
+              id: button
+              fields:
+                label: Button 2

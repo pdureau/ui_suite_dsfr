@@ -24,9 +24,10 @@ tile:
       options:
         h2: h2
         h3: h3
-        h4: h4
+        h4: h4 (default)
         h5: h5
         h6: h6
+      default: h4
       preview: h4
     display_md:
       type: select
@@ -53,7 +54,7 @@ tile:
         tag: a
         value: Tile title
         attributes:
-          href: '#'
+          href: "#"
           title: Link title
     description:
       type: text
