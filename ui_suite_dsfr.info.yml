@@ -27,7 +27,6 @@ regions:
   footer_bottom: Footer Bottom
 
 dependencies:
-  - component_blocks:component_blocks
   - drupal:inline_form_errors
   - layout_options:layout_options
   - ui_patterns:ui_patterns
