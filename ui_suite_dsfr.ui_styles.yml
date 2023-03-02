@@ -454,11 +454,58 @@ background:
   category: Color
   previewed_with:
     - fr-p-1v
-  options: {}
+  options:
+    fr-background-action-high--blue-france: Action-high Blue France
+    fr-background-action-high--red-marianne: Action-high Red Marianne
+    fr-background-alt--blue-france: Alt Blue France
+    fr-background-alt--grey: Alt Gray
+    fr-background-alt--red-marianne: Alt Red Marianne
+    fr-background-contrast--blue-france: Contrast Blue France
+    fr-background-contrast--error: Contrast Error
+    fr-background-contrast--grey: Contrast Gray
+    fr-background-contrast--info: Contrast Info
+    fr-background-contrast--red-marianne: Contrast Red Marianne
+    fr-background-contrast--success: Contrast Success
+    fr-background-contrast--warning: Contrast Warning
+    fr-background-default--grey: Default Gray
+    fr-background-flat--error: Flat Error
+    fr-background-flat--grey:
+      label: Flat Grey
+      previewed_with:
+        - fr-text-inverted--grey
+    fr-background-flat--info: Flat Info
+    fr-background-flat--success: Flat Success
+    fr-background-flat--warning: Flat Warning
 
 text_color:
   label: Text color
   category: Color
   previewed_with:
     - fr-p-1v
-  options: {}
+  options:
+    fr-text-action-high--blue-france: Action-high Blue France
+    fr-text-action-high--grey: Action-high Grey
+    fr-text-action-high--red-marianne: Action-high Red Marianne
+    fr-text-default--error: Default Error
+    fr-text-default--grey: Default Grey
+    fr-text-default--info: Default Info
+    fr-text-default--success: Default Success
+    fr-text-default--warning: Default Warning
+    fr-text-inverted--blue-france:
+      label: Inverted Blue France
+      previewed_with:
+        - fr-background-flat--grey
+        - fr-text-default--grey
+    fr-text-inverted--error: Inverted Error
+    fr-text-inverted--grey: Inverted Grey
+    fr-text-inverted--info: Inverted Info
+    fr-text-inverted--red-marianne: Inverted Red Marianne
+    fr-text-inverted--success: Inverted Success
+    fr-text-inverted--warning: Inverted Warning
+    fr-text-label--blue-france: Label Blue France
+    fr-text-label--grey: Label Grey
+    fr-text-label--red-marianne: Label Red Marianne
+    fr-text-mention--grey: Mention Grey
+    fr-text-title--blue-france: Title Blue France
+    fr-text-title--grey: Title Grey
+    fr-text-title--red-marianne: Title Red Marianne

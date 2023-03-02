@@ -133,22 +133,28 @@ function ui_suite_dsfr_form_alter(&$form, &$form_state, $form_id) {
     }
   }
 
+  if (!isset($form['ui_styles'])) {
+    return;
+  }
+
   // Add ui styles for text and background from theme setting.
-  if (isset($form['ui_style'])) {
-    $colors = _ui_suite_dsfr_get_colors_settings();
-    $options = [];
-    foreach ($colors as $id => $color) {
-      foreach ($color['types'] as $type => $values) {
-        foreach ($values as $value) {
-          $options[$type][ucfirst($value)]["fr-$type-$value--$id"] = $color['label'];
-        }
+  $colors = _ui_suite_dsfr_get_colors_settings();
+  $options = [];
+  foreach ($colors as $id => $color) {
+    foreach ($color['types'] as $type => $values) {
+      foreach ($values as $value) {
+        $options[$type]["fr-$type-$value--$id"] = ucfirst($value) . ' ' . $color['label'];
       }
     }
-    if (isset($form['ui_style']['ui_styles_background'])) {
-      $form['ui_style']['ui_styles_background']['#options'] = $options['background'] ?? [];
-    }
-    if (isset($form['ui_style']['ui_styles_text_color'])) {
-      $form['ui_style']['ui_styles_text_color']['#options'] = $options['text'] ?? [];
+  }
+
+  foreach (Element::children($form) as $key) {
+    if (str_starts_with($key, 'ui_styles') && isset($form[$key]['color'])) {
+      $form[$key]['color']['ui_styles_background']['#options'] += $options['background'];
+      $form[$key]['color']['ui_styles_text_color']['#options'] += $options['text'];
+      // Sort asc.
+      ksort($form[$key]['color']['ui_styles_background']['#options']);
+      ksort($form[$key]['color']['ui_styles_text_color']['#options']);
     }
   }
 }
