@@ -65,9 +65,9 @@ function ui_suite_dsfr_preprocess_pattern_tile(array &$variables) {
 }
 
 /**
- * Implements hook_preprocess_HOOK() for responsive_media patterns.
+ * Implements hook_preprocess_HOOK() for content_media patterns.
  */
-function ui_suite_dsfr_preprocess_pattern_responsive_media(array &$variables) {
+function ui_suite_dsfr_preprocess_pattern_content_media(array &$variables) {
   if (isset($variables['image'])) {
     _ui_suite_dsfr_add_class($variables['image'], 'fr-responsive-img');
   }

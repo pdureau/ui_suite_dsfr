@@ -1,6 +1,6 @@
-responsive_media:
-  label: Responsive medias
-  description: "Media content refers to your photo and video content.  https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019554/Contenu+m+dias+-+Responsive+medias"
+content_media:
+  label: Content media
+  description: "Media content refers to your photo and video content. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/contenu-medias/"
   variants:
     default:
       label: Medium
@@ -47,5 +47,5 @@ responsive_media:
         id: button
         fields:
           label: Transcription button label
-          url: '/'
+          url: "/"
           title: Title of the transcription button
