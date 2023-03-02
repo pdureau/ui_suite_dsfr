@@ -24,10 +24,16 @@ alert:
       label: Dismissible?
       description: It’s possible to dismiss any alert inline.
       options:
-        '': No
+        "": No
         core: Using dsfr
         custom: Custom
       preview: core
+    close_title:
+      type: textfield
+      label: Close button text
+      description: Close button text. Optional. Will be used only if alert is dismissible.
+      preview: Hide message
+      allow_token: true
     title_tag:
       type: select
       label: Title tag
@@ -44,14 +50,12 @@ alert:
       type: text
       label: Title
       description: The alert title. Optional.
-      preview: 'Alert: Title of an alert'
+      preview: "Alert: Title of an alert"
     message:
       type: render
       label: Message
       description: The alert message.
-      preview: <p>Detailed description of the message.</p>
-    close_title:
-      type: text
-      label: Close button text
-      description: Close button text. Optional. Will be used only if alert is dismissible.
-      preview: Hide message
+      preview:
+        type: html_tag
+        tag: p
+        value: Detailed description of the message.

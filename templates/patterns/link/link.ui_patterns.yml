@@ -9,6 +9,17 @@ link:
     lg:
       label: Large
   settings:
+    title:
+      type: textfield
+      label: Tilte
+      description: The link title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
+      preview: Simple Link title
+      allow_token: true
+    url:
+      type: url
+      label: URL
+      description: The link URL. Optional.
+      preview: "/"
     target:
       type: select
       label: Link target attribute.
@@ -637,13 +648,3 @@ link:
       label: Label
       description: The link label. Required.
       preview: Simple Link
-    url:
-      type: text
-      label: URL
-      description: The link URL. Optional.
-      preview: '/'
-    title:
-      type: text
-      label: Tilte
-      description: The link title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
-      preview: Simple Link title

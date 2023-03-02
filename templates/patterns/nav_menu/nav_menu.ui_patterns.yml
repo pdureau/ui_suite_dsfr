@@ -7,48 +7,40 @@ nav_menu:
       type: boolean
       description: If true the menu will be displayed as mega menu.
       preview: false
+    menu_name:
+      type: textfield
+      label: Menu name
+      description: For aria label.
+      preview: Main menu
     html_id:
       type: textfield
       label: HTML id attribute
   fields:
-    menu_name:
-      type: text
-      label: Menu name
-      description: Menu Name. Plain text.
-      preview: Main menu
     items:
       type: render
       label: Menu items
-      description: "Full-height and lightweight navigation (including support for dropdowns).
-        Can contain:
-          - title(link title),
-          - url(link url),
-          - below(child items array, can contain the same items as parent),
-          - content(extra_title, extra_description, extra_link - additional data for mega menu items),
-          - in_active_trail(TRUE if the link is in the active trail),
-          - attributes(HTML attributes for the menu item)."
+      description: "Full-height and lightweight navigation (including support for dropdowns). Can contain: title(link title), url(link url), below (child items array, can contain the same items as parent), content(extra_title, extra_description, extra_link - additional data for mega menu items), in_active_trail(TRUE if the link is in the active trail),  attributes(HTML attributes for the menu item)."
       preview:
         - title: Home
-          url: '/'
+          url: "/"
         - title: Library
-          url: '#'
+          url: "#"
           in_active_trail: true
           content:
             extra_title: Editorialized title
             extra_description: Lorem <a href="#">ipsum</a> dolor sit <strong>amet</strong>, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat. Suspendisse potenti.
             extra_link:
-              url: '#'
+              url: "#"
               label: See the whole section
           below:
             - title: Sub 1
-              url: '#'
+              url: "#"
               below:
                 - title: Sub 1.1
-                  url: '#'
+                  url: "#"
             - title: Sub 2
-              url: '#'
+              url: "#"
               below:
                 - title: Sub 2.1
-                  url: '#'
+                  url: "#"
         - title: Data
-

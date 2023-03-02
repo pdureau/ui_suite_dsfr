@@ -8,20 +8,18 @@
 
 {% import _self as menus %}
 
-{% if items %}
-  {% if html_id is empty %}
-    {% set html_id = 'sidemenu-'~random() %}
-  {% endif %}
-  <nav{{ attributes.addClass('fr-sidemenu') }} role="navigation" aria-label="{{ menu_name }}" id="{{ html_id|clean_id }}">
-    <div class="fr-sidemenu__inner">
-      <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper-{{ html_id|clean_id }}" aria-expanded="false">{{ 'In this section'|t }}</button>
-      <div class="fr-collapse" id="fr-sidemenu-wrapper-{{ html_id|clean_id }}">
-        <div class="fr-sidemenu__title">{{ title }}</div>
-        {{ menus.menu_links(items, attributes, 0) }}
-      </div>
-    </div>
-  </nav>
+{% if html_id is empty %}
+  {% set html_id = 'sidemenu-'~random() %}
 {% endif %}
+<nav{{ attributes.addClass('fr-sidemenu') }} role="navigation" aria-label="{{ menu_name }}" id="{{ html_id|clean_id }}">
+  <div class="fr-sidemenu__inner">
+    <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper-{{ html_id|clean_id }}" aria-expanded="false">{{ 'In this section'|t }}</button>
+    <div class="fr-collapse" id="fr-sidemenu-wrapper-{{ html_id|clean_id }}">
+      <div class="fr-sidemenu__title">{{ title }}</div>
+      {{ menus.menu_links(items, attributes, 0) }}
+    </div>
+  </div>
+</nav>
 
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}

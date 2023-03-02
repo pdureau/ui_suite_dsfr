@@ -7,6 +7,10 @@ tag:
     sm:
       label: Small
   settings:
+    url:
+      type: textfield
+      label: URL
+      preview: "https://example.com"
     dismissible:
       type: boolean
       label: Dismissible?
@@ -644,8 +648,3 @@ tag:
       label: Label
       description: The tag label.
       preview: Label tag
-    url:
-      type: text
-      label: URL
-      description: The tag URL. Optional.
-      preview: 'https://example.com'

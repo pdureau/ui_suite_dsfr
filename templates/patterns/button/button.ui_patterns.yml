@@ -27,6 +27,15 @@ button:
     tertiary_no_outline__sm:
       label: Tertiary Small No Outline
   settings:
+    title:
+      type: textfield
+      label: Title
+      description: The button title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
+      allow_token: true
+    url:
+      type: url
+      label: URL
+      description: The button URL. Optional.
     target:
       type: select
       label: Link target attribute. If button is used as link.
@@ -657,11 +666,3 @@ button:
       label: Label
       description: The button label.
       preview: Submit
-    title:
-      type: text
-      label: Tilte
-      description: The button title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
-    url:
-      type: text
-      label: Url
-      description: The button URL. Optional.

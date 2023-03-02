@@ -1,24 +1,8 @@
-{#
-/**
- * @file
- * Default template for Responsive media ui pattern.
- *
- * Available variables:
- * - caption: Media Caption.
- * - transcription_link: Transcription link.
- * - image: Image render.
- * - video: Video render.
- * - ration: Video ratio.
- * - attributes: HTML attributes.
- *
- * @ingroup themeable
- */
-#}
 {% if variant is not empty and variant|lower != 'default' %}
   {% set attributes = attributes.addClass('fr-content-media--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
 {% if image %}
-  <figure{{ attributes.addClass('fr-content-media').setAttribute('role', 'group') }}{% if caption %} aria-label="{{ caption }}"{% endif %}>
+  <figure{{ attributes.addClass('fr-content-media').setAttribute('role', 'group') }}>
     <div class="fr-content-media__img">
       {{ image }}
     </div>

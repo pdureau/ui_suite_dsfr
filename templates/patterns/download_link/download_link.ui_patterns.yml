@@ -2,6 +2,10 @@ download_link:
   label: Download link
   description: The download link makes one or more files available for download along with the text. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/980025345/T+l+chargement+de+fichier
   settings:
+    url:
+      type: textfield
+      label: File url
+      preview: "#"
     new_window:
       type: boolean
       label: Open is a new window?
@@ -16,10 +20,6 @@ download_link:
       label: File name
       description: Text name of the file.
       preview: Download document lorem ipsum sit dolores amet
-    url:
-      type: text
-      label: File url
-      preview: '#'
     detail:
       type: text
       label: File detail

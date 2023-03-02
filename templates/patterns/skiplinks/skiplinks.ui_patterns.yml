@@ -1,33 +1,34 @@
 skiplinks:
   label: Skiplinks
-  description: Skiplinks allow users with keyboard navigation or with screen readers to access specific areas of the page more quickly. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/260014417/Liens+d+vitement+-+Skiplinks
-  fields:
+  description: Skiplinks allow users with keyboard navigation or with screen readers to access specific areas of the page more quickly. Hidden by default. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/260014417/Liens+d+vitement+-+Skiplinks
+  settings:
     label:
-      type: text
+      type: textfield
       label: Label
-      description: Used for aria-label attribute. Plain text.
+      description: Used for aria-label attribute.
+  fields:
     items:
       type: render
       label: Menu items
       description: An array of 'links' pattern.
       preview:
-      - type: pattern
-        id: link
-        fields:
-          label: Content
-          url: '#content'
-      - type: pattern
-        id: link
-        fields:
-          label: Menu
-          url: '#header-navigation'
-      - type: pattern
-        id: link
-        fields:
-          label: Footer
-          url: '#footer'
-      - type: pattern
-        id: link
-        fields:
-          label: Search
-          url: '#header-search'
+        - type: pattern
+          id: link
+          fields:
+            label: Content
+            url: "#content"
+        - type: pattern
+          id: link
+          fields:
+            label: Menu
+            url: "#header-navigation"
+        - type: pattern
+          id: link
+          fields:
+            label: Footer
+            url: "#footer"
+        - type: pattern
+          id: link
+          fields:
+            label: Search
+            url: "#header-search"

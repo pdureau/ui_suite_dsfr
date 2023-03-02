@@ -19,12 +19,11 @@ side_menu:
     html_id:
       type: textfield
       label: HTML id attribute
-  fields:
     menu_name:
-      type: text
+      type: textfield
       label: Menu name
-      description: Menu Name. Plain text.
-      preview: Side Menu name
+      preview: Side menu name
+  fields:
     title:
       type: text
       label: Menu title
@@ -33,38 +32,32 @@ side_menu:
     items:
       type: render
       label: Menu items
-      description: "Full-height and lightweight navigation (including support for dropdowns).
-        Can contain:
-          - title(link title),
-          - url(link url),
-          - below(child items array, can contain the same items as parent),
-          - in_active_trail(TRUE if the link is in the active trail),
-          - attributes(HTML attributes for the menu item)"
+      description: "Full-height and lightweight navigation (including support for dropdowns). Can contain: title(link title), url(link url), below(child items array, can contain the same items as parent), in_active_trail(TRUE if the link is in the active trail), attributes(HTML attributes for the menu item)"
       preview:
         - title: Home
-          url: '/'
+          url: "/"
         - title: Library
-          url: '#'
+          url: "#"
           in_active_trail: true
           below:
             - title: Library Sub 1
-              url: '#'
+              url: "#"
             - title: Library Sub 2
-              url: '#'
+              url: "#"
         - title: Data
-          url: '#'
+          url: "#"
           below:
             - title: Data Sub 1
-              url: '#'
+              url: "#"
               below:
                 - title: Data Sub 1.1
-                  url: '#'
+                  url: "#"
                 - title: Data Sub 1.2
-                  url: '#'
+                  url: "#"
             - title: Data Sub 2
-              url: '#'
+              url: "#"
               below:
                 - title: Data Sub 2.1
-                  url: '#'
+                  url: "#"
                 - title: Data Sub 2.2
-                  url: '#'
+                  url: "#"

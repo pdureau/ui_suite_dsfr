@@ -6,12 +6,19 @@
   {% set attributes = attributes.setAttribute('download', true) %}
 {% endif %}
 
-{% if name and url %}
+{% if name %}
   <div class="fr-download">
     <p>
-      <a{{ attributes.setAttribute('href', url).addClass('fr-download__link') }}>{{ name }}
+      {% if url %}
+      <a{{ attributes.setAttribute('href', url).addClass('fr-download__link') }}>
+      {% endif %}
+        {{ name }}
+        {% if detail %}
         <span class="fr-download__detail">{{ detail }}</span>
+        {% endif %}
+      {% if url %}
       </a>
+      {% endif %}
     </p>
   </div>
 {% endif %}
