@@ -1,6 +1,6 @@
 tabs:
   label: Tabs
-  description: The tab system helps group different content in a limited space and allows dense content to be divided into individually accessible sections to make it easier for the user to read. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/367985267/Onglets+-+Tabs
+  description: The tab system helps group different content in a limited space and allows dense content to be divided into individually accessible sections to make it easier for the user to read. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/
   settings:
     label:
       type: textfield
@@ -15,8 +15,17 @@ tabs:
       preview:
         - title: Tab label 1
           icon: fr-icon-checkbox-circle-line
-          content: '<p>Tab <strong>content 1</strong></p>'
+          content:
+            type: html_tag
+            tag: p
+            value: Tab content 1
         - title: Tab label 2
-          content: '<p>Tab content 2 with <a target="_blank" href="https://example.com">link</a></p>'
+          content:
+            type: html_tag
+            tag: p
+            value: Tab content 2
         - title: Tab label 3
-          content: '<p>Tab content 3<p>'
+          content:
+            type: html_tag
+            tag: p
+            value: Tab content 3

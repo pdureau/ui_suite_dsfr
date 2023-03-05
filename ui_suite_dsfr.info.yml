@@ -6,6 +6,7 @@ core_version_requirement: ^9 || ^10
 base theme: false
 libraries:
   - ui_suite_dsfr/dsfr
+  - ui_suite_dsfr/overrides
 
 logo: assets/logo.svg
 
@@ -41,186 +42,186 @@ colors:
     label: Tilleul Verveine
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   green-bourgeon:
     label: Bourgeon
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   green-emeraude:
     label: Emeraude
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   green-menthe:
     label: Menthe
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   green-archipel:
     label: Archipel
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   blue-ecume:
     label: Ecume
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   blue-cumulus:
     label: Cumulus
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   purple-glycine:
     label: Glycine
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   pink-macaron:
     label: Macaron
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   pink-tuile:
     label: Tuile
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   yellow-tournesol:
     label: Tournesol
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   yellow-moutarde:
     label: Moutarde
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   orange-terre-battue:
     label: Terre Battue
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   brown-cafe-creme:
     label: Cafe creme
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   brown-caramel:
     label: Caramel
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   brown-opera:
     label: Opera
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted
   beige-gris-galet:
     label: Gris Galet
     types:
       background:
-      - action-high
-      - alt
-      - contrast
+        - action-high
+        - alt
+        - contrast
       text:
-      - action-high
-      - label
-      - inverted
+        - action-high
+        - label
+        - inverted

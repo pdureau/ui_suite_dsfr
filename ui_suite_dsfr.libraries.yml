@@ -5,10 +5,17 @@ dsfr:
     gpl-compatible: false
   js:
     # We don't use dsfr.module.min.js because of conflict with drupal js.
-    dist/dsfr.module.js: { }
+    dist/dsfr.module.js: {}
   css:
     theme:
       dist/dsfr.min.css: { minified: true }
       dist/utility/icons/icons.min.css: { minified: true }
       dist/utility/colors/colors.min.css: { minified: true }
-      dist/reset/reset.css: { }
+      dist/reset/reset.css: {}
+
+overrides:
+  css:
+    theme:
+      css/overrides.css: {}
+  dependencies:
+    - ui_suite_dsfr/dsfr

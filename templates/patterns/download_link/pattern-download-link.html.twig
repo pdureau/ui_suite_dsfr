@@ -8,7 +8,6 @@
 
 {% if name %}
   <div class="fr-download">
-    <p>
       {% if url %}
       <a{{ attributes.setAttribute('href', url).addClass('fr-download__link') }}>
       {% endif %}
@@ -19,6 +18,5 @@
       {% if url %}
       </a>
       {% endif %}
-    </p>
   </div>
 {% endif %}

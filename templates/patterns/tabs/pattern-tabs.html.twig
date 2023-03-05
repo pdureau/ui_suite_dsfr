@@ -22,7 +22,7 @@
         {% set div_attributes = div_attributes.addClass('fr-tabs__panel--selected') %}
       {% endif %}
       <div{{ div_attributes.addClass('fr-tabs__panel') }}>
-        {{ item.content|raw }}
+        {{ item.content }}
       </div>
     {% endfor %}
   </div>

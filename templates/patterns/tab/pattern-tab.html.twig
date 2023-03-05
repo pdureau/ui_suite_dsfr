@@ -1,0 +1,5 @@
+{% set attributes = icon ? attributes.addClass(['fr-tabs__tab--icon-left', icon]) : attributes %}
+{% set attributes = (variant|lower == "selected") ? attributes.setAttribute('aria-selected', "true") : attributes %}
+<button{{ attributes.addClass('fr-tabs__tab').setAttribute("role", "tab") }}>
+  {{ title }}
+</button>
