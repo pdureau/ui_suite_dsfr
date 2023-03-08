@@ -29,11 +29,10 @@ alert:
         custom: Custom
       preview: core
     close_title:
-      type: textfield
+      type: token
       label: Close button text
       description: Close button text. Optional. Will be used only if alert is dismissible.
       preview: Hide message
-      allow_token: true
     title_tag:
       type: select
       label: Title tag

@@ -3,7 +3,7 @@ skiplinks:
   description: Skiplinks allow users with keyboard navigation or with screen readers to access specific areas of the page more quickly. Hidden by default. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/260014417/Liens+d+vitement+-+Skiplinks
   settings:
     label:
-      type: textfield
+      type: token
       label: Label
       description: Used for aria-label attribute.
   fields:

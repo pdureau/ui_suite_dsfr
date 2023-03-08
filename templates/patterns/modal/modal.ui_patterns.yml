@@ -10,7 +10,7 @@ modal:
       label: Small
   settings:
     modal_id:
-      type: textfield
+      type: token
       label: Modal ID
       description: To link the triggered element (the one with 'aria-controls') and the modal.
     icon:

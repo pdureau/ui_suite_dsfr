@@ -8,7 +8,7 @@ tag:
       label: Small
   settings:
     url:
-      type: textfield
+      type: token
       label: URL
       preview: "https://example.com"
     dismissible:

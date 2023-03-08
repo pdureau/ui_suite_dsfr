@@ -3,12 +3,12 @@ footer:
   description: "The footer provides information on the site and secondary navigation for the user to continue his journey. It is flexible according to the needs and requirements of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
   settings:
     service_title:
-      type: textfield
+      type: token
       label: Service title
       description: "Will be the site name if empty"
       default: ""
     logo:
-      type: textfield
+      type: token
       label: Logo text
       description: "Default: 'République\\n Française'"
       preview: "République\n Française"

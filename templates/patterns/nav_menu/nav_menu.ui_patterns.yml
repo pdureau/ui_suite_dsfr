@@ -8,12 +8,12 @@ nav_menu:
       description: If true the menu will be displayed as mega menu.
       preview: false
     menu_name:
-      type: textfield
+      type: token
       label: Menu name
       description: For aria label.
       preview: Main menu
     html_id:
-      type: textfield
+      type: token
       label: HTML id attribute
   fields:
     items:

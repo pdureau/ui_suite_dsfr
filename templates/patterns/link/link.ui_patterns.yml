@@ -10,11 +10,10 @@ link:
       label: Large
   settings:
     title:
-      type: textfield
+      type: token
       label: Tilte
       description: The link title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
       preview: Simple Link title
-      allow_token: true
     url:
       type: url
       label: URL

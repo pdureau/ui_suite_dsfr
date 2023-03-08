@@ -17,10 +17,10 @@ side_menu:
         right: Right
       preview: right
     html_id:
-      type: textfield
+      type: token
       label: HTML id attribute
     menu_name:
-      type: textfield
+      type: token
       label: Menu name
       preview: Side menu name
   fields:

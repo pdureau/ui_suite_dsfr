@@ -28,10 +28,9 @@ button:
       label: Tertiary Small No Outline
   settings:
     title:
-      type: textfield
+      type: token
       label: Title
       description: The button title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
-      allow_token: true
     url:
       type: url
       label: URL
