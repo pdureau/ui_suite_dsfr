@@ -4,7 +4,7 @@
     {% set attributes = attributes.addClass('fr-alert--' ~ variant|lower|replace({'_': '-'})) %}
   {% endfor %}
 {% endif %}
-{% set title_tag = title_tag ?: 'p' %}
+{% set title_tag = title_tag|default('p') %}
 
 <div{{ attributes.addClass('fr-alert')}}>
   {% if title %}
@@ -12,6 +12,7 @@
   {% endif %}
     {{ message }}
   {% if dismissible %}
-    <button{% if dismissible == 'core' %} onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert);"{% endif %} class="fr-btn fr-btn--close" title="{{ close_title ?: 'Close'|t }}">{{ close_title ?: 'Close'|t }}</button>
+    {% set close_title = close_title|default('Close'|t) %}
+    <button{% if dismissible == 'core' %} onclick="const alert = this.parentNode; alert.parentNode.removeChild(alert);"{% endif %} class="fr-btn fr-btn--close" title="{{ close_title }}">{{ close_title }}</button>
   {% endif %}
 </div>

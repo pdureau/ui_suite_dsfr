@@ -2,7 +2,7 @@
   {% set attributes = attributes.addClass('fr-downloads-group--bordered') %}
 {% endif %}
 
-{% set title_tag = title_tag ?: 'h4' %}
+{% set title_tag = title_tag|default('h4') %}
 
 {% if downloads %}
   <div{{ attributes.addClass('fr-downloads-group') }}>

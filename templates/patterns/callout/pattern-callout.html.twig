@@ -5,8 +5,8 @@
   {% set attributes = attributes.addClass('fr-callout--' ~ color_schema) %}
 {% endif %}
 
-{% set title_tag = title_tag ?: 'p' %}
-{% set text_tag = text_tag ?: 'p' %}
+{% set title_tag = title_tag|default('p') %}
+{% set text_tag = text_tag|default('p') %}
 
 <div{{ attributes.addClass('fr-callout') }}>
   {% if title %}

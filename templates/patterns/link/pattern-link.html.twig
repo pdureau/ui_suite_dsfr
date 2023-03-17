@@ -20,7 +20,7 @@
   {% endif %}
 {% endif %}
 
-{% set url = url ?: attributes.href %}
+{% set url = url|default(attributes.href) %}
 <a{{ attributes.setAttribute('title', title).setAttribute('href', url) }}>
   {{ label }}
 </a>

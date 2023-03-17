@@ -1,7 +1,7 @@
 {% if title %}
   <section{{ attributes.addClass('fr-accordion') }}>
-    {% set id = 'accordion-'~random() %}
-    {% set title_tag = title_tag ?: 'h3' %}
+    {% set id = 'accordion-' ~ random() %}
+    {% set title_tag = title_tag|default('h3') %}
     <{{ title_tag }} class="fr-accordion__title">
       <button class="fr-accordion__btn"
               aria-expanded="false"
