@@ -1,6 +1,6 @@
 tab_panel:
   label: (Tabs panel)
-  description: "Invisible by default. Used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
+  description: "Invisible by default. Only used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
   variants:
     default: Default
     selected: Selected

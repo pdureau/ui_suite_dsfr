@@ -16,12 +16,12 @@
  * @ingroup themeable
  */
 #}
-{% set variant = not is_active ? 'secondary' %}
+{% set variant = is_active ? 'selected' : '' %}
 {% if is_active %}
   {% set attributes = attributes.setAttribute('aria-current', 'page') %}
 {% endif %}
-{{ pattern('button', {
+{{ pattern('tab', {
   'attributes': attributes,
-  'label': link['#title'],
+  'title': link['#title'],
   'url': link['#url'].toString(),
 }, variant) }}

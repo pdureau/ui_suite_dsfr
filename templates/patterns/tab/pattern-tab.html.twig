@@ -9,6 +9,12 @@
   {% set attributes = attributes.setAttribute('tabindex', "0").setAttribute('aria-selected', "true").addClass('fr-tabs__tab--selected') %}
 {% endif %}
 
+{% if url %}
+<a{{ attributes.addClass('fr-tabs__tab').setAttribute("role", "tab").setAttribute("href", url) }}>
+  {{ title }}
+</a>
+{% else %}
 <button{{ attributes.addClass('fr-tabs__tab').setAttribute("role", "tab") }}>
   {{ title }}
 </button>
+{% endif %}

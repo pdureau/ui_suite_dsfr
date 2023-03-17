@@ -1,6 +1,6 @@
 tab:
   label: (Tab)
-  description: "Used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
+  description: "Usually used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
   variants:
     default: Default
     selected: Selected
@@ -9,6 +9,10 @@ tab:
       type: token
       label: Unique ID
       description: Must be unique in the scope of a Web page. The same ID will be passed to the corresponding panel.
+    url:
+      type: url
+      label: URL
+      description: This pattern can be used as standalone, with hyperlinks instead of the dynamic tabs.
     icon:
       type: select
       label: Icon
