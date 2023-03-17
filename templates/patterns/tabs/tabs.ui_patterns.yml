@@ -9,23 +9,48 @@ tabs:
       preview: Tabs label
   fields:
     items:
-      type: array
+      type: render
       label: Tabs items
-      description: Contains 'title', 'icon' and 'content' elements.
+      description: Each tabs must have an ID unique in the scope of the page.
       preview:
-        - title: Tab label 1
+        - type: pattern
+          id: tab
+          variant: selected
+          title: Tab label 1
           icon: fr-icon-checkbox-circle-line
+          unique_id: e9759ba9-1
+        - type: pattern
+          id: tab
+          title: Tab label 2
+          unique_id: e9759ba9-2
+        - type: pattern
+          id: tab
+          title: Tab label 3
+          unique_id: e9759ba9-3
+    panels:
+      type: render
+      label: Panels
+      description: Each panels must have an ID related to its tab.
+      preview:
+        - type: pattern
+          id: tab_panel
+          variant: selected
           content:
             type: html_tag
             tag: p
             value: Tab content 1
-        - title: Tab label 2
+          unique_id: e9759ba9-1
+        - type: pattern
+          id: tab_panel
           content:
             type: html_tag
             tag: p
             value: Tab content 2
-        - title: Tab label 3
+          unique_id: e9759ba9-2
+        - type: pattern
+          id: tab_panel
           content:
             type: html_tag
             tag: p
             value: Tab content 3
+          unique_id: e9759ba9-3

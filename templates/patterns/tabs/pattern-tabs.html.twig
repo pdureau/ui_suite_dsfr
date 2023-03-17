@@ -1,37 +1,12 @@
-{% set unique = random() %}
 {% if items %}
   <div{{ attributes.addClass('fr-tabs') }}>
     <ul class="fr-tabs__list" role="tablist" aria-label="{{ label }}">
-      {% for item in items %}
+      {% for tab in items %}
         <li role="presentation">
-          {% if loop.first %}
-          {{ pattern("tab", {
-            title: item.title,
-            icon: item.icon,
-            unique_id: unique ~ '-' ~ loop.index
-          }, 'selected') }}
-          {% else %}
-          {{ pattern("tab", {
-            title: item.title,
-            icon: item.icon,
-            unique_id: unique ~ '-' ~ loop.index
-          }) }}
-          {% endif %}
+          {{ tab }}
         </li>
       {% endfor %}
     </ul>
-    {% for item in items %}
-      {% if loop.first %}
-      {{ pattern("tab_panel", {
-        content: item.content,
-        unique_id: unique ~ '-' ~ loop.index
-      }, 'selected') }}
-      {% else %}
-      {{ pattern("tab_panel", {
-        content: item.content,
-        unique_id: unique ~ '-' ~ loop.index
-      }) }}
-      {% endif %}
-    {% endfor %}
+    {{ panels }}
   </div>
 {% endif %}
