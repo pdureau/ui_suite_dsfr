@@ -1,11 +1,9 @@
-{% if variant is not empty and variant|lower != 'default' %}
-  {% set variants = variant|split('__') %}
-  {% for variant in variants %}
-    {% set attributes = attributes.addClass('fr-card--' ~ variant|lower|replace({'_': '-'})) %}
-    {% if horisontal_ratio %}
-      {% set attributes = attributes.addClass('fr-card--' ~ variant|lower|replace({'_': '-'}) ~ '-' ~ horisontal_ratio) %}
-    {% endif %}
-  {% endfor %}
+{% if variant and variant|lower != 'default' %}
+  {% set variants = variant|split('__')|map(v => v|lower|replace({(v): 'fr-card--' ~ v})|replace({'_': '-'})) %}
+  {% set attributes = attributes.addClass(variants) %}
+  {% if 'fr-card--horizontal' in variants and horisontal_ratio %}
+    {% set attributes = attributes.addClass('fr-card--horizontal-' ~ horisontal_ratio) %}
+  {% endif %}
 {% endif %}
 
 {% if enlarge_link and not footer %}

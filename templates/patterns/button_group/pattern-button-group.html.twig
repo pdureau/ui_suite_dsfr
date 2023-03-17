@@ -1,11 +1,9 @@
-{% if variant is not empty and variant|lower != 'default' %}
-  {% set variants = variant|split('__') %}
-  {% for variant in variants %}
-    {% set attributes = attributes.addClass('fr-btns-group--' ~ variant|lower|replace({'_': '-'})) %}
-  {% endfor %}
+{% if variant and variant|lower != 'default' %}
+  {% set variants = variant|split('__')|map(v => v|lower|replace({(v): 'fr-btns-group--' ~ v})|replace({'_': '-'})) %}
+  {% set attributes = attributes.addClass(variants) %}
 {% endif %}
 
-{% if icon_position is not empty %}
+{% if icon_position %}
   {% set attributes = attributes.addClass('fr-btns-group--icon-' ~ icon_position) %}
 {% endif %}
 

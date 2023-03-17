@@ -1,5 +1,5 @@
 {% if items %}
-  {% if html_id is empty %}
+  {% if not html_id %}
     {% set html_id = 'main-menu-'~random() %}
   {% endif %}
   <nav{{ attributes.addClass('fr-nav') }} role="navigation" aria-label="{{ menu_name }}" id="{{ html_id|clean_id }}">
@@ -96,7 +96,7 @@
           {% for item in items %}
             <div class="fr-col-12 fr-col-lg-3">
               <h5 class="fr-mega-menu__category">
-                {% if item.url is empty %}
+                {% if not item.url %}
                   <span class="fr-nav__link">{{ item.title }}</span>
                 {% else %}
                   <a class="fr-nav__link"

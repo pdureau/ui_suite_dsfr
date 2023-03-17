@@ -1,5 +1,5 @@
 {% set text_attributes = create_attribute() %}
-{% if variant is not empty and variant|lower != 'default' %}
+{% if variant and variant|lower != 'default' %}
   {% set text_attributes = text_attributes.addClass('fr-text--' ~ variant|lower) %}
 {% endif %}
 

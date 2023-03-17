@@ -1,4 +1,4 @@
-{% if variant is not empty and variant|lower != 'default' %}
+{% if variant and variant|lower != 'default' %}
   {% set attributes = attributes.addClass('fr-content-media--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
 {% if image %}

@@ -1,4 +1,4 @@
-{% if variant is empty or variant|lower == 'default' %}
+{% if not variant or variant|lower == 'default' %}
   {% set attributes = attributes.addClass('fr-col-md-6') %}
 {% endif %}
 {% if variant|lower == 'sm' %}

@@ -10,10 +10,10 @@
 {% if with_gutters %}
   {% set attributes = attributes.addClass('fr-grid-row--gutters') %}
 {% endif %}
-{% if horizontal_align is not empty %}
+{% if horizontal_align %}
   {% set attributes = attributes.addClass('fr-grid-row--' ~ horizontal_align|lower|replace({'_': '-'})) %}
 {% endif %}
-{% if vertical_align is not empty %}
+{% if vertical_align %}
   {% set attributes = attributes.addClass('fr-grid-row--' ~ vertical_align|lower|replace({'_': '-'})) %}
 {% endif %}
 
