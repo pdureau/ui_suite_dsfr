@@ -1,6 +1,6 @@
 tabs:
   label: Tabs
-  description: The tab system helps group different content in a limited space and allows dense content to be divided into individually accessible sections to make it easier for the user to read. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/
+  description: Groups different content in a limited space and allows dense content to be divided into individually accessible sections to make it easier for the user to read. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/
   settings:
     label:
       type: token

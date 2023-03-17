@@ -1,0 +1,11 @@
+{% set attributes = attributes.setAttribute('tabindex', "-1").setAttribute('aria-selected', "false") %}
+{% if unique_id %}
+  {% set attributes = attributes.setAttribute('id', 'panel-' ~ unique_id).setAttribute('aria-labelledby', 'tab-' ~ unique_id) %}
+{% endif %}
+{% if variant|lower == "selected" %}
+  {% set attributes = attributes.setAttribute('tabindex', "0").setAttribute('aria-selected', "true").addClass('fr-tabs__panel--selected') %}
+{% endif %}
+
+<div{{ attributes.addClass('fr-tabs__panel').setAttribute('role', 'tabpanel') }}>
+  {{ content }}
+</div>

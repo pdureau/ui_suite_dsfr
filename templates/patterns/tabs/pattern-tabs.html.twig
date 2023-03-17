@@ -4,26 +4,34 @@
     <ul class="fr-tabs__list" role="tablist" aria-label="{{ label }}">
       {% for item in items %}
         <li role="presentation">
-          {% set button_attributes = create_attribute({'id': 'tabpanel-'~loop.index~'-'~unique, 'aria-controls':
-            'tabpanel-'~loop.index~'-panel-'~unique, 'role': 'tab'}) %}
-          {% if item.icon %}
-            {% set button_attributes = button_attributes.addClass(['fr-tabs__tab--icon-left', item.icon]) %}
+          {% if loop.first %}
+          {{ pattern("tab", {
+            title: item.title,
+            icon: item.icon,
+            unique_id: unique ~ '-' ~ loop.index
+          }, 'selected') }}
+          {% else %}
+          {{ pattern("tab", {
+            title: item.title,
+            icon: item.icon,
+            unique_id: unique ~ '-' ~ loop.index
+          }) }}
           {% endif %}
-          {% set button_attributes = button_attributes.setAttribute('tabindex', loop.first ? 0 : -1).setAttribute('aria-selected', loop.first ? 'true' : 'false') %}
-          <button{{ button_attributes.addClass('fr-tabs__tab') }}>
-            {{ item.title }}
-          </button>
         </li>
       {% endfor %}
     </ul>
     {% for item in items %}
-      {% set div_attributes = create_attribute({'id': 'tabpanel-'~loop.index~'-panel'~'-'~unique, 'aria-labelledby': 'tabpanel-'~loop.index~'-'~unique, 'role': 'tabpanel', 'tabindex': 0}) %}
       {% if loop.first %}
-        {% set div_attributes = div_attributes.addClass('fr-tabs__panel--selected') %}
+      {{ pattern("tab_panel", {
+        content: item.content,
+        unique_id: unique ~ '-' ~ loop.index
+      }, 'selected') }}
+      {% else %}
+      {{ pattern("tab_panel", {
+        content: item.content,
+        unique_id: unique ~ '-' ~ loop.index
+      }) }}
       {% endif %}
-      <div{{ div_attributes.addClass('fr-tabs__panel') }}>
-        {{ item.content }}
-      </div>
     {% endfor %}
   </div>
 {% endif %}

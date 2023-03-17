@@ -1,10 +1,14 @@
 tab:
   label: (Tab)
-  description: "To be used with 'tab' pattern in the future. See: https://www.drupal.org/project/ui_suite_dsfr/issues/3346124"
+  description: "Used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
   variants:
     default: Default
     selected: Selected
   settings:
+    unique_id:
+      type: token
+      label: Unique ID
+      description: Must be unique in the scope of a Web page. The same ID will be passed to the corresponding panel.
     icon:
       type: select
       label: Icon

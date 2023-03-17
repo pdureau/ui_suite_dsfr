@@ -1,0 +1,19 @@
+tab_panel:
+  label: (Tabs panel)
+  description: "Invisible by default. Used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
+  variants:
+    default: Default
+    selected: Selected
+  settings:
+    unique_id:
+      type: token
+      label: Unique ID
+      description: Must be unique in the scope of a Web page. The same ID will be passed to the corresponding tab.
+  fields:
+    content:
+      type: render
+      label: Content
+      preview:
+        type: html_tag
+        tag: p
+        value: Tab content

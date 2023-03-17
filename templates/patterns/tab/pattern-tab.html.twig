@@ -1,5 +1,14 @@
-{% set attributes = icon ? attributes.addClass(['fr-tabs__tab--icon-left', icon]) : attributes %}
-{% set attributes = (variant|lower == "selected") ? attributes.setAttribute('aria-selected', "true") : attributes %}
+{% set attributes = attributes.setAttribute('tabindex', "-1").setAttribute('aria-selected', "false") %}
+{% if icon %}
+  {% set attributes = attributes.addClass(['fr-tabs__tab--icon-left', icon]) %}
+{% endif %}
+{% if unique_id %}
+  {% set attributes = attributes.setAttribute('id', 'tab-' ~ unique_id).setAttribute('aria-controls', 'panel-' ~ unique_id) %}
+{% endif %}
+{% if variant|lower == "selected" %}
+  {% set attributes = attributes.setAttribute('tabindex', "0").setAttribute('aria-selected', "true").addClass('fr-tabs__tab--selected') %}
+{% endif %}
+
 <button{{ attributes.addClass('fr-tabs__tab').setAttribute("role", "tab") }}>
   {{ title }}
 </button>
