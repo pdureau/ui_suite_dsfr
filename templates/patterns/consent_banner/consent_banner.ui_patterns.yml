@@ -6,32 +6,38 @@ consent_banner:
     title:
       type: text
       label: Title
-      description: Banner title. Optional.
       preview: "About cookies on sitename.fr"
-    text:
+    content:
       type: render
       label: Content
-      description: Banner renderable content.
       preview: 'Welcome! We use cookies to improve your experience and the services available on this site. To find out more, visit the <a href="#">Personal data and cookies</a> page. You can, at any time, have control over the cookies you want to activate.'
-    modal:
-      type: array
-      label: Modal data
-      description: "Contains:
-        - title: Modal title,
-        - text: see 'Consent manager' pattern,
-        - services: see 'Consent manager' pattern"
+    modal_title:
+      type: text
+      label: Modal title
+      description: "See 'Modal' pattern."
+      preview: Cookie management panel
+    modal_text:
+      type: text
+      label: Modal text
+      description: "See 'Consent manager' pattern."
+      preview: Preferences for all services.
+    services:
+      type: menu
+      label: Modal services
+      description: "A Drupal menu structure. See 'Consent manager' pattern."
       preview:
-        title: Cookie management panel
-        text: Preferences for all services.
-        services:
-          youtube:
-            title: Youtube
-            description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
-          google:
-            title: Google
-            description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
-            sub_services:
-              analitycs:
-                title: Google Analytics
-              maps:
-                title: Google Maps
+        - title: Youtube
+          attributes:
+            id: youtube
+            title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+        - title: Google
+          attributes:
+            id: google
+            title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+          below:
+            - title: Google Analytics
+              attributes:
+                id: maps
+            - title: Google Maps
+              attributes:
+                id: analitycs

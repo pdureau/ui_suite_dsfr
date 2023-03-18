@@ -3,24 +3,28 @@ consent_manager:
   description: "Allows the user to define his preferences on the use of his personal data, in particular the deposit of non-functional cookies in his browser. Used with consent_banner. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/gestionnaire-de-consentement/"
   category: Consent
   fields:
-    text:
+    title:
       type: text
-      label: Text
+      label: Title
       description: Descriptive text for the "Accept all" / "Refuse all" options.
       preview: Preferences for all services.
     services:
-      type: array
+      type: menu
       label: Services
-      description: "Cookies list, keyed by service ID. Contains: - title: Service title, - description: Service description text, - sub_services: Array with sub services, keyed by sub service id. Contains: - title: Service title."
+      description: "A 2 levels Drupal menu structure with attributes.id and attributes.title. 'url' key is ignored."
       preview:
-        youtube:
-          title: Youtube
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
-        google:
-          title: Google
-          description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
-          sub_services:
-            analitycs:
-              title: Google Analytics
-            maps:
-              title: Google Maps
+        - title: Youtube
+          attributes:
+            id: youtube
+            title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+        - title: Google
+          attributes:
+            id: google
+            title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nulla arcu, imperdiet vel rutrum sed, dapibus et diam.
+          below:
+            - title: Google Analytics
+              attributes:
+                id: analitycs
+            - title: Google Maps
+              attributes:
+                id: maps

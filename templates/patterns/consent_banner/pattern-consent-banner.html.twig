@@ -3,7 +3,7 @@
 <div{{ attributes.addClass('fr-consent-banner') }}>
   {% if title %}<p class="fr-h6 fr-mb-3v">{{ title }}</p>{% endif %}
   <div class="fr-consent-banner__content">
-    <p class="fr-text--sm">{{ text }}</p>
+    <p class="fr-text--sm">{{ content }}</p>
   </div>
   {% set buttons = [
     pattern('button', {'label': 'Accept all'|t,
@@ -25,9 +25,9 @@
 
 {{ pattern('modal', {
   modal_id: modal_id,
-  title: modal.title,
+  title: modal_title,
   body: pattern('consent_manager', {
-    text: modal.text,
-    services: modal.services
+    title: modal_text,
+    services: services
   })
 }) }}

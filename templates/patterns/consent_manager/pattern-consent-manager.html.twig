@@ -1,8 +1,8 @@
 <div{{ attributes.addClass('fr-consent-manager') }}>
   <div class="fr-consent-service fr-consent-manager__header">
     <fieldset class="fr-fieldset fr-fieldset--inline">
-      {%  if text %}
-        <legend id="finality-legend" class="fr-consent-service__title">{{ text }}</legend>
+      {%  if title %}
+        <legend id="finality-legend" class="fr-consent-service__title">{{ title }}</legend>
       {% endif %}
       <div class="fr-consent-service__radios">
         <div class="fr-radio-group">
@@ -16,40 +16,40 @@
       </div>
     </fieldset>
   </div>
-  {% for id, service in services %}
+  {% for service in services %}
     <div class="fr-consent-service">
-      <fieldset aria-labelledby="{{ id }}-legend {{ id }}-desc" role="group" class="fr-fieldset fr-fieldset--inline">
-    <legend id="{{ id }}-legend" class="fr-consent-service__title">{{ service.title }}</legend>
+      <fieldset aria-labelledby="{{ service.attributes.id }}-legend {{ service.attributes.id }}-desc" role="group" class="fr-fieldset fr-fieldset--inline">
+    <legend id="{{ service.attributes.id }}-legend" class="fr-consent-service__title">{{ service.title }}</legend>
     <div class="fr-consent-service__radios">
       <div class="fr-radio-group">
-        <input type="radio" id="consent-{{ id }}-accept" name="consent-{{ id }}">
-        <label class="fr-label" for="consent-{{ id }}-accept">{{ 'Accept'|t }}</label>
+        <input type="radio" id="consent-{{ service.attributes.id }}-accept" name="consent-{{ service.attributes.id }}">
+        <label class="fr-label" for="consent-{{ service.attributes.id }}-accept">{{ 'Accept'|t }}</label>
       </div>
       <div class="fr-radio-group">
-        <input type="radio" id="consent-{{ id }}-refuse" name="consent-{{ id }}">
-        <label class="fr-label" for="consent-{{ id }}-refuse">{{ 'Refuse'|t }}</label>
+        <input type="radio" id="consent-{{ service.attributes.id }}-refuse" name="consent-{{ service.attributes.id }}">
+        <label class="fr-label" for="consent-{{ service.attributes.id }}-refuse">{{ 'Refuse'|t }}</label>
       </div>
     </div>
-    {% if service.description %}
-      <p id="{{ id }}-desc" class="fr-consent-service__desc">{{ service.description }}</p>
+    {% if service.attributes.title %}
+      <p id="{{ service.attributes.id }}-desc" class="fr-consent-service__desc">{{ service.attributes.title }}</p>
     {% endif %}
-    {% if service.sub_services %}
+    {% if service.below %}
       <div class="fr-consent-service__collapse">
-        <button class="fr-consent-service__collapse-btn" aria-expanded="false" aria-describedby="{{ id }}-legend" aria-controls="{{ id }}-collapse">{{ 'See more details'|t }}</button>
+        <button class="fr-consent-service__collapse-btn" aria-expanded="false" aria-describedby="{{ service.attributes.id }}-legend" aria-controls="{{ service.attributes.id }}-collapse">{{ 'See more details'|t }}</button>
       </div>
-      <div class="fr-consent-services fr-collapse" id="{{ id }}-collapse">
-        {% for sub_id, sub_service in service.sub_services %}
+      <div class="fr-consent-services fr-collapse" id="{{ service.attributes.id }}-collapse">
+        {% for sub_id, sub_service in service.below %}
           <div class="fr-consent-service">
             <fieldset class="fr-fieldset fr-fieldset--inline">
-              <legend id="{{ id }}-{{ sub_id }}-legend" class="fr-consent-service__title">{{ sub_service.title }}</legend>
+              <legend id="{{ service.attributes.id }}-{{ sub_id }}-legend" class="fr-consent-service__title">{{ sub_service.title }}</legend>
               <div class="fr-consent-service__radios fr-fieldset--inline">
                 <div class="fr-radio-group">
-                  <input type="radio" id="consent-{{ id }}-{{ sub_id }}-accept" name="consent-{{ id }}-{{ sub_id }}">
-                  <label class="fr-label" for="consent-{{ id }}-{{ sub_id }}-accept">{{ 'Accept'|t }}</label>
+                  <input type="radio" id="consent-{{ service.attributes.id }}-{{ sub_id }}-accept" name="consent-{{ service.attributes.id }}-{{ sub_id }}">
+                  <label class="fr-label" for="consent-{{ service.attributes.id }}-{{ sub_id }}-accept">{{ 'Accept'|t }}</label>
                 </div>
                 <div class="fr-radio-group">
-                  <input type="radio" id="consent-{{ id }}-{{ sub_id }}-refuse" name="consent-{{ id }}-{{ sub_id }}">
-                  <label class="fr-label" for="consent-{{ id }}-{{ sub_id }}-refuse">{{ 'Refuse'|t }}</label>
+                  <input type="radio" id="consent-{{ service.attributes.id }}-{{ sub_id }}-refuse" name="consent-{{ service.attributes.id }}-{{ sub_id }}">
+                  <label class="fr-label" for="consent-{{ service.attributes.id }}-{{ sub_id }}-refuse">{{ 'Refuse'|t }}</label>
                 </div>
               </div>
             </fieldset>
