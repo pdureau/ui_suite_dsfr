@@ -1,6 +1,7 @@
 tag:
   label: Tag
-  description: The tag categorizes/classifies/organizes content using keywords. It helps users to easily search and find information. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/310706305/Tag
+  description: The tag categorizes/classifies/organizes content using keywords. It helps users to easily search and find information. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tag
+  category: Tag
   variants:
     default:
       label: Medimm

@@ -55,11 +55,7 @@ follow:
     social:
       type: array
       label: Social networks links
-      description: "Follow links by provider.
-        The link element contains the following elements:
-        - id: Follow provider machine name (facebook, twitter…);
-        - title: Link title;
-        - url: Link URI."
+      description: "Follow links by provider. The link element contains the following elements: id: Follow provider machine name (facebook, twitter…); title: Link title; url: Link URI."
       preview:
         - id: facebook
           title: Follow on Facebook

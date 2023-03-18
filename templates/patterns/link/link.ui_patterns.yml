@@ -1,6 +1,7 @@
 link:
   label: Link
-  description: The link allows navigation between a page and other content within the same page, the same site or external. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217284725/Liens+-+Links
+  description: The link allows navigation between a page and other content within the same page, the same site or external. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien
+  category: Link
   variants:
     default:
       label: Medium

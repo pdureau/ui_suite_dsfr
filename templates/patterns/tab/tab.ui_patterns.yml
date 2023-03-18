@@ -1,6 +1,7 @@
 tab:
   label: (Tab)
   description: "Usually used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
+  category: Tabs
   variants:
     default: Default
     selected: Selected

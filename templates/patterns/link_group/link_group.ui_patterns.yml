@@ -1,6 +1,7 @@
 link_group:
-  label: Link Group
-  description: Groups links in a list of links. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217284725/Liens+-+Links
+  label: Link group
+  description: Groups of links. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien
+  category: Link
   fields:
     links:
       type: render
@@ -19,4 +20,3 @@ link_group:
             label: Link 2
             url: "https://example.com"
             title: Link 2 title
-

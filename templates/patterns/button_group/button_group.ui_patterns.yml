@@ -1,6 +1,7 @@
 button_group:
-  label: Button Group
-  description: "The group of buttons allows the user to choose between several actions. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/487915549/Groupe+de+boutons"
+  label: Button group
+  description: "The group of buttons allows the user to choose between several actions. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/groupe-de-boutons"
+  category: Button
   variants:
     default:
       label: Vertical

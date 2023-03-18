@@ -1,6 +1,6 @@
 card:
   label: Card
-  description: "The card is a link to an editorial page of which it gives an overview. It is usually part of a collection or list of similar content previews. The card is never presented in isolation. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331445/Carte+-+Card"
+  description: "The card is a link to an editorial page of which it gives an overview. It is usually part of a collection or list of similar content previews. The card is never presented in isolation. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/carte"
   variants:
     default:
       label: Vertical

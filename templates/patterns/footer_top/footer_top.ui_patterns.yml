@@ -1,6 +1,7 @@
 footer_top:
   label: (Footer top)
   description: "To be embedded in the footer pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
+  category: Footer
   fields:
     items:
       type: menu

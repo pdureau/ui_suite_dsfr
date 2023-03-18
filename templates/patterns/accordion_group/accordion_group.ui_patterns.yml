@@ -1,6 +1,7 @@
 accordion_group:
   label: Accordion group
-  description: A grouping of accordions.
+  description: A grouping of accordions. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon
+  category: Accordion
   fields:
     accordions:
       type: render

@@ -1,6 +1,6 @@
 modal:
   label: Modal
-  description: The modal allows the user's attention to be focused exclusively on a task or an element of information, without losing the context of the current page. This component requires user action in order to be closed or opened. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/476610770/Modale+-+Modal
+  description: The modal allows the user's attention to be focused exclusively on a task or an element of information, without losing the context of the current page. This component requires user action in order to be closed or opened. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/modale
   variants:
     default:
       label: Medium

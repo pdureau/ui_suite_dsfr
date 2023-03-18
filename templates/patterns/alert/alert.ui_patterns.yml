@@ -1,6 +1,6 @@
 alert:
   label: Alert
-  description: Alerts make it possible to draw the user's attention to information without interrupting his current task. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/736362500/Alertes+-+Alerts
+  description: Alerts make it possible to draw the user's attention to information without interrupting his current task. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte
   variants:
     error:
       label: Error

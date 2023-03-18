@@ -1,6 +1,6 @@
 highlight:
   label: Highlight
-  description: "The highlighting allows the user to distinguish and locate information easily. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019199/Mise+en+exergue+-+Highlight"
+  description: "The highlighting allows the user to distinguish and locate information easily. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue"
   variants:
     default:
       label: Medium

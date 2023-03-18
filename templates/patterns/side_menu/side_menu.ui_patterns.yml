@@ -1,6 +1,6 @@
 side_menu:
-  label: Side menu
-  description: The side menu allows users to navigate between the different pages of a topic or the same topic. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222789853/Navigation+principale+-+Main+navigation
+  label: Sidemenu
+  description: The side menu allows users to navigate between the different pages of a topic or the same topic. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/menu-lateral
   variants:
     default:
       label: Default

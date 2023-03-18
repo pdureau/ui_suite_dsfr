@@ -1,6 +1,7 @@
 consent_banner:
   label: Consent banner
   description: "Allows the collection of the consent of users upon arrival on the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/gestionnaire-de-consentement"
+  category: Consent
   fields:
     title:
       type: text

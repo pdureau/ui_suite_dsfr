@@ -1,6 +1,6 @@
 tile:
   label: Tile
-  description: "The tile is a shortcut or entry point that redirects users to pages of content. It is usually part of a collection or list of similar tiles. The tile is never presented in isolation. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331438/Tuile+-+Tile"
+  description: "The tile is a shortcut or entry point that redirects users to pages of content. It is usually part of a collection or list of similar tiles. The tile is never presented in isolation. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tuile"
   variants:
     default:
       label: Vertical

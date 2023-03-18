@@ -1,6 +1,6 @@
 callout:
-  label: Call-out
-  description: "The highlight allows the user to quickly distinguish information that complements the content viewed. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331196/Mise+en+avant+-+Call-out"
+  label: Callout
+  description: "The highlight allows the user to quickly distinguish information that complements the content viewed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant"
   settings:
     title_tag:
       type: select

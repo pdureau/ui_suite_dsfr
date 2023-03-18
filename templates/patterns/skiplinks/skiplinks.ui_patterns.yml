@@ -1,6 +1,6 @@
 skiplinks:
   label: Skiplinks
-  description: Skiplinks allow users with keyboard navigation or with screen readers to access specific areas of the page more quickly. Hidden by default. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/260014417/Liens+d+vitement+-+Skiplinks
+  description: Skiplinks allow users with keyboard navigation or with screen readers to access specific areas of the page more quickly. Hidden by default. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien-d-evitement
   settings:
     label:
       type: token

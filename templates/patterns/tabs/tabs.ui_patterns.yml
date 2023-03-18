@@ -1,6 +1,7 @@
 tabs:
   label: Tabs
   description: Groups different content in a limited space and allows dense content to be divided into individually accessible sections to make it easier for the user to read. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/
+  category: Tabs
   settings:
     label:
       type: token

@@ -1,6 +1,6 @@
 header:
   label: Header
-  description: The header allows users to identify what site they are on. It can provide access to search and certain key pages or features. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222789846/En-t+te+-+Header
+  description: The header allows users to identify what site they are on. It can provide access to search and certain key pages or features. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete
   fields:
     operator_logo:
       type: render

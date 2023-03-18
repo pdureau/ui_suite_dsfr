@@ -1,6 +1,6 @@
 quote:
   label: Quote
-  description: "The citation is used to cite a text in an editorial page. The quote can come from an excerpt from an oral speech made by a third party or from a written text. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/771358744/Citation+-+Quote"
+  description: "The citation is used to cite a text in an editorial page. The quote can come from an excerpt from an oral speech made by a third party or from a written text. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/citation"
   settings:
     color_schema:
       type: select

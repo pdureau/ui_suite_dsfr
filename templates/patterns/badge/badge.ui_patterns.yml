@@ -1,6 +1,7 @@
 badge:
   label: Badge
-  description: The badge component makes it possible to highlight information of the “status” or “state” type on an element of the site. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/851869737/Badges
+  description: The badge component makes it possible to highlight information of the “status” or “state” type on an element of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge
+  category: Badge
   variants:
     default:
       label: Default

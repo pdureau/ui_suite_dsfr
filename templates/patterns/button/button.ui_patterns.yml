@@ -1,6 +1,7 @@
 button:
   label: Button
-  description: The button is an element of interaction with the interface allowing the user to perform an action. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217284660/Boutons+-+Buttons
+  description: The button is an element of interaction with the interface allowing the user to perform an action. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton
+  category: Button
   variants:
     default:
       label: Primary

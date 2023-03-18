@@ -15,9 +15,9 @@
   {# List of available patterns with anchor links. #}
   {% for group_name, group_patterns in patterns %}
     {% if patterns|length > 1 %}
-    <h3>{{ group_name }}</h3>
+    <h3 class="fr-h5">{{ group_name }}</h3>
     {% endif %}
-    <ul class="fr-sidemenu__list">
+    <ul class="fr-sidemenu__list fr-mb-5v fr-mt-5v">
     {% for pattern_name, pattern in group_patterns %}
       <li class="fr-sidemenu__item">
         <a class="fr-sidemenu__link"  href="#{{ pattern_name }}">{{ pattern.label }}</a>

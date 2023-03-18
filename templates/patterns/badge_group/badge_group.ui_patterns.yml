@@ -1,6 +1,7 @@
 badge_group:
-  label: Badge Group
-  description: "The group of badges allows to highlight information. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/851869737/Badges#Groupes-de-badges"
+  label: Badge group
+  description: "The group of badges allows to highlight information. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge"
+  category: Badge
   fields:
     badges:
       type: render

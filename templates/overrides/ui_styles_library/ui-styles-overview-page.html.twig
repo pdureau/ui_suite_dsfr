@@ -17,7 +17,7 @@
       {% if styles|length > 1 %}
         <h3 class="fr-h5">{{ group_name }}</h3>
       {% endif %}
-      <ul class="fr-sidemenu__list">
+    <ul class="fr-sidemenu__list fr-mb-5v fr-mt-5v">
         {% for style in group_styles %}
           <li class="fr-sidemenu__item">
             <a class="fr-sidemenu__link" href="#{{ style.id }}">{{ style.label }}</a>

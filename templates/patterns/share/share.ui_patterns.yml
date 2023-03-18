@@ -1,6 +1,6 @@
 share:
   label: Share
-  description: "Share buttons allow users to easily share content they are viewing with other users. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/771555355/Partage+-+Share"
+  description: "Share buttons allow users to easily share content they are viewing with other users. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/partage"
   fields:
     title:
       type: text
@@ -11,14 +11,11 @@ share:
       type: array
       label: Links
       description: "Share links by provider.
-        The link element contains the following elements:
-          - id: Share provider machine name (facebook, twitter, mail…);
-          - title: Link label (Share on Facebook, Share by email…);
-          - url: Link URI."
+        The link element contains the following elements: id: Share provider machine name (facebook, twitter, mail…); title: Link label (Share on Facebook, Share by email…); url: Link URI."
       preview:
         - id: facebook
           title: Share on Facebook
-          url: ''
+          url: ""
         - id: twitter
           title: Share on Twitter
           url: "https://twitter.com/intent/tweet?url=https://example.com&text=HelloWorld&via=@username&hashtags=dummy"

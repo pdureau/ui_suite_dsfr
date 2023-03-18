@@ -1,6 +1,7 @@
 download_link_group:
   label: Download link group
-  description: It is possible to make a list of download links. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/980025345/T+l+chargement+de+fichier#Liste-de-liens-de-t%C3%A9l%C3%A9chargement
+  description: It is possible to make a list of download links. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier
+  category: Download
   settings:
     bordered:
       type: boolean
@@ -28,24 +29,23 @@ download_link_group:
       label: Downloads items
       description: Download link patterns array.
       preview:
-      - type: pattern
-        id: download_link
-        settings:
-          new_window: true
-        fields:
-          name: Download document 1
-          url: '#'
-          detail: PDF – 161,88 Ko
-      - type: pattern
-        id: download_link
-        fields:
-          name: Download document 2
-          url: '#'
-          detail: PNG – 61,88 Ko
-      - type: pattern
-        id: download_link
-        fields:
-          name: Download document 3
-          url: '#'
-          detail: JPG – 261,88 Ko
-
+        - type: pattern
+          id: download_link
+          settings:
+            new_window: true
+          fields:
+            name: Download document 1
+            url: "#"
+            detail: PDF – 161,88 Ko
+        - type: pattern
+          id: download_link
+          fields:
+            name: Download document 2
+            url: "#"
+            detail: PNG – 61,88 Ko
+        - type: pattern
+          id: download_link
+          fields:
+            name: Download document 3
+            url: "#"
+            detail: JPG – 261,88 Ko

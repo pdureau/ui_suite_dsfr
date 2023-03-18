@@ -1,6 +1,7 @@
 accordion:
   label: Accordion
-  description: Accordions are used to condense space by hiding content and revealing it as needed. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/312082509/Accord+on+-+Accordion
+  description: Accordions are used to condense space by hiding content and revealing it as needed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon
+  category: Accordion
   settings:
     title_tag:
       type: select

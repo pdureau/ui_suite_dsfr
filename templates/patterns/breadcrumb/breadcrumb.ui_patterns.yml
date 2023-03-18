@@ -1,15 +1,11 @@
 breadcrumb:
   label: Breadcrumb
-  description: The breadcrumb trail provides information on the site's architecture. It indicates to the user his current position and allows him  to locate himself in the tree structure  of the site. https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019278/Fil+d+Ariane+-+Breadcrumb
+  description: The breadcrumb trail provides information on the site's architecture. It indicates to the user his current position and allows him  to locate himself in the tree structure  of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/fil-d-ariane
   fields:
     items:
       type: render
       label: Items
-      description: "Breadcrumb items array.
-        Each item can contain:
-          - text,
-          - url,
-          - attributes(item html attributes)."
+      description: "Breadcrumb items array. Each item can contain: text, url, attributes."
       preview:
         - text: Home
           url: '/'
