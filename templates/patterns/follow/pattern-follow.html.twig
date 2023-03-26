@@ -4,7 +4,7 @@
   <div{{ attributes.addClass('fr-follow') }}>
     <div class="fr-container">
       <div class="fr-grid-row">
-        {% set social_class =  social and newsletter ? 'fr-col-12 fr-col-md-4' : 'fr-col-12' %}
+        {% set social_class = social and newsletter ? 'fr-col-12 fr-col-md-4' : 'fr-col-12' %}
         {% set newsletter_class = social and newsletter ? 'fr-col-12 fr-col-md-8' : 'fr-col-12' %}
         {% if newsletter %}
           <div class="{{ newsletter_class }}">

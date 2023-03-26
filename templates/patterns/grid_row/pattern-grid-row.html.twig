@@ -17,11 +17,9 @@
   {% set attributes = attributes.addClass('fr-grid-row--' ~ vertical_align|lower|replace({'_': '-'})) %}
 {% endif %}
 
-
 {% if with_container %}
   <div {{ create_attribute({'class': container_classes}) }}>
 {% endif %}
-
 
 <div{{ attributes.addClass('fr-grid-row') }}>
   {% for item in content %}

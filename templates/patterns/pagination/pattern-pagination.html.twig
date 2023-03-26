@@ -32,15 +32,17 @@
         <li>
           {% if current == key %}
             <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('aria-current', 'page').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+              {{ key }}
+            </a>
+          {% elseif key - current > 1 or key - current < -1 %}
+            <a{{ item.attributes.addClass('fr-pagination__link', 'fr-hidden', 'fr-unhidden-lg').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+              {{ key }}
+            </a>
           {% else %}
-            {% if key - current > 1 or key - current < -1 %}
-              <a{{ item.attributes.addClass('fr-pagination__link', 'fr-hidden', 'fr-unhidden-lg').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
-            {% else %}
-              <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
-            {% endif %}
+            <a{{ item.attributes.addClass('fr-pagination__link').setAttribute('href', item.href).setAttribute('title', 'Page @key'|t({'@key': key})) }}>
+              {{ key }}
+            </a>
           {% endif %}
-            {{ key }}
-          </a>
         </li>
       {% endfor %}
       {% if ellipses.next %}

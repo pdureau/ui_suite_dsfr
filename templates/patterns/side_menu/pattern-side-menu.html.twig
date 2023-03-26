@@ -2,7 +2,7 @@
   {% set attributes = attributes.addClass('fr-sidemenu--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
 
-{% if position and position|lower != 'default'%}
+{% if position and position|lower != 'default' %}
   {% set attributes = attributes.addClass('fr-sidemenu--' ~ position) %}
 {% endif %}
 
