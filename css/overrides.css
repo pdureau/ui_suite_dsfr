@@ -21,3 +21,6 @@ table.treetable tr span.indenter a {
   position: relative;
   visibility: visible;
 }
+.layout-builder__section .fr-card * {
+  order: unset;
+}
