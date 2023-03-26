@@ -15,14 +15,16 @@ card:
     horizontal__lg:
       label: Horizontal Large
   settings:
-    horisontal_ratio:
+    horizontal_ratio:
       type: select
       label: Ratio for horizontal cards
       description: The default ratio is 40% for the image. Can also be 33/66 or 50/50.
       options:
         tier: 33/66
+        "": 40/60 (default)
         half: 50/50
-      preview: tier
+      default: ""
+      preview: ""
     enlarge_link:
       type: boolean
       label: Enlarge link?
