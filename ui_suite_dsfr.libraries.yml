@@ -11,11 +11,11 @@ dsfr:
       dist/dsfr.min.css: { minified: true }
       dist/utility/icons/icons.min.css: { minified: true }
       dist/utility/colors/colors.min.css: { minified: true }
-      dist/reset/reset.css: {}
 
 overrides:
   css:
     theme:
       css/overrides.css: {}
+      dist/reset.css: {}
   dependencies:
     - ui_suite_dsfr/dsfr
