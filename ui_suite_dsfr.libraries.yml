@@ -16,6 +16,6 @@ overrides:
   css:
     theme:
       css/overrides.css: {}
-      dist/reset.css: {}
+      css/reset.css: {}
   dependencies:
     - ui_suite_dsfr/dsfr
