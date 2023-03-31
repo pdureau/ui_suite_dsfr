@@ -654,8 +654,8 @@ callout:
       label: Button
       description: Call-out Button. Optional.
       preview:
-        - type: pattern
-          id: button
-          fields:
-            label: Go somewhere
-            url: "https://example.com"
+        type: pattern
+        id: button
+        fields:
+          label: Go somewhere
+          url: "https://example.com"

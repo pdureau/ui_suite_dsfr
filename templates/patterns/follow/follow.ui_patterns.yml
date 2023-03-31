@@ -47,11 +47,11 @@ follow:
       label: Newsletter
       description: Newsletter subscription render.
       preview:
-        - type: pattern
-          id: button
-          fields:
-            label: Subscribe
-            url: "https://example.com"
+        type: pattern
+        id: button
+        fields:
+          label: Subscribe
+          url: "https://example.com"
     social:
       type: array
       label: Social networks links

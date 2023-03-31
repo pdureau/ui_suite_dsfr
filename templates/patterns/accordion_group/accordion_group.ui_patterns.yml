@@ -13,22 +13,22 @@ accordion_group:
           fields:
             title: Accordion 1
             content:
-              - type: html_tag
-                tag: p
-                value: Accordion 1 content
+              type: html_tag
+              tag: p
+              value: Accordion 1 content
         - type: pattern
           id: accordion
           fields:
             title: Accordion 2
             content:
-              - type: html_tag
-                tag: p
-                value: Accordion 2 content
+              type: html_tag
+              tag: p
+              value: Accordion 2 content
         - type: pattern
           id: accordion
           fields:
             title: Accordion 3
             content:
-              - type: html_tag
-                tag: p
-                value: Accordion 3 content
+              type: html_tag
+              tag: p
+              value: Accordion 3 content

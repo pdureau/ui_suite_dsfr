@@ -25,6 +25,6 @@ accordion:
       label: Content
       description: The accordion renderable content.
       preview:
-        - type: html_tag
-          tag: p
-          value: Accordion content
+        type: html_tag
+        tag: p
+        value: Accordion content

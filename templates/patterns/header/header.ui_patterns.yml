@@ -22,21 +22,21 @@ header:
           html_id: header-navigation
           items:
             - title: Home
-              url: '/'
+              url: "/"
             - title: Library
-              url: '#'
+              url: "#"
               in_active_trail: true
               below:
                 - title: Sub 1
-                  url: '#'
+                  url: "#"
                   below:
                     - title: Sub 1.1
-                      url: '#'
+                      url: "#"
                 - title: Sub 2
-                  url: '#'
+                  url: "#"
                   below:
                     - title: Sub 2.1
-                      url: '#'
+                      url: "#"
             - title: Data
         settings:
           is_mega_menu: false
@@ -54,31 +54,31 @@ header:
       label: Header tools links
       description: Quick access links render. Optional.
       preview:
-        - type: pattern
-          id: link_group
-          fields:
-            links:
-              - type: pattern
-                id: link
-                fields:
-                  label: Create a space
-                  url: '#'
-                settings:
-                  icon: fr-fi-add-circle-line
-              - type: pattern
-                id: link
-                fields:
-                  label: Login
-                  url: '#'
-                settings:
-                  icon: fr-fi-lock-line
-              - type: pattern
-                id: link
-                fields:
-                  label: Register
-                  url: '#'
-                settings:
-                  icon: fr-fi-account-line
+        type: pattern
+        id: link_group
+        fields:
+          links:
+            - type: pattern
+              id: link
+              fields:
+                label: Create a space
+                url: "#"
+              settings:
+                icon: fr-fi-add-circle-line
+            - type: pattern
+              id: link
+              fields:
+                label: Login
+                url: "#"
+              settings:
+                icon: fr-fi-lock-line
+            - type: pattern
+              id: link
+              fields:
+                label: Register
+                url: "#"
+              settings:
+                icon: fr-fi-account-line
     tools_search:
       type: render
       label: Header tools search. Optional.
