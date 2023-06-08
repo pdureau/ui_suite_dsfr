@@ -9,23 +9,23 @@ pagination:
       preview:
         pages:
           1:
-            href: '#page1'
+            href: "#page1"
           2:
-            href: '#page2'
+            href: "#page2"
           3:
-            href: '#page3'
+            href: "#page3"
           4:
-            href: '#page4'
+            href: "#page4"
           5:
-            href: '#page5'
+            href: "#page5"
         first:
-          href: '#first'
+          href: "#first"
         last:
-          href: '#last'
+          href: "#last"
         next:
-          href: '#next'
+          href: "#next"
         previous:
-          href: '#prev'
+          href: "#prev"
     current:
       type: number
       label: Current page

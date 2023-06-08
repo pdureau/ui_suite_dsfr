@@ -4,16 +4,15 @@ header:
   fields:
     operator_logo:
       type: render
-      label: Header operator logo
-      description: Operator logo image render. Optional.
+      label: Operator logo
+      description: Image render.
       preview:
         theme: image
         uri: "data:image/svg+xml;charset=UTF-8,%3csvg width='150' height='150' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='2' y='2' width='146' height='146' style='fill:%23dedede;stroke:%23555555;stroke-width:2'/%3e%3ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' alignment-baseline='middle' font-family='monospace, sans-serif' fill='%23555555'%3eoperator logo%3c/text%3e%3c/svg%3e"
         alt: Logo
     navbar:
       type: render
-      label: Header navbar
-      description: Renderable navbar.
+      label: Navbar
       preview:
         type: pattern
         id: nav_menu
@@ -42,17 +41,17 @@ header:
           is_mega_menu: false
     service_title:
       type: text
-      label: Header service title
-      description: Service title plain text. Optional.
+      label: Service title
+      description: Service title plain text.
     service_tagline:
       type: text
-      label: Header service tagline
-      description: Service tagline plain text. Optional.
+      label: Service tagline
+      description: Service tagline plain text.
       preview: baseline - organization details
     tools_links:
       type: render
-      label: Header tools links
-      description: Quick access links render. Optional.
+      label: Tools links
+      description: Quick access links render.
       preview:
         type: pattern
         id: link_group
@@ -81,7 +80,7 @@ header:
                 icon: fr-fi-account-line
     tools_search:
       type: render
-      label: Header tools search. Optional.
+      label: Tools search
     logo:
       type: array
-      label: Logo text and title. Optional.
+      label: Logo text and title

@@ -1,6 +1,6 @@
 tag_group:
   label: Tags group
-  description: Groping of tags. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tag
+  description: Grouping of tags. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tag
   category: Tag
   fields:
     tags:

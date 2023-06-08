@@ -1,6 +1,6 @@
 highlight:
   label: Highlight
-  description: "The highlighting allows the user to distinguish and locate information easily. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue"
+  description: "Allows the user to distinguish and locate information easily. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue"
   variants:
     default:
       label: Medium
@@ -11,8 +11,7 @@ highlight:
   settings:
     color_schema:
       type: select
-      label: Component color
-      description: "Component color schema. Css selector in DSFR is '.fr-highlight--[color]'."
+      label: Color schema
       options:
         green-tilleul-verveine: Tilleul Verveine
         green-bourgeon: Bourgeon
@@ -36,5 +35,4 @@ highlight:
     text:
       type: text
       label: Text
-      description: Highlight text. Plain text.
       preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat. Suspendisse potenti. Fusce elit diam, gravida id tortor eu, eleifend faucibus libero. Mauris quis mi finibus, accumsan dui ut, ultricies est. Fusce mi quam, suscipit vitae ante a, egestas auctor purus."

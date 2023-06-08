@@ -1,6 +1,6 @@
 link:
   label: Link
-  description: The link allows navigation between a page and other content within the same page, the same site or external. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien
+  description: Allows navigation between a page and other content within the same page, the same site or external. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien
   category: Link
   variants:
     default:
@@ -12,8 +12,8 @@ link:
   settings:
     title:
       type: token
-      label: Tilte
-      description: The link title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
+      label: Tilte attribute
+      description: "'- new window' suffix will automatically be added for external links."
       preview: Simple Link title
     url:
       type: url
@@ -22,7 +22,7 @@ link:
       preview: "/"
     target:
       type: select
-      label: Link target attribute.
+      label: Target attribute
       options:
         self: Self
         blank: Blank
@@ -646,5 +646,4 @@ link:
     label:
       type: text
       label: Label
-      description: The link label. Required.
       preview: Simple Link

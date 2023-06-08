@@ -17,7 +17,7 @@ nav_menu:
       label: HTML id attribute
   fields:
     items:
-      type: render
+      type: menu
       label: Menu items
       description: "Full-height and lightweight navigation (including support for dropdowns). Can contain: title(link title), url(link url), below (child items array, can contain the same items as parent), content(extra_title, extra_description, extra_link - additional data for mega menu items), in_active_trail(TRUE if the link is in the active trail),  attributes(HTML attributes for the menu item)."
       preview:

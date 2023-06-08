@@ -1,6 +1,6 @@
 alert:
   label: Alert
-  description: Alerts make it possible to draw the user's attention to information without interrupting his current task. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte
+  description: Draws the user's attention to information without interrupting his current task. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/alerte
   variants:
     error:
       label: Error
@@ -31,12 +31,11 @@ alert:
     close_title:
       type: token
       label: Close button text
-      description: Close button text. Optional. Will be used only if alert is dismissible.
+      description: Optional. Will be used only if alert is dismissible.
       preview: Hide message
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'p' or 'h2'-'h6'.
+      label: HTML tag for title
       options:
         p: p
         h2: h2
@@ -48,12 +47,10 @@ alert:
     title:
       type: text
       label: Title
-      description: The alert title. Optional.
       preview: "Alert: Title of an alert"
     message:
       type: render
       label: Message
-      description: The alert message.
       preview:
         type: html_tag
         tag: p

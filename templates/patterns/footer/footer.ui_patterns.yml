@@ -1,6 +1,6 @@
 footer:
   label: Footer
-  description: "The footer provides information on the site and secondary navigation for the user to continue his journey. It is flexible according to the needs and requirements of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
+  description: "Provides information on the site and secondary navigation for the user to continue his journey. It is flexible according to the needs and requirements of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
   category: Footer
   settings:
     service_title:

@@ -5,7 +5,6 @@ share:
     title:
       type: text
       label: Title
-      description: Component title.
       preview: Share page
     links:
       type: array
@@ -28,5 +27,4 @@ share:
     text:
       type: render
       label: Text
-      description: A renderable text. Optional.
       preview: "Please <a href=https://example.com>allow the deposit of cookies</a> to share on Facebook, Twitter and LinkedIn."

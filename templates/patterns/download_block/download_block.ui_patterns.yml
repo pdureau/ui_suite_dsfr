@@ -1,6 +1,6 @@
 download_block:
   label: Download block
-  description: To highlight the document to be downloaded, use a download block. This block is an instance of the MD card. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier
+  description: Highlight a document to be downloaded. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier
   category: Download
   settings:
     url:
@@ -631,6 +631,5 @@ download_block:
       preview: PDF – 61,88 Ko
     description:
       type: text
-      label: Description
-      description: Short description. Optional.
+      label: Short description
       preview: Description texte body small regular consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore…

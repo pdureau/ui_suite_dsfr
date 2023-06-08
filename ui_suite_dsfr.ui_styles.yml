@@ -1,4 +1,3 @@
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019527/Typographie+-+Typography
 typography:
   label: Text titles & styles
   description: "To give greater editorial and graphic freedom, without harming the information hierarchy and referencing, we offer several levels of alternative titles (display)."
@@ -21,7 +20,6 @@ typography:
     fr-text--sm: Detail
     fr-text--xs: Mention
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/223019527/Typographie+-+Typography#Corps-de-texte---Body
 alternative-font:
   label: Alternative font
   description: "Use of the Spectral is limited to secondary, minor, or distinguishable information."
@@ -29,9 +27,9 @@ alternative-font:
   options:
     fr-text--alt: Spectral typography
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin:
   label: Margin
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -55,7 +53,6 @@ spacing_margin:
     fr-m-12w: 12w
     fr-m-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_top:
   label: Margin top
   category: Spacing
@@ -81,9 +78,9 @@ spacing_margin_top:
     fr-mt-12w: 12w
     fr-mt-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_bottom:
   label: Margin bottom
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -107,9 +104,9 @@ spacing_margin_bottom:
     fr-mb-12w: 12w
     fr-mb-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_left:
   label: Margin left
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -133,9 +130,9 @@ spacing_margin_left:
     fr-ml-12w: 12w
     fr-ml-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_margin_right:
   label: Margin right
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -159,9 +156,9 @@ spacing_margin_right:
     fr-mr-12w: 12w
     fr-mr-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding:
   label: Padding
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -185,9 +182,9 @@ spacing_padding:
     fr-p-12w: 12w
     fr-p-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_top:
   label: Padding top
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -211,8 +208,8 @@ spacing_padding_top:
     fr-pt-12w: 12w
     fr-pt-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_bottom:
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   label: Padding bottom
   category: Spacing
   previewed_with:
@@ -237,9 +234,9 @@ spacing_padding_bottom:
     fr-pb-12w: 12w
     fr-pb-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_left:
   label: Padding left
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -263,9 +260,9 @@ spacing_padding_left:
     fr-pl-12w: 12w
     fr-pl-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222396724/Espacement+-+Spacing
 spacing_padding_right:
   label: Padding right
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -289,148 +286,146 @@ spacing_padding_right:
     fr-pr-12w: 12w
     fr-pr-15w: 15w
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons
 icons:
   label: Icons
   category: Icons
-  description: Functional icons are visual symbols that accompany the user in his actions and help him understand the interface.
+  description: Functional icons are visual symbols that accompany the user in his actions and help him understand the interface. https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone
   options:
-    fr-icon-account-fill: account filled
-    fr-icon-account-line: account line
-    fr-icon-add-circle-fill: add-circle filled
-    fr-icon-add-circle-line: add-circle line
-    fr-icon-add-line: add line
-    fr-icon-alert-fill: alert filled
-    fr-icon-alert-line: alert line
-    fr-icon-arrow-down-line: arrow-down line
-    fr-icon-arrow-down-s-line: arrow-down-s line
-    fr-icon-arrow-go-back-fill: arrow go back filled
-    fr-icon-arrow-go-back-line: arrow go back line
-    fr-icon-arrow-left-line: arrow-left line
-    fr-icon-arrow-left-s-line: arrow-left-s line
-    fr-icon-arrow-right-line: arrow-right line
-    fr-icon-arrow-right-s-line: arrow-right-s line
-    fr-icon-arrow-up-fill: arrow up filled
-    fr-icon-arrow-up-line: arrow-up line
-    fr-icon-arrow-up-s-fill: arrow up s filled
-    fr-icon-arrow-up-s-line: arrow-up-s line
-    fr-icon-attachment-fill: pièce jointe filled
-    fr-icon-attachment-line: pièce jointe line
-    fr-icon-calendar-fill: calendar filled
-    fr-icon-calendar-line: calendar line
-    fr-icon-check-line: check line
-    fr-icon-checkbox-circle-fill: checkbox-circle filled
-    fr-icon-checkbox-circle-line: checkbox-circle line
-    fr-icon-close-circle-fill: close-circle filled
-    fr-icon-close-circle-line: close-circle line
-    fr-icon-close-line: close line
-    fr-icon-daily-motion-fill: dailymotion filled
-    fr-icon-daily-motion-line: dailymotion line
-    fr-icon-delete-fill: delete filled
-    fr-icon-delete-line: delete line
-    fr-icon-download-line: download line
-    fr-icon-edit-fill: edit filled
-    fr-icon-edit-line: edit line
-    fr-icon-equalizer-fill: equalizer filled
-    fr-icon-equalizer-line: equalizer line
-    fr-icon-error-warning-fill: error-warning filled
-    fr-icon-error-warning-line: error-warning line
-    fr-icon-external-link-line: external-link line
-    fr-icon-eye-fill: eye filled
-    fr-icon-eye-line: eye line
-    fr-icon-eye-off-fill: eye-off filled
-    fr-icon-eye-off-line: eye-off line
-    fr-icon-facebook-fill: facebook filled
-    fr-icon-file-download-fill: file-download filled
-    fr-icon-file-download-line: file-download line
-    fr-icon-file-fill: file filled
-    fr-icon-file-line: file line
-    fr-icon-file-pdf-fill: file-pdf filled
-    fr-icon-file-pdf-line: file-pdf line
-    fr-icon-filter-fill: filtre filled
-    fr-icon-filter-line: filtre line
-    fr-icon-github-fill: github filled
-    fr-icon-github-line: github line
-    fr-icon-home-4-fill: home 4 filled
-    fr-icon-home-4-line: home 4 line
-    fr-icon-image-fill: image filled
-    fr-icon-image-line: image line
-    fr-icon-information-fill: information filled
-    fr-icon-information-line: information line
-    fr-icon-instagram-fill: instagram filled
-    fr-icon-instagram-line: instagram line
-    fr-icon-line-chart-fill: line chart filled
-    fr-icon-line-chart-line: line chart line
-    fr-icon-linkedin-box-fill: linkedin-box filled
-    fr-icon-lock-fill: lock filled
-    fr-icon-lock-line: lock line
-    fr-icon-mail-fill: mail filled
-    fr-icon-mail-line: mail line
-    fr-icon-map-pin-2-fill: map pin 2 filled
-    fr-icon-map-pin-2-line: map pin 2 line
-    fr-icon-menu-2-line: menu 2 filled
-    fr-icon-menu-fill: menu filled
-    fr-icon-npmjs-fill: npmjs filled
-    fr-icon-npmjs-line: npmjs line
-    fr-icon-pause-circle-fill: pause-circle filled
-    fr-icon-pause-circle-line: pause-circle line
-    fr-icon-phone-fill: phone filled
-    fr-icon-phone-line: phone line
-    fr-icon-play-fill: play filled
-    fr-icon-play-line: play line
-    fr-icon-printer-fill: printer filled
-    fr-icon-printer-line: printer line
-    fr-icon-question-fill: question filled
-    fr-icon-question-line: question line
-    fr-icon-remixicon-fill: remixicon filled
-    fr-icon-remixicon-line: remixicon line
-    fr-icon-road-map-fill: road map filled
-    fr-icon-road-map-line: road map line
-    fr-icon-rss-fill: rss filled
-    fr-icon-rss-line: rss line
-    fr-icon-save-fill: save filled
-    fr-icon-save-line: save line
-    fr-icon-search-fill: search filled
-    fr-icon-search-line: search line
-    fr-icon-slack-fill: slack filled
-    fr-icon-slack-line: slack line
-    fr-icon-snapchat-fill: snapchat filled
-    fr-icon-snapchat-line: snapchat line
-    fr-icon-subtract-line: subtract line
-    fr-icon-telegram-fill: telegram filled
-    fr-icon-telegram-line: telegram line
-    fr-icon-theme-fill: theme filled
-    fr-icon-tiktok-fill: tiktok filled
-    fr-icon-tiktok-line: tiktok line
-    fr-icon-timer-fill: timer filled
-    fr-icon-timer-line: timer line
-    fr-icon-twitch-fill: twitch filled
-    fr-icon-twitch-line: twitch line
-    fr-icon-twitter-fill: twitter filled
-    fr-icon-twitter-line: twitter line
-    fr-icon-upload-2-fill: upload filled
-    fr-icon-upload-2-line: upload line
-    fr-icon-user-fill: user filled
-    fr-icon-user-line: user line
-    fr-icon-vimeo-fill: vimeo filled
-    fr-icon-vimeo-line: vimeo line
-    fr-icon-volume-down-fill: volume-down filled
-    fr-icon-volume-down-line: volume-down line
-    fr-icon-volume-mute-fill: volume-mute filled
-    fr-icon-volume-mute-line: volume-mute line
-    fr-icon-volume-up-fill: volume-up filled
-    fr-icon-volume-up-line: volume-up line
-    fr-icon-youtube-fill: youtube filled
-    fr-icon-youtube-line: youtube line
-    fr-icon-zoom-in-fill: zoom in filled
-    fr-icon-zoom-in-line: zoom in line
-    fr-icon-zoom-out-fill: zoom out filled
-    fr-icon-zoom-out-line: zoom out line
+    fr-icon-account-fill: Account (filled)
+    fr-icon-account-line: Account
+    fr-icon-add-circle-fill: Add circle (filled)
+    fr-icon-add-circle-line: Add circle
+    fr-icon-add-line: Add
+    fr-icon-alert-fill: Alert (filled)
+    fr-icon-alert-line: Alert
+    fr-icon-arrow-down-line: Arrow down
+    fr-icon-arrow-down-s-line: Arrow down short
+    fr-icon-arrow-go-back-fill: Arrow go back (filled)
+    fr-icon-arrow-go-back-line: Arrow go back
+    fr-icon-arrow-left-line: Arrow left
+    fr-icon-arrow-left-s-line: Arrow left short
+    fr-icon-arrow-right-line: Arrow right
+    fr-icon-arrow-right-s-line: Arrow right short
+    fr-icon-arrow-up-fill: Arrow up (filled)
+    fr-icon-arrow-up-line: Arrow up
+    fr-icon-arrow-up-s-fill: Arrow up short (filled)
+    fr-icon-arrow-up-s-line: Arrow up short
+    fr-icon-attachment-fill: Attachment (filled)
+    fr-icon-attachment-line: Attachment
+    fr-icon-calendar-fill: Calendar (filled)
+    fr-icon-calendar-line: Calendar
+    fr-icon-check-line: Check
+    fr-icon-checkbox-circle-fill: Checkbox circle (filled)
+    fr-icon-checkbox-circle-line: Checkbox circle
+    fr-icon-close-circle-fill: Close circle (filled)
+    fr-icon-close-circle-line: Close circle
+    fr-icon-close-line: Close
+    fr-icon-daily-motion-fill: Dailymotion (filled)
+    fr-icon-daily-motion-line: Dailymotion
+    fr-icon-delete-fill: Delete (filled)
+    fr-icon-delete-line: Delete
+    fr-icon-download-line: Download
+    fr-icon-edit-fill: Edit (filled)
+    fr-icon-edit-line: Edit
+    fr-icon-equalizer-fill: Equalizer (filled)
+    fr-icon-equalizer-line: Equalizer
+    fr-icon-error-warning-fill: Error warning (filled)
+    fr-icon-error-warning-line: Error warning
+    fr-icon-external-link-line: External link
+    fr-icon-eye-fill: Eye (filled)
+    fr-icon-eye-line: Eye
+    fr-icon-eye-off-fill: Eye off (filled)
+    fr-icon-eye-off-line: Eye off
+    fr-icon-facebook-fill: Facebook (filled)
+    fr-icon-file-download-fill: File download (filled)
+    fr-icon-file-download-line: File download
+    fr-icon-file-fill: File (filled)
+    fr-icon-file-line: File
+    fr-icon-file-pdf-fill: File PDF (filled)
+    fr-icon-file-pdf-line: File PDF
+    fr-icon-filter-fill: Filter (filled)
+    fr-icon-filter-line: Filter
+    fr-icon-github-fill: Github (filled)
+    fr-icon-github-line: Github
+    fr-icon-home-4-fill: Home 4 (filled)
+    fr-icon-home-4-line: Home 4
+    fr-icon-image-fill: Image (filled)
+    fr-icon-image-line: Image
+    fr-icon-information-fill: Information (filled)
+    fr-icon-information-line: Information
+    fr-icon-instagram-fill: Instagram (filled)
+    fr-icon-instagram-line: Instagram
+    fr-icon-line-chart-fill: Line chart (filled)
+    fr-icon-line-chart-line: Line chart
+    fr-icon-linkedin-box-fill: Linkedin box (filled)
+    fr-icon-lock-fill: Lock (filled)
+    fr-icon-lock-line: Lock
+    fr-icon-mail-fill: Mail (filled)
+    fr-icon-mail-line: Mail
+    fr-icon-map-pin-2-fill: Map pin 2 (filled)
+    fr-icon-map-pin-2-line: Map pin 2
+    fr-icon-menu-2-line: Menu 2 (filled)
+    fr-icon-menu-fill: Menu (filled)
+    fr-icon-npmjs-fill: npmjs (filled)
+    fr-icon-npmjs-line: npmjs
+    fr-icon-pause-circle-fill: pause-circle (filled)
+    fr-icon-pause-circle-line: pause-circle
+    fr-icon-phone-fill: Phone (filled)
+    fr-icon-phone-line: Phone
+    fr-icon-play-fill: Play (filled)
+    fr-icon-play-line: Play
+    fr-icon-printer-fill: Printer (filled)
+    fr-icon-printer-line: Printer
+    fr-icon-question-fill: Question (filled)
+    fr-icon-question-line: Question
+    fr-icon-remixicon-fill: Remixicon (filled)
+    fr-icon-remixicon-line: Remixicon
+    fr-icon-road-map-fill: Road map (filled)
+    fr-icon-road-map-line: Road map
+    fr-icon-rss-fill: RSS (filled)
+    fr-icon-rss-line: RSS
+    fr-icon-save-fill: Save (filled)
+    fr-icon-save-line: Save
+    fr-icon-search-fill: Search (filled)
+    fr-icon-search-line: Search
+    fr-icon-slack-fill: Slack (filled)
+    fr-icon-slack-line: Slack
+    fr-icon-snapchat-fill: Snapchat (filled)
+    fr-icon-snapchat-line: Snapchat
+    fr-icon-subtract-line: Subtract
+    fr-icon-telegram-fill: Telegram (filled)
+    fr-icon-telegram-line: Telegram
+    fr-icon-theme-fill: Theme (filled)
+    fr-icon-tiktok-fill: Tiktok (filled)
+    fr-icon-tiktok-line: Tiktok
+    fr-icon-timer-fill: Timer (filled)
+    fr-icon-timer-line: Timer
+    fr-icon-twitch-fill: Twitch (filled)
+    fr-icon-twitch-line: Twitch
+    fr-icon-twitter-fill: Twitter (filled)
+    fr-icon-twitter-line: Twitter
+    fr-icon-upload-2-fill: Upload 2 (filled)
+    fr-icon-upload-2-line: Upload 2
+    fr-icon-user-fill: User (filled)
+    fr-icon-user-line: User
+    fr-icon-vimeo-fill: Vimeo (filled)
+    fr-icon-vimeo-line: Vimeo
+    fr-icon-volume-down-fill: Volume down (filled)
+    fr-icon-volume-down-line: Volume down
+    fr-icon-volume-mute-fill: Volume mute (filled)
+    fr-icon-volume-mute-line: Volume mute
+    fr-icon-volume-up-fill: Volume up (filled)
+    fr-icon-volume-up-line: Volume up
+    fr-icon-youtube-fill: Youtube (filled)
+    fr-icon-youtube-line: Youtube
+    fr-icon-zoom-in-fill: Zoom in (filled)
+    fr-icon-zoom-in-line: Zoom in
+    fr-icon-zoom-out-fill: Zoom out (filled)
+    fr-icon-zoom-out-line: Zoom out
 
-# https://gouvfr.atlassian.net/wiki/spaces/DB/pages/222331396/Ic+nes+-+Icons#Tailles
 icons_size:
   label: Icon sizes
-  description: The icons are available in four sizes. It is possible to modify the size of the icons using specific modifiers.
+  description: The icons are available in four sizes. It is possible to modify the size of the icons using specific modifiers. https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone
   category: Icons
   options:
     fr-fi--sm: SM
@@ -439,9 +434,8 @@ icons_size:
   previewed_with:
     - fr-icon-alert-fill
 
-# ...
 container_type:
-  label: Type of container
+  label: Container type
   description: External margins and gutters.
   previewed_with:
     - fr-background-alt--grey
@@ -450,32 +444,36 @@ container_type:
     fr-container--fluid: Fluid
 
 background:
-  label: Background
+  label: Background color
+  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-palette
   category: Color
   previewed_with:
-    - fr-p-1v
+    - fr-p-1w
   options:
-    fr-background-action-high--blue-france: Action-high Blue France
-    fr-background-action-high--red-marianne: Action-high Red Marianne
+    fr-background-action-high--blue-france:
+      label: Action-high blue France
+      previewed_with:
+        - fr-text-inverted--blue-france
+    fr-background-action-high--red-marianne: Action-high red Marianne
     fr-background-alt--blue-france: Alt Blue France
-    fr-background-alt--grey: Alt Gray
-    fr-background-alt--red-marianne: Alt Red Marianne
-    fr-background-contrast--blue-france: Contrast Blue France
-    fr-background-contrast--error: Contrast Error
-    fr-background-contrast--grey: Contrast Gray
-    fr-background-contrast--info: Contrast Info
-    fr-background-contrast--red-marianne: Contrast Red Marianne
-    fr-background-contrast--success: Contrast Success
-    fr-background-contrast--warning: Contrast Warning
-    fr-background-default--grey: Default Gray
-    fr-background-flat--error: Flat Error
+    fr-background-alt--grey: Alt gray
+    fr-background-alt--red-marianne: Alt red Marianne
+    fr-background-contrast--blue-france: Contrast blue France
+    fr-background-contrast--error: Contrast error
+    fr-background-contrast--grey: Contrast gray
+    fr-background-contrast--info: Contrast info
+    fr-background-contrast--red-marianne: Contrast red Marianne
+    fr-background-contrast--success: Contrast success
+    fr-background-contrast--warning: Contrast warning
+    fr-background-default--grey: Default gray
+    fr-background-flat--error: Flat error
     fr-background-flat--grey:
-      label: Flat Grey
+      label: Flat grey
       previewed_with:
         - fr-text-inverted--grey
-    fr-background-flat--info: Flat Info
-    fr-background-flat--success: Flat Success
-    fr-background-flat--warning: Flat Warning
+    fr-background-flat--info: Flat info
+    fr-background-flat--success: Flat success
+    fr-background-flat--warning: Flat warning
 
 text_color:
   label: Text color
@@ -483,29 +481,46 @@ text_color:
   previewed_with:
     - fr-p-1v
   options:
-    fr-text-action-high--blue-france: Action-high Blue France
-    fr-text-action-high--grey: Action-high Grey
-    fr-text-action-high--red-marianne: Action-high Red Marianne
-    fr-text-default--error: Default Error
-    fr-text-default--grey: Default Grey
-    fr-text-default--info: Default Info
-    fr-text-default--success: Default Success
-    fr-text-default--warning: Default Warning
+    fr-text-action-high--blue-france: Action-high blue France
+    fr-text-action-high--grey: Action-high grey
+    fr-text-action-high--red-marianne: Action-high red Marianne
+    fr-text-default--error: Default error
+    fr-text-default--grey: Default grey
+    fr-text-default--info: Default info
+    fr-text-default--success: Default success
+    fr-text-default--warning: Default warning
     fr-text-inverted--blue-france:
-      label: Inverted Blue France
+      label: Inverted blue France
+      previewed_with:
+        - fr-background-action-high--blue-france
+    fr-text-inverted--error:
+      label: Inverted error
+      previewed_with:
+        - fr-background-flat--error
+    fr-text-inverted--grey:
+      label: Inverted grey
       previewed_with:
         - fr-background-flat--grey
-        - fr-text-default--grey
-    fr-text-inverted--error: Inverted Error
-    fr-text-inverted--grey: Inverted Grey
-    fr-text-inverted--info: Inverted Info
-    fr-text-inverted--red-marianne: Inverted Red Marianne
-    fr-text-inverted--success: Inverted Success
-    fr-text-inverted--warning: Inverted Warning
-    fr-text-label--blue-france: Label Blue France
-    fr-text-label--grey: Label Grey
-    fr-text-label--red-marianne: Label Red Marianne
-    fr-text-mention--grey: Mention Grey
-    fr-text-title--blue-france: Title Blue France
-    fr-text-title--grey: Title Grey
-    fr-text-title--red-marianne: Title Red Marianne
+    fr-text-inverted--info:
+      label: Inverted info
+      previewed_with:
+        - fr-background-flat--info
+    fr-text-inverted--red-marianne:
+      label: Inverted red Marianne
+      previewed_with:
+        - fr-background-action-high--red-marianne
+    fr-text-inverted--success:
+      label: Inverted success
+      previewed_with:
+        - fr-background-flat--success
+    fr-text-inverted--warning:
+      label: Inverted warning
+      previewed_with:
+        - fr-background-flat--warning
+    fr-text-label--blue-france: Label blue France
+    fr-text-label--grey: Label grey
+    fr-text-label--red-marianne: Label red Marianne
+    fr-text-mention--grey: Mention grey
+    fr-text-title--blue-france: Title blue France
+    fr-text-title--grey: Title g  rey
+    fr-text-title--red-marianne: Title red Marianne

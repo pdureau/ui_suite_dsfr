@@ -1,6 +1,6 @@
 button:
   label: Button
-  description: The button is an element of interaction with the interface allowing the user to perform an action. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton
+  description: Element of interaction with the interface allowing the user to perform an action. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton
   category: Button
   variants:
     default:
@@ -30,15 +30,15 @@ button:
   settings:
     title:
       type: token
-      label: Title
-      description: The button title attribute text. Optional. Do not add suffix '- new window' for external links, it will be added automaticaly when needed.
+      label: Title attribute
+      description: "'- new window' suffix will automatically be added for external links."
     url:
       type: url
       label: URL
-      description: The button URL. Optional.
     target:
       type: select
-      label: Link target attribute. If button is used as link.
+      label: Link target attribute
+      description: If button is used as link.
       options:
         self: Self
         blank: Blank
@@ -664,5 +664,4 @@ button:
     label:
       type: text
       label: Label
-      description: The button label.
       preview: Submit

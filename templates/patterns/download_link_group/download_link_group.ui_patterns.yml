@@ -9,8 +9,7 @@ download_link_group:
       preview: true
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'h2'-'h6'.
+      label: HTML tag for title
       options:
         h2: h2
         h3: h3
@@ -22,12 +21,11 @@ download_link_group:
     title:
       type: text
       label: Title
-      description: The group title.
       preview: Download group title
     downloads:
-      type: array
+      type: render
       label: Downloads items
-      description: Download link patterns array.
+      description: "'Download link' patterns."
       preview:
         - type: pattern
           id: download_link

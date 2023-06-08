@@ -1,12 +1,11 @@
 accordion:
   label: Accordion
-  description: Accordions are used to condense space by hiding content and revealing it as needed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon
+  description: Used to condense space by hiding content and revealing it as needed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon
   category: Accordion
   settings:
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'h2'-'h6'.
+      label: HTML tag for title
       options:
         h2: h2
         h3: h3
@@ -18,7 +17,6 @@ accordion:
     title:
       type: text
       label: Title
-      description: The accordion title.
       preview: Accordion title
     content:
       type: render

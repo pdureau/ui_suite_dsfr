@@ -9,7 +9,7 @@ skiplinks:
   fields:
     items:
       type: render
-      label: Menu items
+      label: Items
       description: An array of 'links' pattern.
       preview:
         - type: pattern

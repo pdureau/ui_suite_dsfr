@@ -5,7 +5,6 @@ summary:
     title:
       type: text
       label: Title
-      description: Summary title.
       preview: Summary
     links:
       type: array
@@ -29,8 +28,7 @@ summary:
   settings:
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'p' or 'h2'-'h6'.
+      label: HTML tag for title
       options:
         p: p
         h2: h2

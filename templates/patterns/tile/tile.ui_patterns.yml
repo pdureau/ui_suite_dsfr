@@ -1,6 +1,6 @@
 tile:
   label: Tile
-  description: "The tile is a shortcut or entry point that redirects users to pages of content. It is usually part of a collection or list of similar tiles. The tile is never presented in isolation. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tuile"
+  description: "A shortcut or entry point that redirects users to pages of content. It is usually part of a collection or list of similar tiles. The tile is never presented in isolation. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tuile"
   variants:
     default:
       label: Vertical
@@ -19,8 +19,7 @@ tile:
       preview: true
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'h2'-'h6'.
+      label: HTML tag for title
       options:
         h2: h2
         h3: h3
@@ -40,7 +39,6 @@ tile:
     image:
       type: render
       label: Image
-      description: Tile image.
       preview:
         theme: image
         uri: "data:image/svg+xml;charset=UTF-8,%3csvg style='font-size: 1.125rem; text-anchor: middle; user-select: none;' width='100%25' height='254' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid slice' focusable='false' role='img'%3e%3crect width='100%25' height='100%25' fill='%23868e96'%3e%3c/rect%3e%3ctext x='50%25' y='50%25' fill='%23dee2e6' dy='.3em'%3eImage cap%3c/text%3e%3c/svg%3e"
@@ -48,7 +46,7 @@ tile:
     title:
       type: render
       label: Title
-      description: Tile title (May contain a link).
+      description: May contain a link
       preview:
         type: html_tag
         tag: a
@@ -59,5 +57,4 @@ tile:
     description:
       type: text
       label: Text
-      description: Tile description. Plain text. Optional.
       preview: Tile description

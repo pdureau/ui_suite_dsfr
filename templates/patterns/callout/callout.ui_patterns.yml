@@ -1,11 +1,10 @@
 callout:
   label: Callout
-  description: "The highlight allows the user to quickly distinguish information that complements the content viewed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant"
+  description: "Allows the user to quickly distinguish information that complements the content viewed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant"
   settings:
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'p' or 'h2'-'h6'.
+      label: HTML tag for title
       options:
         p: p
         h2: h2
@@ -15,8 +14,7 @@ callout:
         h6: h6
     color_schema:
       type: select
-      label: Component color
-      description: "Component color schema. Css selector in DSFR is '.fr-callout--[color]'."
+      label: Color schema
       options:
         green-tilleul-verveine: Tilleul Verveine
         green-bourgeon: Bourgeon
@@ -642,17 +640,15 @@ callout:
     title:
       type: text
       label: Title
-      description: Callout title. Plain text. Optional.
       preview: Title
     text:
       type: text
       label: Text
-      description: Callout text. Plain text.
       preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat. Suspendisse potenti. Fusce elit diam, gravida id tortor eu, eleifend faucibus libero. Mauris quis mi finibus, accumsan dui ut, ultricies est. Fusce mi quam, suscipit vitae ante a, egestas auctor purus."
     button:
       type: render
       label: Button
-      description: Call-out Button. Optional.
+      description: A 'Button' component.
       preview:
         type: pattern
         id: button

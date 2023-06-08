@@ -1,6 +1,6 @@
 download_link:
   label: Download link
-  description: The download link makes one or more files available for download along with the text. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier
+  description: One or more files available for download along with some text. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier
   category: Download
   settings:
     url:

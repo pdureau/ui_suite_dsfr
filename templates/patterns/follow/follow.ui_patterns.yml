@@ -4,8 +4,7 @@ follow:
   settings:
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'h2'-'h6'.
+      label: HTML tag for title
       options:
         h2: h2 (default)
         h3: h3
@@ -16,8 +15,7 @@ follow:
       preview: h2
     follow_title_tag:
       type: select
-      label: Follow us title tag
-      description: Title html tag. Can be 'h2'-'h6'.
+      label: "HTML tag for 'Follow us' title"
       options:
         h2: h2 (default)
         h3: h3
@@ -29,23 +27,19 @@ follow:
   fields:
     social_title:
       type: render
-      label: Title (Social networks)
-      description: Social networks title rendered text.
+      label: Social networks title
       preview: "Follow us <br> on social networks"
     newsletter_title:
       type: text
-      label: Title (Newsletter)
-      description: Newsletter title text.
+      label: Newsletter title
       preview: "Subscribe to our newsletter"
     newsletter_body:
       type: render
-      label: Description text
-      description: Newslatter description renderable text. Optional.
+      label: Newsletter description
       preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
     newsletter:
       type: render
-      label: Newsletter
-      description: Newsletter subscription render.
+      label: Newsletter button
       preview:
         type: pattern
         id: button

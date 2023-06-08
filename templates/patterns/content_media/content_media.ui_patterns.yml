@@ -20,8 +20,8 @@ content_media:
   fields:
     video:
       type: render
-      label: Video
-      description: The video player. No needed if image is set.
+      label: Video player
+      description: Not expected if image is set.
       preview:
         type: html_tag
         tag: iframe
@@ -32,16 +32,15 @@ content_media:
     image:
       type: render
       label: Image
-      description: Media image. No needed if video is set.
+      description: Not expected if video is set.
     caption:
       type: text
       label: Caption
-      description: Media caption. Plain text. Optional.
       preview: "© Media caption"
     transcription_link:
       type: render
       label: Transcription Link
-      description: A 'button' pattern. Optional.
+      description: A 'button' pattern.
       preview:
         type: pattern
         id: button

@@ -27,10 +27,9 @@ side_menu:
     title:
       type: text
       label: Menu title
-      description: Menu title text. Plain text.
       preview: Section title
     items:
-      type: render
+      type: menu
       label: Menu items
       description: "Full-height and lightweight navigation (including support for dropdowns). Can contain: title(link title), url(link url), below(child items array, can contain the same items as parent), in_active_trail(TRUE if the link is in the active trail), attributes(HTML attributes for the menu item)"
       preview:

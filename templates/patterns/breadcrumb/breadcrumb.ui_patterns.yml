@@ -1,6 +1,6 @@
 breadcrumb:
   label: Breadcrumb
-  description: The breadcrumb trail provides information on the site's architecture. It indicates to the user his current position and allows him  to locate himself in the tree structure  of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/fil-d-ariane
+  description: Provides information on the site's architecture. It indicates to the user his current position and allows him  to locate himself in the tree structure of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/fil-d-ariane
   fields:
     items:
       type: render
@@ -8,9 +8,9 @@ breadcrumb:
       description: "Breadcrumb items array. Each item can contain: text, url, attributes."
       preview:
         - text: Home
-          url: '/'
+          url: "/"
         - text: Library
-          url: '#'
+          url: "#"
         - text: Data
           attributes:
-            data-name: 'Test'
+            data-name: "Test"

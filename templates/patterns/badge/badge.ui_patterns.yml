@@ -1,6 +1,6 @@
 badge:
   label: Badge
-  description: The badge component makes it possible to highlight information of the “status” or “state” type on an element of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge
+  description: Highlight information of the “status” or “state” type on an element of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge
   category: Badge
   variants:
     default:
@@ -10,8 +10,8 @@ badge:
   settings:
     color_schema:
       type: select
-      label: Component color
-      description: "Component color schema. Css selector in DSFR is '.fr-badge--[color]'. It is possible to use illustrative colors for not system badges only. Optional."
+      label: Color schema
+      description: "It is possible to use illustrative colors for not system badges only. Optional."
       options:
         green-tilleul-verveine: Tilleul Verveine
         green-bourgeon: Bourgeon
@@ -33,8 +33,8 @@ badge:
       preview: brown-caramel
     system_type:
       type: select
-      label: Budget type
-      description: System badget type. If selected 'Component color' setting will be ignored. Optional.
+      label: System type
+      description: If selected 'Color schema' will be ignored. Optional.
       options:
         success: Success
         error: Error
@@ -51,5 +51,4 @@ badge:
     label:
       type: text
       label: Label
-      description: The badget label.
       preview: Badge label

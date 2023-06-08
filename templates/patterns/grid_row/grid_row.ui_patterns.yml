@@ -99,7 +99,7 @@ grid_row:
         fr-col-xl-11: 11
         fr-col-xl-12: 12
     horizontal_align:
-      label: Alignement horizontal
+      label: Horizontal alignement
       type: select
       preview: left
       options:
@@ -107,7 +107,7 @@ grid_row:
         right: Right
         center: Center
     vertical_align:
-      label: Alignement vertical
+      label: Vertical alignment
       type: select
       options:
         top: Top
@@ -129,7 +129,7 @@ grid_row:
               tag: a
               value: Card title
               attributes:
-                href: '#'
+                href: "#"
                 title: Link title
           settings:
             enlarge_link: true

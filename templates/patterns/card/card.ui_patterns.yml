@@ -47,8 +47,7 @@ card:
       preview: shadow
     title_tag:
       type: select
-      label: Title tag
-      description: Title html tag. Can be 'h2'-'h6'.
+      label: HTML tag for title
       options:
         h2: h2
         h3: h3
@@ -1267,15 +1266,13 @@ card:
     image:
       type: render
       label: Image
-      description: Card image render. Optional.
       preview:
         theme: image
         uri: "data:image/svg+xml;charset=UTF-8,%3csvg style='font-size: 1.125rem; text-anchor: middle; user-select: none;' width='100%25' height='254' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid slice' focusable='false' role='img'%3e%3crect width='100%25' height='100%25' fill='%23868e96'%3e%3c/rect%3e%3ctext x='50%25' y='50%25' fill='%23dee2e6' dy='.3em'%3eImage cap%3c/text%3e%3c/svg%3e"
         alt: ""
     image_badges:
       type: render
-      label: Image badges group
-      description: Group render. Optional.
+      label: Image badges
       preview:
         type: pattern
         id: badge_group
@@ -1288,7 +1285,7 @@ card:
     title:
       type: render
       label: Title
-      description: Card title (May contain a link).
+      description: May contain a link
       preview:
         type: html_tag
         tag: a
@@ -1298,8 +1295,7 @@ card:
           title: Link title
     tags_badges:
       type: render
-      label: Tags or badges group
-      description: Group render. Optional.
+      label: Tags or badges groups
       preview:
         type: pattern
         id: tag_group
@@ -1316,22 +1312,19 @@ card:
     detail:
       type: text
       label: Top detail
-      description: Card top detail. Optional
       preview: Detail
     detail_end:
       type: text
       label: Bottom detail
-      description: Card bottom detail. Optional
       preview: Detail 2
     description:
       type: text
       label: Text
-      description: Card text. Plain text. Optional.
       preview: "The card gives clickable previews of a content page to the user. It is usually part of a collection or list of similar content previews. The card is never presented in isolation."
     footer:
       type: render
       label: Card footer
-      description: Should be button or link group. Optional.
+      description: Should be button or link group.
       preview:
         type: pattern
         id: button_group

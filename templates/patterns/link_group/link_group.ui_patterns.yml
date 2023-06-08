@@ -1,6 +1,6 @@
 link_group:
   label: Link group
-  description: Groups of links. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien
+  description: Group of links. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien
   category: Link
   fields:
     links:
