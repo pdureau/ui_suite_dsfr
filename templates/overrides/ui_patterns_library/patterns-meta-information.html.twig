@@ -39,7 +39,7 @@
         <td><code>{{ setting.type }}</code></td>
         <td>{{ setting.description }}
         {% if setting.options %}
-        <ul>
+        <ul{% if "icon" in name and setting.type == "select"%} style="max-height: 300px; overflow: scroll"{% endif %}>
         {% for key, label in setting.options %}
           <li>{{ key }}: {{ label }}</li>
         {% endfor %}
