@@ -2,56 +2,28 @@ header:
   label: Header
   description: The header allows users to identify what site they are on. It can provide access to search and certain key pages or features. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete
   fields:
+    logo_text:
+      type: text
+      label: Logo text
     operator_logo:
       type: render
       label: Operator logo
-      description: Image render.
+      description: A renderable image.
       preview:
         theme: image
         uri: "data:image/svg+xml;charset=UTF-8,%3csvg width='150' height='150' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='2' y='2' width='146' height='146' style='fill:%23dedede;stroke:%23555555;stroke-width:2'/%3e%3ctext x='50%25' y='50%25' font-size='18' text-anchor='middle' alignment-baseline='middle' font-family='monospace, sans-serif' fill='%23555555'%3eoperator logo%3c/text%3e%3c/svg%3e"
         alt: Logo
-    navbar:
-      type: render
-      label: Navbar
-      preview:
-        type: pattern
-        id: nav_menu
-        fields:
-          menu_name: Main menu
-          html_id: header-navigation
-          items:
-            - title: Home
-              url: "/"
-            - title: Library
-              url: "#"
-              in_active_trail: true
-              below:
-                - title: Sub 1
-                  url: "#"
-                  below:
-                    - title: Sub 1.1
-                      url: "#"
-                - title: Sub 2
-                  url: "#"
-                  below:
-                    - title: Sub 2.1
-                      url: "#"
-            - title: Data
-        settings:
-          is_mega_menu: false
     service_title:
       type: text
       label: Service title
-      description: Service title plain text.
     service_tagline:
       type: text
       label: Service tagline
-      description: Service tagline plain text.
       preview: baseline - organization details
     tools_links:
       type: render
       label: Tools links
-      description: Quick access links render.
+      description: Quick access links.
       preview:
         type: pattern
         id: link_group
@@ -81,6 +53,37 @@ header:
     tools_search:
       type: render
       label: Tools search
-    logo:
-      type: array
-      label: Logo text and title
+    navbar:
+      type: render
+      label: Navbar
+      preview:
+        type: pattern
+        id: nav_menu
+        fields:
+          menu_name: Main menu
+          html_id: header-navigation
+          items:
+            - title: Home
+              url: "/"
+            - title: Library
+              url: "#"
+              in_active_trail: true
+              below:
+                - title: Sub 1
+                  url: "#"
+                  below:
+                    - title: Sub 1.1
+                      url: "#"
+                - title: Sub 2
+                  url: "#"
+                  below:
+                    - title: Sub 2.1
+                      url: "#"
+            - title: Data
+        settings:
+          is_mega_menu: false
+  settings:
+    logo_title:
+      type: token
+      label: Logo title
+      preview: "Logo title"

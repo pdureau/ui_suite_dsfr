@@ -8,10 +8,9 @@
             {# Main logo #}
             <div class="fr-header__logo">
               <a href="/" title="{{ 'Homepage'|t }}">
-                <p class="fr-logo"{% if logo.title %} title="{{ logo.title }}"{% endif %}>
-                  {% if logo.text %}
-                    {{ logo.text }}
-                  {% else %}
+                <p class="fr-logo"{% if logo_title %} title="{{ logo_title }}"{% endif %}>
+                  {{ logo_text }}
+                  {% if not logo_text %}
                     République
                     <br>
                     Française
