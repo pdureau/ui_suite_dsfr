@@ -42,13 +42,13 @@
 #}
 <div class="layout-container">
   {{ pattern('header', {
+    'logo_text': page.logo,
     'operator_logo': page.header_operator_logo,
-    'navbar': page.header_navbar,
     'service_title': site_name,
     'service_tagline': site_slogan,
     'tools_links': page.header_tools_links,
     'tools_search': page.header_tools_search,
-    'logo': page.logo
+    'navbar': page.header_navbar,
   }) }}
   <main role="main" class="{{ container }} fr-mb-4w fr-mt-4w">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
