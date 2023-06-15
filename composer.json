@@ -14,6 +14,22 @@
         "drupal/ui_patterns_settings": "^2.0@beta",
         "drupal/layout_options": "^1.0",
         "drupal/ui_styles": "^1.0",
-        "drupal/component_blocks": "^1.2"
+        "drupal/component_blocks": "^1.2",
+        "gouvfr/dsfr": "1.9.3"
+    },
+    "repositories": {
+        "dsfr": {
+            "type": "package",
+            "package": {
+                "name": "gouvfr/dsfr",
+                "type": "drupal-library",
+                "version": "1.9.3",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/GouvernementFR/dsfr/releases/download/v1.9.3/dsfr-v1.9.3.zip"
+                }
+            }
+
+        }
     }
 }

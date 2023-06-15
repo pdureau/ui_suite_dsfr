@@ -5,12 +5,13 @@ dsfr:
     gpl-compatible: false
   js:
     # We don't use dsfr.module.min.js because of conflict with drupal js.
-    dist/dsfr.module.js: {}
+    /libraries/dsfr/dist/dsfr.module.js: { attributes: { type: module } }
+
   css:
     theme:
-      dist/dsfr.min.css: { minified: true }
-      dist/utility/icons/icons.min.css: { minified: true }
-      dist/utility/colors/colors.min.css: { minified: true }
+      /libraries/dsfr/dist/dsfr.min.css: { minified: true }
+      /libraries/dsfr/dist/utility/icons/icons.min.css: { minified: true }
+      /libraries/dsfr/dist/utility/colors/colors.min.css: { minified: true }
 
 overrides:
   css:
