@@ -5,8 +5,10 @@
   <ol class="fr-summary__list">
     {% for link in links %}
       <li>
-        {% set url = link.url|default(link.attributes.href) %}
-        <a{{ link.attributes.addClass('fr-summary__link').setAttribute('href', url) }}>{{ link.title }}</a>
+        {% set link_attributes = link.attributes|default({}) %}
+        {% set link_attributes = create_attribute(link_attributes) %}
+        {% set url = link.url|default(link_attributes.href) %}
+        <a{{ link_attributes.addClass('fr-summary__link').setAttribute('href', url) }}>{{ link.title }}</a>
       </li>
     {% endfor %}
   </ol>

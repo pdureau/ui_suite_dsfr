@@ -34,20 +34,8 @@ function ui_suite_dsfr_preprocess_page(&$variables) {
  * Implements hook_preprocess_HOOK() for card patterns.
  */
 function ui_suite_dsfr_preprocess_pattern_card(array &$variables) {
-  if (isset($variables['image'])) {
-    _ui_suite_dsfr_add_class($variables['image'], 'fr-responsive-img');
-  }
   if (isset($variables['title'])) {
     _ui_suite_dsfr_add_link_class($variables['title'], 'fr-card__link');
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK() for quote patterns.
- */
-function ui_suite_dsfr_preprocess_pattern_quote(array &$variables) {
-  if (isset($variables['image'])) {
-    _ui_suite_dsfr_add_class($variables['image'], 'fr-responsive-img');
   }
 }
 
@@ -55,23 +43,8 @@ function ui_suite_dsfr_preprocess_pattern_quote(array &$variables) {
  * Implements hook_preprocess_HOOK() for tile patterns.
  */
 function ui_suite_dsfr_preprocess_pattern_tile(array &$variables) {
-  if (isset($variables['image'])) {
-    _ui_suite_dsfr_add_class($variables['image'], 'fr-responsive-img');
-  }
   if (isset($variables['title'])) {
     _ui_suite_dsfr_add_link_class($variables['title'], 'fr-tile__link');
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK() for content_media patterns.
- */
-function ui_suite_dsfr_preprocess_pattern_content_media(array &$variables) {
-  if (isset($variables['image'])) {
-    _ui_suite_dsfr_add_class($variables['image'], 'fr-responsive-img');
-  }
-  if (isset($variables['video'])) {
-    _ui_suite_dsfr_add_class($variables['video'], 'fr-responsive-vid__player');
   }
 }
 
@@ -481,74 +454,6 @@ function ui_suite_dsfr_preprocess_pattern_header(array &$variables) {
 }
 
 /**
- * Adds class to the element.
- *
- * @param mixed $element
- *   Element.
- * @param string $class
- *   CSS class.
- */
-function _ui_suite_dsfr_add_class(&$element, string $class) {
-  if (!is_array($element)) {
-    return;
-  }
-  if (isset($element['#attributes']['class'])) {
-    $element['#attributes']['class'] = (array) $element['#attributes']['class'];
-  }
-  $element['#attributes']['class'][] = $class;
-}
-
-/**
- * Implements hook_preprocess_pattern_breadcrumb().
- */
-function ui_suite_dsfr_preprocess_pattern_breadcrumb(array &$variables) {
-  // Add attributes to each breadcrumb item, can be useful.
-  if (isset($variables['items'])) {
-    _ui_suite_dsfr_add_elements_attributes($variables['items']);
-  }
-}
-
-/**
- * Implements hook_preprocess_pattern_summary().
- */
-function ui_suite_dsfr_preprocess_pattern_summary(array &$variables) {
-  // Add attributes to each link, can be useful.
-  if (isset($variables['links'])) {
-    _ui_suite_dsfr_add_elements_attributes($variables['links']);
-  }
-}
-
-/**
- * Implements hook_preprocess_pattern_follow().
- */
-function ui_suite_dsfr_preprocess_pattern_follow(array &$variables) {
-  // Add attributes to each social item, can be useful.
-  if (isset($variables['social'])) {
-    _ui_suite_dsfr_add_elements_attributes($variables['social']);
-  }
-}
-
-/**
- * Adds attributes to elements array.
- *
- * @param mixed $elements
- *   Elements array.
- */
-function _ui_suite_dsfr_add_elements_attributes(&$elements) {
-  if (!is_array($elements)) {
-    return;
-  }
-  foreach ($elements as &$item) {
-    if (isset($item['attributes']) && !($item['attributes'] instanceof Attribute)) {
-      $item['attributes'] = new Attribute($item['attributes']);
-    }
-    elseif (!isset($item['attributes'])) {
-      $item['attributes'] = new Attribute();
-    }
-  }
-}
-
-/**
  * Implements hook_preprocess_pattern_link().
  */
 function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
@@ -581,33 +486,6 @@ function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
   if ((isset($variables['target']) && $variables['target'] === 'blank')
   || (isset($variables['attributes']['target']) && $variables['attributes']['target'] === '_blank')) {
     $variables['title'] = t('@title - new window', ['@title' => !empty($variables['title']) ? $variables['title'] : $variables['label']]);
-  }
-}
-
-/**
- * Implements hook_preprocess_pattern_share().
- */
-function ui_suite_dsfr_preprocess_pattern_share(array &$variables) {
-  // Add attributes to each link item, can be useful.
-  if (isset($variables['links'])) {
-    _ui_suite_dsfr_add_elements_attributes($variables['links']);
-  }
-  // Add attributes for copy link.
-  if (isset($variables['copy_attributes']) && !($variables['copy_attributes'] instanceof Attribute)) {
-    $variables['copy_attributes'] = new Attribute($variables['copy_attributes']);
-  }
-  elseif (!isset($variables['copy_attributes'])) {
-    $variables['copy_attributes'] = new Attribute();
-  }
-}
-
-/**
- * Implements hook_preprocess_pattern_consent_banner().
- */
-function ui_suite_dsfr_preprocess_pattern_consent_banner(array &$variables) {
-  // Make element relative for preview mode.
-  if ($variables['context']->getType() == 'preview') {
-    $variables['attributes']['style'] = 'position:relative;';
   }
 }
 

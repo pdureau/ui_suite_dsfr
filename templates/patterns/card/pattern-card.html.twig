@@ -53,7 +53,7 @@
     {% if image %}
       <div class="fr-card__header">
         <div class="fr-card__img">
-          {{ image }}
+          {{ image|add_class('fr-responsive-img') }}
         </div>
         {{ image_badges }}
       </div>

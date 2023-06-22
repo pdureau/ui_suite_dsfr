@@ -4,7 +4,7 @@
 {% if image %}
   <figure{{ attributes.addClass('fr-content-media').setAttribute('role', 'group') }}>
     <div class="fr-content-media__img">
-      {{ image }}
+      {{ image|add_class('fr-responsive-img') }}
     </div>
     {% if caption %}
       <figcaption class="fr-content-media__caption">{{ caption }}</figcaption>
@@ -13,7 +13,7 @@
 {% elseif video %}
   <div{{ attributes.addClass('fr-content-media') }}>
     <div class="fr-responsive-vid{{ ratio == '4x3' ? ' fr-responsive-vid--4x3' }}">
-      {{ video }}
+      {{ video|add_class('fr-responsive-vid__player') }}
     </div>
     {% if caption %}
       <div class="fr-content-media__caption">{{ caption }}</div>

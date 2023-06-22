@@ -3,7 +3,9 @@
   <ul class="fr-btns-group">
     {% for link in links %}
       <li>
-        {% set link_attributes = link.attributes.setAttribute('target', '_blank').setAttribute('rel', 'noopener') %}
+        {% set link_attributes = link.attributes|default({}) %}
+        {% set link_attributes = create_attribute(link_attributes) %}
+        {% set link_attributes = link_attributes.setAttribute('target', '_blank').setAttribute('rel', 'noopener') %}
         {% if link.url %}
           {% set link_attributes = link_attributes.setAttribute('href', link.url).setAttribute('title', '@title - new window'|t({'@title': link.title })).setAttribute('onclick', "window.open(this.href,"~link.title~",'toolbar=no,location=yes,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=450'); event.preventDefault();") %}
         {% else %}
@@ -17,7 +19,7 @@
     {# Mandatory element goes here. #}
     <li>
       {% set copy_label = 'Copy to clipboard'|t %}
-      {% set copy_attributes = copy_attributes.setAttribute('title', copy_label).setAttribute('onclick', "navigator.clipboard.writeText(window.location);alert('"  ~ 'Address copied to clipboard.'|t ~ "');") %}
+      {% set copy_attributes = create_attribute().setAttribute('title', copy_label).setAttribute('onclick', "navigator.clipboard.writeText(window.location);alert('"  ~ 'Address copied to clipboard.'|t ~ "');") %}
       <button{{ copy_attributes.addClass(['fr-btn', 'fr-btn--copy']) }}>
         {{ copy_label }}
       </button>

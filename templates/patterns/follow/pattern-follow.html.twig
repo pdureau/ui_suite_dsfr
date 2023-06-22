@@ -26,11 +26,13 @@
               <ul class="fr-btns-group fr-btns-group--lg">
                 {% for link in social %}
                   <li>
+                    {% set link_attributes = link.attributes|default({}) %}
+                    {% set link_attributes = create_attribute(link_attributes) %}
                     {{ pattern('button', {
                       label: link.id,
                       title: link.title,
                       url: link.url,
-                      attributes: link.attributes.addClass('fr-btn--'~link.id)
+                      attributes: link_attributes.addClass('fr-btn--'~link.id)
                     }) }}
                   </li>
                 {% endfor %}

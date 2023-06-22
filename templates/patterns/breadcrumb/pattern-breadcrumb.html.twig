@@ -6,8 +6,10 @@
       <ol class="fr-breadcrumb__list">
         {% for item in items %}
           <li>
-            {% set url = item.url|default(item.attributes.href) %}
-            <a{{ item.attributes.addClass('fr-breadcrumb__link').setAttribute('href', url).setAttribute('aria-current', loop.last ? 'page' : null) }}>
+            {% set item_attributes = item.attributes|default({}) %}
+            {% set item_attributes = create_attribute(item_attributes) %}
+            {% set url = item.url|default(item_attributes.href) %}
+            <a{{ item_attributes.addClass('fr-breadcrumb__link').setAttribute('href', url).setAttribute('aria-current', loop.last ? 'page' : null) }}>
               {{ item.text }}
             </a>
           </li>
