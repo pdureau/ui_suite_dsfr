@@ -27,19 +27,19 @@
         <{{ title_tag }} class="fr-card__title">
           {{ title }}
         </{{ title_tag }}>
-        {% if description %}<p class="fr-card__desc">{{ description }}</p>{% endif %}
+        {% if description %}<div class="fr-card__desc">{{ description }}</div>{% endif %}
         {% if detail or tags_badges %}
           <div class="fr-card__start">
             {{ tags_badges }}
             {% if detail %}
-              <p class="fr-card__detail {{ detail_icon }}">{{ detail }}</p>
+              <div class="fr-card__detail {{ detail_icon }}">{{ detail }}</div>
             {% endif %}
           </div>
         {% endif %}
         {% if detail_end %}
           <div class="fr-card__end">
             {% if detail_end %}
-              <p class="fr-card__detail {{ detail_end_icon }}">{{ detail_end }}</p>
+              <div class="fr-card__detail {{ detail_end_icon }}">{{ detail_end }}</div>
             {% endif %}
           </div>
         {% endif %}
