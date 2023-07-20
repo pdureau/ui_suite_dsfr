@@ -6,7 +6,7 @@ accordion_group:
     accordions:
       type: render
       label: Accordions
-      description: An array of 'accordion' patterns.
+      description: A list of 'accordion' components.
       preview:
         - type: pattern
           id: accordion

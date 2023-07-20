@@ -10,7 +10,7 @@ skiplinks:
     items:
       type: render
       label: Items
-      description: An array of 'links' pattern.
+      description: A list of 'links' components.
       preview:
         - type: pattern
           id: link

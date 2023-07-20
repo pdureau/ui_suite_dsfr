@@ -1,6 +1,6 @@
 tab:
   label: (Tab)
-  description: "Usually used with 'tabs' pattern. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
+  description: "Usually used with 'tabs' component. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
   category: Tabs
   variants:
     default: Default
@@ -13,7 +13,7 @@ tab:
     url:
       type: url
       label: URL
-      description: This pattern can be used as standalone, with hyperlinks instead of the dynamic tabs.
+      description: This component can be used as standalone, with hyperlinks instead of the dynamic tabs.
     icon:
       type: select
       label: Icon

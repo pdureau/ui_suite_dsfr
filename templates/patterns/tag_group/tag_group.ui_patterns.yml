@@ -6,7 +6,7 @@ tag_group:
     tags:
       type: render
       label: Tags
-      description: An array of 'tag' patterns.
+      description: A list of 'tag' components.
       preview:
         - type: pattern
           id: tag

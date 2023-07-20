@@ -14,17 +14,17 @@ consent_banner:
     modal_title:
       type: text
       label: Modal title
-      description: "See 'Modal' pattern."
+      description: "See 'Modal' component."
       preview: Cookie management panel
     modal_text:
       type: text
       label: Modal text
-      description: "See 'Consent manager' pattern."
+      description: "See 'Consent manager' component."
       preview: Preferences for all services.
     services:
       type: menu
       label: Modal services
-      description: "A Drupal menu structure. See 'Consent manager' pattern."
+      description: "A Drupal menu structure. See 'Consent manager' component."
       preview:
         - title: Youtube
           attributes:

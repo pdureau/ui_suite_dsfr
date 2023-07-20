@@ -50,7 +50,7 @@ button_group:
     buttons:
       type: render
       label: Buttons
-      description: An array of 'button' patterns.
+      description: A list of 'button' components.
       preview:
         - type: pattern
           id: button

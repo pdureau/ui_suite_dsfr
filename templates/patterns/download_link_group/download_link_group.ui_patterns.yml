@@ -25,7 +25,7 @@ download_link_group:
     downloads:
       type: render
       label: Downloads items
-      description: "'Download link' patterns."
+      description: "A list of 'Download link' components."
       preview:
         - type: pattern
           id: download_link

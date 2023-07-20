@@ -633,7 +633,7 @@ modal:
     actions:
       type: render
       label: Actions
-      description: Modal action (buttons group pattern).
+      description: Modal action (button_group component).
       preview:
         - type: pattern
           id: button_group

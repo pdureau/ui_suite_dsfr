@@ -6,7 +6,7 @@ link_group:
     links:
       type: render
       label: Links
-      description: An array of 'link' patterns.
+      description: A list of 'link' components.
       preview:
         - type: pattern
           id: link

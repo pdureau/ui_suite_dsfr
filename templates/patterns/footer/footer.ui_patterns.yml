@@ -17,7 +17,7 @@ footer:
     top:
       type: render
       label: Top region
-      description: Can host a footer_top pattern."
+      description: A footer_top component."
       preview:
         type: pattern_preview
         id: footer_top

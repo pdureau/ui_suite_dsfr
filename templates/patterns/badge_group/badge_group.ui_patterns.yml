@@ -6,7 +6,7 @@ badge_group:
     badges:
       type: render
       label: Badges
-      description: An array of 'badge' patterns.
+      description: A list of 'badge' components.
       preview:
         - type: pattern
           id: badge
