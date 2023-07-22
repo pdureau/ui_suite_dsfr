@@ -6,7 +6,7 @@ dsfr:
   js:
     # We don't use dsfr.module.min.js because of conflict with drupal js.
     /libraries/dsfr/dist/dsfr.module.js: { attributes: { type: module } }
-
+    js/theme_switcher.js: {}
   css:
     theme:
       /libraries/dsfr/dist/dsfr.min.css: { minified: true }
