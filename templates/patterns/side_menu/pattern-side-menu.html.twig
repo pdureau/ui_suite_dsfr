@@ -26,7 +26,7 @@
           <li class="fr-sidemenu__item">
           {% if item.below %}
             {% set item_id = 'fr-sidemenu-item-' ~ loop.index ~ '-' ~ random() %}
-            <button class="fr-sidemenu__btn" aria-expanded="false" aria-controls="{{ item_id }}">{{ item.title }}</button>
+            <button class="fr-sidemenu__btn" aria-expanded="false" aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="page"{% endif %}>{{ item.title }}</button>
             <div class="fr-collapse" id="{{ item_id }}">
               {{ _self.menu_links(item.below, attributes, menu_level + 1) }}
             </div>
