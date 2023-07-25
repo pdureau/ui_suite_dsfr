@@ -8,8 +8,9 @@
           <li>
             {% set item_attributes = item.attributes|default({}) %}
             {% set item_attributes = create_attribute(item_attributes) %}
+            {% set item_attributes = loop.last ? item_attributes.setAttribute('aria-current', 'page') : item_attributes %}
             {% set url = item.url|default(item_attributes.href) %}
-            <a{{ item_attributes.addClass('fr-breadcrumb__link').setAttribute('href', url).setAttribute('aria-current', loop.last ? 'page' : null) }}>
+            <a{{ item_attributes.addClass('fr-breadcrumb__link').setAttribute('href', url) }}>
               {{ item.text }}
             </a>
           </li>
