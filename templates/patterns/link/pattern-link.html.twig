@@ -13,6 +13,10 @@
   {% set attributes = attributes.setAttribute('target', '_' ~ target) %}
 {% endif %}
 
+{% if title %}
+  {% set attributes = attributes.setAttribute('title', title) %}
+{% endif %}
+
 {% if is_external %}
   {% set attributes = attributes.setAttribute('rel', 'noopener') %}
   {% if not force_internal %}
@@ -21,6 +25,6 @@
 {% endif %}
 
 {% set url = url|default(attributes.href) %}
-<a{{ attributes.setAttribute('title', title).setAttribute('href', url) }}>
+<a{{ attributes.setAttribute('href', url) }}>
   {{ label }}
 </a>
