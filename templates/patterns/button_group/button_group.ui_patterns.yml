@@ -34,6 +34,13 @@ button_group:
     inline__inline_reverse__lg__right:
       label: Horizontal large right reverse
   settings:
+    inline_from:
+      type: select
+      label: Horizontal inline only from a certain breakpoint
+      options:
+        sm: sm
+        md: md
+        lg: lg
     equisized:
       type: boolean
       label: Equisized?

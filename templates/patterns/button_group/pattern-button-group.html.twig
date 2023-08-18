@@ -3,6 +3,10 @@
   {% set attributes = attributes.addClass(variants) %}
 {% endif %}
 
+{% if inline_from %}
+  {% set attributes = attributes.addClass('fr-btns-group--inline-' ~ inline_from) %}
+{% endif %}
+
 {% if icon_position %}
   {% set attributes = attributes.addClass('fr-btns-group--icon-' ~ icon_position) %}
 {% endif %}
