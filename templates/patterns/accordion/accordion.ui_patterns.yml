@@ -13,6 +13,12 @@ accordion:
         h5: h5
         h6: h6
       preview: h4
+    expanded:
+      type: boolean
+      label: Expanded?
+      description: Accordion will be expanded on page load
+      default_value: false
+      preview: false
   fields:
     title:
       type: text
