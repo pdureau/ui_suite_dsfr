@@ -1,11 +1,14 @@
 {% if variant and variant|lower != 'default' and not is_external %}
   {% set attributes = attributes.addClass('fr-link--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
+
 {% set attributes = attributes.addClass('fr-link') %}
-{% if icon and not is_external %}
+
+{% if icon %}
   {% set attributes = attributes.addClass(icon).addClass('fr-link--icon-' ~ icon_position) %}
 {% endif %}
-{% if icon_position and not is_external %}
+
+{% if icon_position %}
   {% set attributes = attributes.addClass('fr-link--icon-' ~ icon_position) %}
 {% endif %}
 
