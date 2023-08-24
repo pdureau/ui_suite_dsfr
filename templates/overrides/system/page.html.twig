@@ -41,6 +41,24 @@
  */
 #}
 <div class="layout-container">
+  {{ pattern('skiplinks', {
+    label: 'Skip links'|t|render,
+    items: [
+      pattern('link', {
+        label: 'Content'|t,
+        url: '#main-content'
+      }),
+      pattern('link', {
+        label: 'Menu'|t,
+        url: '#header-navigation'
+      }),
+      pattern('link', {
+        label: 'Footer'|t,
+        url: '#footer'
+      })
+    ]
+  }) }}
+
   {{ pattern('header', {
     'logo_text': page.logo,
     'operator_logo': page.header_operator_logo,
