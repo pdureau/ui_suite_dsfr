@@ -81,11 +81,13 @@
     </div>
   </div>
   {% if navbar %}
-    <div class="fr-header__menu fr-modal" id="{{ mobile_menu_mid }}" aria-labelledby="fr-btn-menu-mobile">
-      <div class="fr-container">
-        <button class="fr-btn fr-btn--close" aria-controls="{{ mobile_menu_mid }}" title="{{ 'Close'|t }}">{{ 'Close'|t }}</button>
-        <div class="fr-header__menu-links"></div>
-        {{ navbar }}
+    <div id="header-navigation">
+      <div class="fr-header__menu fr-modal" id="{{ mobile_menu_mid }}" aria-labelledby="fr-btn-menu-mobile">
+        <div class="fr-container">
+          <button class="fr-btn fr-btn--close" aria-controls="{{ mobile_menu_mid }}" title="{{ 'Close'|t }}">{{ 'Close'|t }}</button>
+          <div class="fr-header__menu-links"></div>
+          {{ navbar }}
+        </div>
       </div>
     </div>
   {% endif %}
