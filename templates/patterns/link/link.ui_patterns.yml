@@ -37,8 +37,8 @@ link:
       type: select
       label: Icon position
       options:
-        left: Right
-        right: Left
+        left: Left
+        right: Right
       preview: left
     icon:
       type: select
