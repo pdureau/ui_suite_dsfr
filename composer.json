@@ -13,6 +13,7 @@
         "drupal/ui_patterns_settings": "^2.0",
         "drupal/layout_options": "^1.0",
         "drupal/ui_styles": "^1.0",
+        "drupal/ui_skins": "^1.0",
         "gouvfr/dsfr": "1.9.3"
     },
     "repositories": {
