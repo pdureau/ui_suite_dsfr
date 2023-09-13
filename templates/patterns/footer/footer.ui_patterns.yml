@@ -8,11 +8,14 @@ footer:
       label: Service title
       description: "Will be the site name if empty"
       default: ""
-    logo:
+    logo_text:
       type: token
       label: Logo text
       description: "Default: 'République\\n Française'"
-      preview: "République\n Française"
+    operator_logo_alt:
+      type: token
+      label: Operator logo alt text
+      description: "Should match the visible text of the operator logo"
   fields:
     top:
       type: render

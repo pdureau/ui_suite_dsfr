@@ -1,10 +1,16 @@
 header:
   label: Header
   description: The header allows users to identify what site they are on. It can provide access to search and certain key pages or features. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete
-  fields:
+  settings:
     logo_text:
-      type: text
+      type: token
       label: Logo text
+      description: "Default: 'République\\n Française'"
+    operator_logo_alt:
+      type: token
+      label: Operator logo alt text
+      description: "Should match the visible text of the operator logo"
+  fields:
     operator_logo:
       type: render
       label: Operator logo
@@ -82,8 +88,3 @@ header:
             - title: Data
         settings:
           is_mega_menu: false
-  settings:
-    logo_title:
-      type: token
-      label: Logo title
-      preview: "Logo title"

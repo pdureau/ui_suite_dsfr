@@ -3,17 +3,20 @@
   <div class="fr-container">
     <div class="fr-footer__body">
       <div class="fr-footer__brand fr-enlarge-link">
+
+        {% set logo_text = logo_text|default('République\nFrançaise') %}
+
         {% if not operator_logo %}
-          <a href="/" title="{{ 'Back to home - @name'|t({'@name': service_title}) }}">
+          <a href="/" title="{{ 'Homepage'|t }} - {{ service_title }} - {{ logo_text }}">
         {% endif %}
         <p class="fr-logo">
-          {{ logo|default("République\nFrançaise")|nl2br }}
+          {{ logo_text|nl2br }}
         </p>
         {% if not operator_logo %}
           </a>
         {% endif %}
         {% if operator_logo %}
-          <a class="fr-footer__brand-link" href="/" title="{{ 'Back to home - @name'|t({'@name': service_title}) }}">
+          <a class="fr-footer__brand-link" href="/" title="{{ 'Homepage'|t }} - {{ operator_logo_alt ? operator_logo_alt : service_title }} - {{ logo_text }}">
             {{ operator_logo }}
           </a>
         {% endif %}

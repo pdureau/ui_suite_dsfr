@@ -5,24 +5,32 @@
         <div class="fr-header__brand fr-enlarge-link">
           <div class="fr-header__brand-top">
 
+            {% set logo_text = logo_text|default('République\nFrançaise') %}
+
             {# Main logo #}
             <div class="fr-header__logo">
-              <a href="/" title="{{ 'Homepage'|t }}">
-                <p class="fr-logo"{% if logo_title %} title="{{ logo_title }}"{% endif %}>
-                  {{ logo_text }}
-                  {% if not logo_text %}
-                    République
-                    <br>
-                    Française
-                  {% endif %}
-                </p>
-              </a>
+              {# Operator logo #}
+              {% if (not operator_logo) and (not service_title) %}
+                <a href="/" title="{{ 'Homepage'|t }} - {{ logo_text }}">
+              {% endif %}
+              <p class="fr-logo">
+                {{ logo_text|nl2br }}
+              </p>
+              {% if (not operator_logo) and (not service_title) %}
+                </a>
+              {% endif %}
             </div>
 
             {# Operator logo #}
             {% if operator_logo %}
               <div class="fr-header__operator">
+                {% if not service_title %}
+                  <a href="/" title="{{ 'Homepage'|t }} - {{ operator_logo_alt }} - {{ logo_text }}">
+                {% endif %}
                 {{ operator_logo }}
+                {% if not service_title %}
+                  </a>
+                {% endif %}
               </div>
             {% endif %}
 
@@ -44,17 +52,20 @@
               </div>
             {% endif %}
           </div>
+
           {# Header service #}
-          <div class="fr-header__service">
-            {# Header service title #}
-            <a href="/" title="{{ 'Homepage'|t }}">
-              <p class="fr-header__service-title">{{ service_title }}</p>
-            </a>
-            {# Header service tagline #}
-            {% if service_tagline %}
-              <p class="fr-header__service-tagline">{{ service_tagline }}</p>
-            {% endif %}
-          </div>
+          {% if service_title %}
+            <div class="fr-header__service">
+              {# Header service title #}
+              <a href="/" title="{{ 'Homepage'|t }} - {{ service_title }} - {{ logo_text }}">
+                <p class="fr-header__service-title">{{ service_title }}</p>
+              </a>
+              {# Header service tagline #}
+              {% if service_tagline %}
+                <p class="fr-header__service-tagline">{{ service_tagline }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
         </div>
 
         {# Header tools #}
