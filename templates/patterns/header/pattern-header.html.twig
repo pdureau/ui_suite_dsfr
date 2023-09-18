@@ -1,5 +1,8 @@
-{% set mobile_menu_id = mobile_menu_id|default('modal-' ~ random()) %}
-{% set search_id = search_id|default('modal-' ~ random()) %}
+{% set header_id = header_id|default("fr-header-" ~ random() ) %}
+{% set mobile_menu_id = header_id ~ '--mobile-menu' %}
+{% set mobile_menu_bid = header_id ~ '--mobile-menu-btn' %}
+{% set search_id = header_id ~ '--search' %}
+{% set search_bid = header_id ~ '--search-btn' %}
 
 <header{{ attributes.addClass('fr-header').setAttribute('role', 'banner') }}>
   <div class="fr-header__body">
@@ -41,12 +44,12 @@
             {% if tools_search or navbar %}
               <div class="fr-header__navbar">
                 {% if tools_search %}
-                  <button class="fr-btn--search fr-btn" data-fr-opened="false" aria-controls="{{ search_id }}" title="{{ 'Search'|t }}">
+                  <button class="fr-btn--search fr-btn" data-fr-opened="false" aria-controls="{{ search_id }}" title="{{ 'Search'|t }}" id="{{ search_bid }}">
                     {{ 'Search'|t }}
                   </button>
                 {% endif %}
                 {% if navbar %}
-                  <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="{{ mobile_menu_id }}" aria-haspopup="menu" title="{{ 'Menu'|t }}" id="fr-btn-menu-mobile">
+                  <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="{{ mobile_menu_id }}" aria-haspopup="dialog" title="{{ 'Menu'|t }}" id="{{ mobile_menu_bid }}">
                     {{ 'Menu'|t }}
                   </button>
                 {% endif %}
@@ -80,9 +83,9 @@
             {% endif %}
             {# Header tools bottom (can be used for search bar) #}
             {% if tools_search %}
-              <div class="fr-header__search fr-modal" id="{{ search_id }}">
+              <div class="fr-header__search fr-modal" id="{{ search_id }}" aria-labelledby="{{ search_bid }}">
                 <div class="fr-container fr-container-lg--fluid">
-                  <button class="fr-btn fr-btn--close" aria-controls="{{ search_id }}" title="{{ 'Close'|t }}">{{ 'Close'|t }}</button>
+                  <button class="fr-btn fr-btn--close" aria-controls="{{ search_id }}" title="{{ 'Close search'|t }}">{{ 'Close'|t }}</button>
                   {{ tools_search }}
                 </div>
               </div>
@@ -93,13 +96,11 @@
     </div>
   </div>
   {% if navbar %}
-    <div id="header-navigation">
-      <div class="fr-header__menu fr-modal" id="{{ mobile_menu_id }}" aria-labelledby="fr-btn-menu-mobile">
-        <div class="fr-container">
-          <button class="fr-btn fr-btn--close" aria-controls="{{ mobile_menu_id }}" title="{{ 'Close'|t }}">{{ 'Close'|t }}</button>
-          <div class="fr-header__menu-links"></div>
-          {{ navbar }}
-        </div>
+    <div class="fr-header__menu fr-modal" id="{{ mobile_menu_id }}" aria-labelledby="{{ mobile_menu_bid }}">
+      <div class="fr-container">
+        <button class="fr-btn fr-btn--close" aria-controls="{{ mobile_menu_id }}" title="{{ 'Close menu'|t }}">{{ 'Close'|t }}</button>
+        <div class="fr-header__menu-links"></div>
+        {{ navbar }}
       </div>
     </div>
   {% endif %}
