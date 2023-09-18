@@ -14,3 +14,8 @@ breadcrumb:
         - text: Data
           attributes:
             data-name: "Test"
+  settings:
+    breadcrumb_id:
+      type: token
+      label: ID
+      description: "Must start with a letter. Randomly generated if empty."

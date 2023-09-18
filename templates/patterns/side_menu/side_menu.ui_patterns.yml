@@ -18,7 +18,8 @@ side_menu:
       preview: right
     html_id:
       type: token
-      label: HTML id attribute
+      label: ID
+      description: "Used for collapse mechanism. Must start with a letter. Randomly generated if empty."
     menu_name:
       type: token
       label: Menu name

@@ -14,7 +14,8 @@ nav_menu:
       preview: Main menu
     html_id:
       type: token
-      label: HTML id attribute
+      label: ID
+      description: "Must start with a letter. Randomly generated if empty."
   fields:
     items:
       type: menu

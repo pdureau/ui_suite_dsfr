@@ -1,7 +1,5 @@
 {% if items %}
-  {% if not html_id %}
-    {% set html_id = 'main-menu-'~random() %}
-  {% endif %}
+  {% set html_id = html_id|default('main-menu-' ~ random()) %}
   <nav{{ attributes.addClass('fr-nav') }} role="navigation" aria-label="{{ menu_name }}" id="{{ html_id|clean_id }}">
     <ul class="fr-nav__list">
       {% if is_mega_menu %}

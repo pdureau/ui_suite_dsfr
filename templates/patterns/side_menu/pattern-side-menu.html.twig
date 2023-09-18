@@ -6,9 +6,7 @@
   {% set attributes = attributes.addClass('fr-sidemenu--' ~ position) %}
 {% endif %}
 
-{% if not html_id %}
-  {% set html_id = 'sidemenu-' ~ random() %}
-{% endif %}
+{% set html_id = html_id|default('sidemenu-' ~ random()) %}
 <nav{{ attributes.addClass('fr-sidemenu') }} role="navigation" aria-label="{{ menu_name }}" id="{{ html_id|clean_id }}">
   <div class="fr-sidemenu__inner">
     <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper-{{ html_id|clean_id }}" aria-expanded="false">{{ 'In this section'|t }}</button>

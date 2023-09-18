@@ -37,3 +37,7 @@ summary:
         h5: h5
         h6: h6
       preview: p
+    title_id:
+      type: token
+      label: Title ID
+      description: "Must start with a letter. Randomly generated if empty."

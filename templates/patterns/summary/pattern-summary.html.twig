@@ -1,4 +1,4 @@
-{% set title_id = 'fr-summary-title--' ~ random() %}
+{% set title_id = title_id|default('fr-summary-title--' ~ random()) %}
 {% set title_tag = title_tag|default('p') %}
 <nav{{ attributes.addClass('fr-summary').setAttribute('role', 'navigation').setAttribute('aria-labelledby', title_id) }}>
   <{{ title_tag }} class="fr-summary__title" id="{{ title_id }}">{{ title }}</{{ title_tag }}>

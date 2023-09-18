@@ -3,6 +3,10 @@ accordion:
   description: Used to condense space by hiding content and revealing it as needed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon
   category: Accordion
   settings:
+    accordion_id:
+      type: token
+      label: ID
+      description: "Must start with a letter. Randomly generated if empty."
     title_tag:
       type: select
       label: HTML tag for title
