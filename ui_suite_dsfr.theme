@@ -10,6 +10,7 @@ use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Template\Attribute;
+use Drupal\Core\Url;
 
 /**
  * Implements hook_preprocess_HOOK() for page templates.
@@ -485,3 +486,30 @@ function ui_suite_dsfr_preprocess_textarea(array &$variables) {
   }
 }
 
+/**
+ * Implements hook_preprocess_pattern_footer_menu().
+ */
+function ui_suite_dsfr_preprocess_pattern_footer_menu(array &$variables) {
+  foreach ($variables['items'] as &$item) {
+    if (empty($item['url'])) {
+      return;
+    }
+
+    // @TODO : remove when #3345071 is fixed (new links setting)
+    if ($item['url'] instanceof Url) {
+      $url = $item['url'];
+      $item['url'] = $url->toString();
+
+      $options = $url->getOptions();
+
+      if (isset($options['attributes'])) {
+        $item['link_attributes'] = $options['attributes'];
+      }
+    }
+
+    if (UrlHelper::isExternal($item['url'])
+        && !UrlHelper::externalIsLocal($item['url'], \Drupal::request()->getSchemeAndHttpHost())) {
+      $item['link_attributes']['target'] = '_blank';
+    }
+  }
+}
