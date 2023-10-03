@@ -98,12 +98,14 @@ card:
         fr-icon-arrow-left-s-first-line: arrow left s first line
         fr-icon-arrow-left-s-line-double: arrow left s line double
         fr-icon-arrow-left-s-line: arrow-left-s line
+        fr-icon-arrow-right-down-circle-fill: arrow-right-down circle fill
         fr-icon-arrow-right-fill: arrow right fill
         fr-icon-arrow-right-line: arrow-right line
         fr-icon-arrow-right-s-fill: arrow right s fill
         fr-icon-arrow-right-s-last-line: arrow right s last line
         fr-icon-arrow-right-s-line-double: arrow right s line double
         fr-icon-arrow-right-s-line: arrow-right-s line
+        fr-icon-arrow-right-up-circle-fill: arrow-right-up circle fill
         fr-icon-arrow-right-up-line: arrow right up line
         fr-icon-arrow-up-fill: arrow up filled
         fr-icon-arrow-up-line: arrow-up line
@@ -247,6 +249,7 @@ card:
         fr-icon-edit-box-line: edit box line
         fr-icon-edit-fill: edit filled
         fr-icon-edit-line: edit line
+        fr-icon-equal-circle-fill: equal circle fill
         fr-icon-equalizer-fill: equalizer filled
         fr-icon-equalizer-line: equalizer line
         fr-icon-error-fill: error fill
@@ -590,6 +593,8 @@ card:
         fr-icon-theme-fill: theme filled
         fr-icon-thermometer-fill: thermometer fill
         fr-icon-thermometer-line: thermometer line
+        fr-icon-threads-fill: threads fill
+        fr-icon-threads-line: threads line
         fr-icon-thumb-down-fill: thumb down fill
         fr-icon-thumb-down-line: thumb down line
         fr-icon-thumb-up-fill: thumb up fill
@@ -614,6 +619,8 @@ card:
         fr-icon-twitch-line: twitch line
         fr-icon-twitter-fill: twitter filled
         fr-icon-twitter-line: twitter line
+        fr-icon-twitter-x-fill: twitter-x fill
+        fr-icon-twitter-x-line: twitter-x line
         fr-icon-umbrella-fill: umbrella fill
         fr-icon-umbrella-line: umbrella line
         fr-icon-upload-2-fill: upload filled
@@ -701,12 +708,14 @@ card:
         fr-icon-arrow-left-s-first-line: arrow left s first line
         fr-icon-arrow-left-s-line-double: arrow left s line double
         fr-icon-arrow-left-s-line: arrow-left-s line
+        fr-icon-arrow-right-down-circle-fill: arrow-right-down circle fill
         fr-icon-arrow-right-fill: arrow right fill
         fr-icon-arrow-right-line: arrow-right line
         fr-icon-arrow-right-s-fill: arrow right s fill
         fr-icon-arrow-right-s-last-line: arrow right s last line
         fr-icon-arrow-right-s-line-double: arrow right s line double
         fr-icon-arrow-right-s-line: arrow-right-s line
+        fr-icon-arrow-right-up-circle-fill: arrow-right-up circle fill
         fr-icon-arrow-right-up-line: arrow right up line
         fr-icon-arrow-up-fill: arrow up filled
         fr-icon-arrow-up-line: arrow-up line
@@ -850,6 +859,7 @@ card:
         fr-icon-edit-box-line: edit box line
         fr-icon-edit-fill: edit filled
         fr-icon-edit-line: edit line
+        fr-icon-equal-circle-fill: equal circle fill
         fr-icon-equalizer-fill: equalizer filled
         fr-icon-equalizer-line: equalizer line
         fr-icon-error-fill: error fill
@@ -1193,6 +1203,8 @@ card:
         fr-icon-theme-fill: theme filled
         fr-icon-thermometer-fill: thermometer fill
         fr-icon-thermometer-line: thermometer line
+        fr-icon-threads-fill: threads fill
+        fr-icon-threads-line: threads line
         fr-icon-thumb-down-fill: thumb down fill
         fr-icon-thumb-down-line: thumb down line
         fr-icon-thumb-up-fill: thumb up fill
@@ -1217,6 +1229,8 @@ card:
         fr-icon-twitch-line: twitch line
         fr-icon-twitter-fill: twitter filled
         fr-icon-twitter-line: twitter line
+        fr-icon-twitter-x-fill: twitter-x fill
+        fr-icon-twitter-x-line: twitter-x line
         fr-icon-umbrella-fill: umbrella fill
         fr-icon-umbrella-line: umbrella line
         fr-icon-upload-2-fill: upload filled

@@ -304,8 +304,10 @@ icons:
     fr-icon-arrow-go-back-line: Arrow go back
     fr-icon-arrow-left-line: Arrow left
     fr-icon-arrow-left-s-line: Arrow left short
+    fr-icon-arrow-right-down-circle-fill: Arrow right down circle fill
     fr-icon-arrow-right-line: Arrow right
     fr-icon-arrow-right-s-line: Arrow right short
+    fr-icon-arrow-right-up-circle-fill: Arrow right up circle fill
     fr-icon-arrow-up-fill: Arrow up (filled)
     fr-icon-arrow-up-line: Arrow up
     fr-icon-arrow-up-s-fill: Arrow up short (filled)
@@ -327,6 +329,7 @@ icons:
     fr-icon-download-line: Download
     fr-icon-edit-fill: Edit (filled)
     fr-icon-edit-line: Edit
+    fr-icon-equal-circle-fill: Equal circle (filled)
     fr-icon-equalizer-fill: Equalizer (filled)
     fr-icon-equalizer-line: Equalizer
     fr-icon-error-warning-fill: Error warning (filled)
@@ -396,6 +399,8 @@ icons:
     fr-icon-telegram-fill: Telegram (filled)
     fr-icon-telegram-line: Telegram
     fr-icon-theme-fill: Theme (filled)
+    fr-icon-threads-fill: Threads (filled)
+    fr-icon-threads-line: Threads
     fr-icon-tiktok-fill: Tiktok (filled)
     fr-icon-tiktok-line: Tiktok
     fr-icon-timer-fill: Timer (filled)
@@ -404,6 +409,8 @@ icons:
     fr-icon-twitch-line: Twitch
     fr-icon-twitter-fill: Twitter (filled)
     fr-icon-twitter-line: Twitter
+    fr-icon-twitter-x-fill: Twitter - X (filled)
+    fr-icon-twitter-x-line: Twitter - X
     fr-icon-upload-2-fill: Upload 2 (filled)
     fr-icon-upload-2-line: Upload 2
     fr-icon-user-fill: User (filled)
