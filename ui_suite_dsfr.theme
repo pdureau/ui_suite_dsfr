@@ -441,14 +441,9 @@ function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
   if (empty($variables['url'])) {
     return;
   }
-  // Mark external urls.
   if (UrlHelper::isExternal($variables['url'])
     && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost())) {
-    $variables['is_external'] = TRUE;
-    $variables['target'] = 'blank';
-  }
-  if (isset($variables['target']) && $variables['target'] === 'blank') {
-    $variables['title'] = t('@title - new window', ['@title' => !empty($variables['title']) ? $variables['title'] : $variables['label']]);
+    $variables['external'] = TRUE;
   }
 }
 
@@ -459,16 +454,9 @@ function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
   if (empty($variables['url'])) {
     return;
   }
-  // Mark external urls.
   if (UrlHelper::isExternal($variables['url'])
     && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost())) {
-    $attribute = $variables['attributes'] ?? new Attribute;
-    $attribute->setAttribute('rel', 'noopener');
-    $variables['attributes'] = $attribute;
-    $variables['target'] = 'blank';
-  }
-  if (isset($variables['target']) && $variables['target'] === 'blank') {
-    $variables['title'] = t('@title - new window', ['@title' => !empty($variables['title']) ? $variables['title'] : $variables['label']]);
+    $variables['external'] = TRUE;
   }
 }
 

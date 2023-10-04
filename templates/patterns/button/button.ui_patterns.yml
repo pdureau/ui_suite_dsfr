@@ -38,13 +38,18 @@ button:
     target:
       type: select
       label: Link target attribute
-      description: If button is used as link.
+      description: If button is used as link. "Blank" will automatically be set for external links.
       options:
         self: Self
         blank: Blank
         parent: Parent
         top: Left
       preview: self
+    external:
+      type: boolean
+      label: External?
+      description: Is the link targeting an external URL?
+      preview: false
     disabled:
       type: boolean
       label: Disabled?

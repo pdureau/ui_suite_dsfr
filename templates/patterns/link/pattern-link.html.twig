@@ -1,30 +1,35 @@
-{% if variant and variant|lower != 'default' and not is_external %}
+{% if variant and variant|lower != 'default' and not external %}
   {% set attributes = attributes.addClass('fr-link--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
 
 {% set attributes = attributes.addClass('fr-link') %}
 
 {% if icon %}
-  {% set attributes = attributes.addClass(icon).addClass('fr-link--icon-' ~ icon_position) %}
+  {% set attributes = attributes.addClass(icon) %}
 {% endif %}
 
 {% if icon_position %}
   {% set attributes = attributes.addClass('fr-link--icon-' ~ icon_position) %}
 {% endif %}
 
+{% if external %}
+  {% set attributes = attributes.setAttribute('rel', 'noopener') %}
+  {% set target = 'blank' %}
+  {% if not force_internal %}
+    {% set attributes = attributes.removeClass('fr-link') %}
+  {% endif %}
+{% endif %}
+
 {% if target %}
   {% set attributes = attributes.setAttribute('target', '_' ~ target) %}
 {% endif %}
 
-{% if title %}
-  {% set attributes = attributes.setAttribute('title', title) %}
+{% if target and target == 'blank' %}
+  {% set title = '@title - new window'|t({'@title': title}) %}
 {% endif %}
 
-{% if is_external %}
-  {% set attributes = attributes.setAttribute('rel', 'noopener') %}
-  {% if not force_internal %}
-    {% set attributes = attributes.removeClass('fr-link') %}
-  {% endif %}
+{% if title %}
+  {% set attributes = attributes.setAttribute('title', title) %}
 {% endif %}
 
 {% set url = url|default(attributes.href) %}

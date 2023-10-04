@@ -22,13 +22,18 @@ link:
       preview: "/"
     target:
       type: select
-      label: Target attribute
+      label: Target attribute.  "Blank" will automatically be set for external links.
       options:
         self: Self
         blank: Blank
         parent: Parent
         top: Left
       preview: self
+    external:
+      type: boolean
+      label: External?
+      description: Is the link targeting an external URL?
+      preview: false
     force_internal:
       type: boolean
       label: Force as internal

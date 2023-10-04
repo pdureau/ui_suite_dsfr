@@ -20,6 +20,14 @@
 
 {% if url or attributes.href %}
   {% set url = url|default(attributes.href) %}
+  {% if external %}
+    {% set attributes = attributes.setAttribute('rel', 'noopener') %}
+    {% set target = 'blank' %}
+  {% endif %}
+  {% if target and target == 'blank' %}
+    {% set title = '@title - new window'|t({'@title': title}) %}
+    {% set attributes = attributes.setAttribute('title', title) %}
+  {% endif %}
   {% if target %}
     {% set attributes = attributes.setAttribute('target', '_' ~ target) %}
   {% endif %}
