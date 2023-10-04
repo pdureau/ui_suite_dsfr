@@ -1,0 +1,39 @@
+{% set transcription_id = transcription_id|default('transcription-' ~ random()) %}
+
+{% set title = title|default('Transcription'|t) %}
+
+<div{{ attributes.addClass('fr-transcription') }}>
+  <button class="fr-transcription__btn" aria-expanded="false" aria-controls="fr-transcription__collapse-transcription-{{ transcription_id }}">
+    {{ title }}</button>
+  <div class="fr-collapse" id="fr-transcription__collapse-transcription-{{ transcription_id }}">
+    <dialog id="fr-transcription__modal-transcription-{{ transcription_id }}" class="fr-modal" role="dialog" aria-labelledby="fr-transcription__modal-transcription-{{ transcription_id }}-title">
+      <div class="fr-container fr-container--fluid fr-container-md">
+        <div class="fr-grid-row fr-grid-row--center">
+          <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
+            <div class="fr-modal__body">
+              <div class="fr-modal__header">
+                <button class="fr-btn--close fr-btn" aria-controls="fr-transcription__modal-transcription-{{ transcription_id }}" title="{{ 'Close transcription modal'|t }}">
+                  {{ 'Close'|t }}
+                </button>
+              </div>
+              <div class="fr-modal__content">
+                <h1 id="fr-transcription__modal-transcription-{{ transcription_id }}-title" class="fr-modal__title">
+                  {{ title }}
+                </h1>
+                {{ content }}
+              </div>
+              <div class="fr-transcription__footer">
+                <div class="fr-transcription__actions-group">
+                  <button class="fr-btn fr-btn--fullscreen" aria-controls="fr-transcription__modal-transcription-{{ transcription_id }}" data-fr-opened="false" title="{{ 'Enlarge transcription'|t }}">
+                    {{ 'Enlarge'|t }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+</div>
+

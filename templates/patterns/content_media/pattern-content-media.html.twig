@@ -1,27 +1,33 @@
 {% if variant and variant|lower != 'default' %}
   {% set attributes = attributes.addClass('fr-content-media--' ~ variant|lower|replace({'_': '-'})) %}
 {% endif %}
-{% if image %}
-  <figure{{ attributes.addClass('fr-content-media').setAttribute('role', 'group') }}>
+
+{% if caption or transcription %}
+  {% set attributes = attributes.setAttribute('role', 'group') %}
+{% endif %}
+
+{% if caption %}
+  {% set attributes = attributes.setAttribute('aria-label', caption) %}
+{% endif %}
+
+<figure{{ attributes.addClass('fr-content-media') }}>
+  {% if image %}
     <div class="fr-content-media__img">
       {{ image|add_class('fr-responsive-img') }}
     </div>
-    {% if caption %}
-      <figcaption class="fr-content-media__caption">{{ caption }}</figcaption>
-    {% endif %}
-  </figure>
-{% elseif video %}
-  <div{{ attributes.addClass('fr-content-media') }}>
+  {% elseif video %}
     <div class="fr-responsive-vid{{ ratio == '4x3' ? ' fr-responsive-vid--4x3' }}">
       {{ video|add_class('fr-responsive-vid__player') }}
     </div>
-    {% if caption %}
-      <div class="fr-content-media__caption">{{ caption }}</div>
-    {% endif %}
-    {% if transcription_link %}
-      <div class="fr-content-media__transcription">
-        {{ transcription_link }}
-      </div>
-    {% endif %}
-  </div>
-{% endif %}
+  {% endif %}
+
+  {% if caption %}
+    <figcaption class="fr-content-media__caption">{{ caption }}</figcaption>
+  {% endif %}
+
+  {% if transcription %}
+    {{ pattern('transcription', {
+      content: transcription
+    }) }}
+  {% endif %}
+</figure>

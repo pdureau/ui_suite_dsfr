@@ -1,0 +1,17 @@
+transcription:
+  label: Transcription
+  description: 'Textual transcription for video, or detailed description for complex images'
+  settings:
+    transcription_id:
+      type: token
+      label: Transcription ID
+      description: 'To generate unique id attributes if several transcriptions are in the same page. Default is randomly generated.'
+  fields:
+    title:
+      type: text
+      label: Title
+      description: 'Title for transcription button and modal. Default is "Transcription".'
+    content:
+      type: render
+      label: Content
+      preview: "<p>Transcription text : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>"
