@@ -24,6 +24,10 @@ side_menu:
       type: token
       label: Menu name
       preview: Side menu name
+    title_id:
+      type: token
+      label: Title  ID
+      description: "An identifier for the side menu title. It must start with a letter and will be randomly generated if left empty."
   fields:
     title:
       type: text
