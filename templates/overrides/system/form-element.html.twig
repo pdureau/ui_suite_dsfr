@@ -76,8 +76,10 @@
   {# Cases when we need to use erros in form element.
      Rest errors will be handled in children to fit DSF structure. #}
   {% if add_error and errors %}
-    <p id="{{ error_id }}" class="fr-error-text">
-      {{ errors }}
-    </p>
+    <div id="{{ error_id }}" class="fr-error-group">
+      <p class="fr-message--error">
+        {{ errors }}
+      </p>
+    </div>
   {% endif %}
 </div>

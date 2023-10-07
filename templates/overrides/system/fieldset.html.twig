@@ -61,8 +61,10 @@
       {% endif %}
     </div>
     {% if errors %}
-      <div id="{{ error_id }}" class="fr-error-text">
-        {{ errors }}
+      <div id="{{ error_id }}" class="fr-error-group">
+        <p class="fr-message--error">
+          {{ errors }}
+        </p>
       </div>
     {% endif %}
   </fieldset>

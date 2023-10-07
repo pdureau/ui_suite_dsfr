@@ -27,8 +27,10 @@
     {% endfor %}
   </select>
   {% if errors %}
-    <p id="{{ error_id }}" class="fr-error-text">
-      {{ errors }}
-    </p>
+    <div id="{{ error_id }}" class="fr-error-group">
+      <p class="fr-message--error">
+        {{ errors }}
+      </p>
+    </div>
   {% endif %}
 {% endapply %}
