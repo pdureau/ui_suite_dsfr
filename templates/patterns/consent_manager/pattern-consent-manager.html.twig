@@ -38,10 +38,11 @@
         <button class="fr-consent-service__collapse-btn" aria-expanded="false" aria-describedby="{{ service.attributes.id }}-legend" aria-controls="{{ service.attributes.id }}-collapse">{{ 'See more details'|t }}</button>
       </div>
       <div class="fr-consent-services fr-collapse" id="{{ service.attributes.id }}-collapse">
-        {% for sub_id, sub_service in service.below %}
+        {% for sub_service in service.below %}
+          {% set sub_id = sub_service.attributes.id|default("") %}
           <div class="fr-consent-service">
             <fieldset class="fr-fieldset fr-fieldset--inline">
-              <legend id="{{ service.attributes.id }}-{{ sub_id }}-legend" class="fr-consent-service__title">{{ sub_service.title }}</legend>
+              <legend id="{{ service.attributes.id }}-{{ sub_id }}-legend" class="fr-consent-service__title">{{ sub_service.title|default("") }}</legend>
               <div class="fr-consent-service__radios fr-fieldset--inline">
                 <div class="fr-radio-group">
                   <input type="radio" id="consent-{{ service.attributes.id }}-{{ sub_id }}-accept" name="consent-{{ service.attributes.id }}-{{ sub_id }}">
