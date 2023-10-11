@@ -3,7 +3,7 @@ pagination:
   description: "Pagination allows the user to navigate between the different pages of a list of items. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pagination"
   fields:
     items:
-      type: array
+      type: links
       label: Items
       description: "Pagination items. The list is keyed by the following elements: first: Item for the first page. previous: Item for the previous page. next: Item for the next page. last: Item for the last page. pages: List of pages, keyed by page number."
       preview:

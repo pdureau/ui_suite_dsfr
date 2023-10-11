@@ -7,7 +7,7 @@ summary:
       label: Title
       preview: Summary
     links:
-      type: array
+      type: links
       label: Links
       description: "Summary links by provider. Each link contains the following keys: title: Link title; url: Link URI."
       preview:

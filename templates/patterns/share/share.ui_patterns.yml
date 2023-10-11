@@ -7,7 +7,7 @@ share:
       label: Title
       preview: Share page
     links:
-      type: array
+      type: links
       label: Links
       description: "Share links by provider.
         The link element contains the following elements: id: Share provider machine name (facebook, twitter, mail…); title: Link label (Share on Facebook, Share by email…); url: Link URI."

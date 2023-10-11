@@ -9,7 +9,7 @@ layout_option_definitions:
     layout: true
     regions: false
     inline: true
-    weight:  1
+    weight: 1
     options:
       "with-container": "True"
       "": "False"
@@ -22,7 +22,7 @@ layout_option_definitions:
     layout: true
     regions: false
     inline: true
-    weight:  2
+    weight: 2
     options:
       "fluid-container": "True"
       "": "False"
@@ -35,7 +35,7 @@ layout_option_definitions:
     layout: true
     regions: false
     inline: true
-    weight:  3
+    weight: 3
     options:
       "with-gutters": "True"
       "": "False"

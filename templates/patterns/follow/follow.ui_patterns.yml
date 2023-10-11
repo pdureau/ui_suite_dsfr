@@ -47,7 +47,7 @@ follow:
           label: Subscribe
           url: "https://example.com"
     social:
-      type: array
+      type: links
       label: Social networks links
       description: "Follow links by provider. The link element contains the following elements: id: Follow provider machine name (facebook, twitter…); title: Link title; url: Link URI."
       preview:
