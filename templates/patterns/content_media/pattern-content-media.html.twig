@@ -10,13 +10,15 @@
   {% set attributes = attributes.setAttribute('aria-label', caption) %}
 {% endif %}
 
+{% set ratio = ratio|default("16x9") %}
+
 <figure{{ attributes.addClass('fr-content-media') }}>
   {% if image %}
-    <div class="fr-content-media__img">
+    <div class="fr-content-media__img{{ ratio != "16x9" ? ' fr-responsive-vid--'~ratio }}">
       {{ image|add_class('fr-responsive-img') }}
     </div>
   {% elseif video %}
-    <div class="fr-responsive-vid{{ ratio == '4x3' ? ' fr-responsive-vid--4x3' }}">
+    <div class="fr-responsive-vid{{ ratio not in ["32x9", "3x2", "3x4", "2x3"] ? ' fr-responsive-vid--'~ratio : "" }}">
       {{ video|add_class('fr-responsive-vid__player') }}
     </div>
   {% endif %}
