@@ -9,7 +9,7 @@
     "type": "drupal-theme",
     "license": "GPL-2.0-or-later",
     "require": {
-        "drupal/ui_patterns": "^1.2",
+        "drupal/ui_patterns": "^1.7",
         "drupal/ui_patterns_settings": "^2.0",
         "drupal/layout_options": "^1.0",
         "drupal/ui_styles": "^1.0",
