@@ -31,12 +31,12 @@ summary:
       label: HTML tag for title
       options:
         p: p
-        h2: h2
+        h2: h2 (default)
         h3: h3
         h4: h4
         h5: h5
         h6: h6
-      preview: p
+      default: h2
     title_id:
       type: token
       label: Title ID

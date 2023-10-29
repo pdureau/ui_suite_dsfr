@@ -3,7 +3,7 @@
   {% set attributes = attributes.addClass(variants) %}
 {% endif %}
 
-{% set title_tag = title_tag|default('p') %}
+{% set title_tag = title_tag|default('h3') %}
 
 <div{{ attributes.addClass('fr-alert')}}>
   {% if title %}

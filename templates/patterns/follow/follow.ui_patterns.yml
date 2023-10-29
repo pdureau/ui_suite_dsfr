@@ -6,24 +6,22 @@ follow:
       type: select
       label: HTML tag for title
       options:
-        h2: h2 (default)
-        h3: h3
+        h2: h2
+        h3: h3 (default)
         h4: h4
         h5: h5
         h6: h6
-      default: h2
-      preview: h2
+      default: h3
     follow_title_tag:
       type: select
       label: "HTML tag for 'Follow us' title"
       options:
-        h2: h2 (default)
-        h3: h3
+        h2: h2
+        h3: h3 (default)
         h4: h4
         h5: h5
         h6: h6
-      default: h2
-      preview: h2
+      default: h3
   fields:
     social_title:
       type: render
