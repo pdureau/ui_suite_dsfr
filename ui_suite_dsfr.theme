@@ -209,12 +209,12 @@ function ui_suite_dsfr_preprocess_form_element(array &$variables) {
       $class = $variables['element']['#type'] == 'radio' ? 'fr-radio-group' : 'fr-checkbox-group';
       // Here we need to add error in form element template only for
       // single checkbox. These vars can be used in form_element.twig.html.
-      $variables['add_error'] = isset($variables['element']['#delta']);
+      $variables['add_error'] = !isset($variables['element']['#error_no_message']);
       $variables['error_id'] = 'error-desc--';
       if (isset($variables['element']['#name'])) {
         $variables['error_id'] .= $variables['element']['#name'];
       }
-      $error_class = isset($variables['element']['#delta']) ? $class . '--error' : NULL;
+      $error_class = !$variables['add_error'] ? $class . '--error' : NULL;
       break;
 
     case 'managed_file':
