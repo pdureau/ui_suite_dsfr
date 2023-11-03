@@ -1,17 +1,34 @@
 {% if variant and variant|lower != 'default' %}
-  {% set attributes = attributes.addClass('fr-tile--' ~ variant|lower|replace({'_': '-'})) %}
+  {% set variants = variant|split('__')|map(v => v|lower|replace({(v): 'fr-tile--' ~ v})|replace({'_': '-'})) %}
+  {% set attributes = attributes.addClass(variants) %}
 {% endif %}
 
 {% if enlarge_link %}
   {% set attributes = attributes.addClass('fr-enlarge-link') %}
 {% endif %}
 
-{% if grey_hover %}
-  {% set attributes = attributes.addClass('fr-tile--grey') %}
+{% if display_md %}
+  {% set attributes = attributes.addClass('fr-tile--' ~ display_md ~ '@md') %}
 {% endif %}
 
-{% if display_md %}
-  {% set attributes = attributes.addClass('fr-tile--' ~ display_md ~ '-md') %}
+{% if display_lg %}
+  {% set attributes = attributes.addClass('fr-tile--' ~ display_lg ~ '@lg') %}
+{% endif %}
+
+{% if shadow %}
+  {% set attributes = attributes.addClass('fr-tile--shadow') %}
+{% endif %}
+
+{% if icon %}
+  {% set attributes = attributes.addClass('fr-tile--no-icon') %}
+{% endif %}
+
+{% if border %}
+  {% set attributes = attributes.addClass('fr-tile--no-border') %}
+{% endif %}
+
+{% if background and background|lower != 'default' %}
+  {% set attributes = attributes.addClass('fr-tile--' ~ background|lower) %}
 {% endif %}
 
 {% set title_tag = title_tag|default('h3') %}
@@ -19,14 +36,28 @@
 {% if title %}
   <div{{ attributes.addClass('fr-tile') }}>
     <div class="fr-tile__body">
-      <{{ title_tag }} class="fr-tile__title">
-        {{ title }}
-      </{{ title_tag }}>
-      {% if description %}<p class="fr-tile__desc">{{ description }}</p>{% endif %}
+      <div class="fr-tile__content">
+        <{{ title_tag }} class="fr-tile__title">
+          {{ title }}
+        </{{ title_tag }}>
+        {% if description %}
+          <p class="fr-tile__desc">{{ description }}</p>
+        {% endif %}
+        {% if tags_badges %}
+          <div class="fr-tile__start">
+            {{ tags_badges }}
+          </div>
+        {% endif %}
+        {% if detail %}
+          <div class="fr-tile__detail {{ detail_icon }}">{{ detail }}</div>
+        {% endif %}
+      </div>
     </div>
     {% if image %}
-      <div class="fr-tile__img">
-        {{ image|add_class('fr-responsive-img') }}
+      <div class="fr-tile__header">
+        <div class="fr-tile__pictogram">
+          {{ image|add_class('fr-responsive-img') }}
+        </div>
       </div>
     {% endif %}
   </div>

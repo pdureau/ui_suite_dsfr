@@ -6,16 +6,15 @@ tile:
       label: Vertical
     horizontal:
       label: Horizontal
+    sm:
+      label: Vertical small
+    horizontal__sm:
+      label: Horizontal small
   settings:
     enlarge_link:
       type: boolean
       label: Enlarge link?
       description: Extend the link to the whole tile.
-      preview: true
-    grey_hover:
-      type: boolean
-      label: Grey background?
-      description: Adds grey background on card hover.
       preview: true
     title_tag:
       type: select
@@ -34,6 +33,35 @@ tile:
       options:
         horizontal: Horizontal
         vertical: Vertical
+    display_lg:
+      type: select
+      label: Display LG
+      description: Can be vertical or horizontal from the LG breakpoint.
+      options:
+        horizontal: Horizontal
+        vertical: Vertical
+    background:
+      type: select
+      label: Background color
+      options:
+        default: Default (default)
+        grey: Grey
+        no-background: None
+    icon:
+      type: boolean
+      label: Display icon?
+      description: Add arrow icon in the corner.
+      default_value: true
+    border:
+      type: boolean
+      label: Display borders?
+      description: Add borders.
+      default_value: true
+    shadow:
+      type: boolean
+      label: Display shadow?
+      description: Replace borders with a shadow.
+      default_value: false
   fields:
     image:
       type: render
@@ -53,7 +81,34 @@ tile:
         attributes:
           href: "#"
           title: Link title
+    tags_badges:
+      type: render
+      label: Tags or badges groups
+      preview:
+        - type: pattern
+          id: tag_group
+          fields:
+            tags:
+              - type: pattern
+                id: tag
+                variant: sm
+                fields:
+                  label: Label tag 1
+              - type: pattern
+                id: tag
+                variant: sm
+                fields:
+                  label: Label tag 2
+        - type: pattern
+          id: badge
+          variant: sm
+          fields:
+            label: Badge label
     description:
       type: text
       label: Text
       preview: Tile description
+    detail:
+      type: text
+      label: Detail
+      preview: Tile detail
