@@ -3,30 +3,30 @@
     <ul class="fr-pagination__list pager__items js-pager__items">
       {% if not items.first %}
         {% set first = {
-          attributes: create_attribute()
+          attributes: create_attribute({'aria-disabled' : 'true', 'role': 'link'})
         } %}
       {% else %}
          {% set first = items.first %}
       {% endif %}
       <li>
-        <a{{ first.attributes.addClass('fr-pagination__link', 'fr-pagination__link--first') }} href="{{ first.href }}">
+        <a{{ first.attributes.addClass('fr-pagination__link', 'fr-pagination__link--first').setAttribute('href', first.href) }}>
           {{ 'First page'|t }}
         </a>
       </li>
       {% if not items.previous %}
         {% set previous = {
-          attributes: create_attribute()
+          attributes: create_attribute({'aria-disabled' : 'true', 'role': 'link'})
         } %}
       {% else %}
         {% set previous = items.previous %}
       {% endif %}
         <li>
-          <a{{ previous.attributes.addClass('fr-pagination__link', 'fr-pagination__link--prev', 'fr-pagination__link--lg-label') }} href="{{ previous.href }}">
+          <a{{ previous.attributes.addClass('fr-pagination__link', 'fr-pagination__link--prev', 'fr-pagination__link--lg-label').setAttribute('href', previous.href) }}>
             {{ 'Previous page'|t }}
           </a>
         </li>
       {% if ellipses.previous %}
-        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg" href="">...</a></li>
+        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg" aria-disabled="true" role="link">...</a></li>
       {% endif %}
       {% for key, item in items.pages %}
         <li>
@@ -46,29 +46,29 @@
         </li>
       {% endfor %}
       {% if ellipses.next %}
-        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg" href="">...</a></li>
+        <li><a class="fr-pagination__link fr-hidden fr-unhidden-lg" aria-disabled="true" role="link">...</a></li>
       {% endif %}
       {% if not items.next %}
         {% set next = {
-          attributes: create_attribute()
+          attributes: create_attribute({'aria-disabled' : 'true', 'role': 'link'})
         } %}
       {% else %}
         {% set next = items.next %}
       {% endif %}
       <li>
-        <a{{ next.attributes.addClass('fr-pagination__link', 'fr-pagination__link--next', 'fr-pagination__link--lg-label') }} href="{{ next.href }}">
+        <a{{ next.attributes.addClass('fr-pagination__link', 'fr-pagination__link--next', 'fr-pagination__link--lg-label').setAttribute('href', next.href) }}>
           {{ 'Next page'|t }}
         </a>
       </li>
       {% if not items.last %}
         {% set last = {
-          attributes: create_attribute()
+          attributes: create_attribute({'aria-disabled' : 'true', 'role': 'link'})
         } %}
       {% else %}
         {% set last = items.last %}
       {% endif %}
       <li>
-        <a{{ last.attributes.addClass('fr-pagination__link', 'fr-pagination__link--last') }} href="{{ last.href }}">
+        <a{{ last.attributes.addClass('fr-pagination__link', 'fr-pagination__link--last').setAttribute('href', last.href) }}>
           {{ 'Last page'|t }}
         </a>
       </li>
