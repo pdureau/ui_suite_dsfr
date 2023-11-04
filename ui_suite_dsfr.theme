@@ -76,7 +76,6 @@ function _ui_suite_dsfr_add_link_class(&$element, string $class) {
  * Implements hook_form_FORM_ID_alter().
  */
 function ui_suite_dsfr_form_alter(&$form, &$form_state, $form_id) {
-  $form['#attributes']['novalidate'] = 'novalidate';
   // Style form buttons like button patterns.
   if (isset($form['actions'])) {
     $actions = Element::children($form['actions']);
