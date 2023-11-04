@@ -218,7 +218,7 @@ function ui_suite_dsfr_preprocess_form_element(array &$variables) {
 
     case 'managed_file':
       $class = 'fr-upload-group';
-      $error_class = 'fr-input-group--error';
+      $error_class = 'fr-upload-group--error';
       break;
 
     case 'select':
