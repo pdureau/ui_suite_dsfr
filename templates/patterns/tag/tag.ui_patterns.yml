@@ -4,7 +4,7 @@ tag:
   category: Tag
   variants:
     default:
-      label: Medimm
+      label: Medium (default)
     sm:
       label: Small
   settings:
