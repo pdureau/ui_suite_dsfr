@@ -15,12 +15,12 @@
     <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper-{{ html_id|clean_id }}" aria-expanded="false">{{ 'In this section'|t }}</button>
     <div class="fr-collapse" id="fr-sidemenu-wrapper-{{ html_id|clean_id }}">
       <div id="{{ title_id }}" class="fr-sidemenu__title">{{ title }}</div>
-      {{ _self.menu_links(items, attributes, 0) }}
+      {{ _self.menu_links(items, attributes) }}
     </div>
   </div>
 </nav>
 
-{% macro menu_links(items, attributes, menu_level) %}
+{% macro menu_links(items, attributes) %}
   {% if items %}
     <ul class="fr-sidemenu__list">
       {% for item in items %}
@@ -29,7 +29,7 @@
             {% set item_id = 'fr-sidemenu-item-' ~ loop.index ~ '-' ~ random() %}
             <button class="fr-sidemenu__btn" aria-expanded="false" aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="page"{% endif %}>{{ item.title }}</button>
             <div class="fr-collapse" id="{{ item_id }}">
-              {{ _self.menu_links(item.below, attributes, menu_level + 1) }}
+              {{ _self.menu_links(item.below, attributes) }}
             </div>
           {% else %}
               <a class="fr-sidemenu__link" href="{{ item.url }}">{{ item.title }}</a>

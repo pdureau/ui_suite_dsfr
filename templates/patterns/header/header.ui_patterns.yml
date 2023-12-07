@@ -6,10 +6,6 @@ header:
       type: token
       label: Header ID
       description: 'To generate unique id attributes if several headers are in the same page. Default is randomly generated.'
-    logo_title:
-      type: token
-      label: Logo title
-      preview: "Logo title"
     logo_text:
       type: token
       label: Logo text

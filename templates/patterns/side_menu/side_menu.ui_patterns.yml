@@ -20,10 +20,6 @@ side_menu:
       type: token
       label: ID
       description: "Used for collapse mechanism. Must start with a letter. Randomly generated if empty."
-    menu_name:
-      type: token
-      label: Menu name
-      preview: Side menu name
     title_id:
       type: token
       label: Title  ID
