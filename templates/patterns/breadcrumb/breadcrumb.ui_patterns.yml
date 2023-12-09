@@ -1,20 +1,19 @@
 breadcrumb:
   label: Breadcrumb
   description: Provides information on the site's architecture. It indicates to the user his current position and allows him  to locate himself in the tree structure of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/fil-d-ariane
-  fields:
+  settings:
     items:
-      type: render
+      type: links
       label: Items
-      description: "Breadcrumb items array. Each item can contain: text, url, attributes."
+      description: "Each item can contain: title, url, attributes."
       preview:
-        - text: Home
+        - title: Home
           url: "/"
-        - text: Library
+        - title: Library
           url: "#"
-        - text: Data
+        - title: Data
           attributes:
             data-name: "Test"
-  settings:
     breadcrumb_id:
       type: token
       label: ID

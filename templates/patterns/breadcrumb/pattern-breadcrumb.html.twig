@@ -11,7 +11,7 @@
             {% set item_attributes = loop.last ? item_attributes.setAttribute('aria-current', 'page') : item_attributes %}
             {% set url = item.url|default(item_attributes.href) %}
             <a{{ item_attributes.addClass('fr-breadcrumb__link').setAttribute('href', url) }}>
-              {{ item.text }}
+              {{ item.title }}
             </a>
           </li>
         {% endfor %}

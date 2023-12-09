@@ -34,7 +34,7 @@ dependencies:
   - layout_options:layout_options
   - ui_patterns:ui_patterns
   - ui_patterns:ui_patterns_library
-  - ui_patterns_settings:ui_patterns_settings
+  - ui_patterns_settings:ui_patterns_settings (>=8.x-2.2-alpha1 || >=8.x-2.2 || >=3.0)
   - ui_styles:ui_styles
   - ui_skins:ui_skins
 

@@ -6,10 +6,11 @@ summary:
       type: text
       label: Title
       preview: Summary
+  settings:
     links:
       type: links
       label: Links
-      description: "Summary links by provider. Each link contains the following keys: title: Link title; url: Link URI."
+      description: "Summary links by provider."
       preview:
         - title: Anchor title 1
           url: "#anchor-title-1"
@@ -25,7 +26,6 @@ summary:
           url: "#anchor-title-5"
         - title: Anchor title 6
           url: "#anchor-title-6"
-  settings:
     title_tag:
       type: select
       label: HTML tag for title

@@ -21,10 +21,11 @@ consent_banner:
       label: Modal text
       description: "See 'Consent manager' component."
       preview: Preferences for all services.
+  settings:
     services:
-      type: menu
+      type: links
       label: Modal services
-      description: "A Drupal menu structure. See 'Consent manager' component."
+      description: "See 'Consent manager' component."
       preview:
         - title: Youtube
           attributes:

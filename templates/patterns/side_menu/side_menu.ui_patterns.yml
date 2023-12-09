@@ -24,15 +24,10 @@ side_menu:
       type: token
       label: Title  ID
       description: "An identifier for the side menu title. It must start with a letter and will be randomly generated if left empty."
-  fields:
-    title:
-      type: text
-      label: Menu title
-      preview: Section title
     items:
-      type: menu
+      type: links
       label: Menu items
-      description: "Full-height and lightweight navigation (including support for dropdowns). Can contain: title(link title), url(link url), below(child items array, can contain the same items as parent), in_active_trail(TRUE if the link is in the active trail), attributes(HTML attributes for the menu item)"
+      description: "Full-height and lightweight navigation (including support for dropdowns)."
       preview:
         - title: Home
           url: "/"
@@ -61,3 +56,8 @@ side_menu:
                   url: "#"
                 - title: Data Sub 2.2
                   url: "#"
+  fields:
+    title:
+      type: text
+      label: Menu title
+      preview: Section title

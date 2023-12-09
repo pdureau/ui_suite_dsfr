@@ -33,7 +33,9 @@
  */
 #}
 {{ pattern('pagination', {
-  items: items,
-  current: current,
-  ellipses: ellipses
+  first: items.first ? items.first.href : false,
+  prev: items.previous ? items.previous.href : false,
+  pages: items.pages,
+  next: items.next ? items.next.href : false,
+  last: items.last ? items.last.href : false,
 }) }}

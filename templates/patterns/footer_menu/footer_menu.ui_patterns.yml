@@ -5,11 +5,11 @@ footer_menu:
   variants:
     content: Content (Default)
     bottom: Bottom
-  fields:
+  settings:
     items:
-      type: menu
+      type: links
       label: Items
-      description: "A flat Drupal menu structure. https://api.drupal.org/api/drupal/core!modules!system!templates!menu.html.twig/10.0.x"
+      description: Flat list of links.
       preview:
         - title: Sitemap
           url: "#"

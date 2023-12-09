@@ -8,10 +8,11 @@ consent_manager:
       label: Title
       description: Descriptive text for the "Accept all" / "Refuse all" options.
       preview: Preferences for all services.
+  settings:
     services:
-      type: menu
+      type: links
       label: Services
-      description: "A 2 levels Drupal menu structure with attributes.id and attributes.title. 'url' key is ignored."
+      description: "A 2 levels links structure with attributes.id and attributes.title. 'url' key is ignored."
       preview:
         - title: Youtube
           attributes:

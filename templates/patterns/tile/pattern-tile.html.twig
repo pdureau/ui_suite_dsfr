@@ -38,7 +38,7 @@
     <div class="fr-tile__body">
       <div class="fr-tile__content">
         <{{ title_tag }} class="fr-tile__title">
-          {{ title }}
+          {{ title|add_class('fr-tile__link') }}
         </{{ title_tag }}>
         {% if description %}
           <p class="fr-tile__desc">{{ description }}</p>

@@ -5,12 +5,12 @@
  * Functions to support theming in the UI Suite DSFR theme.
  */
 
-use Drupal\Component\Render\MarkupInterface;
+declare(strict_types = 1);
+
 use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Render\Element;
-use Drupal\Core\Template\Attribute;
-use Drupal\Core\Url;
+use Drupal\ui_patterns_settings\Plugin\UiPatterns\SettingType\LinksSettingType;
 
 /**
  * Implements hook_preprocess_HOOK() for page templates.
@@ -21,55 +21,6 @@ function ui_suite_dsfr_preprocess_page(&$variables) {
   $config = \Drupal::config('system.site');
   $variables['site_name'] = $config->get('name');
   $variables['site_slogan'] = $config->get('slogan');
-}
-
-/**
- * Implements hook_preprocess_HOOK() for card patterns.
- */
-function ui_suite_dsfr_preprocess_pattern_card(array &$variables) {
-  if (isset($variables['title'])) {
-    _ui_suite_dsfr_add_link_class($variables['title'], 'fr-card__link');
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK() for tile patterns.
- */
-function ui_suite_dsfr_preprocess_pattern_tile(array &$variables) {
-  if (isset($variables['title'])) {
-    _ui_suite_dsfr_add_link_class($variables['title'], 'fr-tile__link');
-  }
-}
-
-/**
- * Adds class to link element.
- *
- * @param mixed $element
- *   Element.
- * @param string $class
- *   CSS class.
- */
-function _ui_suite_dsfr_add_link_class(&$element, string $class) {
-  if (!is_array($element)) {
-    return;
-  }
-  if (Element::getVisibleChildren($element)) {
-    foreach (Element::children($element) as $child) {
-      if (!array_key_exists('#type', $element[$child])) {
-        continue;
-      }
-      if ($element[$child]['#type'] === 'link'
-        || ($element[$child]['#type'] === 'html_tag' && $element[$child]['#tag'] === 'a')
-        || ($element[$child]['#type'] === 'pattern' && $element[$child]['#id'] === 'link')) {
-        $element[$child]['#attributes']['class'][] = $class;
-      }
-    }
-  }
-  elseif ($element['#type'] === 'link'
-    || ($element['#type'] === 'html_tag' && $element['#tag'] === 'a')
-    || ($element['#type'] === 'pattern' && $element['#id'] === 'link')) {
-    $element['#attributes']['class'][] = $class;
-  }
 }
 
 /**
@@ -376,43 +327,6 @@ function _ui_suite_dsfr_get_colors_settings() {
 }
 
 /**
- * Implements hook_preprocess_pattern_pagination().
- */
-function ui_suite_dsfr_preprocess_pattern_pagination(array &$variables) {
-  if (isset($variables['current'])) {
-    if ($variables['current'] instanceof MarkupInterface) {
-      $variables['current'] = $variables['current']->__toString();
-    }
-    $variables['current'] = (int) $variables['current'];
-  }
-  if (!isset($variables['items']['pages'])) {
-    return;
-  }
-  foreach ($variables['items']['pages'] as &$page) {
-    if (isset($page['attributes'])) {
-      if (!($page['attributes'] instanceof Attribute)) {
-        $page['attributes'] = new Attribute($page['attributes']);
-      }
-    }
-    else {
-      $page['attributes'] = new Attribute();
-    }
-  }
-  foreach (['first', 'last', 'previous', 'next'] as $item) {
-    if (isset($variables['items'][$item])) {
-      if (isset($variables['items'][$item]['attributes'])) {
-        if (!($variables['items'][$item]['attributes'] instanceof Attribute)) {
-          $variables['items'][$item]['attributes'] = new Attribute($variables['items'][$item]['attributes']);
-        }
-      }
-      else {
-        $variables['items'][$item]['attributes'] = new Attribute();
-      }
-    }
-  }
-}
-
-/**
  * Implements hook_preprocess_pattern_footer().
  */
 function ui_suite_dsfr_preprocess_pattern_footer(array &$variables) {
@@ -481,22 +395,27 @@ function ui_suite_dsfr_preprocess_pattern_footer_menu(array &$variables) {
     if (empty($item['url'])) {
       return;
     }
-
-    // @TODO : remove when #3345071 is fixed (new links setting)
-    if ($item['url'] instanceof Url) {
-      $url = $item['url'];
-      $item['url'] = $url->toString();
-
-      $options = $url->getOptions();
-
-      if (isset($options['attributes'])) {
-        $item['link_attributes'] = $options['attributes'];
-      }
-    }
-
     if (UrlHelper::isExternal($item['url'])
         && !UrlHelper::externalIsLocal($item['url'], \Drupal::request()->getSchemeAndHttpHost())) {
       $item['link_attributes']['target'] = '_blank';
     }
   }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for 'breadcrumb'.
+ */
+function ui_suite_dsfr_preprocess_breadcrumb(array &$variables): void {
+  $variables["breadcrumb"] = LinksSettingType::normalize($variables["breadcrumb"]);
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for 'pager'.
+ */
+function ui_suite_dsfr_preprocess_pager(array &$variables): void {
+  if (!isset($variables["items"]["pages"])) {
+    return;
+  }
+  $variables["items"]["pages"] = LinksSettingType::normalize($variables["items"]["pages"]);
+  unset($pages[$variables["current"] - 1]["url"]);
 }

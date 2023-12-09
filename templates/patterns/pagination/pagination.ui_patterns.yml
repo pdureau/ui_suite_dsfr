@@ -1,37 +1,38 @@
 pagination:
   label: Pagination
   description: "Pagination allows the user to navigate between the different pages of a list of items. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pagination"
-  fields:
-    items:
+  settings:
+    first:
+      type: url
+      label: First link
+      description: Should be empty when the user is on the first page. Will be printed desactivated if empty.
+      preview: "#"
+    prev:
+      type: url
+      label: Previous link
+      description: Should be empty when the user is on the first page. Will be printed desactivated if empty.
+      preview: "#"
+    pages:
       type: links
-      label: Items
-      description: "Pagination items. The list is keyed by the following elements: first: Item for the first page. previous: Item for the previous page. next: Item for the next page. last: Item for the last page. pages: List of pages, keyed by page number."
+      label: Pages links
+      description: The current page has no url property.  It is recommended to limit the number of pages visible and displayed by default in the pagination to 5 or 7, the other pages being hidden by a truncation system.
       preview:
-        pages:
-          1:
-            href: "#page1"
-          2:
-            href: "#page2"
-          3:
-            href: "#page3"
-          4:
-            href: "#page4"
-          5:
-            href: "#page5"
-        first:
-          href: "#first"
-        last:
-          href: "#last"
-        next:
-          href: "#next"
-        previous:
-          href: "#prev"
-    current:
-      type: number
-      label: Current page
-      description: Current page number.
-      preview: 3
-    ellipses:
-      type: array
-      label: Ellipsis
-      description: If there are more pages than the quantity allows, then an ellipsis before or after the listed pages may be present. Can contain previous and next element.
+        - title: "1"
+          url: "#page1"
+        - title: "2"
+          url: "#page2"
+        - title: "3"
+        - title: "4"
+          url: "#page4"
+        - title: "5"
+          url: "#page5"
+    next:
+      type: url
+      label: Next link
+      description: Should be empty when the user is on the last page. Will be printed desactivated if empty.
+      preview: "#"
+    last:
+      type: url
+      label: Last link
+      description: Should be empty when the user is on the last page. Will be printed desactivated if empty.
+      preview: "#"
