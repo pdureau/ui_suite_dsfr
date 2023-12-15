@@ -31,7 +31,7 @@ function ui_suite_dsfr_form_alter(&$form, &$form_state, $form_id) {
   if (isset($form['actions'])) {
     $actions = Element::children($form['actions']);
     foreach ($actions as $action) {
-      if ($form['actions'][$action]['#type'] == 'submit') {
+      if (array_key_exists('#type', $form['actions'][$action]) && $form['actions'][$action]['#type'] == 'submit') {
         $form['actions'][$action]['#attributes']['class'][] = 'fr-btn';
         if ($form_id == 'search_block_form') {
           continue;
