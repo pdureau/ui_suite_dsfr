@@ -3,6 +3,7 @@ dsfr:
   license:
     name: MIT
     gpl-compatible: false
+    url: https://github.com/GouvernementFR/dsfr/blob/main/LICENSE.md
   js:
     # We don't use dsfr.module.min.js because of conflict with drupal js.
     /libraries/dsfr/dist/dsfr.module.js: { attributes: { type: module } }
