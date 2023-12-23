@@ -6,6 +6,11 @@ share:
       type: text
       label: Title
       preview: Share page
+    text:
+      type: render
+      label: Text
+      preview: "Please <a href=https://example.com>allow the deposit of cookies</a> to share on Facebook, Twitter and LinkedIn."
+  settings:
     links:
       type: links
       label: Links
@@ -24,7 +29,3 @@ share:
         - id: mail
           title: Share by email
           url: "mailto:?subject=SubjectHere&body=BodyHere"
-    text:
-      type: render
-      label: Text
-      preview: "Please <a href=https://example.com>allow the deposit of cookies</a> to share on Facebook, Twitter and LinkedIn."

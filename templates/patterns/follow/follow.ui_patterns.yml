@@ -22,28 +22,6 @@ follow:
         h5: h5
         h6: h6
       default: h3
-  fields:
-    social_title:
-      type: render
-      label: Social networks title
-      preview: "Follow us <br> on social networks"
-    newsletter_title:
-      type: text
-      label: Newsletter title
-      preview: "Subscribe to our newsletter"
-    newsletter_body:
-      type: render
-      label: Newsletter description
-      preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
-    newsletter:
-      type: render
-      label: Newsletter button
-      preview:
-        type: pattern
-        id: button
-        fields:
-          label: Subscribe
-          url: "https://example.com"
     social:
       type: links
       label: Social networks links
@@ -66,3 +44,25 @@ follow:
         - id: youtube
           title: Follow on Youtube
           url: "https://www.youtube.com"
+  fields:
+    social_title:
+      type: render
+      label: Social networks title
+      preview: "Follow us <br> on social networks"
+    newsletter_title:
+      type: text
+      label: Newsletter title
+      preview: "Subscribe to our newsletter"
+    newsletter_body:
+      type: render
+      label: Newsletter description
+      preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et."
+    newsletter:
+      type: render
+      label: Newsletter button
+      preview:
+        type: pattern
+        id: button
+        fields:
+          label: Subscribe
+          url: "https://example.com"

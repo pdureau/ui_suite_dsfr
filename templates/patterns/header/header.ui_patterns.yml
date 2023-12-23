@@ -37,7 +37,7 @@ header:
       preview:
         type: pattern
         id: link_group
-        fields:
+        settings:
           links:
             - type: pattern
               id: link
@@ -69,7 +69,7 @@ header:
       preview:
         type: pattern
         id: nav_menu
-        fields:
+        settings:
           menu_name: Main menu
           html_id: header-navigation
           items:
@@ -90,5 +90,4 @@ header:
                     - title: Sub 2.1
                       url: "#"
             - title: Data
-        settings:
           is_mega_menu: false
