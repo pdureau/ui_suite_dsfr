@@ -37,7 +37,7 @@ header:
       preview:
         type: pattern
         id: link_group
-        settings:
+        fields:
           links:
             - type: pattern
               id: link
