@@ -417,5 +417,8 @@ function ui_suite_dsfr_preprocess_pager(array &$variables): void {
     return;
   }
   $variables["items"]["pages"] = LinksSettingType::normalize($variables["items"]["pages"]);
-  unset($pages[$variables["current"] - 1]["url"]);
+  // Not mandatory to remove the current URL, because aria-current is enough.
+  // But let's do it anyway, for safert.
+  $current = $variables["current"] - 1;
+  unset($variables["items"]["pages"][$current]["url"]);
 }
