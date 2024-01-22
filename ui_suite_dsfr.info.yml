@@ -14,15 +14,15 @@ ckeditor_stylesheets:
   - dist/dsfr.css
 
 regions:
-  header_operator_logo: Header Operator Logo
-  header_tools_links: Header Tools links
-  header_tools_search: Header Tools search
-  header_navbar: Header Navbar
+  header_operator_logo: Header - Operator logo
+  header_tools_links: Header - Tools links
+  header_tools_search: Header - Tools search
+  header_navbar: Header - Navbar
   content: Content
-  sidebar_first: Sidebar first
-  sidebar_second: Sidebar second
+  sidebar_first: Sidebar - First
+  sidebar_second: Sidebar - Second
   footer_top: Footer - Top links
-  footer_operator_logo: Footer - Operator Logo
+  footer_operator_logo: Footer - Operator logo
   footer_content: Footer - Content
   footer_content_desc: Footer - Content description
   footer_partners: Footer - Partners
