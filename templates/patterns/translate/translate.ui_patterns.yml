@@ -1,0 +1,36 @@
+translate:
+  label: Translate
+  description: "Language selector. Works properly only in page header."
+  variants:
+    default:
+      label: Default (with outline)
+    no-outline:
+      label: Without outline
+  settings:
+    html_id:
+      type: token
+      label: ID
+      description: "Used for collapse mechanism. Must start with a letter. Randomly generated if empty."
+    links:
+      type: links
+      label: List of languages
+      description:
+      preview:
+        - title: Français
+          url: "#"
+          attributes:
+            lang: fr
+          in_active_trail: true
+        - title: English
+          url: "#"
+          attributes:
+            lang: en
+        - title: Español
+          url: "#"
+          attributes:
+            lang: es
+  fields:
+    title:
+      type: markup
+      label: Translate menu title
+      preview: 'FR<span class="fr-hidden-lg"> - Français</span>'
