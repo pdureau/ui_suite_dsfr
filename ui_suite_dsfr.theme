@@ -18,6 +18,7 @@ use Drupal\ui_patterns_settings\Plugin\UiPatterns\SettingType\LinksSettingType;
 function ui_suite_dsfr_preprocess_page(&$variables) {
   $variables['container'] = theme_get_setting('container');
 
+  // For the header & footer components.
   $config = \Drupal::config('system.site');
   $variables['site_name'] = $config->get('name');
   $variables['site_slogan'] = $config->get('slogan');
@@ -323,27 +324,6 @@ function _ui_suite_dsfr_get_colors_settings() {
   }
   else {
     return [];
-  }
-}
-
-/**
- * Implements hook_preprocess_pattern_footer().
- */
-function ui_suite_dsfr_preprocess_pattern_footer(array &$variables) {
-  if (empty($variables['service_title'])) {
-    $variables['service_title'] = \Drupal::config('system.site')->get('name');
-  }
-}
-
-/**
- * Implements hook_preprocess_pattern_header().
- */
-function ui_suite_dsfr_preprocess_pattern_header(array &$variables) {
-  if (empty($variables['service_title'])) {
-    $variables['service_title'] = \Drupal::config('system.site')->get('name');
-  }
-  if (empty($variables['service_tagline'])) {
-    $variables['service_tagline'] = \Drupal::config('system.site')->get('slogan');
   }
 }
 
