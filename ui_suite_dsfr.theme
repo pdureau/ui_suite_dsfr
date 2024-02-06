@@ -354,7 +354,9 @@ function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
   if (empty($variables['url'])) {
     return;
   }
-  if (UrlHelper::isExternal($variables['url'])
+  // It seems UrlHelper::setAllowedProtocols() doesn't support mailto.
+  if (!str_starts_with(strtolower($variables['url']), 'mailto:')
+    && UrlHelper::isExternal($variables['url'])
     && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost())) {
     $variables['external'] = TRUE;
   }
@@ -367,7 +369,9 @@ function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
   if (empty($variables['url'])) {
     return;
   }
-  if (UrlHelper::isExternal($variables['url'])
+  // It seems UrlHelper::setAllowedProtocols() doesn't support mailto.
+  if (!str_starts_with(strtolower($variables['url']), 'mailto:')
+    && UrlHelper::isExternal($variables['url'])
     && !UrlHelper::externalIsLocal($variables['url'], \Drupal::request()->getSchemeAndHttpHost())) {
     $variables['external'] = TRUE;
   }
@@ -395,7 +399,9 @@ function ui_suite_dsfr_preprocess_pattern_footer_menu(array &$variables) {
     if (empty($item['url'])) {
       return;
     }
-    if (UrlHelper::isExternal($item['url'])
+    // It seems UrlHelper::setAllowedProtocols() doesn't support mailto.
+    if (!str_starts_with(strtolower($item['url']), 'mailto:')
+        && UrlHelper::isExternal($item['url'])
         && !UrlHelper::externalIsLocal($item['url'], \Drupal::request()->getSchemeAndHttpHost())) {
       $item['link_attributes']['target'] = '_blank';
     }
