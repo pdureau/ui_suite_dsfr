@@ -70,6 +70,7 @@ header:
     navbar:
       type: render
       label: Navbar
+      description: "A nav_menu component"
       preview:
         type: pattern
         id: nav_menu

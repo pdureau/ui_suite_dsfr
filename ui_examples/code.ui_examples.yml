@@ -45,7 +45,7 @@ render:
             - "#type": "html_tag"
               "#tag": "img"
               "#attributes":
-                src: "https://code.gouv.fr/icons/binaire-256.png"
+                src: "https://code.gouv.fr/illustrations/Programmer.png"
                 style: "display: block; margin: auto;"
   1:
     "#type": "html_tag"
@@ -91,11 +91,6 @@ render:
             "#fields":
               title: Utiliser
               description: Mieux connaître, utiliser et concevoir les logiciels libres et les communs numériques.
-              image:
-                "#type": html_tag
-                "#tag": img
-                "#attributes":
-                  src: "https://code.gouv.fr/icons/coding-64.png"
           - "#type": "pattern"
             "#id": "tile"
             "#settings":
@@ -103,11 +98,6 @@ render:
             "#fields":
               title: Publier
               description: Développer et accompagner l’ouverture et la libération des codes sources de l'administration.
-              image:
-                "#type": html_tag
-                "#tag": img
-                "#attributes":
-                  src: "https://code.gouv.fr/icons/programing-64.png"
           - "#type": "pattern"
             "#id": "tile"
             "#settings":
@@ -115,11 +105,6 @@ render:
             "#fields":
               title: Attirer
               description: S’appuyer sur les logiciels libres et open source et sur les communs numériques pour renforcer l’attractivité de l’État-employeur auprès des talents du numériques.
-              image:
-                "#type": html_tag
-                "#tag": img
-                "#attributes":
-                  src: "https://code.gouv.fr/icons/hat-64.png"
     2:
       "#type": "pattern"
       "#id": "grid_row"
