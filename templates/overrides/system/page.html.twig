@@ -61,6 +61,7 @@
 
   {{ pattern('header', {
     'logo_text': page.logo,
+    'home_url': path('<front>'),
     'operator_logo': page.header_operator_logo,
     'service_title': site_name,
     'service_tagline': site_slogan,
@@ -89,6 +90,7 @@
 
   </main>
   {{ pattern('footer', {
+    'home_url': path('<front>'),
     'top': page.footer_top,
     'operator_logo': page.footer_operator_logo,
     'content': page.footer_content,

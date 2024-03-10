@@ -17,7 +17,7 @@
             <div class="fr-header__logo">
               {# Operator logo #}
               {% if (not operator_logo) and (not service_title) %}
-                <a href="/" title="{{ 'Homepage'|t }} - {{ logo_text }}">
+                <a href="{{ home_url|default('/') }}" title="{{ 'Homepage'|t }} - {{ logo_text }}">
               {% endif %}
               <p class="fr-logo">
                 {{ logo_text|nl2br }}
@@ -31,7 +31,7 @@
             {% if operator_logo %}
               <div class="fr-header__operator">
                 {% if not service_title %}
-                  <a href="/" title="{{ 'Homepage'|t }} - {{ operator_logo_alt }} - {{ logo_text }}">
+                  <a href="{{ home_url|default('/') }}" title="{{ 'Homepage'|t }} - {{ operator_logo_alt }} - {{ logo_text }}">
                 {% endif %}
                 {{ operator_logo }}
                 {% if not service_title %}
@@ -61,7 +61,7 @@
           {% if service_title %}
             <div class="fr-header__service">
               {# Header service title #}
-              <a href="/" title="{{ 'Homepage'|t }} - {{ service_title }} - {{ logo_text }}">
+              <a href="{{ home_url|default('/') }}" title="{{ 'Homepage'|t }} - {{ service_title }} - {{ logo_text }}">
                 <p class="fr-header__service-title">{{ service_title }}</p>
               </a>
               {# Header service tagline #}

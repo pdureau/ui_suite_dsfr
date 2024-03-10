@@ -14,6 +14,10 @@ header:
       type: token
       label: Operator logo alt text
       description: "Should match the visible text of the operator logo"
+    home_url:
+      type: url
+      label: Homepage URL
+      preview: /
   fields:
     operator_logo:
       type: render
