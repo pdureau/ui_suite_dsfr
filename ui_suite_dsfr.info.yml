@@ -21,7 +21,6 @@ regions:
   content: Content
   sidebar_first: Sidebar - First
   sidebar_second: Sidebar - Second
-  footer_top: Footer - Top links
   footer_operator_logo: Footer - Operator logo
   footer_content: Footer - Content
   footer_content_desc: Footer - Content description

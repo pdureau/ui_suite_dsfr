@@ -5,10 +5,13 @@
  * Functions to support theming in the UI Suite DSFR theme.
  */
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\Component\Plugin\Exception\PluginNotFoundException;
 use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Menu\MenuTreeParameters;
 use Drupal\Core\Render\Element;
 use Drupal\ui_patterns_settings\Plugin\UiPatterns\SettingType\LinksSettingType;
 
@@ -22,6 +25,38 @@ function ui_suite_dsfr_preprocess_page(&$variables) {
   $config = \Drupal::config('system.site');
   $variables['site_name'] = $config->get('name');
   $variables['site_slogan'] = $config->get('slogan');
+
+  // Add menus.
+  if (theme_get_setting('dsfr_footer_top') !== NULL) {
+    $variables = _add_raw_menu($variables, "footer_top", theme_get_setting('dsfr_footer_top'));
+  }
+}
+
+/**
+ * Add single menu links in #menus.
+ *
+ * @return array
+ *   The altered renderable variables.
+ */
+function _add_raw_menu(array $variables, string $variable, string $menu_id): array {
+  $parameters = new MenuTreeParameters();
+  // Empty parameters because not configurable.
+  $menu_tree_builder = \Drupal::service('menu.link_tree');
+  $tree = $menu_tree_builder->load($menu_id, $parameters);
+  $manipulators = [
+      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
+      ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+  ];
+  $tree = $menu_tree_builder->transform($tree, $manipulators);
+  $tree = $menu_tree_builder->build($tree);
+  if (!isset($tree["#items"])) {
+    return $variables;
+  }
+  if (isset($tree["#cache"])) {
+    $variables["#cache"] = array_merge($variables["#cache"] ?? [], $tree["#cache"]);
+  }
+  $variables[$variable] = LinksSettingType::normalize($tree["#items"]);
+  return $variables;
 }
 
 /**
@@ -273,6 +308,37 @@ function ui_suite_dsfr_form_system_theme_settings_alter(&$form, $form_state) {
       '#options' => $colors,
     ];
   }
+
+  $form['dsfr_footer_top'] = _menu_settings_form(
+    t("Footer top menu"),
+    theme_get_setting('dsfr_footer_top') ?? "account"
+  );
+}
+
+/**
+ * Return menu Settings.
+ */
+function _menu_settings_form($title, $value): array {
+  $entity_type_manager = \Drupal::service('entity_type.manager');
+  try {
+    $all_menus = $entity_type_manager->getStorage('menu')->loadMultiple();
+    $menus = [
+      "" => "(None)",
+    ];
+    foreach ($all_menus as $id => $menu) {
+      $menus[$id] = $menu->label();
+    }
+    asort($menus);
+    return [
+      '#type' => 'select',
+      '#title' => $title,
+      '#options' => $menus,
+      '#default_value' => $value,
+    ];
+  }
+  catch (InvalidPluginDefinitionException | PluginNotFoundException) {
+  }
+  return [];
 }
 
 /**

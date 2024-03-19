@@ -3,6 +3,59 @@ footer:
   description: "Provides information on the site and secondary navigation for the user to continue his journey. It is flexible according to the needs and requirements of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
   category: Footer
   settings:
+    top:
+      type: links
+      label: Top menu
+      description: "A 2 levels links list. It is recommended to choose the full footer for deep sites that need to reintegrate bounced link lists from the navigation."
+      preview:
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+        - title: Nom de la catégorie
+          below:
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
+            - title: Lien de navigation
+              url: "#"
     service_title:
       type: token
       label: Service title
@@ -21,13 +74,6 @@ footer:
       label: Homepage URL
       preview: /
   fields:
-    top:
-      type: render
-      label: Top region
-      description: A footer_top component."
-      preview:
-        type: pattern_preview
-        id: footer_top
     operator_logo:
       type: render
       label: Operator logo
