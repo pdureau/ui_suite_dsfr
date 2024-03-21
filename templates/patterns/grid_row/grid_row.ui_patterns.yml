@@ -24,7 +24,7 @@ grid_row:
       options:
         fr-col-1: 1
         fr-col-2: 2
-        fr-col-3: 3
+        fr-col-3: 3 (default)
         fr-col-4: 4
         fr-col-5: 5
         fr-col-6: 6

@@ -5,6 +5,7 @@
     'fr-mb-3w',
   ]
 %}
+ {% set fr_col = fr_col|default("fr-col-3") %}
 
 {% if with_gutters %}
   {% set attributes = attributes.addClass('fr-grid-row--gutters') %}
