@@ -26,7 +26,7 @@ The relocation requires that :
 ```json
 {
   "require": {
-    "npm-asset/gouvfr--dsfr": "1.9.3",
+    "npm-asset/gouvfr--dsfr": "1.10.2",
     "composer/installers": "^2",
     "oomphinc/composer-installers-extender": "2.*"
   },
@@ -65,7 +65,7 @@ Example:
 ```json
 {
   "require": {
-    "gouvernementfr/dsfr": "1.9.3",
+    "gouvernementfr/dsfr": "1.10.2",
     "composer/installers": "2.*"
   },
   "repositories": {
@@ -74,10 +74,10 @@ Example:
       "package": {
         "name": "gouvernementfr/dsfr",
         "type": "drupal-library",
-        "version": "1.9.3",
+        "version": "1.10.2",
         "dist": {
           "type": "zip",
-          "url": "https://github.com/GouvernementFR/dsfr/releases/download/v1.9.3/dsfr-v1.9.3.zip"
+          "url": "https://github.com/GouvernementFR/dsfr/releases/download/v1.10.2/dsfr-v1.10.2.zip"
         }
       }
     }
