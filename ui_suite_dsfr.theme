@@ -20,7 +20,7 @@ use Drupal\ui_patterns_settings\Plugin\UiPatterns\SettingType\LinksSettingType;
  */
 function ui_suite_dsfr_preprocess_page(&$variables) {
   $variables['container'] = theme_get_setting('container') ?? 'fr-container';
-  $variables['logo_text'] = theme_get_setting('logo_text');
+  $variables['logo_text'] = theme_get_setting('logo_text') ?? '';
   $variables['logo_text'] = str_replace('\n', PHP_EOL, $variables['logo_text']);
 
   // For the header & footer components.
