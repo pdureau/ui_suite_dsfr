@@ -22,28 +22,6 @@ follow:
         h5: h5
         h6: h6
       default: h3
-    social:
-      type: links
-      label: Social networks links
-      description: "Follow links by provider. The link element contains the following elements: id: Follow provider machine name (facebook, twitter…); title: Link title; url: Link URI."
-      preview:
-        - id: facebook
-          title: Follow on Facebook
-          url: "https://facebook.com"
-        - id: twitter
-          title: Follow on Twitter
-          url: "https://twitter.com"
-        - id: instagram
-          title: Follow on Instagram
-          url: "https://instagram.com"
-        - id: linkedin
-          title: Follow on LinkedIn
-          url: "https://www.linkedin.com"
-          attributes:
-            data-test: Test
-        - id: youtube
-          title: Follow on Youtube
-          url: "https://www.youtube.com"
   fields:
     social_title:
       type: render
@@ -66,3 +44,79 @@ follow:
         fields:
           label: Subscribe
           url: "https://example.com"
+    social:
+      type: links
+      label: Social networks links
+      description: "Follow links by provider. The link element contains the following elements: id: Follow provider machine name (facebook, twitter…); title: Link title; url: Link URI."
+      preview:
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on Facebook
+          settings:
+            url: "https://facebook.com"
+            social: facebook
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on Twitter
+          settings:
+            url: "https://twitter.com"
+            social: twitter
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on Instagram
+          settings:
+            url: "https://instagram.com"
+            social: instagram
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on LinkedIn
+          settings:
+            url: "https://www.linkedin.com"
+            social: linkedin
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on Youtube
+          settings:
+            url: "https://www.youtube.com"
+            social: youtube
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on Threads
+          settings:
+            url: "https://www.threads.com"
+            social: threads
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on TikTok
+          settings:
+            url: "https://www.tiktok.com"
+            social: tiktok
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on Dailymotion
+          settings:
+            url: "https://www.dailymotion.com"
+            social: dailymotion
+
+        - type: pattern
+          id: button
+          fields:
+            title: Follow on Mastodon
+          settings:
+            url: "https://www.mastodon.com"
+            social: mastodon

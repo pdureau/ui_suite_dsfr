@@ -62,6 +62,20 @@ button:
         left: Right
         right: Left
       preview: left
+    social:
+      type: select
+      label: Social networks
+      description: "This will only work in a follow or share component"
+      options:
+        facebook: Facebook
+        twitter: Twitter
+        instagram: Instagram
+        linkedin: LinkedIn
+        youtube: Youtube
+        threads: Threads
+        tiktok: TikTok
+        dailymotion: Dailymotion
+        mastodon: Mastodon
     icon:
       type: select
       label: Icon

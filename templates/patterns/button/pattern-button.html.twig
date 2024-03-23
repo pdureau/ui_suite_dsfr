@@ -3,6 +3,8 @@
   {% set attributes = attributes.addClass(variants) %}
 {% endif %}
 
+{% set attributes = social ? attributes.addClass('fr-btn--' ~ social) : attributes %}
+
 {% if icon %}
   {% set attributes = attributes.addClass(icon) %}
   {% if icon_position %}
