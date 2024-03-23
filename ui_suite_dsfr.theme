@@ -19,7 +19,9 @@ use Drupal\ui_patterns_settings\Plugin\UiPatterns\SettingType\LinksSettingType;
  * Implements hook_preprocess_HOOK() for page templates.
  */
 function ui_suite_dsfr_preprocess_page(&$variables) {
-  $variables['container'] = theme_get_setting('container');
+  $variables['container'] = theme_get_setting('container') ?? 'fr-container';
+  $variables['logo_text'] = theme_get_setting('logo_text');
+  $variables['logo_text'] = str_replace('\n', PHP_EOL, $variables['logo_text']);
 
   // For the header & footer components.
   $config = \Drupal::config('system.site');
@@ -308,6 +310,12 @@ function ui_suite_dsfr_form_system_theme_settings_alter(&$form, $form_state) {
       '#options' => $colors,
     ];
   }
+
+  $form['ui_suite_dsfr_settings']['logo_text'] = [
+    '#type' => 'textfield',
+    '#title' => t('Logo text for header and footer'),
+    '#default_value' => theme_get_setting('logo_text'),
+  ];
 
   $form['dsfr_footer_top'] = _menu_settings_form(
     t("Footer top menu"),
