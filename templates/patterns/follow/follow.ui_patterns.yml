@@ -45,9 +45,9 @@ follow:
           label: Subscribe
           url: "https://example.com"
     social:
-      type: button
+      type: render
       label: Social networks links
-      description: "Follow links by provider. The link element expects a list of button components, each containing the following elements: id: Follow provider machine name (facebook, twitter…); title: Link title; url: Link URI."
+      description: "A list of button components."
       preview:
         - type: pattern
           id: button
@@ -56,7 +56,6 @@ follow:
           settings:
             url: "https://facebook.com"
             social: facebook
-
         - type: pattern
           id: button
           fields:
@@ -64,7 +63,6 @@ follow:
           settings:
             url: "https://twitter.com"
             social: twitter
-
         - type: pattern
           id: button
           fields:
@@ -72,7 +70,6 @@ follow:
           settings:
             url: "https://instagram.com"
             social: instagram
-
         - type: pattern
           id: button
           fields:
@@ -80,7 +77,6 @@ follow:
           settings:
             url: "https://www.linkedin.com"
             social: linkedin
-
         - type: pattern
           id: button
           fields:
@@ -88,7 +84,6 @@ follow:
           settings:
             url: "https://www.youtube.com"
             social: youtube
-
         - type: pattern
           id: button
           fields:
@@ -96,7 +91,6 @@ follow:
           settings:
             url: "https://www.threads.com"
             social: threads
-
         - type: pattern
           id: button
           fields:
@@ -104,7 +98,6 @@ follow:
           settings:
             url: "https://www.tiktok.com"
             social: tiktok
-
         - type: pattern
           id: button
           fields:
@@ -112,7 +105,6 @@ follow:
           settings:
             url: "https://www.dailymotion.com"
             social: dailymotion
-
         - type: pattern
           id: button
           fields:
