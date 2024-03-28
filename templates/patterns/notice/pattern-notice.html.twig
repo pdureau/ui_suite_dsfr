@@ -1,0 +1,20 @@
+{% set variant = variant|default('info') %}
+
+<div{{ attributes.addClass('fr-notice').addClass('fr-notice--' ~ variant)}}>
+  <div class="fr-container">
+    <div class="fr-notice__body">
+    {% if title %}
+    <div class="fr-notice__title">
+      {{ title }}
+    </div>
+    {% endif %}
+    {% if dismissible %}
+      {% set close_title = close_title|default('Close'|t) %}
+      {% set event = "const notice = this.parentNode.parentNode.parentNode; notice.parentNode.removeChild(notice)" %}
+      <button onclick="{{ event }}" class="fr-btn fr-btn--close" title="{{ close_title }}">
+        {{ close_title }}
+      </button>
+    {% endif %}
+    </div>
+  </div>
+</div>

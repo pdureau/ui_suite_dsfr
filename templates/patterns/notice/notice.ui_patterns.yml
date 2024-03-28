@@ -1,0 +1,22 @@
+notice:
+  label: Notice
+  description: Draws the user's attention to information without interrupting his current task. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bandeau-d-information-importante
+  variants:
+    info:
+      label: Information
+  settings:
+    dismissible:
+      type: boolean
+      label: Dismissible?
+      description: It’s possible to dismiss any notice inline.
+      preview: true
+    close_title:
+      type: token
+      label: Close button text
+      description: Optional. Will be used only if notice is dismissible.
+      preview: Hide message
+  fields:
+    title:
+      type: text
+      label: Title
+      preview: "Notice: Title of an notice"
