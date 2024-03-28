@@ -45,9 +45,9 @@ follow:
           label: Subscribe
           url: "https://example.com"
     social:
-      type: links
+      type: button
       label: Social networks links
-      description: "Follow links by provider. The link element contains the following elements: id: Follow provider machine name (facebook, twitter…); title: Link title; url: Link URI."
+      description: "Follow links by provider. The link element expects a list of button components, each containing the following elements: id: Follow provider machine name (facebook, twitter…); title: Link title; url: Link URI."
       preview:
         - type: pattern
           id: button
