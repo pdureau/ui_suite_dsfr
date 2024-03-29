@@ -14,7 +14,6 @@
   <table class="pattern-preview__fields fr-table fr-table--bordered">
     <thead>
     <tr>
-      <td></td>
       <th>{{ "Name"|t }}</th>
       <th>{{ "Label"|t }}</th>
       <th>{{ "Type"|t }}</th>
@@ -24,16 +23,14 @@
     <tbody>
     {% for field in pattern.fields %}
       <tr>
-        <td>{{ "Field"|t }}</td>
         <td><code>{{ field.name }}</code></td>
         <td>{{ field.label }}</td>
-        <td><code>{{ field.type }}</code></td>
+        <td><code>slot</code></td>
         <td>{{ field.description }}</td>
       </tr>
     {% endfor %}
     {% for name, setting in pattern.additional.settings %}
       <tr>
-        <td>{{ "Setting"|t }}</td>
         <td><code>{{ name }}</code></td>
         <td>{{ setting.label }}</td>
         <td><code>{{ setting.type }}</code></td>
