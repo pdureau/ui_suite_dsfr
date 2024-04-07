@@ -34,6 +34,15 @@ link:
       label: External?
       description: Is the link targeting an external URL?
       preview: false
+    tooltip:
+      type: textfield
+      label: Tooltip
+      description: Hidden by default and displayed when hovering over. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/infobulle/
+      preview: Lorem [...] elit ut
+    link_id:
+      type: token
+      label: Link ID
+      description: "Used by the tooltip. Must start with a letter. Randomly generated if empty."
     force_internal:
       type: boolean
       label: Force as internal

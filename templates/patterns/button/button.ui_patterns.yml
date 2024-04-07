@@ -62,6 +62,14 @@ button:
         left: Right
         right: Left
       preview: left
+    tooltip:
+      type: textfield
+      label: Tooltip
+      description: Hidden by default and displayed when clicking on the button. Replace the icon and disable some variants. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/infobulle/
+    button_id:
+      type: token
+      label: ID
+      description: "Used by the tooltip. Must start with a letter. Randomly generated if empty."
     social:
       type: select
       label: Social networks

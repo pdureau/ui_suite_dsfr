@@ -5,7 +5,7 @@
 
 {% set attributes = social ? attributes.addClass('fr-btn--' ~ social) : attributes %}
 
-{% if icon %}
+{% if icon and not tooltip %}
   {% set attributes = attributes.addClass(icon) %}
   {% if icon_position %}
     {% set attributes = attributes.addClass('fr-btn--icon-' ~ icon_position) %}
@@ -18,6 +18,12 @@
 
 {% if disabled %}
   {% set attributes = attributes.setAttribute('disabled', true) %}
+{% endif %}
+
+{% if tooltip %}
+  {% set tooltip_id = "tooltip-" ~ button_id|default(random()) %}
+  {% set attributes = attributes.addClass('fr-btn--tooltip').setAttribute("aria-describedby", tooltip_id) %}
+  <span class="fr-tooltip fr-placement" id="{{ tooltip_id }}" role="tooltip" aria-hidden="true">{{ tooltip }}</span>
 {% endif %}
 
 {% if url or attributes.href %}
@@ -41,3 +47,5 @@
     {{ label }}
   </button>
 {% endif %}
+
+
