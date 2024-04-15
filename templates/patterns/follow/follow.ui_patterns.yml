@@ -62,7 +62,7 @@ follow:
             title: Follow on Twitter
           settings:
             url: "https://twitter.com"
-            social: twitter
+            social: twitter-x
         - type: pattern
           id: button
           fields:
