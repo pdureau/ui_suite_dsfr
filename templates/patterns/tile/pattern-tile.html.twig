@@ -19,11 +19,11 @@
   {% set attributes = attributes.addClass('fr-tile--shadow') %}
 {% endif %}
 
-{% if icon %}
+{% if not icon %}
   {% set attributes = attributes.addClass('fr-tile--no-icon') %}
 {% endif %}
 
-{% if border %}
+{% if not border %}
   {% set attributes = attributes.addClass('fr-tile--no-border') %}
 {% endif %}
 
