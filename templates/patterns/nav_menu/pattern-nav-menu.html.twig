@@ -78,7 +78,7 @@
               <div class="fr-mega-menu__leader">
                 <h4 class="fr-h4 fr-mb-2v">{{ parent.content.extra_title }}</h4>
                 {% if parent.content.extra_description %}
-                  <p class="fr-hidden fr-unhidden-lg">{{ parent.content.extra_description|raw }}</p>
+                  <p class="fr-hidden fr-unhidden-lg">{{ parent.content.extra_description }}</p>
                 {% endif %}
                 {% if parent.content.extra_link %}
                   {{ pattern('link', {
