@@ -62,7 +62,7 @@ function _add_raw_menu(array $variables, string $variable, string $menu_id): arr
 }
 
 /**
- * Implements hook_form_FORM_ID_alter().
+ * Implements hook_form_alter().
  */
 function ui_suite_dsfr_form_alter(&$form, &$form_state, $form_id) {
   // Style form buttons like button patterns.
@@ -273,6 +273,20 @@ function ui_suite_dsfr_form_search_block_form_alter(&$form, &$form_state) {
 }
 
 /**
+ * Get theme name from theme settings form.
+ */
+function _ui_suite_dsfr_get_theme_name(array $form) {
+  if (isset($form['config_key']['#value']) && \is_string($form['config_key']['#value'])) {
+    $config_key = $form['config_key']['#value'];
+    $config_key_parts = \explode('.', $config_key);
+
+    if (isset($config_key_parts[0])) {
+      return $config_key_parts[0];
+    }
+  }
+}
+
+/**
  * Implements hook_form_system_theme_settings_alter().
  */
 function ui_suite_dsfr_form_system_theme_settings_alter(&$form, $form_state) {
@@ -297,8 +311,8 @@ function ui_suite_dsfr_form_system_theme_settings_alter(&$form, $form_state) {
       'fr-container--fluid' => t('Fluid'),
     ],
   ];
-
-  $colors = _ui_suite_dsfr_get_colors_options();
+  $theme = _ui_suite_dsfr_get_theme_name($form);
+  $colors = _ui_suite_dsfr_get_colors_options($theme);
   if (isset($colors)) {
     $form['ui_suite_dsfr_settings']['ui_suite_dsfr_utilities']['available_colors'] = [
       '#type' => 'select',
@@ -306,7 +320,7 @@ function ui_suite_dsfr_form_system_theme_settings_alter(&$form, $form_state) {
       '#multiple' => TRUE,
       '#size' => 12,
       '#default_value' => theme_get_setting('available_colors'),
-      '#description' => t('If no selected - then all will be available. For more info visit <a href="https://gouvfr.atlassian.net/wiki/spaces/DB/pages/217186370/Couleurs+-+palette+-+Color" target="_blank">DSFR Colors</a> page.'),
+      '#description' => t('If no selected - then all will be available. For more info visit <a href="https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-utilisation-dans-le-dsfr/" target="_blank">DSFR Colors</a> page.'),
       '#options' => $colors,
     ];
   }
@@ -326,7 +340,7 @@ function ui_suite_dsfr_form_system_theme_settings_alter(&$form, $form_state) {
 /**
  * Return menu Settings.
  */
-function _menu_settings_form($title, $value): array {
+function _menu_settings_form($title, string $value): array {
   $entity_type_manager = \Drupal::service('entity_type.manager');
   try {
     $all_menus = $entity_type_manager->getStorage('menu')->loadMultiple();
@@ -355,8 +369,7 @@ function _menu_settings_form($title, $value): array {
  * @return array
  *   Array with values.
  */
-function _ui_suite_dsfr_get_colors_options() {
-  $theme = \Drupal::config('system.theme')->get('default');
+function _ui_suite_dsfr_get_colors_options(string $theme): array {
   /** @var \Drupal\Core\Extension\ThemeExtensionList $theme_list */
   $theme_list = \Drupal::service('extension.list.theme');
   $info = $theme_list->getExtensionInfo($theme);
@@ -367,9 +380,10 @@ function _ui_suite_dsfr_get_colors_options() {
     }
     return $colors_options;
   }
-  else {
-    return [];
+  elseif (isset($info["base theme"])) {
+    return _ui_suite_dsfr_get_colors_options($info["base theme"]);
   }
+  return [];
 }
 
 /**
@@ -378,8 +392,7 @@ function _ui_suite_dsfr_get_colors_options() {
  * @return array
  *   Array with values.
  */
-function _ui_suite_dsfr_get_colors_settings() {
-  $theme = \Drupal::config('system.theme')->get('default');
+function _ui_suite_dsfr_get_colors_settings(string $theme): array {
   /** @var \Drupal\Core\Extension\ThemeExtensionList $theme_list */
   $theme_list = \Drupal::service('extension.list.theme');
   $info = $theme_list->getExtensionInfo($theme);
