@@ -8,8 +8,6 @@ libraries:
   - ui_suite_dsfr/dsfr
   - ui_suite_dsfr/overrides
 
-logo: assets/logo.svg
-
 ckeditor_stylesheets:
   - dist/dsfr.css
 
