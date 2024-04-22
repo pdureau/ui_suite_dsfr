@@ -69,6 +69,7 @@
     'tools_search': page.header_tools_search,
     'navbar': page.header_navbar,
   }) }}
+  {{ page.top }}
   <main role="main" class="{{ container }} fr-mb-4w fr-mt-4w">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     <div class="fr-grid-row fr-grid-row--gutters">
@@ -90,6 +91,7 @@
     </div>
 
   </main>
+  {{ page.bottom }}
   {{ pattern('footer', {
     'logo_text': logo_text,
     'home_url': path('<front>'),

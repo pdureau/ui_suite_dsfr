@@ -18,9 +18,11 @@ regions:
   header_tools_links: Header - Tools links
   header_tools_search: Header - Tools search
   header_navbar: Header - Navbar
+  top : Top
   content: Content
   sidebar_first: Sidebar - First
   sidebar_second: Sidebar - Second
+  bottom: Bottom
   footer_operator_logo: Footer - Operator logo
   footer_content: Footer - Content
   footer_content_desc: Footer - Content description
