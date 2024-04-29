@@ -18,8 +18,8 @@
     {% endfor %}
     {# Mandatory element goes here. #}
     <li>
-      {% set copy_label = 'Copy to clipboard'|t %}
-      {% set copy_attributes = create_attribute().setAttribute('title', copy_label).setAttribute('onclick', "navigator.clipboard.writeText(window.location);alert('"  ~ 'Address copied to clipboard.'|t ~ "');") %}
+      {% set copy_label = 'Copy page address to clipboard'|t %}
+      {% set copy_attributes = create_attribute().setAttribute('title', copy_label).setAttribute('onclick', "navigator.clipboard.writeText(window.location);alert('"  ~ 'Page address copied to clipboard.'|t ~ "');") %}
       <button{{ copy_attributes.addClass(['fr-btn', 'fr-btn--copy']) }}>
         {{ copy_label }}
       </button>
