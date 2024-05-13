@@ -20,7 +20,7 @@
             {% set item_id = 'menu-'~loop.index~'-'~random() %}
             <button class="fr-nav__btn"
                     aria-expanded="false"
-                    aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="page"{% endif %}>
+                    aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="true"{% endif %}>
               {{ item.title }}
             </button>
               <div class="fr-collapse fr-menu" id="{{ item_id }}">
@@ -55,7 +55,7 @@
           {% if item.below %}
             {% set item_id = 'mega-menu-'~loop.index~'-'~random() %}
             <button class="fr-nav__btn" aria-expanded="false"
-                    aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="page"{% endif %}>
+                    aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="true"{% endif %}>
               {{ item.title }}
             </button>
             <div class="fr-collapse fr-mega-menu" id="{{ item_id }}" tabindex="-1">
