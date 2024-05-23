@@ -9,10 +9,12 @@ declare(strict_types=1);
 
 use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
 use Drupal\Component\Plugin\Exception\PluginNotFoundException;
+use Drupal\Component\Render\MarkupInterface;
 use Drupal\Component\Utility\Crypt;
 use Drupal\Component\Utility\UrlHelper;
 use Drupal\Core\Menu\MenuTreeParameters;
 use Drupal\Core\Render\Element;
+use Drupal\Core\Url;
 use Drupal\ui_patterns_settings\Plugin\UiPatterns\SettingType\LinksSettingType;
 
 /**
@@ -428,6 +430,12 @@ function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
   if (empty($variables['url'])) {
     return;
   }
+  if ($variables['url'] instanceof MarkupInterface) {
+      $variables['url'] = (string) $variables['url'];
+  }
+  if ($variables['url'] instanceof Url) {
+      $variables['url'] = $variables['url']->toString();
+  }
   // It seems UrlHelper::setAllowedProtocols() doesn't support mailto.
   if (!str_starts_with(strtolower($variables['url']), 'mailto:')
     && UrlHelper::isExternal($variables['url'])
@@ -442,6 +450,12 @@ function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
 function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
   if (empty($variables['url'])) {
     return;
+  }
+  if ($variables['url'] instanceof MarkupInterface) {
+    $variables['url'] = (string) $variables['url'];
+  }
+  if ($variables['url'] instanceof Url) {
+    $variables['url'] = $variables['url']->toString();
   }
   // It seems UrlHelper::setAllowedProtocols() doesn't support mailto.
   if (!str_starts_with(strtolower($variables['url']), 'mailto:')
@@ -472,6 +486,12 @@ function ui_suite_dsfr_preprocess_pattern_footer_menu(array &$variables) {
   foreach ($variables['items'] as &$item) {
     if (empty($item['url'])) {
       return;
+    }
+    if ($item['url'] instanceof MarkupInterface) {
+      $item['url'] = (string) $item['url'];
+    }
+    if ($item['url'] instanceof Url) {
+      $item['url'] = $item['url']->toString();
     }
     // It seems UrlHelper::setAllowedProtocols() doesn't support mailto.
     if (!str_starts_with(strtolower($item['url']), 'mailto:')
