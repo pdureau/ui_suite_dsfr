@@ -389,10 +389,17 @@ function _ui_suite_dsfr_get_colors_options(string $theme): array {
 /**
  * Gets all available colors settings.
  *
+ * @param string|null $theme
+ *   The theme name (by default the currently active theme).
+ *
  * @return array
  *   Array with values.
  */
-function _ui_suite_dsfr_get_colors_settings(string $theme): array {
+function _ui_suite_dsfr_get_colors_settings(string $theme = NULL): array {
+  if (!$theme) {
+    // Get the current active theme.
+    $theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
+  }
   /** @var \Drupal\Core\Extension\ThemeExtensionList $theme_list */
   $theme_list = \Drupal::service('extension.list.theme');
   $info = $theme_list->getExtensionInfo($theme);
