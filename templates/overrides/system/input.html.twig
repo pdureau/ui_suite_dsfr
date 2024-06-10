@@ -12,7 +12,7 @@
  * @ingroup themeable
  */
 #}
-<input{{ attributes }} />{{ children }}
+<input{{ attributes.removeAttribute('size') }} />{{ children }}
 {% if errors %}
   <div id="{{ error_id }}" class="fr-error-group">
     <p class="fr-message--error">
