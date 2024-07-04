@@ -14,7 +14,7 @@
         {% set link_attributes = link_attributes.setAttribute('href', item.url) %}
 
         {% if link_attributes.target == '_blank' %}
-          {% set link_attributes = link_attributes.setAttribute('title', '@title - new window'|t({'@title': link_attributes.title?:item.title })) %}
+          {% set link_attributes = link_attributes.setAttribute('title', '@title - new window'|t({'@title': link_attributes.title ?: item.title})) %}
         {% endif %}
 
         <a{{ link_attributes }}>

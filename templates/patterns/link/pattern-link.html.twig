@@ -1,5 +1,5 @@
 {% if variant and variant|lower != 'default' and not external %}
-  {% set attributes = attributes.addClass('fr-link--' ~ variant|lower|replace({'_': '-'})) %}
+  {% set attributes = attributes.addClass('fr-link--' ~ variant|lower|replace({_: '-'})) %}
 {% endif %}
 
 {% set attributes = attributes.addClass('fr-link') %}
@@ -33,8 +33,8 @@
 {% endif %}
 
 {% if tooltip %}
-  {% set tooltip_id = "tooltip-" ~ link_id|default(random()) %}
-  {% set attributes = attributes.addClass('fr-link').setAttribute("aria-describedby", tooltip_id) %}
+  {% set tooltip_id = 'tooltip-' ~ link_id|default(random()) %}
+  {% set attributes = attributes.addClass('fr-link').setAttribute('aria-describedby', tooltip_id) %}
   <span class="fr-tooltip fr-placement" id="{{ tooltip_id }}" role="tooltip" aria-hidden="true">{{ tooltip }}</span>
 {% endif %}
 

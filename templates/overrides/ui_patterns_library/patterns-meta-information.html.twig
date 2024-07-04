@@ -14,10 +14,10 @@
   <table class="pattern-preview__fields fr-table fr-table--bordered">
     <thead>
     <tr>
-      <th>{{ "Name"|t }}</th>
-      <th>{{ "Label"|t }}</th>
-      <th>{{ "Type"|t }}</th>
-      <th>{{ "Description"|t }} / {{ "Options"|t }}</th>
+      <th>{{ 'Name'|t }}</th>
+      <th>{{ 'Label'|t }}</th>
+      <th>{{ 'Type'|t }}</th>
+      <th>{{ 'Description'|t }} / {{ 'Options'|t }}</th>
     </tr>
     </thead>
     <tbody>
@@ -36,7 +36,7 @@
         <td><code>{{ setting.type }}</code></td>
         <td>{{ setting.description }}
         {% if setting.options %}
-        <ul{% if "icon" in name and setting.type == "select"%} style="max-height: 300px; overflow: scroll"{% endif %}>
+        <ul{% if 'icon' in name and setting.type == 'select' %} style="max-height: 300px; overflow: scroll"{% endif %}>
         {% for key, label in setting.options %}
           <li>{{ key }}: {{ label }}</li>
         {% endfor %}

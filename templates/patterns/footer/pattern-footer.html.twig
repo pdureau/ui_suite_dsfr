@@ -35,7 +35,7 @@
           </a>
         {% endif %}
         {% if operator_logo %}
-          <a class="fr-footer__brand-link" href="{{ home_url|default('/') }}" title="{{ 'Homepage'|t }} - {{ operator_logo_alt ? operator_logo_alt : service_title }} - {{ logo_text }}">
+          <a class="fr-footer__brand-link" href="{{ home_url|default('/') }}" title="{{ 'Homepage'|t }} - {{ operator_logo_alt|default(service_title) }} - {{ logo_text }}">
             {{ operator_logo }}
           </a>
         {% endif %}
@@ -62,4 +62,3 @@
     {% endif %}
   </div>
 </footer>
-

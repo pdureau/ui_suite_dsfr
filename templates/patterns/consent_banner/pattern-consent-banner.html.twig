@@ -6,20 +6,20 @@
     <p class="fr-text--sm">{{ content }}</p>
   </div>
   {% set buttons = [
-    pattern('button', {'label': 'Accept all'|t,
-      'attributes': {title: 'Accept all cookies'|t}
+    pattern('button', {label: 'Accept all'|t,
+      attributes: {title: 'Accept all cookies'|t}
     }),
-    pattern('button', {'label': 'Refuse all'|t,
-      'attributes': {title: 'Refuse all cookies'|t}
+    pattern('button', {label: 'Refuse all'|t,
+      attributes: {title: 'Refuse all cookies'|t}
     }),
-    pattern('button', {'label': 'Personalize'|t,
-      'attributes':
+    pattern('button', {label: 'Personalize'|t,
+      attributes:
       {'data-fr-opened': 'false', 'aria-controls': modal_id, title: 'Personalize cookies'|t}
     }, 'secondary')
   ] %}
   {{ pattern('button_group', {
-    'attributes': {'class': ['fr-consent-banner__buttons', 'fr-btns-group--inline-sm']},
-    'buttons': buttons
+    attributes: {class: ['fr-consent-banner__buttons', 'fr-btns-group--inline-sm']},
+    buttons: buttons
   }, 'inline__inline_reverse__right') }}
 </div>
 

@@ -21,7 +21,7 @@
   {% set attributes = attributes.setAttribute('aria-current', 'page') %}
 {% endif %}
 {{ pattern('tab', {
-  'attributes': attributes,
-  'title': link['#title'],
-  'url': link['#url'].toString(),
+  attributes: attributes,
+  title: link['#title'],
+  url: link['#url'].toString(),
 }, variant) }}

@@ -10,7 +10,7 @@
 <div class="fr-col-lg-2">
 
   <nav class="fr-sidemenu" role="navigation">
-  <h2 class="hidden">{{ "Available patterns"|t }}</h2>
+  <h2 class="hidden">{{ 'Available patterns'|t }}</h2>
 
   {# List of available patterns with anchor links. #}
   {% for group_name, group_patterns in patterns %}
@@ -34,13 +34,13 @@
     {% for pattern_name, pattern in group_patterns %}
 
     <div class="pattern-preview pattern-preview__{{ pattern.definition.id }}">
-    
+
       <h2 class="pattern-preview__label fr-display-lg" id="{{ pattern_name }}">
-        <a href="{{ url('ui_patterns.patterns.single', {'name': pattern.id}) }}">
+        <a href="{{ url('ui_patterns.patterns.single', {name: pattern.id}) }}">
            {{ pattern.label }}
         </a>
       </h2>
-    
+
       {# Pattern name and desciption. #}
       <a name="{{ pattern_name }}"></a>
       {{ pattern.meta }}
@@ -57,6 +57,3 @@
 </div>
 
 {% endif %}
-
-
-

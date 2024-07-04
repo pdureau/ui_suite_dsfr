@@ -17,7 +17,7 @@
         {% for item in items %}
         <li{{ item.attributes.addClass('fr-nav__item') }}>
           {% if item.below %}
-            {% set item_id = 'menu-'~loop.index~'-'~random() %}
+            {% set item_id = 'menu-' ~ loop.index ~ '-' ~ random() %}
             <button class="fr-nav__btn"
                     aria-expanded="false"
                     aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="true"{% endif %}>
@@ -53,7 +53,7 @@
       {% for item in items %}
         <li{{ item.attributes.addClass('fr-nav__item') }}>
           {% if item.below %}
-            {% set item_id = 'mega-menu-'~loop.index~'-'~random() %}
+            {% set item_id = 'mega-menu-' ~ loop.index ~ '-' ~ random() %}
             <button class="fr-nav__btn" aria-expanded="false"
                     aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="true"{% endif %}>
               {{ item.title }}

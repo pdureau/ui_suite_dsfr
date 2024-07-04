@@ -1,5 +1,5 @@
 {% if variant and variant|lower != 'default' %}
-  {% set attributes = attributes.addClass('fr-badge--' ~ variant|lower|replace({'_': '-'})) %}
+  {% set attributes = attributes.addClass('fr-badge--' ~ variant|lower|replace({_: '-'})) %}
 {% endif %}
 
 {% if system_type %}

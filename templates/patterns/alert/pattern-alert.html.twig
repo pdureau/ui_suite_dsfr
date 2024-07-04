@@ -1,11 +1,11 @@
 {% if variant and variant|lower != 'default' %}
-  {% set variants = variant|split('__')|map(v => v|lower|replace({(v): 'fr-alert--' ~ v})|replace({'_': '-'})) %}
+  {% set variants = variant|split('__')|map(v => v|lower|replace({(v): 'fr-alert--' ~ v})|replace({_: '-'})) %}
   {% set attributes = attributes.addClass(variants) %}
 {% endif %}
 
 {% set title_tag = title_tag|default('h3') %}
 
-<div{{ attributes.addClass('fr-alert')}}>
+<div{{ attributes.addClass('fr-alert') }}>
   {% if title %}
     <{{ title_tag }} class="fr-alert__title">{{ title }}</{{ title_tag }}>
   {% endif %}

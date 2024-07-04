@@ -7,7 +7,7 @@ translate:
     no-outline:
       label: Without outline
   settings:
-    html_id:
+    translate_id:
       type: token
       label: ID
       description: "Used for collapse mechanism. Must start with a letter. Randomly generated if empty."

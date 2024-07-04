@@ -39,10 +39,10 @@
       </div>
       <div class="fr-consent-services fr-collapse" id="{{ service.attributes.id }}-collapse">
         {% for sub_service in service.below %}
-          {% set sub_id = sub_service.attributes.id|default("") %}
+          {% set sub_id = sub_service.attributes.id|default('') %}
           <div class="fr-consent-service">
             <fieldset class="fr-fieldset fr-fieldset--inline">
-              <legend id="{{ service.attributes.id }}-{{ sub_id }}-legend" class="fr-consent-service__title">{{ sub_service.title|default("") }}</legend>
+              <legend id="{{ service.attributes.id }}-{{ sub_id }}-legend" class="fr-consent-service__title">{{ sub_service.title|default('') }}</legend>
               <div class="fr-consent-service__radios fr-fieldset--inline">
                 <div class="fr-radio-group">
                   <input type="radio" id="consent-{{ service.attributes.id }}-{{ sub_id }}-accept" name="consent-{{ service.attributes.id }}-{{ sub_id }}">
@@ -62,7 +62,7 @@
     </div>
   {% endfor %}
   {{ pattern('button_group', {
-    'attributes': {'class': ['fr-consent-manager__buttons', 'fr-btns-group--inline-sm']},
-    'buttons': [pattern('button', {'label': 'Confirm my choices'|t})]
+    attributes: {class: ['fr-consent-manager__buttons', 'fr-btns-group--inline-sm']},
+    buttons: [pattern('button', {label: 'Confirm my choices'|t})]
   }, 'right') }}
 </div>

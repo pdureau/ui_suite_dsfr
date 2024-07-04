@@ -1,5 +1,5 @@
 {% if variant and variant|lower != 'default' %}
-  {% set variants = variant|split('__')|map(v => v|lower|replace({(v): 'fr-btns-group--' ~ v})|replace({'_': '-'})) %}
+  {% set variants = variant|split('__')|map(v => v|lower|replace({(v): 'fr-btns-group--' ~ v})|replace({_: '-'})) %}
   {% set attributes = attributes.addClass(variants) %}
 {% endif %}
 

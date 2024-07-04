@@ -1,4 +1,4 @@
-{% set translate_id = 'translate-' ~ random() %}
+{% set translate_id = translate_id|random('translate-' ~ random()) %}
 
 {% if links -%}
   <nav{{ attributes.addClass(['fr-translate', 'fr-nav']) }} role="navigation">
