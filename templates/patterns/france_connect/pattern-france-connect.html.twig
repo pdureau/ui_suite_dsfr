@@ -3,7 +3,7 @@
 
 {% if variant and variant|lower != 'default' %}
   {% set attributes = attributes.addClass('fr-connect--' ~ variant|lower|replace({_: '-'})) %}
-  {% set brand = 'FranceConnect+'|t %}
+  {% set brand = 'FranceConnect'|t %}
   {% set url = 'https://franceconnect.gouv.fr/france-connect-plus' %}
 {% endif %}
 
