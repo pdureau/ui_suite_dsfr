@@ -1,6 +1,8 @@
 accordion:
   label: Accordion
-  description: Used to condense space by hiding content and revealing it as needed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon
+  description: Used to condense space by hiding content and revealing it as needed.
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon"
   category: Accordion
   settings:
     accordion_id:

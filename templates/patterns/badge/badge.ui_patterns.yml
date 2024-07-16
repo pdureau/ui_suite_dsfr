@@ -1,6 +1,8 @@
 badge:
   label: Badge
-  description: Highlight information of the “status” or “state” type on an element of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge
+  description: "Highlight information of the “status” or “state” type on an element of the site."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge"
   category: Badge
   variants:
     default:

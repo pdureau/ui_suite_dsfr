@@ -1,6 +1,8 @@
 button_group:
   label: Button group
-  description: "Allows the user to choose between several actions. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/groupe-de-boutons"
+  description: "Allows the user to choose between several actions."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton"
   category: Button
   variants:
     default:

@@ -1,6 +1,8 @@
 highlight:
   label: Highlight
-  description: "Allows the user to distinguish and locate information easily. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue"
+  description: "Allows the user to distinguish and locate information easily."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-exergue"
   variants:
     default:
       label: Medium

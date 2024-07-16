@@ -1,6 +1,8 @@
 badge_group:
   label: Badge group
-  description: "The group of badges allows to highlight information. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge"
+  description: "The group of badges allows to highlight information."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/badge"
   category: Badge
   fields:
     badges:

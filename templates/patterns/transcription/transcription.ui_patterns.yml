@@ -1,11 +1,13 @@
 transcription:
   label: Transcription
-  description: 'Textual transcription for video, or detailed description for complex images'
+  description: "Textual transcription for video, or detailed description for complex images"
+  links:
+    - "https://www.systeme-de-design.gouv.fr/composants-et-modeles/composants/transcription/"
   settings:
     transcription_id:
       type: token
       label: Transcription ID
-      description: 'To generate unique id attributes if several transcriptions are in the same page. Default is randomly generated.'
+      description: "To generate unique id attributes if several transcriptions are in the same page. Default is randomly generated."
   fields:
     title:
       type: text

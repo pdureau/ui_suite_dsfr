@@ -1,6 +1,8 @@
 summary:
   label: Summary
-  description: "The summary allows users to preview content and navigate between different sections of a page. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/sommaire"
+  description: "The summary allows users to preview content and navigate between different sections of a page."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/sommaire"
   fields:
     title:
       type: text

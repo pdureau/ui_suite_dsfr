@@ -1,6 +1,8 @@
 button:
   label: Button
-  description: Element of interaction with the interface allowing the user to perform an action. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton
+  description: "Element of interaction with the interface allowing the user to perform an action."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/bouton"
   category: Button
   variants:
     default:

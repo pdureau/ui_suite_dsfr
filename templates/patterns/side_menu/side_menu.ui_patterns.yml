@@ -1,6 +1,8 @@
 side_menu:
   label: Sidemenu
-  description: The side menu allows users to navigate between the different pages of a topic or the same topic. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/menu-lateral
+  description: "The side menu allows users to navigate between the different pages of a topic or the same topic."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/menu-lateral"
   variants:
     default:
       label: Default

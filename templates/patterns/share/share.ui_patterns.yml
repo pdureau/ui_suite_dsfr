@@ -1,6 +1,8 @@
 share:
   label: Share
-  description: "Share buttons allow users to easily share content they are viewing with other users. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/partage"
+  description: "Share buttons allow users to easily share content they are viewing with other users."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/partage"
   fields:
     title:
       type: text

@@ -1,6 +1,8 @@
 footer_menu:
   label: (Footer menu)
-  description: "To be embedded in the footer component. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page/"
+  description: "To be embedded in the footer component."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pied-de-page"
   category: Footer
   variants:
     content: Content (Default)

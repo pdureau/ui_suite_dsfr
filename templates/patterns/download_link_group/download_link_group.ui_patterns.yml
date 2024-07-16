@@ -1,6 +1,8 @@
 download_link_group:
   label: Download link group
-  description: It is possible to make a list of download links. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier
+  description: "It is possible to make a list of download links."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier"
   category: Download
   settings:
     bordered:

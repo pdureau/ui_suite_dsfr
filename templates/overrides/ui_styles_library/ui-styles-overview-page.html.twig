@@ -36,6 +36,15 @@
     {% if style.description %}
       <p>{{ style.description }}</p>
     {% endif %}
+    {% if style.render_links %}
+      <ul class="fr-mb-3w">
+        {% for renderLink in style.render_links %}
+          <li>
+            {{ renderLink }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
     {% for id, option in style.preview_options %}
       {% set option_attributes = create_attribute()
         .addClass(id)

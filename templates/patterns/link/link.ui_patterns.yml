@@ -1,6 +1,8 @@
 link:
   label: Link
-  description: Allows navigation between a page and other content within the same page, the same site or external. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien
+  description: "Allows navigation between a page and other content within the same page, the same site or external."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lien"
   category: Link
   variants:
     default:

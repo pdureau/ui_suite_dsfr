@@ -1,6 +1,8 @@
 tile:
   label: Tile
-  description: "A shortcut or entry point that redirects users to pages of content. It is usually part of a collection or list of similar tiles. The tile is never presented in isolation. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tuile"
+  description: "A shortcut or entry point that redirects users to pages of content. It is usually part of a collection or list of similar tiles. The tile is never presented in isolation."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/tuile"
   variants:
     default:
       label: Vertical

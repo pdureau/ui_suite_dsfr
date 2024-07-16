@@ -1,11 +1,13 @@
 header:
   label: Header
-  description: The header allows users to identify what site they are on. It can provide access to search and certain key pages or features. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete
+  description: "The header allows users to identify what site they are on. It can provide access to search and certain key pages or features."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/en-tete"
   settings:
     header_id:
       type: token
       label: Header ID
-      description: 'To generate unique id attributes if several headers are in the same page. Default is randomly generated.'
+      description: "To generate unique id attributes if several headers are in the same page. Default is randomly generated."
     logo_text:
       type: token
       label: Logo text

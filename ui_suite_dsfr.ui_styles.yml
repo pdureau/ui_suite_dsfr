@@ -29,7 +29,9 @@ alternative-font:
 
 spacing_margin:
   label: Margin
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -56,6 +58,9 @@ spacing_margin:
 spacing_margin_top:
   label: Margin top
   category: Spacing
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   previewed_with:
     - fr-background-alt--grey
   options:
@@ -80,7 +85,9 @@ spacing_margin_top:
 
 spacing_margin_bottom:
   label: Margin bottom
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -106,7 +113,9 @@ spacing_margin_bottom:
 
 spacing_margin_left:
   label: Margin left
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -132,7 +141,9 @@ spacing_margin_left:
 
 spacing_margin_right:
   label: Margin right
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -158,7 +169,9 @@ spacing_margin_right:
 
 spacing_padding:
   label: Padding
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -184,7 +197,9 @@ spacing_padding:
 
 spacing_padding_top:
   label: Padding top
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -209,8 +224,10 @@ spacing_padding_top:
     fr-pt-15w: 15w
 
 spacing_padding_bottom:
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   label: Padding bottom
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -236,7 +253,9 @@ spacing_padding_bottom:
 
 spacing_padding_left:
   label: Padding left
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -262,7 +281,9 @@ spacing_padding_left:
 
 spacing_padding_right:
   label: Padding right
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
+  description: A spacing and margin dimension system that relies on multiples of 8.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/espacement
   category: Spacing
   previewed_with:
     - fr-background-alt--grey
@@ -289,7 +310,9 @@ spacing_padding_right:
 icons:
   label: Icons
   category: Icons
-  description: Functional icons are visual symbols that accompany the user in his actions and help him understand the interface. https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone
+  description: Functional icons are visual symbols that accompany the user in his actions and help him understand the interface.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone
   options:
     fr-icon-account-fill: Account (filled)
     fr-icon-account-line: Account
@@ -432,7 +455,9 @@ icons:
 
 icons_size:
   label: Icon sizes
-  description: The icons are available in four sizes. It is possible to modify the size of the icons using specific modifiers. https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone
+  description: The icons are available in four sizes. It is possible to modify the size of the icons using specific modifiers.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-techniques/icone
   category: Icons
   options:
     fr-fi--sm: SM
@@ -452,7 +477,9 @@ container_type:
 
 background:
   label: Background color
-  description: https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-palette
+  description: The color palette helps create consistency between interfaces and provide an optimal user experience.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-palette
   category: Color
   previewed_with:
     - fr-p-1w
@@ -484,6 +511,9 @@ background:
 
 text_color:
   label: Text color
+  description: The color palette helps create consistency between interfaces and provide an optimal user experience.
+  links:
+    - https://www.systeme-de-design.gouv.fr/elements-d-interface/fondamentaux-de-l-identite-de-l-etat/couleurs-palette
   category: Color
   previewed_with:
     - fr-p-1v

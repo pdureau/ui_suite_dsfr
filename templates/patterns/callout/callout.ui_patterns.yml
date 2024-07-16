@@ -1,6 +1,8 @@
 callout:
   label: Callout
-  description: "Allows the user to quickly distinguish information that complements the content viewed. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant"
+  description: "Allows the user to quickly distinguish information that complements the content viewed."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/mise-en-avant"
   settings:
     title_tag:
       type: select

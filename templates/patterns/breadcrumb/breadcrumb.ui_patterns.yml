@@ -1,6 +1,8 @@
 breadcrumb:
   label: Breadcrumb
-  description: Provides information on the site's architecture. It indicates to the user his current position and allows him  to locate himself in the tree structure of the site. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/fil-d-ariane
+  description: "Provides information on the site's architecture. It indicates to the user his current position and allows him  to locate himself in the tree structure of the site."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/fil-d-ariane"
   settings:
     items:
       type: links

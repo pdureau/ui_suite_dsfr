@@ -1,6 +1,8 @@
 content_media:
   label: Content media
-  description: "Media content refers to your photo and video content. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/contenu-medias/"
+  description: "Media content refers to your photo and video content."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/contenu-medias"
   variants:
     default:
       label: Medium

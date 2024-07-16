@@ -1,6 +1,8 @@
 grid_row:
   label: Grid row
   description: "The grid system uses a series of containers, rows, and columns to layout and align content https://getbootstrap.com/docs/4.3/layout/grid/ For simple use cases only. For more powerful needs, please use bootstrap_grid_row_* layouts."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/fondamentaux/grille-et-points-de-rupture"
   settings:
     with_container:
       type: boolean

@@ -1,6 +1,8 @@
 translate:
   label: Translate
   description: "Language selector. Works properly only in page header."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/composants-et-modeles/composants/selecteur-de-langue/"
   variants:
     default:
       label: Default (with outline)

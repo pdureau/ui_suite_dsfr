@@ -1,6 +1,8 @@
 pagination:
   label: Pagination
-  description: "Pagination allows the user to navigate between the different pages of a list of items. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pagination"
+  description: "Pagination allows the user to navigate between the different pages of a list of items."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/pagination"
   settings:
     first:
       type: url

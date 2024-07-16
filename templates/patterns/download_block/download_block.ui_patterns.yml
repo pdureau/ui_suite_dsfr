@@ -1,6 +1,8 @@
 download_block:
   label: Download block
-  description: Highlight a document to be downloaded. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier
+  description: "Highlight a document to be downloaded."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/telechargement-de-fichier"
   category: Download
   settings:
     url:

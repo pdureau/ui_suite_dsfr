@@ -1,6 +1,8 @@
 tab:
   label: (Tab)
-  description: "Usually used with 'tabs' component. https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets/"
+  description: "Usually used with 'tabs' component."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets"
   category: Tabs
   variants:
     default: Default
