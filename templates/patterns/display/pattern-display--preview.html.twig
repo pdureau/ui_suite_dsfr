@@ -1,0 +1,18 @@
+{% set attributes = attributes.setAttribute('style', 'position:relative;') %}
+{% set modal_id = 'fr-theme-modal' %}
+{{ pattern('button', {
+    label: 'Display settings'|t,
+    attributes: {
+        class: 'fr-icon-theme-fill fr-btn--icon-left',
+        'data-fr-opened': 'false',
+        'aria-controls': modal_id
+    }
+}) }}
+{{ pattern('modal', {
+    modal_id: modal_id,
+    title: 'Display settings'|t,
+    body: pattern('display', {
+        title: 'Choose a theme to personalize the appearance of site.'|t,
+        themes: themes
+    })
+}) }}

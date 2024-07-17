@@ -1,0 +1,30 @@
+display:
+  label: Display
+  description: "Allows the user to define his preferences on the display settings theme."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/parametre-d-affichage"
+  category: Display
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Descriptive text for changing the display theme settings.
+      preview: Choose a theme to personalize the appearance of site.
+  settings:
+    themes:
+      type: links
+      label: Themes
+      description: "A links structure with attributes.id. 'url' property is used for the SVG path."
+      preview:
+        - title: Light
+          url: /libraries/dsfr/dist/artwork/pictograms/environment/sun.svg
+          attributes:
+            id: light
+        - title: Dark
+          url: /libraries/dsfr/dist/artwork/pictograms/environment/moon.svg
+          attributes:
+            id: dark
+        - title: System
+          url: /libraries/dsfr/dist/artwork/pictograms/system/system.svg
+          attributes:
+            id: system
