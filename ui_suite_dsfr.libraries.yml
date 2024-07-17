@@ -11,6 +11,7 @@ dsfr:
   css:
     theme:
       /libraries/dsfr/dist/dsfr.min.css: { minified: true }
+      /libraries/dsfr/dist/dsfr.print.css: { minified: true, media: print }
       /libraries/dsfr/dist/utility/icons/icons.min.css: { minified: true }
       /libraries/dsfr/dist/utility/colors/colors.min.css: { minified: true }
 
