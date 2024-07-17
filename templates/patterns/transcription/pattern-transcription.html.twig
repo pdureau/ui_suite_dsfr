@@ -6,6 +6,13 @@
   <button class="fr-transcription__btn" aria-expanded="false" aria-controls="fr-transcription__collapse-transcription-{{ transcription_id }}">
     {{ title }}</button>
   <div class="fr-collapse" id="fr-transcription__collapse-transcription-{{ transcription_id }}">
+    <div class="fr-transcription__footer">
+      <div class="fr-transcription__actions-group">
+        <button class="fr-btn fr-btn--fullscreen" aria-controls="fr-transcription__modal-transcription-{{ transcription_id }}" data-fr-opened="false" title="{{ 'Enlarge transcription'|t }}">
+          {{ 'Enlarge'|t }}
+        </button>
+      </div>
+    </div>
     <dialog id="fr-transcription__modal-transcription-{{ transcription_id }}" class="fr-modal" role="dialog" aria-labelledby="fr-transcription__modal-transcription-{{ transcription_id }}-title">
       <div class="fr-container fr-container--fluid fr-container-md">
         <div class="fr-grid-row fr-grid-row--center">
@@ -21,13 +28,6 @@
                   {{ title }}
                 </h1>
                 {{ content }}
-              </div>
-              <div class="fr-transcription__footer">
-                <div class="fr-transcription__actions-group">
-                  <button class="fr-btn fr-btn--fullscreen" aria-controls="fr-transcription__modal-transcription-{{ transcription_id }}" data-fr-opened="false" title="{{ 'Enlarge transcription'|t }}">
-                    {{ 'Enlarge'|t }}
-                  </button>
-                </div>
               </div>
             </div>
           </div>
