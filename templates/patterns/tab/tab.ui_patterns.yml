@@ -2,7 +2,7 @@ tab:
   label: (Tab)
   description: "Usually used with 'tabs' component."
   links:
-    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/onglets"
+    - "https://www.systeme-de-design.gouv.fr/composants-et-modeles/composants/onglet"
   category: Tabs
   variants:
     default: Default

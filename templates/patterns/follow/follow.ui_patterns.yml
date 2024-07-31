@@ -2,7 +2,7 @@ follow:
   label: Newsletter & Follow us
   description: "Allow the user to have access to the subscription to the proposed newsletter (s), and the links to the social network accounts of the entity."
   links:
-    - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/lettre-d-info-et-reseaux-sociaux"
+    - "https://www.systeme-de-design.gouv.fr/composants-et-modeles/composants/lettre-d-information-et-reseaux-sociaux"
   settings:
     title_tag:
       type: select
