@@ -20,42 +20,44 @@
 
   {# Pattern fields descriptions. #}
   {% if pattern.fields or pattern.additional.settings %}
-  <table class="pattern-preview__fields fr-table fr-table--bordered">
-    <thead>
-    <tr>
-      <th>{{ 'Name'|t }}</th>
-      <th>{{ 'Label'|t }}</th>
-      <th>{{ 'Type'|t }}</th>
-      <th>{{ 'Description'|t }} / {{ 'Options'|t }}</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for field in pattern.fields %}
-      <tr>
-        <td><code>{{ field.name }}</code></td>
-        <td>{{ field.label }}</td>
-        <td><code>slot</code></td>
-        <td>{{ field.description }}</td>
-      </tr>
-    {% endfor %}
-    {% for name, setting in pattern.additional.settings %}
-      <tr>
-        <td><code>{{ name }}</code></td>
-        <td>{{ setting.label }}</td>
-        <td><code>{{ setting.type }}</code></td>
-        <td>{{ setting.description }}
-        {% if setting.options %}
-        <ul{% if 'icon' in name and setting.type == 'select' %} style="max-height: 300px; overflow: scroll"{% endif %}>
-        {% for key, label in setting.options %}
-          <li>{{ key }}: {{ label }}</li>
+    <div class="fr-table fr-table--bordered">
+      <table class="pattern-preview__fields">
+        <thead>
+        <tr>
+          <th>{{ 'Name'|t }}</th>
+          <th>{{ 'Label'|t }}</th>
+          <th>{{ 'Type'|t }}</th>
+          <th>{{ 'Description'|t }} / {{ 'Options'|t }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for field in pattern.fields %}
+          <tr>
+            <td><code>{{ field.name }}</code></td>
+            <td>{{ field.label }}</td>
+            <td><code>slot</code></td>
+            <td>{{ field.description }}</td>
+          </tr>
         {% endfor %}
-        </ul>
-        {% endif %}
-        </td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
+        {% for name, setting in pattern.additional.settings %}
+          <tr>
+            <td><code>{{ name }}</code></td>
+            <td>{{ setting.label }}</td>
+            <td><code>{{ setting.type }}</code></td>
+            <td>{{ setting.description }}
+            {% if setting.options %}
+            <ul{% if 'icon' in name and setting.type == 'select' %} style="max-height: 300px; overflow: scroll"{% endif %}>
+            {% for key, label in setting.options %}
+              <li>{{ key }}: {{ label }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
   {% endif %}
 
 {% endif %}
