@@ -11,7 +11,7 @@ share:
     text:
       type: render
       label: Text
-      preview: "Please <a href=https://example.com>allow the deposit of cookies</a> to share on Facebook, Twitter and LinkedIn."
+      preview: "Please <a href=https://example.com>allow the deposit of cookies</a> to share on Facebook, X (formerly Twitter) and LinkedIn."
   settings:
     links:
       type: links
@@ -23,7 +23,7 @@ share:
           title: Share on Facebook
           url: ""
         - id: twitter
-          title: Share on Twitter
+          title: Share on X (formerly Twitter)
           url: "https://twitter.com/intent/tweet?url=https://example.com&text=HelloWorld&via=@username&hashtags=dummy"
         - id: linkedin
           title: Share on LinkedIn

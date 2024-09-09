@@ -61,7 +61,7 @@ follow:
         - type: pattern
           id: button
           fields:
-            title: Follow on Twitter
+            title: Follow on X (formerly Twitter)
           settings:
             url: "https://twitter.com"
             social: twitter-x

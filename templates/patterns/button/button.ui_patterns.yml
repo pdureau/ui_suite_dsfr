@@ -78,7 +78,7 @@ button:
       description: "This will only work in a follow or share component"
       options:
         facebook: Facebook
-        twitter: Twitter
+        twitter: X (formerly Twitter)
         instagram: Instagram
         linkedin: LinkedIn
         youtube: Youtube
