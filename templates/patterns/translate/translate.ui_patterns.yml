@@ -16,7 +16,7 @@ translate:
     links:
       type: links
       label: List of languages
-      description:
+      description: "List of languages"
       preview:
         - title: Français
           url: "#"

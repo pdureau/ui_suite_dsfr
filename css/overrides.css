@@ -17,9 +17,9 @@ table.treetable tr span.indenter a {
   pointer-events: auto;
 }
 .layout-builder__section .fr-modal {
-  opacity: 1;
   position: relative;
   visibility: visible;
+  opacity: 1;
 }
 .layout-builder__section .fr-card * {
   order: unset;

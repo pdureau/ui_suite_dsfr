@@ -2,18 +2,19 @@
  * Reset for admin toolbar links.
  */
 .toolbar a {
-  background-image: none;
-  cursor: pointer;
   --hover-tint: none;
   --active-tint: none;
+
+  cursor: pointer;
+  background-image: none;
 }
 
 /**
  * Pagination fix to allow ajax use.
  */
 .fr-pagination__link[href=""] {
-  color: var(--text-disabled-grey);
   cursor: not-allowed;
+  color: var(--text-disabled-grey);
 }
 
 .fr-pagination__link[aria-current="page"] {

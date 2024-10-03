@@ -346,7 +346,7 @@ function _ui_suite_dsfr_get_colors_options(string $theme): array {
  * @return array
  *   Array with values.
  */
-function _ui_suite_dsfr_get_colors_settings(string $theme = NULL): array {
+function _ui_suite_dsfr_get_colors_settings(?string $theme = NULL): array {
   if (!$theme) {
     // Get the current active theme.
     $theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
@@ -380,10 +380,10 @@ function ui_suite_dsfr_preprocess_pattern_link(array &$variables) {
     return;
   }
   if ($variables['url'] instanceof MarkupInterface) {
-      $variables['url'] = (string) $variables['url'];
+    $variables['url'] = (string) $variables['url'];
   }
   if ($variables['url'] instanceof Url) {
-      $variables['url'] = $variables['url']->toString();
+    $variables['url'] = $variables['url']->toString();
   }
   // It seems UrlHelper::setAllowedProtocols() doesn't support mailto.
   if (!str_starts_with(strtolower($variables['url']), 'mailto:')

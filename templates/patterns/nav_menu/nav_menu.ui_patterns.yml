@@ -30,7 +30,7 @@ nav_menu:
           in_active_trail: true
           content:
             extra_title: Editorialized title
-            extra_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat. Suspendisse potenti.
+            extra_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat gravida tortor id semper. Maecenas posuere et dolor nec feugiat.
             extra_link:
               url: "#"
               label: See the whole section
