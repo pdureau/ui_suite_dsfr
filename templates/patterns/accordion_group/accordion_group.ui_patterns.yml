@@ -4,6 +4,11 @@ accordion_group:
   links:
     - "https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/accordeon"
   category: Accordion
+  settings:
+    grouped:
+      type: boolean
+      label: Group accordions?
+      default_value: true
   fields:
     accordions:
       type: render
