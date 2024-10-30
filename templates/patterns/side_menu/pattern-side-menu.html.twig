@@ -15,12 +15,12 @@
     <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper-{{ html_id|clean_id }}" aria-expanded="false">{{ 'In this section'|t }}</button>
     <div class="fr-collapse" id="fr-sidemenu-wrapper-{{ html_id|clean_id }}">
       <div id="{{ title_id }}" class="fr-sidemenu__title">{{ title }}</div>
-      {{ _self.menu_links(items, attributes) }}
+      {{ _self.menu_links(items, attributes, [html_id]) }}
     </div>
   </div>
 </nav>
 
-{% macro menu_links(items, attributes) %}
+{% macro menu_links(items, attributes, ids_chain) %}
   {% if items %}
     <ul class="fr-sidemenu__list">
       {% for item in items %}
@@ -32,7 +32,8 @@
           {% set link_attributes = create_attribute(link_attributes) %}
 
           {% if item.below %}
-            {% set item_id = 'fr-sidemenu-item-' ~ loop.index ~ '-' ~ random() %}
+            {% set ids_chain_current = ids_chain|merge([loop.index]) %}
+            {% set item_id = ids_chain_current|join('-') %}
             {% set link_attributes = link_attributes.setAttribute('aria-controls', item_id) %}
             {% set link_attributes = link_attributes.setAttribute('aria-expanded', (item.is_expanded) ? 'true' : 'false') %}
 
@@ -42,7 +43,7 @@
 
             <button{{ link_attributes.addClass('fr-sidemenu__btn') }}>{{ item.title }}</button>
             <div class="fr-collapse" id="{{ item_id }}">
-              {{ _self.menu_links(item.below, attributes, menu_level + 1) }}
+              {{ _self.menu_links(item.below, attributes, ids_chain_current) }}
             </div>
           {% else %}
             {% set link_attributes = link_attributes.setAttribute('href', item.url) %}

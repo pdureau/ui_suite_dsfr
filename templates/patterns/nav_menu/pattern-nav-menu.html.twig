@@ -3,21 +3,21 @@
   <nav{{ attributes.addClass('fr-nav') }} role="navigation" aria-label="{{ menu_name }}" id="{{ html_id|clean_id }}">
     <ul class="fr-nav__list">
       {% if is_mega_menu %}
-        {{ _self.mega_menu_links(items, attributes, 0) }}
+        {{ _self.mega_menu_links(items, attributes, 0, html_id) }}
       {% else %}
-        {{ _self.menu_links(items, attributes, 0) }}
+        {{ _self.menu_links(items, attributes, 0, html_id) }}
       {% endif %}
     </ul>
   </nav>
 {% endif %}
 
-{% macro menu_links(items, attributes, menu_level) %}
+{% macro menu_links(items, attributes, menu_level, menu_id) %}
   {% if items %}
     {% if menu_level == 0 %}
         {% for item in items %}
         <li{{ item.attributes.addClass('fr-nav__item') }}>
           {% if item.below %}
-            {% set item_id = 'menu-' ~ loop.index ~ '-' ~ random() %}
+            {% set item_id = menu_id ~ "-" ~ loop.index %}
             <button class="fr-nav__btn"
                     aria-expanded="false"
                     aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="true"{% endif %}>
@@ -47,19 +47,19 @@
   {% endif %}
 {% endmacro %}
 
-{% macro mega_menu_links(items, attributes, menu_level, index, parent) %}
+{% macro mega_menu_links(items, attributes, menu_level, menu_id, index, parent) %}
   {% if items %}
     {% if menu_level == 0 %}
       {% for item in items %}
         <li{{ item.attributes.addClass('fr-nav__item') }}>
           {% if item.below %}
-            {% set item_id = 'mega-menu-' ~ loop.index ~ '-' ~ random() %}
+            {% set item_id = menu_id ~ "-" ~ loop.index %}
             <button class="fr-nav__btn" aria-expanded="false"
                     aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="true"{% endif %}>
               {{ item.title }}
             </button>
             <div class="fr-collapse fr-mega-menu" id="{{ item_id }}" tabindex="-1">
-              {{ _self.mega_menu_links(item.below, attributes, menu_level + 1, item_id, item) }}
+              {{ _self.mega_menu_links(item.below, attributes, menu_level + 1, menu_id, item_id, item) }}
             </div>
           {% else %}
             <a class="fr-nav__link"
@@ -104,7 +104,7 @@
                 {% endif %}
               </h5>
               {% if item.below %}
-                {{ _self.mega_menu_links(item.below, attributes, menu_level + 2) }}
+                {{ _self.mega_menu_links(item.below, attributes, menu_level + 2, menu_id) }}
               {% endif %}
             </div>
           {% endfor %}
