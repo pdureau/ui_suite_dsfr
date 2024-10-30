@@ -35,7 +35,6 @@ side_menu:
           url: "/"
         - title: Library
           url: "#"
-          in_active_trail: true
           below:
             - title: Library Sub 1
               url: "#"
@@ -43,6 +42,8 @@ side_menu:
               url: "#"
         - title: Data
           url: "#"
+          in_active_trail: true
+          is_expanded: true
           below:
             - title: Data Sub 1
               url: "#"
@@ -53,11 +54,13 @@ side_menu:
                   url: "#"
             - title: Data Sub 2
               url: "#"
+              in_active_trail: true
               below:
                 - title: Data Sub 2.1
                   url: "#"
                 - title: Data Sub 2.2
                   url: "#"
+                  in_active_trail: true
   fields:
     title:
       type: text

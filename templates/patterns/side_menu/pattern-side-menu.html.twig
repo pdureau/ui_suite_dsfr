@@ -8,8 +8,8 @@
 
 {# Generate a unique ID for the title of the side menu. #}
 {% set title_id = title_id|default('sidemenu__title-' ~ random()) %}
-
 {% set html_id = html_id|default('sidemenu-' ~ random()) %}
+
 <nav{{ attributes.addClass('fr-sidemenu') }} role="navigation" aria-labelledby="{{ title_id }}" id="{{ html_id|clean_id }}">
   <div class="fr-sidemenu__inner">
     <button class="fr-sidemenu__btn" aria-controls="fr-sidemenu-wrapper-{{ html_id|clean_id }}" aria-expanded="false">{{ 'In this section'|t }}</button>
@@ -24,15 +24,34 @@
   {% if items %}
     <ul class="fr-sidemenu__list">
       {% for item in items %}
-          <li class="fr-sidemenu__item">
+        {% set item_attributes = item.attributes|default({}) %}
+        {% set item_attributes = create_attribute(item_attributes) %}
+
+        <li{{ item_attributes.addClass('fr-sidemenu__item') }}>
+          {% set link_attributes = item.link_attributes|default({}) %}
+          {% set link_attributes = create_attribute(link_attributes) %}
+
           {% if item.below %}
             {% set item_id = 'fr-sidemenu-item-' ~ loop.index ~ '-' ~ random() %}
-            <button class="fr-sidemenu__btn" aria-expanded="false" aria-controls="{{ item_id }}"{% if item.in_active_trail %} aria-current="page"{% endif %}>{{ item.title }}</button>
+            {% set link_attributes = link_attributes.setAttribute('aria-controls', item_id) %}
+            {% set link_attributes = link_attributes.setAttribute('aria-expanded', (item.is_expanded) ? 'true' : 'false') %}
+
+            {% if item.in_active_trail %}
+              {% set link_attributes = link_attributes.setAttribute('aria-current', 'true') %}
+            {% endif %}
+
+            <button{{ link_attributes.addClass('fr-sidemenu__btn') }}>{{ item.title }}</button>
             <div class="fr-collapse" id="{{ item_id }}">
-              {{ _self.menu_links(item.below, attributes) }}
+              {{ _self.menu_links(item.below, attributes, menu_level + 1) }}
             </div>
           {% else %}
-              <a class="fr-sidemenu__link" href="{{ item.url }}">{{ item.title }}</a>
+            {% set link_attributes = link_attributes.setAttribute('href', item.url) %}
+
+            {% if item.in_active_trail %}
+              {% set link_attributes = link_attributes.setAttribute('aria-current', 'page') %}
+            {% endif %}
+
+            <a{{ link_attributes.addClass('fr-sidemenu__link') }}>{{ item.title }}</a>
           {% endif %}
         </li>
       {% endfor %}
