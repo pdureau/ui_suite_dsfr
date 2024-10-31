@@ -1,0 +1,49 @@
+stepper:
+  label: Stepper
+  description: "The stepper shows the user where they are in a form or process."
+  links:
+    - "https://www.systeme-de-design.gouv.fr/composants-et-modeles/composants/indicateur-d-etapes"
+  settings:
+    title_tag:
+      type: select
+      label: HTML tag for title
+      options:
+        h1: h1
+        h2: h2 (default)
+        h3: h3
+        h4: h4
+        h5: h5
+        h6: h6
+      default_value: h2
+      preview: h2
+    current_step:
+      type: number
+      label: Current step
+      description: "Number of the current step."
+      preview: 2
+      default_value: 1
+      min: 1
+      max: 8
+    steps:
+      type: number
+      label: Total steps
+      description: "Number of steps in total."
+      preview: 8
+      min: 2
+      max: 8
+  fields:
+    title:
+      type: text
+      label: Title
+      description: "Title of the current step."
+      preview: "Title of the current step"
+    state:
+      type: text
+      label: State
+      description: "State of the process"
+      preview: "Step 2 of 8"
+    detail:
+      type: text
+      label: Bottom detail
+      description: "Title of the next step."
+      preview: "Title of the next step"
