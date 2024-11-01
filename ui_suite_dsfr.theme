@@ -420,10 +420,17 @@ function ui_suite_dsfr_preprocess_pattern_button(array &$variables) {
 function ui_suite_dsfr_preprocess_textarea(array &$variables) {
   if (!empty($variables['element']['#errors'])) {
     $error_id = 'error-desc--';
+    if (isset($variables['element']['#name'])) {
+      $error_id .= $variables['element']['#name'];
+    }
     $variables['attributes']['class'][] = 'fr-input--error';
     // Move error to input, so can be used in input template.
     $variables['errors'] = $variables['element']['#errors'];
-    $variables['attributes']['aria-describedby'] = $error_id;
+    $aria_describedby = [$error_id];
+    if (!empty($variables['attributes']['aria-describedby'])) {
+      $aria_describedby[] = $variables['attributes']['aria-describedby'];
+    }
+    $variables['attributes']['aria-describedby'] = implode(' ', $aria_describedby);
     $variables['error_id'] = $error_id;
   }
 }
