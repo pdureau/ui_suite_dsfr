@@ -1,5 +1,5 @@
 {% set header_id = header_id|default('fr-header-' ~ random()) %}
-{% set mobile_menu_id = header_id ~ '--mobile-menu' %}
+{% set menu_id = header_id ~ '--menu' %}
 {% set mobile_menu_bid = header_id ~ '--mobile-menu-btn' %}
 {% set search_id = header_id ~ '--search' %}
 {% set search_bid = header_id ~ '--search-btn' %}
@@ -49,7 +49,7 @@
                   </button>
                 {% endif %}
                 {% if navbar %}
-                  <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="{{ mobile_menu_id }}" aria-haspopup="dialog" title="{{ 'Menu'|t }}" id="{{ mobile_menu_bid }}">
+                  <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="{{ menu_id }}" aria-haspopup="dialog" title="{{ 'Menu'|t }}" id="{{ mobile_menu_bid }}">
                     {{ 'Menu'|t }}
                   </button>
                 {% endif %}
@@ -96,9 +96,9 @@
     </div>
   </div>
   {% if navbar %}
-    <div class="fr-header__menu fr-modal" id="{{ mobile_menu_id }}" aria-labelledby="{{ mobile_menu_bid }}">
+    <div class="fr-header__menu fr-modal" id="{{ menu_id }}" aria-labelledby="{{ mobile_menu_bid }}">
       <div class="fr-container">
-        <button class="fr-btn fr-btn--close" aria-controls="{{ mobile_menu_id }}" title="{{ 'Close menu'|t }}">{{ 'Close'|t }}</button>
+        <button class="fr-btn fr-btn--close" aria-controls="{{ menu_id }}" title="{{ 'Close menu'|t }}">{{ 'Close'|t }}</button>
         <div class="fr-header__menu-links"></div>
         {{ navbar }}
       </div>
