@@ -71,8 +71,7 @@
     header_id: 'page-header'
   }) }}
   {{ page.top }}
-  <main role="main" class="{{ container }} fr-mb-4w fr-mt-4w">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+  <main role="main" class="{{ container }} fr-mb-4w fr-mt-4w" id="main-content">
     <div class="fr-grid-row fr-grid-row--gutters">
       <div class="fr-col" style="order: 2">
         {{ page.content }}
