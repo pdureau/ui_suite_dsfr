@@ -71,6 +71,8 @@ link:
         fr-icon-add-line: add line
         fr-icon-admin-fill: admin fill
         fr-icon-admin-line: admin line
+        fr-icon-airplay-fill: airplay fill
+        fr-icon-airplay-line: airplay line
         fr-icon-alarm-warning-fill: alarm warning fill
         fr-icon-alarm-warning-line: alarm warning line
         fr-icon-alert-fill: alert filled
@@ -81,39 +83,67 @@ link:
         fr-icon-ancient-gate-line: ancient gate line
         fr-icon-ancient-pavilion-fill: ancient pavilion fill
         fr-icon-ancient-pavilion-line: ancient pavilion line
+        fr-icon-anticlockwise-fill: anticlockwise fill
+        fr-icon-anticlockwise-line: anticlockwise line
+        fr-icon-archive-drawer-fill: archive drawer fill
+        fr-icon-archive-drawer-line: archive drawer line
         fr-icon-archive-fill: archive fill
         fr-icon-archive-line: archive line
+        fr-icon-arrow-down-circle-fill: arrow down circle fill
+        fr-icon-arrow-down-circle-line: arrow down circle line
         fr-icon-arrow-down-fill: arrow down fill
-        fr-icon-arrow-down-line: arrow-down line
+        fr-icon-arrow-down-line: arrow down line
         fr-icon-arrow-down-s-fill: arrow down s fill
-        fr-icon-arrow-down-s-line: arrow-down-s line
+        fr-icon-arrow-down-s-line: arrow down s line
         fr-icon-arrow-go-back-fill: arrow go back filled
         fr-icon-arrow-go-back-line: arrow go back line
         fr-icon-arrow-go-forward-fill: arrow go forward fill
         fr-icon-arrow-go-forward-line: arrow go forward line
+        fr-icon-arrow-left-circle-fill: arrow left circle fill
+        fr-icon-arrow-left-circle-line: arrow left circle line
+        fr-icon-arrow-left-down-fill: arrow left down fill
+        fr-icon-arrow-left-down-line: arrow left down line
         fr-icon-arrow-left-fill: arrow left fill
         fr-icon-arrow-left-line: arrow-left line
+        fr-icon-arrow-left-right-fill: arrow left right fill
+        fr-icon-arrow-left-right-line: arrow left right line
         fr-icon-arrow-left-s-fill: arrow left s fill
         fr-icon-arrow-left-s-first-line: arrow left s first line
         fr-icon-arrow-left-s-line-double: arrow left s line double
         fr-icon-arrow-left-s-line: arrow-left-s line
-        fr-icon-arrow-right-down-circle-fill: arrow-right-down circle fill
+        fr-icon-arrow-right-circle-fill: arrow right circle fill
+        fr-icon-arrow-right-circle-line: arrow right circle line
+        fr-icon-arrow-right-down-fill: arrow right down fill
+        fr-icon-arrow-right-down-line: arrow right down line
         fr-icon-arrow-right-fill: arrow right fill
         fr-icon-arrow-right-line: arrow-right line
         fr-icon-arrow-right-s-fill: arrow right s fill
         fr-icon-arrow-right-s-last-line: arrow right s last line
         fr-icon-arrow-right-s-line-double: arrow right s line double
         fr-icon-arrow-right-s-line: arrow-right-s line
-        fr-icon-arrow-right-up-circle-fill: arrow-right-up circle fill
+        fr-icon-arrow-right-up-fill: arrow right up fill
         fr-icon-arrow-right-up-line: arrow right up line
+        fr-icon-arrow-turn-back-fill: arrow turn back fill
+        fr-icon-arrow-turn-back-line: arrow turn back line
+        fr-icon-arrow-turn-forward-fill: arrow turn forward fill
+        fr-icon-arrow-turn-forward-line: arrow turn forward line
+        fr-icon-arrow-up-circle-fill: arrow up circle fill
+        fr-icon-arrow-up-circle-line: arrow up circle line
+        fr-icon-arrow-up-down-fill: arrow up down fill
         fr-icon-arrow-up-fill: arrow up filled
         fr-icon-arrow-up-line: arrow-up line
         fr-icon-arrow-up-s-fill: arrow up s filled
         fr-icon-arrow-up-s-line: arrow-up-s line
+        fr-icon-artboard-fill: artboard fill
+        fr-icon-artboard-line: artboard line
         fr-icon-article-fill: article fill
         fr-icon-article-line: article line
+        fr-icon-at-fill: at fill
+        fr-icon-at-line: at line
         fr-icon-attachment-fill: pièce jointe filled
         fr-icon-attachment-line: pièce jointe line
+        fr-icon-avalanches-fill: avalanches fill
+        fr-icon-avalanches-line: avalanches line
         fr-icon-award-fill: award fill
         fr-icon-award-line: award line
         fr-icon-ball-pen-fill: ball pen fill
@@ -122,12 +152,36 @@ link:
         fr-icon-bank-card-line: bank card line
         fr-icon-bank-fill: bank fill
         fr-icon-bank-line: bank line
+        fr-icon-bar-chart-2-fill: bar chart 2 fill
+        fr-icon-bar-chart-2-line: bar chart 2 line
         fr-icon-bar-chart-box-fill: bar chart box fill
         fr-icon-bar-chart-box-line: bar chart box line
+        fr-icon-bar-chart-fill: bar chart fill
+        fr-icon-bar-chart-horizontal-fill: bar chart horizontal fill
+        fr-icon-bar-chart-horizontal-line: bar chart horizontal line
+        fr-icon-bar-chart-line: bar chart line
+        fr-icon-barcode-box-fill: barcode box fill
+        fr-icon-barcode-box-line: barcode box line
+        fr-icon-barcode-fill: barcode fill
+        fr-icon-barcode-line: barcode line
+        fr-icon-base-station-fill: base station fill
+        fr-icon-base-station-line: base station line
+        fr-icon-battery-charge-fill: battery charge fill
+        fr-icon-battery-charge-line: battery charge line
+        fr-icon-battery-fill: battery fill
+        fr-icon-battery-line: battery line
+        fr-icon-battery-low-fill: battery low fill
+        fr-icon-battery-low-line: battery low line
         fr-icon-bike-fill: bike fill
         fr-icon-bike-line: bike line
+        fr-icon-bluesky-fill: bluesky fill
+        fr-icon-bluesky-line: bluesky line
+        fr-icon-bluetooth-connect-fill: bluetooth connect fill
+        fr-icon-bluetooth-connect-line: bluetooth connect line
         fr-icon-bluetooth-fill: bluetooth fill
         fr-icon-bluetooth-line: bluetooth line
+        fr-icon-blur-off-fill: blur off fill
+        fr-icon-blur-off-line: blur off line
         fr-icon-bold: bold
         fr-icon-book-2-fill: book 2 fill
         fr-icon-book-2-line: book 2 line
@@ -135,24 +189,40 @@ link:
         fr-icon-booklet-line: booklet line
         fr-icon-bookmark-fill: bookmark fill
         fr-icon-bookmark-line: bookmark line
+        fr-icon-braces-fill: braces fill
+        fr-icon-braces-line: braces line
+        fr-icon-brackets-fill: brackets fill
+        fr-icon-brackets-line: brackets line
         fr-icon-briefcase-fill: briefcase fill
         fr-icon-briefcase-line: briefcase line
         fr-icon-brush-3-fill: brush 3 fill
         fr-icon-brush-3-line: brush 3 line
         fr-icon-brush-fill: brush fill
         fr-icon-brush-line: brush line
+        fr-icon-bubble-chart-fill: bubble chart fill
+        fr-icon-bubble-chart-line: bubble chart line
         fr-icon-bug-fill: bug fill
         fr-icon-bug-line: bug line
+        fr-icon-building-4-fill: building 4 fill
+        fr-icon-building-4-line: building 4 line
         fr-icon-building-fill: building fill
         fr-icon-building-line: building line
         fr-icon-bus-fill: bus fill
         fr-icon-bus-line: bus line
+        fr-icon-calculator-fill: calculator fill
+        fr-icon-calculator-line: calculator line
         fr-icon-calendar-2-fill: calendar 2 fill
         fr-icon-calendar-2-line: calendar 2 line
+        fr-icon-calendar-check-fill: calendar check fill
+        fr-icon-calendar-check-line: calendar check line
+        fr-icon-calendar-close-fill: calendar close fill
+        fr-icon-calendar-close-line: calendar close line
         fr-icon-calendar-event-fill: alendar event fill
         fr-icon-calendar-event-line: alendar event line
         fr-icon-calendar-fill: calendar filled
         fr-icon-calendar-line: calendar line
+        fr-icon-calendar-todo-fill: calendar todo fill
+        fr-icon-calendar-todo-line: calendar todo line
         fr-icon-camera-fill: camera fill
         fr-icon-camera-line: camera line
         fr-icon-capsule-fill: capsule fill
@@ -161,6 +231,10 @@ link:
         fr-icon-car-line: car line
         fr-icon-caravan-fill: caravan fill
         fr-icon-caravan-line: caravan line
+        fr-icon-cast-fill: cast fill
+        fr-icon-cast-line: cast line
+        fr-icon-cellphone-fill: cellphone fill
+        fr-icon-cellphone-line: cellphone line
         fr-icon-charging-pile-2-fill: charging pile 2 fill
         fr-icon-charging-pile-2-line: charging pile 2 line
         fr-icon-chat-2-fill: chat 2 fill
@@ -171,8 +245,30 @@ link:
         fr-icon-chat-check-line: chat check line
         fr-icon-chat-delete-fill: chat delete fill
         fr-icon-chat-delete-line: chat delete line
+        fr-icon-chat-download-fill: chat download fill
+        fr-icon-chat-download-line: chat download line
+        fr-icon-chat-follow-up-fill: chat follow up fill
+        fr-icon-chat-follow-up-line: chat follow up line
+        fr-icon-chat-forward-fill: chat forward fill
+        fr-icon-chat-forward-line: chat forward line
+        fr-icon-chat-history-fill: chat history fill
+        fr-icon-chat-history-line: chat history line
+        fr-icon-chat-new-fill: chat new fill
+        fr-icon-chat-new-line: chat new line
+        fr-icon-chat-off-fill: chat off fill
+        fr-icon-chat-off-line: chat off line
         fr-icon-chat-poll-fill: chat poll fill
         fr-icon-chat-poll-line: chat poll line
+        fr-icon-chat-private-fill: chat private fill
+        fr-icon-chat-private-line: chat private line
+        fr-icon-chat-quote-fill: chat quote fill
+        fr-icon-chat-quote-line: chat quote line
+        fr-icon-chat-settings-fill: chat settings fill
+        fr-icon-chat-settings-line: chat settings line
+        fr-icon-chat-upload-fill: chat upload fill
+        fr-icon-chat-upload-line: chat upload line
+        fr-icon-chat-voice-fill: chat voice fill
+        fr-icon-chat-voice-line: chat voice line
         fr-icon-check-line: check line
         fr-icon-checkbox-circle-fill: checkbox-circle filled
         fr-icon-checkbox-circle-line: checkbox-circle line
@@ -180,42 +276,87 @@ link:
         fr-icon-checkbox-line: checkbox line
         fr-icon-chrome-fill: chrome fill
         fr-icon-chrome-line: chrome line
+        fr-icon-circle-fill: circle fill
+        fr-icon-circle-line: circle line
         fr-icon-clapperboard-fill: clapperboard fill
         fr-icon-clapperboard-line: clapperboard line
         fr-icon-clipboard-fill: clipboard fill
         fr-icon-clipboard-line: clipboard line
+        fr-icon-clockwise-fill: clockwise fill
+        fr-icon-clockwise-line: clockwise line
         fr-icon-close-circle-fill: close-circle filled
         fr-icon-close-circle-line: close-circle line
         fr-icon-close-line: close line
         fr-icon-cloud-fill: cloud fill
         fr-icon-cloud-line: cloud line
+        fr-icon-cloud-off-fill: cloud off fill
+        fr-icon-cloud-off-line: cloud off line
         fr-icon-cloudy-2-fill: cloudy 2 fill
         fr-icon-cloudy-2-line: cloudy 2 line
         fr-icon-code-box-fill: code box fill
         fr-icon-code-box-line: code box line
+        fr-icon-code-fill: code fill
+        fr-icon-code-line: code line
+        fr-icon-code-s-slash-fill: code s slash fill
         fr-icon-code-s-slash-line: code s slash line
         fr-icon-code-view: code view
         fr-icon-coin-fill: coin fill
+        fr-icon-collage-fill: collage fill
+        fr-icon-collage-line: collage line
+        fr-icon-command-fill: command fill
+        fr-icon-command-line: command line
         fr-icon-community-fill: community fill
         fr-icon-community-line: community line
         fr-icon-compass-3-fill: compass 3 fill
         fr-icon-compass-3-line: compass 3 line
+        fr-icon-compasses-2-fill: compasses 2 fill
+        fr-icon-compasses-2-line: compasses 2 line
         fr-icon-computer-fill: computer fill
         fr-icon-computer-line: computer line
+        fr-icon-contract-left-fill: contract left fill
+        fr-icon-contract-left-line: contract left line
+        fr-icon-contract-left-right-fill: contract left right fill
+        fr-icon-contract-left-right-line: contract left right line
+        fr-icon-contract-right-fill: contract right fill
+        fr-icon-contract-right-line: contract right line
+        fr-icon-contract-up-down-fill: contract up down fill
+        fr-icon-contract-up-down-line: contract up down line
+        fr-icon-contrast-drop-2-fill: contrast drop 2 fill
+        fr-icon-contrast-drop-2-line: contrast drop 2 line
         fr-icon-contrast-fill: contrast fill
         fr-icon-contrast-line: contrast line
         fr-icon-copyright-fill: copyright fill
         fr-icon-copyright-line: copyright line
+        fr-icon-corner-down-left-fill: corner down left fill
+        fr-icon-corner-down-left-line: corner down left line
+        fr-icon-corner-down-right-fill: corner down right fill
+        fr-icon-corner-down-right-line: corner down right line
+        fr-icon-corner-left-down-fill: corner left down fill
+        fr-icon-corner-left-down-line: corner left down line
+        fr-icon-corner-left-up-fill: corner left up fill
+        fr-icon-corner-left-up-line: corner left up line
+        fr-icon-corner-right-down-fill: corner right down fill
+        fr-icon-corner-right-down-line: corner right down line
+        fr-icon-corner-right-up-fill: corner right up fill
+        fr-icon-corner-right-up-line: corner right up line
+        fr-icon-corner-up-left-fill: corner up left fill
+        fr-icon-corner-up-left-line: corner up left line
+        fr-icon-corner-up-right-fill: corner up right fill
+        fr-icon-corner-up-right-line: corner up right line
+        fr-icon-cpu-fill: cpu fill
+        fr-icon-cpu-line: cpu line
         fr-icon-crop-fill: crop fill
         fr-icon-crop-line: crop line
+        fr-icon-crosshair-2-fill: crosshair 2 fill
+        fr-icon-crosshair-2-line: crosshair 2 line
+        fr-icon-css3-fill: css3 fill
+        fr-icon-css3-line: css3 line
         fr-icon-cup-fill: cup fill
         fr-icon-cup-line: cup line
         fr-icon-cursor-fill: cursor fill
         fr-icon-cursor-line: cursor line
         fr-icon-customer-service-fill: customer service fill
         fr-icon-customer-service-line: customer service line
-        fr-icon-daily-motion-fill: dailymotion filled
-        fr-icon-daily-motion-line: dailymotion line
         fr-icon-dailymotion-fill: dailymotion fill
         fr-icon-dailymotion-line: dailymotion line
         fr-icon-dashboard-3-fill: dashboard 3 fill
@@ -226,16 +367,22 @@ link:
         fr-icon-delete-line: delete line
         fr-icon-device-fill: device fill
         fr-icon-device-line: device line
+        fr-icon-device-recover-fill: device recover fill
+        fr-icon-device-recover-line: device recover line
         fr-icon-discuss-fill: discuss fill
         fr-icon-discuss-line: discuss line
         fr-icon-dislike-fill: dislike fill
         fr-icon-dislike-line: dislike line
+        fr-icon-donut-chart-fill: donut chart fill
+        fr-icon-donut-chart-line: donut chart line
         fr-icon-dossier-fill: dossier fill
         fr-icon-dossier-line: dossier line
         fr-icon-download-fill: download fill
         fr-icon-download-line: download line
         fr-icon-draft-fill: draft fill
         fr-icon-draft-line: draft line
+        fr-icon-drag-drop-fill: drag drop fill
+        fr-icon-drag-drop-line: drag drop line
         fr-icon-drag-move-2-fill: drag move 2 fill
         fr-icon-drag-move-2-line: drag move 2 line
         fr-icon-drop-fill: drop fill
@@ -246,8 +393,12 @@ link:
         fr-icon-edge-line: edge line
         fr-icon-edit-box-fill: edit box fill
         fr-icon-edit-box-line: edit box line
+        fr-icon-edit-circle-fill: edit circle fill
+        fr-icon-edit-circle-line: edit circle line
         fr-icon-edit-fill: edit filled
         fr-icon-edit-line: edit line
+        fr-icon-emoji-sticker-fill: emoji sticker fill
+        fr-icon-emoji-sticker-line: emoji sticker line
         fr-icon-equal-circle-fill: equal circle fill
         fr-icon-equalizer-fill: equalizer filled
         fr-icon-equalizer-line: equalizer line
@@ -255,6 +406,14 @@ link:
         fr-icon-error-line: error line
         fr-icon-error-warning-fill: error-warning filled
         fr-icon-error-warning-line: error-warning line
+        fr-icon-expand-left-fill: expand left fill
+        fr-icon-expand-left-line: expand left line
+        fr-icon-expand-left-right-fill: expand left right fill
+        fr-icon-expand-left-right-line: expand left right line
+        fr-icon-expand-right-fill: expand right fill
+        fr-icon-expand-right-line: expand right line
+        fr-icon-expand-up-down-fill: expand up down fill
+        fr-icon-expand-up-down-line: expand up down line
         fr-icon-external-link-fill: external link fill
         fr-icon-external-link-line: external-link line
         fr-icon-eye-fill: eye filled
@@ -263,7 +422,6 @@ link:
         fr-icon-eye-off-line: eye-off line
         fr-icon-facebook-circle-fill: facebook circle fill
         fr-icon-facebook-circle-line: facebook circle line
-        fr-icon-facebook-fill: facebook filled
         fr-icon-feedback-fill: feedback fill
         fr-icon-feedback-line: feedback line
         fr-icon-file-add-fill: file add fill
@@ -280,6 +438,8 @@ link:
         fr-icon-film-line: film line
         fr-icon-filter-fill: filtre filled
         fr-icon-filter-line: filtre line
+        fr-icon-fingerprint-fill: fingerprint fill
+        fr-icon-fingerprint-line: fingerprint line
         fr-icon-firefox-fill: firefox fill
         fr-icon-firefox-line: firefox line
         fr-icon-first-aid-kit-fill: first aid kit fill
@@ -288,6 +448,8 @@ link:
         fr-icon-flag-line: flag line
         fr-icon-flashlight-fill: flashlight fill
         fr-icon-flashlight-line: flashlight line
+        fr-icon-focus-3-fill: focus 3 fill
+        fr-icon-focus-3-line: focus 3 line
         fr-icon-folder-2-fill: folder 2 fill
         fr-icon-folder-2-line: folder 2 line
         fr-icon-font-size: font size
@@ -295,12 +457,16 @@ link:
         fr-icon-france-line: france line
         fr-icon-gallery-fill: gallery fill
         fr-icon-gallery-line: gallery line
+        fr-icon-gamepad-fill: gamepad fill
+        fr-icon-gamepad-line: gamepad line
         fr-icon-gas-station-fill: gas station fill
         fr-icon-gas-station-line: gas station line
         fr-icon-gift-fill: gift fill
         fr-icon-gift-line: gift line
         fr-icon-git-branch-fill: git branch fill
         fr-icon-git-branch-line: git branch line
+        fr-icon-git-close-pull-request-fill: git close pull request fill
+        fr-icon-git-close-pull-request-line: git close pull request line
         fr-icon-git-commit-fill: git commit fill
         fr-icon-git-commit-line: git commit line
         fr-icon-git-merge-fill: git merge fill
@@ -323,6 +489,12 @@ link:
         fr-icon-google-line: google line
         fr-icon-government-fill: government fill
         fr-icon-government-line: government line
+        fr-icon-gps-fill: gps fill
+        fr-icon-gps-line: gps line
+        fr-icon-gradienter-fill: gradienter fill
+        fr-icon-gradienter-line: gradienter line
+        fr-icon-grid-fill: grid fill
+        fr-icon-grid-line: grid line
         fr-icon-group-fill: group fill
         fr-icon-group-line: group line
         fr-icon-h-1: h1
@@ -331,6 +503,8 @@ link:
         fr-icon-h-4: h4
         fr-icon-h-5: h5
         fr-icon-h-6: h6
+        fr-icon-hammer-fill: hammer fill
+        fr-icon-hammer-line: hammer line
         fr-icon-hand-sanitizer-fill: hand sanitizer fill
         fr-icon-hand-sanitizer-line: hand sanitizer line
         fr-icon-hard-drive-2-fill: hard drive 2 fill
@@ -344,13 +518,23 @@ link:
         fr-icon-heart-line: heart line
         fr-icon-heart-pulse-fill: heart pulse fill
         fr-icon-heart-pulse-line: heart pulse line
+        fr-icon-hexagon-fill: hexagon fill
+        fr-icon-hexagon-line: hexagon line
         fr-icon-highlight: highlight
         fr-icon-home-4-fill: home 4 filled
         fr-icon-home-4-line: home 4 line
+        fr-icon-home-office-fill: home office fill
+        fr-icon-home-office-line: home office line
+        fr-icon-honour-fill: honour fill
+        fr-icon-honour-line: honour line
         fr-icon-hospital-fill: hospital fill
         fr-icon-hospital-line: hospital line
         fr-icon-hotel-fill: hotel fill
         fr-icon-hotel-line: hotel line
+        fr-icon-hotspot-fill: hotspot fill
+        fr-icon-hotspot-line: hotspot line
+        fr-icon-html5-fill: html5 fill
+        fr-icon-html5-line: html5 line
         fr-icon-ie-fill: ie fill
         fr-icon-ie-line: ie line
         fr-icon-image-add-fill: image add fill
@@ -359,6 +543,14 @@ link:
         fr-icon-image-edit-line: image edit line
         fr-icon-image-fill: image filled
         fr-icon-image-line: image line
+        fr-icon-inbox-2-fill: inbox 2 fill
+        fr-icon-inbox-2-line: inbox 2 line
+        fr-icon-inbox-archive-fill: inbox archive fill
+        fr-icon-inbox-archive-line: inbox archive line
+        fr-icon-inbox-fill: inbox fill
+        fr-icon-inbox-line: inbox line
+        fr-icon-inbox-unarchive-fill: inbox unarchive fill
+        fr-icon-inbox-unarchive-line: inbox unarchive line
         fr-icon-info-fill: info fill
         fr-icon-info-line: info line
         fr-icon-information-fill: information filled
@@ -367,9 +559,33 @@ link:
         fr-icon-ink-bottle-line: ink bottle line
         fr-icon-instagram-fill: instagram filled
         fr-icon-instagram-line: instagram line
+        fr-icon-install-fill: install fill
+        fr-icon-install-line: install line
+        fr-icon-instance-fill: instance fill
+        fr-icon-instance-line: instance line
         fr-icon-italic: italic
+        fr-icon-javascript-fill: javascript fill
+        fr-icon-javascript-line: javascript line
+        fr-icon-keyboard-fill: keyboard fill
+        fr-icon-keyboard-line: keyboard line
+        fr-icon-layout-bottom-fill: layout bottom fill
+        fr-icon-layout-bottom-line: layout bottom line
+        fr-icon-layout-column-fill: layout column fill
+        fr-icon-layout-column-line: layout column line
+        fr-icon-layout-fill: layout fill
         fr-icon-layout-grid-fill: layout grid fill
         fr-icon-layout-grid-line: layout grid line
+        fr-icon-layout-left-fill: layout left fill
+        fr-icon-layout-left-line: layout left line
+        fr-icon-layout-line: layout line
+        fr-icon-layout-masonry-fill: layout masonry fill
+        fr-icon-layout-masonry-line: layout masonry line
+        fr-icon-layout-right-fill: layout right fill
+        fr-icon-layout-right-line: layout right line
+        fr-icon-layout-row-fill: layout row fill
+        fr-icon-layout-row-line: layout row line
+        fr-icon-layout-top-fill: layout top fill
+        fr-icon-layout-top-line: layout top line
         fr-icon-leaf-fill: leaf fill
         fr-icon-leaf-line: leaf line
         fr-icon-lightbulb-fill: lightbulb fill
@@ -379,6 +595,7 @@ link:
         fr-icon-link-unlink: link unlink
         fr-icon-link: link
         fr-icon-linkedin-box-fill: linkedin-box filled
+        fr-icon-linkedin-box-line: linkedin-box line
         fr-icon-links-fill: links fill
         fr-icon-links-line: links line
         fr-icon-list-ordered: list ordered
@@ -395,29 +612,60 @@ link:
         fr-icon-lungs-line: lungs line
         fr-icon-mac-fill: mac fill
         fr-icon-mac-line: mac line
+        fr-icon-macbook-fill: macbook fill
+        fr-icon-macbook-line: macbook line
+        fr-icon-magic-fill: magic fill
+        fr-icon-magic-line: magic line
+        fr-icon-mail-add-fill: mail add fill
+        fr-icon-mail-add-line: mail add line
+        fr-icon-mail-check-fill: mail check fill
+        fr-icon-mail-check-line: mail check line
+        fr-icon-mail-close-fill: mail close fill
+        fr-icon-mail-close-line: mail close line
+        fr-icon-mail-download-fill: mail download fill
+        fr-icon-mail-download-line: mail download line
         fr-icon-mail-fill: mail filled
+        fr-icon-mail-forbid-fill: mail forbid fill
+        fr-icon-mail-forbid-line: mail forbid line
         fr-icon-mail-line: mail line
+        fr-icon-mail-lock-fill: mail lock fill
+        fr-icon-mail-lock-line: mail lock line
         fr-icon-mail-open-fill: mail open fill
         fr-icon-mail-open-line: mail open line
+        fr-icon-mail-send-fill: mail send fill
+        fr-icon-mail-send-line: mail send line
+        fr-icon-mail-settings-fill: mail settings fill
+        fr-icon-mail-settings-line: mail settings line
+        fr-icon-mail-star-fill: mail star fill
+        fr-icon-mail-star-line: mail star line
+        fr-icon-mail-unread-fill: mail unread fill
+        fr-icon-mail-unread-line: mail unread line
+        fr-icon-mail-volume-fill: mail volume fill
+        fr-icon-mail-volume-line: mail volume line
         fr-icon-map-pin-2-fill: map pin 2 filled
         fr-icon-map-pin-2-line: map pin 2 line
         fr-icon-map-pin-user-fill: map pin user fill
         fr-icon-map-pin-user-line: map pin user line
         fr-icon-mark-pen-fill: mark pen fill
         fr-icon-mark-pen-line: mark pen line
+        fr-icon-markup-fill: markup fill
+        fr-icon-markup-line: markup line
         fr-icon-mastodon-fill: mastodon fill
         fr-icon-mastodon-line: mastodon line
         fr-icon-medal-fill: medal fill
         fr-icon-medal-line: medal line
         fr-icon-medicine-bottle-fill: medicine bottle fill
         fr-icon-medicine-bottle-line: medicine bottle line
+        fr-icon-megaphone-fill: megaphone fill
+        fr-icon-megaphone-line: megaphone line
         fr-icon-mental-health-fill: mental health fill
         fr-icon-mental-health-line: mental health line
         fr-icon-menu-2-fill: menu 2 fill
-        fr-icon-menu-2-line: menu 2 filled
         fr-icon-menu-fill: menu filled
         fr-icon-message-2-fill: message 2 fill
         fr-icon-message-2-line: message 2 line
+        fr-icon-message-3-fill: message 3 fill
+        fr-icon-message-3-line: message 3 line
         fr-icon-mic-fill: mic fill
         fr-icon-mic-line: mic line
         fr-icon-microscope-fill: microscope fill
@@ -432,6 +680,8 @@ link:
         fr-icon-more-line: more line
         fr-icon-motorbike-fill: motorbike fill
         fr-icon-motorbike-line: motorbike line
+        fr-icon-mouse-fill: mouse fill
+        fr-icon-mouse-line: mouse line
         fr-icon-music-2-fill: music 2 fill
         fr-icon-music-2-line: music 2 line
         fr-icon-newspaper-fill: newspaper fill
@@ -442,6 +692,8 @@ link:
         fr-icon-notification-badge-line: notification badge line
         fr-icon-npmjs-fill: npmjs filled
         fr-icon-npmjs-line: npmjs line
+        fr-icon-octagon-fill: octagon fill
+        fr-icon-octagon-line: octagon line
         fr-icon-paint-brush-fill: paint brush fill
         fr-icon-paint-brush-line: paint brush line
         fr-icon-paint-fill: paint fill
@@ -452,6 +704,14 @@ link:
         fr-icon-pantone-line: pantone line
         fr-icon-parent-fill: parent fill
         fr-icon-parent-line: parent line
+        fr-icon-parentheses-fill: parentheses fill
+        fr-icon-parentheses-line: parentheses line
+        fr-icon-pass-expired-fill: pass expired fill
+        fr-icon-pass-expired-line: pass expired line
+        fr-icon-pass-pending-fill: pass pending fill
+        fr-icon-pass-pending-line: pass pending line
+        fr-icon-pass-valid-fill: pass valid fill
+        fr-icon-pass-valid-line: pass valid line
         fr-icon-passport-fill: passport fill
         fr-icon-passport-line: passport line
         fr-icon-pause-circle-fill: pause-circle filled
@@ -462,18 +722,30 @@ link:
         fr-icon-pencil-line: pencil line
         fr-icon-pencil-ruler-fill: pencil ruler fill
         fr-icon-pencil-ruler-line: pencil ruler line
+        fr-icon-pentagon-fill: pentagon fill
+        fr-icon-pentagon-line: pentagon line
         fr-icon-phone-fill: phone filled
+        fr-icon-phone-find-fill: phone find fill
+        fr-icon-phone-find-line: phone find line
         fr-icon-phone-line: phone line
+        fr-icon-phone-lock-fill: phone lock fill
+        fr-icon-phone-lock-line: phone lock line
         fr-icon-pie-chart-2-fill: pie chart 2 fill
         fr-icon-pie-chart-2-line: pie chart 2 line
         fr-icon-pie-chart-box-fill: pie chart box fill
         fr-icon-pie-chart-box-line: pie chart box line
+        fr-icon-pie-chart-fill: pie chart fill
+        fr-icon-pie-chart-line: pie chart line
         fr-icon-plant-fill: plant fill
         fr-icon-plant-line: plant line
         fr-icon-play-circle-fill: play circle fill
         fr-icon-play-circle-line: play circle line
         fr-icon-play-fill: play filled
         fr-icon-play-line: play line
+        fr-icon-presentation-fill: presentation fill
+        fr-icon-presentation-line: presentation line
+        fr-icon-printer-cloud-fill: printer cloud fill
+        fr-icon-printer-cloud-line: printer cloud line
         fr-icon-printer-fill: printer filled
         fr-icon-printer-line: printer line
         fr-icon-profil-fill: profil fill
@@ -485,6 +757,8 @@ link:
         fr-icon-pulse-line: pulse line
         fr-icon-qr-code-fill: qr code fill
         fr-icon-qr-code-line: qr code line
+        fr-icon-qr-scan-fill: qr scan fill
+        fr-icon-qr-scan-line: qr scan line
         fr-icon-question-answer-fill: question answer fill
         fr-icon-question-answer-line: question answer line
         fr-icon-question-fill: question filled
@@ -492,20 +766,46 @@ link:
         fr-icon-question-mark: question mark
         fr-icon-questionnaire-fill: questionnaire fill
         fr-icon-questionnaire-line: questionnaire line
+        fr-icon-quill-pen-fill: quill pen fill
+        fr-icon-quill-pen-line: quill pen line
         fr-icon-quote-fill: quote fill
         fr-icon-quote-line: quote line
+        fr-icon-radar-fill: radar fill
+        fr-icon-radar-line: radar line
+        fr-icon-record-mail-fill: record mail fill
+        fr-icon-record-mail-line: record mail line
+        fr-icon-rectangle-fill: rectangle fill
+        fr-icon-rectangle-line: rectangle line
         fr-icon-recycle-fill: recycle fill
         fr-icon-recycle-line: recycle line
         fr-icon-refresh-fill: refresh fill
         fr-icon-refresh-line: refresh line
         fr-icon-remixicon-fill: remixicon filled
         fr-icon-remixicon-line: remixicon line
+        fr-icon-remote-control-2-fill: remote control 2 fill
+        fr-icon-remote-control-2-line: remote control 2 line
+        fr-icon-remote-control-fill: remote control fill
+        fr-icon-remote-control-line: remote control line
+        fr-icon-reply-all-fill: reply all fill
+        fr-icon-reply-all-line: reply all line
+        fr-icon-reply-fill: reply fill
+        fr-icon-reply-line: reply line
+        fr-icon-restart-fill: restart fill
+        fr-icon-restart-line: restart line
         fr-icon-restaurant-fill: restaurant fill
         fr-icon-restaurant-line: restaurant line
+        fr-icon-rfid-fill: rfid fill
+        fr-icon-rfid-line: rfid line
         fr-icon-road-map-fill: road map filled
         fr-icon-road-map-line: road map line
+        fr-icon-rotate-lock-fill: rotate lock fill
+        fr-icon-rotate-lock-line: rotate lock line
+        fr-icon-router-fill: router fill
+        fr-icon-router-line: router line
         fr-icon-rss-fill: rss filled
         fr-icon-rss-line: rss line
+        fr-icon-ruler-fill: ruler fill
+        fr-icon-ruler-line: ruler line
         fr-icon-safari-fill: safari fill
         fr-icon-safari-line: safari line
         fr-icon-sailboat-fill: sailboat fill
@@ -516,6 +816,20 @@ link:
         fr-icon-save-line: save line
         fr-icon-scales-3-fill: scales 3 fill
         fr-icon-scales-3-line: scales 3 line
+        fr-icon-scan-fill: scan fill
+        fr-icon-scan-line: scan line
+        fr-icon-school-fill: school fill
+        fr-icon-school-line: school line
+        fr-icon-scissors-cut-fill: scissors cut fill
+        fr-icon-scissors-cut-line: scissors cul line
+        fr-icon-scissors-fill: scissors fill
+        fr-icon-scissors-line: scissors line
+        fr-icon-screenshot-2-fill: screenshot 2 fill
+        fr-icon-screenshot-2-line: screenshot 2 line
+        fr-icon-sd-card-fill: sd card fill
+        fr-icon-sd-card-line: sd card line
+        fr-icon-sd-card-mini-fill: sd card mini fill
+        fr-icon-sd-card-mini-line: sd card mini line
         fr-icon-search-fill: search filled
         fr-icon-search-line: search line
         fr-icon-secure-payment-fill: secure payment fill
@@ -524,11 +838,21 @@ link:
         fr-icon-seedling-line: seedling line
         fr-icon-send-plane-fill: send plane fill
         fr-icon-send-plane-line: send plane line
+        fr-icon-sensor-fill: sensor fill
+        fr-icon-sensor-line: sensor line
+        fr-icon-seo-fill: seo fill
+        fr-icon-seo-line: seo line
         fr-icon-separator: separator
         fr-icon-server-fill: server fill
         fr-icon-server-line: server line
+        fr-icon-service-fill: service fill
+        fr-icon-service-line: service line
         fr-icon-settings-5-fill: settings 5 fill
         fr-icon-settings-5-line: settings 5 line
+        fr-icon-shake-hands-fill: shake hands fill
+        fr-icon-shake-hands-line: shake hands line
+        fr-icon-shape-fill: shape fill
+        fr-icon-shape-line: shape line
         fr-icon-shield-fill: shield fill
         fr-icon-shield-line: shield line
         fr-icon-ship-2-fill: ship 2 fill
@@ -537,19 +861,43 @@ link:
         fr-icon-shopping-bag-line: shopping bag line
         fr-icon-shopping-cart-2-fill: shopping cart 2 fill
         fr-icon-shopping-cart-2-line: shopping cart 2 line
+        fr-icon-shut-down-fill: shut down fill
+        fr-icon-shut-down-line: shut down line
         fr-icon-signal-tower-fill: signal tower fill
         fr-icon-signal-tower-line: signal tower line
+        fr-icon-signal-wifi-error-fill: signal wifi error fill
+        fr-icon-signal-wifi-error-line: signal wifi error line
+        fr-icon-signal-wifi-fill: signal wifi fill
+        fr-icon-signal-wifi-line: signal wifi line
+        fr-icon-signal-wifi-off-fill: signal wifi off fill
+        fr-icon-signal-wifi-off-line: signal wifi off line
+        fr-icon-sim-card-2-fill: sim card 2 fill
+        fr-icon-sim-card-2-line: sim card 2 line
         fr-icon-sip-fill: sip fill
         fr-icon-sip-line: sip line
+        fr-icon-skip-down-fill: skip down fill
+        fr-icon-skip-down-line: skip down line
+        fr-icon-skip-up-fill: skip up fill
+        fr-icon-skip-up-line: skip up line
         fr-icon-slack-fill: slack filled
         fr-icon-slack-line: slack line
+        fr-icon-slice-fill: slice fill
+        fr-icon-slice-line: slice line
         fr-icon-slideshow-fill: slideshow fill
         fr-icon-slideshow-line: slideshow line
         fr-icon-smartphone-fill: smartphone fill
         fr-icon-smartphone-line: smartphone line
         fr-icon-snapchat-fill: snapchat filled
         fr-icon-snapchat-line: snapchat line
+        fr-icon-sort-asc: sort asc
+        fr-icon-sort-desc: sort desc
         fr-icon-space: space
+        fr-icon-speak-fill: speak fill
+        fr-icon-speak-line: speak line
+        fr-icon-square-fill: square fill
+        fr-icon-square-line: square line
+        fr-icon-stack-fill: stack fill
+        fr-icon-stack-line: stack line
         fr-icon-star-fill: star fill
         fr-icon-star-line: star line
         fr-icon-star-s-fill: star s fill
@@ -558,6 +906,8 @@ link:
         fr-icon-stethoscope-line: stethoscope line
         fr-icon-stop-circle-fill: stop circle fill
         fr-icon-stop-circle-line: stop circle line
+        fr-icon-submersion-fill: submersion fill
+        fr-icon-submersion-line: submersion line
         fr-icon-subscript: subscript
         fr-icon-subtract-line: subtract line
         fr-icon-success-fill: success fill
@@ -572,6 +922,8 @@ link:
         fr-icon-syringe-fill: syringe fill
         fr-icon-syringe-line: syringe line
         fr-icon-table-2: table 2
+        fr-icon-table-alt-fill: table alt fill
+        fr-icon-table-alt-line: table alt line
         fr-icon-table-fill: table fill
         fr-icon-table-line: table line
         fr-icon-tablet-fill: tablet fill
@@ -582,8 +934,11 @@ link:
         fr-icon-team-line: team line
         fr-icon-telegram-fill: telegram filled
         fr-icon-telegram-line: telegram line
+        fr-icon-tent-fill: tent fill
+        fr-icon-tent-line: tent line
         fr-icon-terminal-box-fill: terminal box fill
         fr-icon-terminal-box-line: terminal box line
+        fr-icon-terminal-fill: terminal fill
         fr-icon-terminal-line: terminal line
         fr-icon-terminal-window-fill: terminal window fill
         fr-icon-terminal-window-line: terminal window line
@@ -606,10 +961,13 @@ link:
         fr-icon-timer-line: timer line
         fr-icon-todo-fill: todo fill
         fr-icon-todo-line: todo line
+        fr-icon-tools-fill: tools fill
+        fr-icon-tools-line: tools line
         fr-icon-train-fill: train fill
         fr-icon-train-line: train line
-        fr-icon-transcription: transcription
         fr-icon-translate-2: translate 2
+        fr-icon-triangle-fill: triangle fill
+        fr-icon-triangle-line: triangle line
         fr-icon-trophy-fill: trophy fill
         fr-icon-trophy-line: trophy line
         fr-icon-tv-fill: tv fill
@@ -620,12 +978,18 @@ link:
         fr-icon-twitter-line: twitter line
         fr-icon-twitter-x-fill: twitter-x fill
         fr-icon-twitter-x-line: twitter-x line
+        fr-icon-u-disk-fill: u disk fill
+        fr-icon-u-disk-line: u disk line
         fr-icon-umbrella-fill: umbrella fill
         fr-icon-umbrella-line: umbrella line
+        fr-icon-uninstall-fill: uninstall fill
+        fr-icon-uninstall-line: uninstall line
         fr-icon-upload-2-fill: upload filled
         fr-icon-upload-2-line: upload line
         fr-icon-upload-fill: upload fill
         fr-icon-upload-line: upload line
+        fr-icon-usb-fill: usb fill
+        fr-icon-usb-line: usb line
         fr-icon-user-add-fill: user add fill
         fr-icon-user-add-line: user add line
         fr-icon-user-fill: user filled
@@ -656,8 +1020,14 @@ link:
         fr-icon-warning-line: warning line
         fr-icon-wifi-fill: wifi fill
         fr-icon-wifi-line: wifi line
+        fr-icon-wifi-off-fill: wifi off fill
+        fr-icon-wifi-off-line: wifi off line
+        fr-icon-window-2-fill: window 2 fill
+        fr-icon-window-2-line: window 2 line
         fr-icon-window-fill: window fill
         fr-icon-window-line: window line
+        fr-icon-wireless-charging-fill: wireless charging fill
+        fr-icon-wireless-charging-line: wireless charging line
         fr-icon-youtube-fill: youtube filled
         fr-icon-youtube-line: youtube line
         fr-icon-zoom-in-fill: zoom in filled
